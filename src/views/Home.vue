@@ -1,18 +1,23 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <page-desc>
+      <template name="title">
+       <h1>E.S.H.S. Robotics Club</h1>
+      </template>
+      <template name="description">
+        <p>The ESHS Robotics Club is made up of a conglomerate of teams competing in various robotics and computer science competitions which all share the same mission. To teach and expose kids about the fundamentals of Science and Engineering. Collectively we are known as The P.O.T.A.T.O.E.S. or People Of Tomorrow Applying Their Outstanding Engineering Skills.</p>
+      </template>
+    </page-desc>
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
+import PageDesc from '@/components/PageDescription';
 
 export default {
   name: 'home',
-  components: {
-    HelloWorld
-  }
+  components: [
+    PageDesc
+  ]
 }
 </script>
