@@ -1,13 +1,9 @@
 <template>
   <div class="resource-container">
-    <slot name="resource-category">
-       <h3> Resource Cateogry </h3> 
-    </slot>
+    <h3> Resource Cateogry </h3> 
 
-    <slot name="resources">
-      <ul>
-        <li> Resouce </li>
-      </ul>
-    </slot>
+    <ul>
+      <li> Resource </li>
+    </ul>
   </div>
 </template>

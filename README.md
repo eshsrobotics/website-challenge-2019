@@ -1,29 +1,12 @@
-# robotics-website
+# Robotics Website
 
-## Project setup
-```
-npm install
-```
-
-### Compiles and hot-reloads for development
-```
-npm run serve
+## How to use
+### Dev Server
+```bash
+$ npm run serve
 ```
 
-### Compiles and minifies for production
+### Build for Prod
+```bash
+$ npm run build
 ```
-npm run build
-```
-
-### Run your tests
-```
-npm run test
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).

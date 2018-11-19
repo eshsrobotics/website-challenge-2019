@@ -55,6 +55,53 @@ export default {
               desc: 'Team branding guideline & logo files'
             }
           ]
+        },
+        {
+          title: 'F.R.C.',
+          resources: [
+            {
+              name: 'S.T.I.M.S. Login',
+              url: 'https://www.firstinspires.org/',
+              desc:  'Main website & STIMS login portal'
+            },
+            {
+              name: 'Getting Started',
+              url: 'https://wpilib.screenstepslive.com/s/currentCS',
+              desc: 'Everything you need to get started for building an FRC robot'
+            },
+            {
+              name: 'Chief Delphi',
+              url: 'https://www.chiefdelphi.com/forums/portal.php',
+              desc: 'The offician unofficial F.R.C. forum'
+            }
+          ]
+        },
+        {
+          title: 'V.E.X.',
+          resources: [
+            {
+              name: 'Main Website',
+              url: 'https://www.vexrobotics.com/',
+              desc: 'The main F.R.C. website'
+            }
+          ]
+        },
+        {
+          title: 'Social Media',
+          resources: [
+            {
+              name: 'Instagram',
+              url: 'https://www.instagram.com/eshspotatoes/'
+            },
+            {
+              name: 'Facebook',
+              url: 'https://www.facebook.com/eshspotatoes/'
+            },
+            {
+              name: 'Twitter',
+              url: 'https://twitter.com/eshspotatoes'
+            }
+          ]
         }
       ]
     }
