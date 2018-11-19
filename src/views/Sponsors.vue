@@ -1,12 +1,8 @@
 <template>
   <div class="sponsors">
     <page-desc>
-      <template name="title">
        <h1>Sponsors</h1>
-      </template>
-      <template name="description">
-        <p>Here you can find all of the P.O.TA.T.O.E.S.’s sponsors. In addition to a list, you can also find out how to become a sponsor!</p>
-      </template>
+       <p>Here you can find all of the P.O.TA.T.O.E.S.’s sponsors. In addition to a list, you can also find out how to become a sponsor!</p>
     </page-desc>
   </div>
 </template>
@@ -16,8 +12,8 @@ import PageDesc from '@/components/PageDescription';
 
 export default {
   name: 'sponsors',
-  components: [
-    PageDesc
-  ]
+  components: {
+    'page-desc': PageDesc
+  }
 }
 </script>

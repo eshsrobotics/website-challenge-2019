@@ -1,12 +1,8 @@
 <template>
   <div class="blog">
     <page-desc>
-      <template name="title">
-       <h1>Blog</h1>
-      </template>
-      <template name="description">
-        <p>Everyday posts about engineering and potatoes. Everyday posts about engineering and potatoes. Everyday posts about engineering and potatoes.</p>
-      </template>
+      <h1>Blog</h1>
+      <p>Everyday posts about engineering and potatoes. Everyday posts about engineering and potatoes. Everyday posts about engineering and potatoes.</p>
     </page-desc>
   </div>
 </template>
@@ -16,8 +12,8 @@ import PageDesc from '@/components/PageDescription';
 
 export default {
   name: 'blog',
-  components: [
-    PageDesc
-  ]
+  components: {
+    'page-desc': PageDesc
+  }
 }
 </script>

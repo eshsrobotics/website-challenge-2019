@@ -1,17 +1,14 @@
 <template>
   <div class="resources">
     <page-desc>
-      <template name="title">
-       <h1>Resouces</h1>
-      </template>
-      <template name="description">
-        <p>Links to various external services and resources the club uses on a regular basis. Please navigate to the links below.</p>
-      </template>
+      <h1>Resouces</h1>
+      <p>Links to various external services and resources the club uses on a regular basis. Please navigate to the links below.</p>
     </page-desc>
 
     <resource-container>
       <slot>
         <h3>Category</h3>
+        <p> {{ allResources }} </p>
       </slot>
     </resource-container>
   </div>
@@ -20,95 +17,18 @@
 <script>
 import PageDesc from '@/components/PageDescription';
 import ResourceContainer from '@/components/ResourceContainer';
+import teamResources from '@/json/teamResources';
 
 export default {
   name: 'resources',
   data() {
     return {
-      resources: [
-        {
-          title: 'General',
-          resources: [
-            {
-              name: 'Slack',
-              url: 'https://eshs-robotics.slack.com/',
-              desc: 'Central communication platform'
-            }
-          ]
-        },
-        {
-          title: 'GitHub',
-          resources: [
-            {
-              name: 'GitHub',
-              url: 'https://github.com/eshsrobotics/',
-              desc: 'Collection of code repositories created by the club over the years'
-            },
-            {
-              name: 'Wiki',
-              url: 'https://github.com/eshsrobotics/database/wiki',
-              desc: 'Everything you need to know about being a P.O.T.A.T.O.E.'
-            },
-            {
-              name: 'Branding',
-              url: 'https://github.com/eshsrobotics/database/wiki/Branding-Guideline',
-              desc: 'Team branding guideline & logo files'
-            }
-          ]
-        },
-        {
-          title: 'F.R.C.',
-          resources: [
-            {
-              name: 'S.T.I.M.S. Login',
-              url: 'https://www.firstinspires.org/',
-              desc:  'Main website & STIMS login portal'
-            },
-            {
-              name: 'Getting Started',
-              url: 'https://wpilib.screenstepslive.com/s/currentCS',
-              desc: 'Everything you need to get started for building an FRC robot'
-            },
-            {
-              name: 'Chief Delphi',
-              url: 'https://www.chiefdelphi.com/forums/portal.php',
-              desc: 'The offician unofficial F.R.C. forum'
-            }
-          ]
-        },
-        {
-          title: 'V.E.X.',
-          resources: [
-            {
-              name: 'Main Website',
-              url: 'https://www.vexrobotics.com/',
-              desc: 'The main F.R.C. website'
-            }
-          ]
-        },
-        {
-          title: 'Social Media',
-          resources: [
-            {
-              name: 'Instagram',
-              url: 'https://www.instagram.com/eshspotatoes/'
-            },
-            {
-              name: 'Facebook',
-              url: 'https://www.facebook.com/eshspotatoes/'
-            },
-            {
-              name: 'Twitter',
-              url: 'https://twitter.com/eshspotatoes'
-            }
-          ]
-        }
-      ]
+      allResources: teamResources
     }
   },
-  components: [
-    PageDesc,
-    ResourceContainer
-  ]
+  components: {
+    'page-desc': PageDesc,
+    'resource-container': ResourceContainer
+  }
 }
 </script>
