@@ -11,7 +11,6 @@
       <nav-bar-item routeTo="/blog" name="Blog"></nav-bar-item>
       <nav-bar-item routeTo="/resources" name="Resources"></nav-bar-item>
       <nav-bar-item routeTo="/media" name="Media"></nav-bar-item>
-      <nav-bar-item routeTo="/members" name="Member"></nav-bar-item>
     </ul>
   </nav>
 </template>

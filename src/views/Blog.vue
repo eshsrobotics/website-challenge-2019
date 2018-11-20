@@ -2,7 +2,7 @@
   <div class="blog">
     <page-desc>
       <h1>Blog</h1>
-      <p>Everyday posts about engineering and potatoes. Everyday posts about engineering and potatoes. Everyday posts about engineering and potatoes.</p>
+      <p>Not implemented yet.</p>
     </page-desc>
   </div>
 </template>

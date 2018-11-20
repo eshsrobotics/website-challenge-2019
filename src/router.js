@@ -41,10 +41,6 @@ export default new Router({
     {
       path: '/media',
       component: () => import('./views/Media')
-    },
-    {
-      path: '/members',
-      component: () => import('./views/Members')
     }
   ]
 })

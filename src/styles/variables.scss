@@ -1,9 +1,20 @@
 @import 'open-color';
-@import 'mixins';
+
+// Common Variables
+$card-bg-color: $oc-gray-1;
+
 
 // Color Variables
 $team-green: #002400;
 $team-white: #d3d3d3;
 
+// Border Radius Variables
 $border-radius: 10px;
 $border-radius-small: 5px;
+
+// Transitions
+$transition-duration: 0.1s;
+$transition-timing-fn: ease-in-out;
+
+@import 'functions';
+@import 'mixins';

@@ -1,9 +1,7 @@
 <template>
-  <!-- <li> -->
     <router-link :to="routeTo" tag="li">
         <p> {{ name }} </p>
     </router-link>
-  <!-- </li> -->
 </template>
 
 <script>
@@ -39,7 +37,7 @@ li {
 
 p {
   @include resetSpacing();
-  font-family: 'Robot', sans-serif;
+  font-family: 'poppins', sans-serif;
   color: $oc-gray-9;
   text-decoration: none;
   padding: 10px 15px;

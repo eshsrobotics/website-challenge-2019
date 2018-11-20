@@ -3,3 +3,34 @@
   padding: 0px;
   border: 0px none;
 }
+
+@mixin glideUpOnHover() {
+  transition: createTransitions((transform));
+  &:hover {
+    transform: translateY(-5px);
+    transition: createTransitions((transform));
+  }
+}
+
+@mixin hoverShadow($shadowReg, $shadowHover) {
+  box-shadow: 2px 2px 2px $shadowReg;
+  transition: createTransitions((background-color, box-shadow));
+
+  &:hover {
+    box-shadow: 3px 3px 4px $shadowHover;
+    transition: createTransitions((background-color, box-shadow));
+  }
+}
+
+@mixin genericCard() {
+  background-color: $oc-gray-1;
+  border-radius: $border-radius;
+  padding: 10px;
+  margin: 10px;
+
+  // Want card to have shadow on hover
+  @include hoverShadow($oc-gray-2, $oc-gray-3);
+
+  // Want card to glide up on hover
+  @include glideUpOnHover();
+}

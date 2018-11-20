@@ -20,15 +20,25 @@ export default {
 <style lang="scss">
 @import '@/styles/variables.scss';
 
-body {
+* {
   @include resetSpacing();
 }
 
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: #2c3e50;
+}
+
+h1 {
+  font-family: 'Poppins', sans-serif;
+}
+
+h3 {
+  font-family: 'Poppins', sans-serif;
+}
+
+p {
+  font-family: 'Raleway';
 }
 
 .wrapper {
@@ -39,5 +49,9 @@ body {
 
 .wrapper-inner {
   max-width: 800px;
+  min-width: 800px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 </style>
