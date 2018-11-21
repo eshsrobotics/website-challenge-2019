@@ -1,7 +1,4 @@
 <template>
-  <!-- Why is this wrapper necessary? It contains:
-    SponsorCards, which are grouped together to have a certain layout
-  -->
   <div class="sponsor-card-wrapper">
     <h2> {{ displayTier }} </h2>
     <layout-card-overflow :class="tier">
@@ -30,9 +27,6 @@ export default {
 
 <style scoped lang="scss">
 // The styles for the class "tier" is in a child component, SponsorCard
-.sponsor-card-wrapper {
-  margin-bottom: 15px;
-}
 
 h2 {
   margin-bottom: 3px;

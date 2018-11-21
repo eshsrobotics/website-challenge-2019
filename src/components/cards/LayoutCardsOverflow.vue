@@ -1,5 +1,5 @@
 <template>
-  <div class="cards-wrapper-overflow">
+  <div class="cards-overflow">
     <slot></slot>
   </div>
 </template>
@@ -14,12 +14,13 @@ export default {
 <style scoped lang="scss">
 @import '@/styles/variables.scss';
 
-.cards-wrapper-overflow {
+.cards-overflow {
   display: flex;
+  flex-wrap: wrap;
 
 }
 
-.cards-wrapper-overflow > * {
+.cards-overflow > * {
   margin-right: 20px;
 }
 

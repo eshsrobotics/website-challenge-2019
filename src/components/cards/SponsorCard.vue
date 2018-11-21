@@ -1,7 +1,8 @@
 <template>
   <div class="sponsor">
     <h3> {{ sponsor.name }} </h3>
-    <img :src="sponsor.image" :alt="sponsor.imageAltText" width="150px"/>
+    <!-- <h3> {[ eee }} </h3> -->
+    <img :src="sponsor.image" :alt="sponsor.imageAltText" width="250px"/>
   </div>
 
 </template>
@@ -12,6 +13,7 @@ export default {
   data() {
     let placeHolder = 'https://dummyimage.com/1280x960/dee2e6/212529';
     return {
+      eee: 'ter',
       sponsors: {
         company1: {
           name: "Company 1" ,
@@ -51,6 +53,9 @@ export default {
   computed: {
     sponsor: function() {
       return this.sponsors[this.showSponsor]
+    },
+    pictureWidth: function() {
+      return "200px"
     }
   }
 }
@@ -71,22 +76,25 @@ img {
   @include genericCard();
   display: flex;
   flex-direction: column;
+  margin-bottom: 15px;
 }
 
 // Recall "plainum, gold, siler, bronze" classes are set in component LayoutCardOverflow.vue (which always must be parent of SponsorCard.vue
-.platinum {
- 
+.platinum .sponsor {
+  img {
+    width: 200px;
+  }
 }
 
-.gold {
+.gold .sponsor {
 
 }
 
-.silver {
-
+.silver .sponsor {
+  
 }
 
-.bronze {
+.bronze .sponsor {
 
 }
 </style>

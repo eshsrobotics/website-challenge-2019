@@ -1,12 +1,14 @@
 <template>
-  <div class="sponsors">
+  <div class="sponsors-page">
     <page-desc>
        <h1>Sponsors</h1>
        <p>The Robotics Club is grateful all our sponsors</p>
     </page-desc>
 
     <sponsor-card-wrapper tier="gold">
-      <sponsor-card showSponsor="company1"></sponsor-card>
+      <!-- <template slot-scope> -->
+        <sponsor-card showSponsor="company1"></sponsor-card>
+      <!-- </template> -->
     </sponsor-card-wrapper>
 
     <sponsor-card-wrapper tier="silver">
@@ -16,6 +18,11 @@
     <sponsor-card-wrapper tier="bronze">
       <sponsor-card showSponsor="company2"></sponsor-card>
       <sponsor-card showSponsor="company4"></sponsor-card>
+      <sponsor-card showSponsor="company5"></sponsor-card>
+      <sponsor-card showSponsor="company5"></sponsor-card>
+      <sponsor-card showSponsor="company5"></sponsor-card>
+      <sponsor-card showSponsor="company5"></sponsor-card>
+      <sponsor-card showSponsor="company5"></sponsor-card>
       <sponsor-card showSponsor="company5"></sponsor-card>
     </sponsor-card-wrapper>
   </div>
