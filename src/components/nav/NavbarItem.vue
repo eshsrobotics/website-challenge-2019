@@ -28,10 +28,11 @@ li {
 
   &:hover {
     cursor: pointer;
+    background-color: $oc-gray-2;
   }
 
   &.router-link-exact-active {
-    background-color: $oc-gray-2;
+    background-color: $oc-gray-3;
   }
 }
 
@@ -41,6 +42,7 @@ p {
   color: $oc-gray-9;
   text-decoration: none;
   padding: 10px 15px;
+  line-height: 100%;
 }
 
 .router-link-exact-active p {

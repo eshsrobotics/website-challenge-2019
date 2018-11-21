@@ -2,38 +2,33 @@
   <div class="home">
     <page-desc>
       <h1>E.S.H.S. Robotics Club</h1>
-      <p>The ESHS Robotics Club is made up of a conglomerate of teams competing in various robotics and computer science competitions which all share the same mission. To teach and expose kids about the fundamentals of Science and Engineering. Collectively we are known as The P.O.T.A.T.O.E.S. or People Of Tomorrow Applying Their Outstanding Engineering Skills.</p>
+      <p>We're a club located in the <b>heart of El Segundo</b>, We have a <b>strong passion</b> for robotics, programming, engineering, and anything related.</p>
+      <p>The team resides in the south bay at El Segundo High School.</p>
     </page-desc>
 
-    <div class="competitions">
-      <competition-card comp="cyberpatriots"></competition-card>
-      <competition-card comp="frc"></competition-card>
-      <competition-card comp="vex"></competition-card>
-    </div>
+    <layout-cards-fit class="competitions">
+      <competition-card showCompetition="cyberpatriots"></competition-card>
+      <competition-card showCompetition="frc"></competition-card>
+      <competition-card showCompetition="vex"></competition-card>
+    </layout-cards-fit>
   </div>
 </template>
 
 <script>
-import PageDesc from '@/components/PageDescription';
-import CompetitionCard from '@/components/CompetitionCard';
+import PageDesc from '@/components/PageDescription'; 
+import CompetitionCard from '@/components/cards/CompetitionCard';
+import LayoutCardsFit from '@/components/cards/LayoutCardsFit';
 
 export default {
   name: 'home',
   components: {
     'page-desc': PageDesc,
-    'competition-card': CompetitionCard
+    'competition-card': CompetitionCard,
+    'layout-cards-fit': LayoutCardsFit
   }
 }
 </script>
 
-<style lang="scss">
+<style scoped lang="scss">
 @import '@/styles/variables.scss';
-
-.competitions {
-  display: flex;
-
-  &> :first-child {
-    width: auto;
-  }
-}
 </style>

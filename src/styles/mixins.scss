@@ -26,7 +26,6 @@
   background-color: $oc-gray-1;
   border-radius: $border-radius;
   padding: 10px;
-  margin: 10px;
 
   // Want card to have shadow on hover
   @include hoverShadow($oc-gray-2, $oc-gray-3);

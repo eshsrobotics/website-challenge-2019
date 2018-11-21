@@ -33,25 +33,42 @@ h1 {
   font-family: 'Poppins', sans-serif;
 }
 
+h2 {
+  font-family: 'Poppins', sans-serif;
+}
+
 h3 {
   font-family: 'Poppins', sans-serif;
 }
 
 p {
-  font-family: 'Raleway';
+  font-family: 'Raleway', sans-serif;
+  line-height: 150%;
 }
 
+// This is for a centered layout 800px wide
+// .wrapper {
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+// }
+// .wrapper-inner {
+//   max-width: 800px;
+//   min-width: 800px;
+//   display: flex;
+//   flex-direction: column;
+//   align-items: flex-start;
+// }
+
+// This is for layout 100% page width
 .wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.wrapper-inner {
-  max-width: 800px;
-  min-width: 800px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  margin: 0px 20px;
+
+}
+.wrapper-inner {
+
 }
 </style>

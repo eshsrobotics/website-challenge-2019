@@ -7,10 +7,10 @@
       <nav-bar-item routeTo="/cyberpatriots" name="CyberPatriots"></nav-bar-item>
       <nav-bar-item routeTo="/frc" name="FRC"></nav-bar-item>
       <nav-bar-item routeTo="/vex" name="VEX"></nav-bar-item>
-      <nav-bar-item routeTo="/sponsors" name="Sponsors"></nav-bar-item>
-      <nav-bar-item routeTo="/blog" name="Blog"></nav-bar-item>
       <nav-bar-item routeTo="/resources" name="Resources"></nav-bar-item>
       <nav-bar-item routeTo="/media" name="Media"></nav-bar-item>
+      <nav-bar-item routeTo="/sponsors" name="Sponsors"></nav-bar-item>
+      <nav-bar-item routeTo="/blog" name="Blog"></nav-bar-item>
     </ul>
   </nav>
 </template>

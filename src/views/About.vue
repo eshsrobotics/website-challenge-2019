@@ -6,3 +6,12 @@
     </page-desc>
   </div>
 </template>
+
+<script>
+import PageDesc from '@/components/PageDescription';
+export default {
+  components: {
+    'page-desc': PageDesc
+  }
+}
+</script>
