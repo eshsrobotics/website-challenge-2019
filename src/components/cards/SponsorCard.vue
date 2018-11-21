@@ -1,44 +1,50 @@
 <template>
   <div class="sponsor">
     <h3> {{ sponsor.name }} </h3>
-    <!-- <h3> {[ eee }} </h3> -->
     <img :src="sponsor.image" :alt="sponsor.imageAltText" width="250px"/>
   </div>
-
 </template>
-
 
 <script>
 export default {
   data() {
     let placeHolder = 'https://dummyimage.com/1280x960/dee2e6/212529';
     return {
-      eee: 'ter',
       sponsors: {
-        company1: {
-          name: "Company 1" ,
+        gamma: {
+          name: "Gamma Foo" ,
           image: placeHolder,
-          imageAltText: "Sponsor 1 Logo"
+          imageAltText: "Gamma Logo"
         },
-        company2: {
-          name: "Company 2" ,
+        epsilon: {
+          name: "Epsilon Bar" ,
           image: placeHolder,
-          imageAltText: "Sponsor 2 Logo"
+          imageAltText: "Epsilon Logo"
         },
-        company3: {
-          name: "Company 3" ,
+        zeta: {
+          name: "Zeta Baz" ,
           image: placeHolder,
-          imageAltText: "Sponsor 3 Logo"
+          imageAltText: "Zeta Logo"
         },
-        company4: {
-          name: "Company 4" ,
+        kappa: {
+          name: "Kappa Foo" ,
           image: placeHolder,
-          imageAltText: "Sponsor 4 Logo"
+          imageAltText: "Kappa Logo"
         },
-        company5: {
-          name: "Company 5" ,
+        omicron: {
+          name: "Omicron Bar" ,
           image: placeHolder,
-          imageAltText: "Sponsor 5 Logo"
+          imageAltText: "Omicron Logo"
+        },
+        rho: {
+          name: "Rho Baz" ,
+          image: placeHolder,
+          imageAltText: "Rho Logo"
+        },
+        phi: {
+          name: "Phi Foo",
+          image: placeHolder,
+          imageAltText: "Phi Logo"
         }
       }
     }
@@ -48,7 +54,7 @@ export default {
   //   <sponsor-card showSponsor="companyFoo"></sponsor-card>
   //   "companyFoo" is being passed down and is equal to the value of showSponsor (for that particular component). And showSponsor must be type String, or errors will be printed in console
   props: {
-    showSponsor: String
+    showSponsor: String,
   },
   computed: {
     sponsor: function() {
