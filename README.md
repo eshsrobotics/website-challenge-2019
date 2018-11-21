@@ -46,12 +46,12 @@ $ npm run build
     * comment on blog posts
     * 'like' other blog posts
 * All users must memorize passcode
-  * Keep trap of users, comments, etc. even if passwords are wiped due to emergency
+  * Keep trap of users, comments, etc. If a password is wiped due to an emergency, make sure the blog posts, comments, etc. are not deleted, or will not be deleted on the next build of the blog
 * Obviously we can see the local backend for the CMS
   * Use [required reviews for pull requests](https://help.github.com/articles/enabling-required-reviews-for-pull-requests/) so bad modifications don't get merged
 
 ### Problems
-If you're new to Vue, or conntributing, you may encounter a few errors. I've isolated some of the more common (and uncommong) errors / mishehaviors you may be getting and I've provided a solution. i.e. If the website is not doing what you want, see if your issue matches any below. The first bullet point after a subsection is a snippet of example code defining, or relating to the issue.
+If you're new to Vue, or conntributing, you may encounter a few errors. I've isolated some of the more common (and uncommong) errors / mishehaviors you may be getting and I've provided a solution. i.e. If the website is not doing what you want, see if your issue matches any below. The first bullet point after a subsection is a snippet of example code that defines or relates to the issue.
 
 #### Scoped CSS / SCSS Styles in Components
 * `<style scoped lang="scss">`
@@ -69,11 +69,12 @@ If you're new to Vue, or conntributing, you may encounter a few errors. I've iso
   .element { color: red }
   ```
 * Solution 1: Remove all `createTransition` calls within your mixins, and put them in your components. That way there are no two `transition` properties for each element (since your mixin will bring an extra `transition` property and cause conflicts)
-* Solution 2: Actually fix the issue. Modifying the `createTransitios` scss function won't change anything. Try looking into [extend](https://css-tricks.com/the-extend-concept/) in scss in combination with mixins / methods / whatever
+* Solution 2: Actually fix the issue. Just modifying the `createTransitios` scss function won't change anything. Try looking into [extend](https://css-tricks.com/the-extend-concept/) in scss in combination with mixins / methods / whatever
 
 #### CSS IDs Styling
 * Ids can only be used once per webPage. Because components are reusable, you might be declaring multiple components of the same type on the same page
 * Alternatively, you may be giving the component two different Ids from two different places. Such as giving the Id when creating the component (`ChildComponent.vue`) *and* using the component (`ParentComponent.vue`)
+
   `ParentComponent.vue`
   ```html
     <parent-component>
