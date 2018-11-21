@@ -20,7 +20,6 @@ $ npm run serve
 ```bash
 $ npm run build
 ```
-<<<<<<< HEAD
 
 ## Roadmap
 ### Website
@@ -50,5 +49,3 @@ $ npm run build
   * Keep trap of users, comments, etc. even if passwords are wiped due to emergency
 * Obviously we can see the local backend for the CMS
   * Use [required reviews for pull requests](https://help.github.com/articles/enabling-required-reviews-for-pull-requests/) so bad modifications don't get merged
-=======
->>>>>>> 1600750549cb091694fa0b8b5cde041d91647a34
