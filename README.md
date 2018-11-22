@@ -1,5 +1,5 @@
 # Robotics Website
-This is a website coded for the Robot Events Website Challenged 
+This is a website coded for the Robot Events Website Challenge
 
 ## Setup
 ```bash
@@ -28,6 +28,7 @@ $ npm run build
 * Add slightly more noise to website (line separators, etc.) (hold of until finish basic design)
 * Add many more pages and make design more interesting
 * Prevent split second of unstyled text (while custom ones are being loaded in)
+* Possibly have some way of viewing the Team's 3D Models bots
 ### Blogging System
 * Blogging system can be controlled by in-house (very basic) CMS
   * Make with NodeJS (running on localhost)
