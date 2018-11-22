@@ -12,7 +12,13 @@ export default new Router({
     },
     {
       path: '/about',
-      component: () => import('./views/About/About')
+      component: () => import('./views/About/About'),
+      children: [
+        {
+          path: 'website',
+          component: () => import('./views/About/Website')
+        }
+      ]
     },
     {
       path: '/cyberpatriots',
