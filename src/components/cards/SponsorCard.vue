@@ -106,19 +106,19 @@ img {
 }
 
 .diamond .sponsor {
-  @include hoverShadow($card-hov-shadow, $oc-blue-3, 32px);
+  @include hoverShadow($card-shadow-hov, $oc-blue-3, 32px);
 }
 
 .gold .sponsor {
-  @include hoverShadow($card-hov-shadow, $oc-yellow-3, 32px);
+  @include hoverShadow($card-shadow-hov, $oc-yellow-3, 32px);
 }
 
 .silver .sponsor {
-  @include hoverShadow($card-hov-shadow, $oc-indigo-3, 32px);
+  @include hoverShadow($card-shadow-hov, $oc-indigo-3, 32px);
 }
 
 .bronze .sponsor {
-  @include hoverShadow($card-hov-shadow, $oc-orange-3, 32px);
+  @include hoverShadow($card-shadow-hov, $oc-orange-3, 32px);
 
 }
 </style>

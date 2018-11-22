@@ -3,7 +3,7 @@
     <ul id="list">
       <li id="image"> <img src="@/assets/robotics-logo.png" alt="Robotics Logo" height="30px"> </li>
       <nav-bar-item routeTo="/" name="Home"></nav-bar-item>
-      <nav-bar-item routeTo="/about" name="About Us"></nav-bar-item>
+      <nav-bar-item routeTo="/about" name="About"></nav-bar-item>
       <nav-bar-item routeTo="/cyberpatriots" name="CyberPatriots"></nav-bar-item>
       <nav-bar-item routeTo="/frc" name="FRC"></nav-bar-item>
       <nav-bar-item routeTo="/vex" name="VEX"></nav-bar-item>

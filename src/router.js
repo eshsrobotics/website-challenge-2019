@@ -12,35 +12,35 @@ export default new Router({
     },
     {
       path: '/about',
-      component: () => import('./views/About')
+      component: () => import('./views/About/About')
     },
     {
       path: '/cyberpatriots',
-      component: () => import('./views/CyberPatriots')
+      component: () => import('./views/Cyberpatriots/CyberPatriots')
     },
     {
       path: '/frc',
-      component: () => import('./views/Frc')
+      component: () => import('./views/Frc/Frc')
     },
     {
       path: '/vex',
-      component: () => import('./views/Vex')
+      component: () => import('./views/Vex/Vex')
     },
     {
       path: '/sponsors',
-      component: () => import('./views/Sponsors')
+      component: () => import('./views/Sponsors/Sponsors')
     },
     {
       path: '/blog',
-      component: () => import('./views/Blog')
+      component: () => import('./views/Blog/Blog')
     },
     {
       path: '/resources',
-      component: () => import('./views/Resources')
+      component: () => import('./views/Resources/Resources')
     },
     {
       path: '/media',
-      component: () => import('./views/Media')
+      component: () => import('./views/Media/Media')
     }
   ]
 })

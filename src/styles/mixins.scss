@@ -17,18 +17,18 @@
   transition: createTransitions((all));
 
   &:hover {
-    box-shadow: 3px 3px $shadowSpreadHover $shadowHover;
+    box-shadow: 4px 4px $shadowSpreadHover $shadowHover;
     transition: createTransitions((all));
   }
 }
 
 @mixin genericCard() {
-  background-color: $oc-gray-1;
+  background-color: $std-bg-reg;
   border-radius: $border-radius;
   padding: 10px;
 
   // Want card to have shadow on hover
-  @include hoverShadow($card-reg-shadow, $card-hov-shadow);
+  @include hoverShadow($card-shadow-reg, $card-shadow-hov);
 
   // Want card to glide up on hover
   @include glideUpOnHover();

@@ -1,9 +1,15 @@
 @import 'open-color';
 
-// Common Variables
-$card-bg-color: $oc-gray-1;
-$card-reg-shadow: $oc-gray-2; // Shadow of card regular
-$card-hov-shadow: $oc-gray-3; // Shadow of card on hover
+// Generic Variables
+$std-bg-reg: $oc-gray-1;
+$std-bg-hov: $oc-gray-2;
+$std-shadow-reg: $oc-gray-2;
+$std-shadow-hov: $oc-gray-3;
+
+// Generic Card Variables
+$card-bg-reg: $oc-gray-1;
+$card-shadow-reg: $oc-gray-2; // Shadow of card regular
+$card-shadow-hov: $oc-gray-3; // Shadow of card on hover
 
 
 
