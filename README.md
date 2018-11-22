@@ -15,6 +15,8 @@ $ npm install
 ```bash
 $ npm run serve
 ```
+#### About dev server
+* Running on localhost:8080
 
 ### Build for Prod
 ```bash
