@@ -5,20 +5,20 @@
 }
 
 @mixin glideUpOnHover() {
-  transition: createTransitions((transform));
+  transition: createTransitions((all));
   &:hover {
     transform: translateY(-5px);
-    transition: createTransitions((transform));
+    transition: createTransitions((all));
   }
 }
 
-@mixin hoverShadow($shadowReg, $shadowHover) {
+@mixin hoverShadow($shadowReg, $shadowHover, $shadowSpreadHover: 6px) {
   box-shadow: 2px 2px 2px $shadowReg;
-  transition: createTransitions((background-color, box-shadow));
+  transition: createTransitions((all));
 
   &:hover {
-    box-shadow: 3px 3px 4px $shadowHover;
-    transition: createTransitions((background-color, box-shadow));
+    box-shadow: 3px 3px $shadowSpreadHover $shadowHover;
+    transition: createTransitions((all));
   }
 }
 
@@ -28,7 +28,7 @@
   padding: 10px;
 
   // Want card to have shadow on hover
-  @include hoverShadow($oc-gray-2, $oc-gray-3);
+  @include hoverShadow($card-reg-shadow, $card-hov-shadow);
 
   // Want card to glide up on hover
   @include glideUpOnHover();

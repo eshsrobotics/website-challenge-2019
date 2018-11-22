@@ -11,13 +11,13 @@
 import LayoutCardOverflow from '@/components/cards/LayoutCardsOverflow'
 
 export default {
-  props: {
-    tier: String,
-  },
   computed: {
     displayTier: function() {
       return this.tier.charAt(0).toUpperCase() + this.tier.slice(1)
     }
+  },
+  props: {
+    tier: String
   },
   components: {
     'layout-card-overflow': LayoutCardOverflow

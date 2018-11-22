@@ -1,7 +1,7 @@
 <template>
   <div class="sponsor">
     <h3> {{ sponsor.name }} </h3>
-    <img :src="sponsor.image" :alt="sponsor.imageAltText" width="250px"/>
+    <img :src="sponsor.image" :alt="sponsor.imageAltText" :width="pictureWidth"/>
   </div>
 </template>
 
@@ -49,20 +49,33 @@ export default {
       }
     }
   },
-  // Purpose: To recieve the showSponsor property (prop) when declaring this component
-  // Ex. For the following code
-  //   <sponsor-card showSponsor="companyFoo"></sponsor-card>
-  //   "companyFoo" is being passed down and is equal to the value of showSponsor (for that particular component). And showSponsor must be type String, or errors will be printed in console
-  props: {
-    showSponsor: String,
-  },
   computed: {
     sponsor: function() {
       return this.sponsors[this.showSponsor]
     },
+     // Purpose: To recieve the showSponsor property (prop) when declaring this component
+    // Ex. For the following code
+    //   <sponsor-card showSponsor="companyFoo"></sponsor-card>
+    //   "companyFoo" is being passed down and is equal to the value of showSponsor (for that particular component). And showSponsor must be type String, or errors will be printed in console
+  
     pictureWidth: function() {
-      return "200px"
+      if(this.aTier === "diamond") {
+        return (250 * 1.25 * 1.25 * 1.25) + "px"
+      }
+      else if(this.aTier === "gold") {
+        return (250 * 1.25 * 1.25) + "px"
+      }
+      else if(this.aTier === "silver") {
+        return (250 * 1.25) + "px"
+      }
+      else if(this.aTier === "bronze") {
+        return "250px"
+      }
     }
+  },
+  props: {
+    showSponsor: String,
+    aTier: String
   }
 }
 </script>
@@ -92,15 +105,20 @@ img {
   }
 }
 
-.gold .sponsor {
+.diamond .sponsor {
+  @include hoverShadow($card-hov-shadow, $oc-blue-3, 32px);
+}
 
+.gold .sponsor {
+  @include hoverShadow($card-hov-shadow, $oc-yellow-3, 32px);
 }
 
 .silver .sponsor {
-  
+  @include hoverShadow($card-hov-shadow, $oc-indigo-3, 32px);
 }
 
 .bronze .sponsor {
+  @include hoverShadow($card-hov-shadow, $oc-orange-3, 32px);
 
 }
 </style>
