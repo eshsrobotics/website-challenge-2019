@@ -12,6 +12,8 @@ import LayoutCardOverflow from '@/components/cards/LayoutCardsOverflow'
 
 export default {
   computed: {
+    // This converts makes the first letter of tier uppercase
+    // Ex. Converts 'gold' to 'Gold'
     displayTier: function() {
       return this.tier.charAt(0).toUpperCase() + this.tier.slice(1)
     }
