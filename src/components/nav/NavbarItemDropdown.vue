@@ -42,7 +42,7 @@ ul {
   // transition: all $transition-duration ease-in-out 0s, visibility 0s linear 0.3s, z-index 0s linear 0.01s;
   // display: block;
 
-  &> * {
+  & > * {
     margin-top: 5px;
   }
 }
