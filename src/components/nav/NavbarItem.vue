@@ -1,20 +1,14 @@
 <template>
     <router-link :to="routeTo" tag="li">
-        <p> {{ name }} </p>
+        <p><slot></slot></p>
     </router-link>
 </template>
 
 <script>
 export default {
-  data() {
-    return {
-      localVar: '/home'
-    }
-  },
-  props: [
-    'name',
-    'routeTo'
-  ]
+  props: {
+    'routeTo': String,  
+  }
 }
 </script>
 
@@ -23,12 +17,12 @@ export default {
 
 li {
   margin: 0px 5px 0px 5px;
-  background-color: $oc-gray-1;
+  background-color: $std-bg-reg;
   border-radius: $border-radius-small;
 
   &:hover {
     cursor: pointer;
-    background-color: $oc-gray-2;
+    background-color: $std-bg-hov;
   }
 
   &.router-link-exact-active {

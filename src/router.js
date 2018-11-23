@@ -12,41 +12,43 @@ export default new Router({
     },
     {
       path: '/about',
-      component: () => import('./views/About/About'),
-      children: [
-        {
-          path: 'website',
-          component: () => import('./views/About/Website')
-        }
-      ]
+      component: () => import('@/views/About/About' )
+    },
+    {
+      path: '/about/website',
+      component: () => import('@/views/About/Website')
     },
     {
       path: '/cyberpatriots',
-      component: () => import('./views/Cyberpatriots/CyberPatriots')
+      component: () => import('@/views/Cyberpatriots/CyberPatriots')
+    },
+    {
+      path: '/cyberpatriots/info',
+      component: () => import('@/views/Cyberpatriots/CyberPatriots')
     },
     {
       path: '/frc',
-      component: () => import('./views/Frc/Frc')
+      component: () => import('@/views/Frc/Frc')
     },
     {
       path: '/vex',
-      component: () => import('./views/Vex/Vex')
+      component: () => import('@/views/Vex/Vex')
     },
     {
       path: '/sponsors',
-      component: () => import('./views/Sponsors/Sponsors')
+      component: () => import('@/views/Sponsors/Sponsors')
     },
     {
       path: '/blog',
-      component: () => import('./views/Blog/Blog')
+      component: () => import('@/views/Blog/Blog')
     },
     {
       path: '/resources',
-      component: () => import('./views/Resources/Resources')
+      component: () => import('@/views/Resources/Resources')
     },
     {
       path: '/media',
-      component: () => import('./views/Media/Media')
+      component: () => import('@/views/Media/Media')
     }
   ]
 })

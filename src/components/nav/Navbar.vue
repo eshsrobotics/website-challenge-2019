@@ -2,24 +2,39 @@
   <nav class="nav">
     <ul id="list">
       <li id="image"> <img src="@/assets/robotics-logo.png" alt="Robotics Logo" height="30px"> </li>
-      <nav-bar-item routeTo="/" name="Home"></nav-bar-item>
-      <nav-bar-item routeTo="/about" name="About"></nav-bar-item>
-      <nav-bar-item routeTo="/cyberpatriots" name="CyberPatriots"></nav-bar-item>
-      <nav-bar-item routeTo="/frc" name="FRC"></nav-bar-item>
-      <nav-bar-item routeTo="/vex" name="VEX"></nav-bar-item>
-      <nav-bar-item routeTo="/resources" name="Resources"></nav-bar-item>
-      <nav-bar-item routeTo="/media" name="Media"></nav-bar-item>
-      <nav-bar-item routeTo="/sponsors" name="Sponsors"></nav-bar-item>
-      <nav-bar-item routeTo="/blog" name="Blog"></nav-bar-item>
+      <nav-bar-item routeTo="/">Home</nav-bar-item>
+       <nav-bar-item-dropdown routeTo="/about" dropdownTitle="About Us">
+        <nav-bar-item routeTo="/about/team">Team</nav-bar-item>
+        <nav-bar-item routeTo="/about/coaches">Coaches</nav-bar-item>
+        <nav-bar-item routeTo="/about/mentors">Mentors</nav-bar-item>
+        <nav-bar-item routeTo="/about/officers">Officers</nav-bar-item>
+        <nav-bar-item routeTo="/about/website">Website</nav-bar-item>
+      </nav-bar-item-dropdown>
+      <nav-bar-item routeTo="/cyberpatriots">Cyberpatriots</nav-bar-item>
+      <nav-bar-item routeTo="/frc">FRC</nav-bar-item>
+      <nav-bar-item routeTo="/vex">VEX</nav-bar-item>
+      <nav-bar-item-dropdown routeTo="/resources" dropdownTitle="Resources">
+        <nav-bar-item routeTo="/resources/links">Quick Links</nav-bar-item>
+        <nav-bar-item routeTo="/resources/branding">Branding Guidelines</nav-bar-item>
+      </nav-bar-item-dropdown>
+      <nav-bar-item-dropdown routeTo="/media" dropdownTitle="Media">
+        <nav-bar-item routeTo="/videos">Videos</nav-bar-item>
+        <nav-bar-item routeTo="/photos">Photos</nav-bar-item>
+      </nav-bar-item-dropdown>
+      <nav-bar-item routeTo="/sponsors">Sponsors</nav-bar-item>
+      <nav-bar-item routeTo="/blog">Blog</nav-bar-item>
     </ul>
   </nav>
 </template>
 
 <script>
-import NavBarItem from '@/components/nav/NavbarItem';
+import NavBarItem from '@/components/nav/NavbarItem'
+import NavBarItemDropdown from '@/components/nav/NavbarItemDropdown'
+
 export default {
   components: {
-    'nav-bar-item': NavBarItem
+    'nav-bar-item': NavBarItem,
+    'nav-bar-item-dropdown': NavBarItemDropdown
   }
 }
 </script>
