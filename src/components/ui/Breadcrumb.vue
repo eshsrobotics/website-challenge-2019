@@ -1,8 +1,8 @@
 <template>
 <ul>
-  <li v-for="urlSeg in pathsArray">
-    <p>{{ urlSeg }}</p>
-    <p>{{ getPath(urlSeg) }}</p>
+  <li v-for="(urlSeg, index) in pathsArray" :key="urlSeg">
+    <router-link :to="getPath(urlSeg)"><p>{{ urlSeg }}</p></router-link>
+    <p v-if="index !== pathsArray.length -1 " class="separator"> ></p>
   </li>
 </ul>
  
@@ -11,18 +11,26 @@
 <script>
 export default {
   methods: {
+    redirectUser: function(urlSeg) {
+      this.$router.push(this.getPath(urlSeg))
+    },
     // Purpose: Returns the path from a url path segment
     // Helpful when going from a deep link to a parent one several times up
     // Ex. Converts 'Website' to '/about/website' and 'About' to '/about'
     getPath: function(urlSeg) {
       let route = this.$route.path
 
+      // Gets the url segment (which is one element of the pathsArray) and makes it lower case
+      // Ex 'About' to 'about'
       urlSeg = urlSeg.toLowerCase()
-      let point = route.indexOf(urlSeg)
-      
-      let newUrlSeg = route.slice(0, point)
 
-      newUrlSeg = newUrlSeg + urlSeg
+      // 'Gets the point where urlSegment is part of the route
+      // Ex. for urlSeg = about, converts '/about/website' to n, with n being the element where the subString 'about' starts
+      let urlSegLocation = route.indexOf(urlSeg)
+      // Only use the route up until before we see the urlSegment
+      // Ex. for route = '/about/website' and urlSeg = about, we will get '/about' in this step
+      // Ex. for route = '/about/website' and urlSeg = website, we will get '/about/website' in this step
+      let newUrlSeg = route.slice(0, urlSegLocation +  urlSeg.length)
       return newUrlSeg;
     }
   },
@@ -64,5 +72,9 @@ export default {
   li {
     list-style-type: none;
     padding: 5px;
+  }
+
+  p {
+    display: inline;
   }
 </style>
