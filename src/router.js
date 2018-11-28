@@ -15,9 +15,22 @@ export default new Router({
       component: () => import('@/views/about/About' )
     },
     {
+      path: '/about/team',
+      component: () => import('@/views/about/Team')
+    },
+    {
+      path: '/about/coaches-and-mentors',
+      component: () => import('@/views/about/CoachesAndMentors')
+    },
+    {
+      path: '/about/officers',
+      component: () => import('@/views/about/Officers')
+    },
+    {
       path: '/about/website',
       component: () => import('@/views/about/Website')
     },
+
     {
       path: '/cyberpatriots',
       component: () => import('@/views/cyberpatriots/CyberPatriots')
@@ -35,20 +48,36 @@ export default new Router({
       component: () => import('@/views/vex/Vex')
     },
     {
+      path: '/resources',
+      component: () => import('@/views/resources/Resources')
+    },
+    {
+      path: '/resources/quick-links',
+      component: () => import('@/views/resources/QuickLinks')
+    },
+    {
+      path: '/resources/branding-guidelines',
+      component: () => import('@/views/resources/BrandingGuidelines')
+    },
+    {
+      path: '/media',
+      component: () => import('@/views/media/Media')
+    },
+    {
+      path: '/media/videos',
+      component: () => import('@/views/media/Videos')
+    },
+    {
+      path: '/media/photos',
+      component: () => import('@/views/media/Photos')
+    },
+    {
       path: '/sponsors',
       component: () => import('@/views/sponsors/Sponsors')
     },
     {
       path: '/blog',
       component: () => import('@/views/blog/Blog')
-    },
-    {
-      path: '/resources',
-      component: () => import('@/views/resources/Resources')
-    },
-    {
-      path: '/media',
-      component: () => import('@/views/media/Media')
     }
   ]
 })

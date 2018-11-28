@@ -5,6 +5,7 @@
     <c-block :data="historyBlock">
       <h2>History</h2>
       <p>Incididunt deserunt dolor tempor cillum non consectetur ullamco excepteur commodo ex voluptate dolore. In ut non voluptate do commodo incididunt fugiat officia irure aliquip. Eiusmod minim consectetur amet aliquip irure. Quis velit cupidatat in qui. Ut tempor qui et ipsum. Aliquip nostrud irure id occaecat irure nulla mollit Lorem.</p>
+      <p>Deserunt esse et ullamco adipisicing nisi incididunt commodo. Laborum ex sunt et duis. Aliqua est nulla ut ad veniam ex commodo sit ad commodo occaecat. Cupidatat proident cillum proident sint minim id sit. Qui veniam adipisicing cupidatat qui dolor sunt.</p>
     </c-block>
     <c-block :data="coreValuesBlock">
       <h2>Core Values</h2>
@@ -22,12 +23,12 @@ export default {
   data() {
     return {
       historyBlock: {
-        photoURL: 'https://dummyimage.com/1280x960/dee2e6/212529',
+        photoURL: 'https://dummyimage.com/1280x720/dee2e6/212529',
         photoDesc: 'Dummy Image',
         photoPosition: 'right'
       },
       coreValuesBlock: {
-        photoURL: 'https://dummyimage.com/1280x960/dee2e6/212529',
+        photoURL: 'https://dummyimage.com/1280x720/dee2e6/212529',
         photoDesc: 'Dummy Image',
         photoPosition: 'left'
       }
@@ -40,3 +41,11 @@ export default {
   }
 }
 </script>
+
+<style scoped lang="scss">
+@import '@/styles/variables.scss';
+
+p {
+  margin-bottom: 10px;
+}
+</style>
