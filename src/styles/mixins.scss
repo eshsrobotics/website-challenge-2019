@@ -7,22 +7,22 @@
 @mixin glideUpOnHover() {
   transition: createTransitions((all));
   &:hover {
-    transform: translateY(-5px);
+    transform: translateY(-8px);
     transition: createTransitions((all));
   }
 }
 
-@mixin hoverShadow($shadowReg, $shadowHover, $shadowSpreadHover: 6px) {
-  box-shadow: 2px 2px 2px $shadowReg;
+@mixin hoverShadow($shadowReg, $shadowHover, $shadowSpreadHover: 8px) {
+  box-shadow: 4px 4px 4px $shadowReg;
   transition: createTransitions((all));
 
   &:hover {
-    box-shadow: 4px 4px $shadowSpreadHover $shadowHover;
+    box-shadow: 6px 6px $shadowSpreadHover $shadowHover;
     transition: createTransitions((all));
   }
 }
 
-@mixin genericCard() {
+@mixin genericCard($isGlideUpOnHover: true) {
   background-color: $std-bg-reg;
   border-radius: $border-radius;
   padding: 10px;
@@ -31,5 +31,7 @@
   @include hoverShadow($card-shadow-reg, $card-shadow-hov);
 
   // Want card to glide up on hover
-  @include glideUpOnHover();
+  @if ($isGlideUpOnHover == true) {
+    @include glideUpOnHover();
+  }
 }

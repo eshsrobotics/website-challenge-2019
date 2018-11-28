@@ -33,14 +33,10 @@ ul {
 }
 
 .child-navbar-items {
+  // background-color: $oc-gray-0;
+
   visibility: hidden;
-  // opacity: 0;
   position: absolute;
-  // top: 100%;
-  // left: 0;
-  // z-index: -1;
-  // transition: all $transition-duration ease-in-out 0s, visibility 0s linear 0.3s, z-index 0s linear 0.01s;
-  // display: block;
 
   & > * {
     margin-top: 5px;

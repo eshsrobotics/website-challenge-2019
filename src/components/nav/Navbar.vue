@@ -18,8 +18,8 @@
         <nav-bar-item routeTo="/resources/branding">Branding Guidelines</nav-bar-item>
       </nav-bar-item-dropdown>
       <nav-bar-item-dropdown routeTo="/media" dropdownTitle="Media">
-        <nav-bar-item routeTo="/videos">Videos</nav-bar-item>
-        <nav-bar-item routeTo="/photos">Photos</nav-bar-item>
+        <nav-bar-item routeTo="/media/videos">Videos</nav-bar-item>
+        <nav-bar-item routeTo="/media/photos">Photos</nav-bar-item>
       </nav-bar-item-dropdown>
       <nav-bar-item routeTo="/sponsors">Sponsors</nav-bar-item>
       <nav-bar-item routeTo="/blog">Blog</nav-bar-item>
