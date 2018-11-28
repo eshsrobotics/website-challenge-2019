@@ -5,8 +5,6 @@
        <p>The Robotics Club is grateful all our sponsors</p>
     </page-desc>
 
-    <c-button>Some Content</c-button>
-
     <sponsor-card-wrapper tier="diamond">
       <sponsor-card aTier="diamond" showSponsor="gamma"></sponsor-card>
     </sponsor-card-wrapper>
@@ -32,15 +30,13 @@
 import PageDesc from '@/components/PageDescription'
 import SponsorCardWrapper from '@/components/cards/SponsorCardWrapper'
 import SponsorCard from '@/components/cards/SponsorCard'
-import CButton from '@/components/ui/Button.vue'
 
 export default {
   name: 'sponsors',
   components: {
     'page-desc': PageDesc,
     'sponsor-card-wrapper': SponsorCardWrapper,
-    'sponsor-card': SponsorCard,
-    'c-button': CButton
+    'sponsor-card': SponsorCard
   }
 }
 </script>

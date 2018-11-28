@@ -5,7 +5,7 @@ This is a website coded for the Robot Events Website Challenge
 ```bash
 $ git clone https://github.com/eshsrobotics/RobotEventsChallengeWebsite2018
 $ cd RobotEventsChallengeWebsite2018
-$ npm install
+$ ./build.sh
 ```
 
 ### Dev Server
