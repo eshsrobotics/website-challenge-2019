@@ -1,7 +1,7 @@
 <template>
-  <div class="officers">
+  <div class="coaches-and-mentors">
     <c-breadcrumb></c-breadcrumb>
-    <h1>Officers</h1>
+    <h1>Coaches and Mentors</h1>
   </div>
 </template>
 
