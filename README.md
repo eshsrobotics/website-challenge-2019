@@ -22,7 +22,6 @@ $ npm run build
 
 ## Roadmap
 ### Website
-* Some menus in navbar need to have submenus
 * Make website responsive design
 * Make website mobile-friendly
 * Add slightly more noise to website (line separators, etc.) (hold of until finish basic design)
