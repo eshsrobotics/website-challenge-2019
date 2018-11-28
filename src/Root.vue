@@ -30,24 +30,49 @@ export default {
 }
 
 h1 {
+  color: $std-text; 
   font-family: 'Poppins', sans-serif;
   font-size: 2.125em;
 }
 
 h2 {
+  color: $std-text;
   font-family: 'Poppins', sans-serif;
   font-size: 1.5em;
 }
 
 h3 {
+  color: $std-text; 
   font-family: 'Poppins', sans-serif;
   // font-size: 1.5em;
 }
 
 p {
+  color: $std-text;
   font-family: 'Raleway', sans-serif;
   font-size: 1.125em;
   line-height: 150%;
+}
+
+a {
+  color: $std-text;
+  text-decoration: line;
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.125em;
+  line-height: 150%;
+}
+
+a:link, a:visited {
+  color: $std-text;
+  text-decoration: line; 
+  text-decoration-color: $std-text-underline;
+}
+
+a:hover, a:active {
+  color: $std-text;
+  text-decoration: line;
+  text-decoration-color: $std-text-underline-active;
+
 }
 
 // This is for layout 100% page width
