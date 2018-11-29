@@ -78,6 +78,10 @@ export default new Router({
     {
       path: '/blog',
       component: () => import('@/views/blog/Blog')
+    },
+    {
+      path: '/contact',
+      component: () => import('@/views/Contact')
     }
   ]
 })

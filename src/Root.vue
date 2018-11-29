@@ -4,15 +4,18 @@
       <div class="router-view-outer">
         <router-view class="router-view"/>
       </div>
+      <foot class="footer"></foot>
   </div>
 </template>
 
 <script>
 import Navbar from '@/components/nav/Navbar'
+import Footer from '@/components/footer/Footer'
 
 export default {
   components: {
-    'navbar': Navbar
+    'navbar': Navbar,
+    'foot': Footer
   }
 }
 </script>
