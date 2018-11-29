@@ -52,11 +52,11 @@ export default new Router({
       component: () => import('@/views/resources/Resources')
     },
     {
-      path: '/resources/quick-links',
+      path: '/resources/links',
       component: () => import('@/views/resources/QuickLinks')
     },
     {
-      path: '/resources/branding-guidelines',
+      path: '/resources/branding',
       component: () => import('@/views/resources/BrandingGuidelines')
     },
     {

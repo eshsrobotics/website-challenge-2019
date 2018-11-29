@@ -23,6 +23,14 @@
         <h3>Phi Foo</h3>
         <p>Ad aliqua laborum et laborum in labore consectetur esse.</p>
       </officer-card>
+      <officer-card>
+        <h3>Chi Foo</h3>
+        <p>Commodo amet eiusmod laboris sit fugiat enim in aliquip ullamco eu officia.</p>
+      </officer-card>
+      <officer-card>
+        <h3>Nu Baz</h3>
+        <p>Aliquip occaecat velit ipsum nisi reprehenderit adipisicing nostrud.</p>
+      </officer-card>
     </layout-cards-overflow>
   </div>
 </template>
