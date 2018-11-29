@@ -6,6 +6,7 @@
       <p>The team resides in the south bay at El Segundo High School.</p>
     </page-desc>
 
+    <h2>Competitions</h2>
     <layout-cards-fit class="competitions">
       <competition-card showCompetition="cyberpatriots"></competition-card>
       <competition-card showCompetition="frc"></competition-card>
