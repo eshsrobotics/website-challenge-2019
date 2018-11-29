@@ -28,6 +28,7 @@ $ npm run build
 * Add many more pages and make design more interesting
 * Prevent split second of unstyled text (while custom ones are being loaded in)
 * Possibly have some way of viewing the Team's 3D Models bots
+* Maybe have a shine effect, possibly for some of the sponsor icons
 ### Blogging System
 * Blogging system can be controlled by in-house (very basic) CMS
   * Make with NodeJS (running on localhost)
