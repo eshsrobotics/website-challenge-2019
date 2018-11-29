@@ -25,10 +25,27 @@
       </ul>
     </div>
     <div class="column">
+      <p>Sponsors</p>
+      <ul>
+        <li><router-link to="/sponsors">Sponsors</router-link></li>
+        <li><router-link to="/sponsors">Sponsor Us</router-link></li>
+      </ul>
+    </div>
+    <div class="column">
       <img src="@/assets/robotics-logo.png" alt="" height="50px" width="50px">
     </div>
   </div>
 </template>
+
+<script>
+import CButton from '@/components/ui/Button'
+
+export default {
+  components: {
+    'c-button': CButton
+  }
+}
+</script>
 
 <style scoped lang="scss">
 @import '@/styles/variables.scss';
@@ -36,7 +53,7 @@
 .wrapper {
   // display: flex;
   display: grid;
-  grid-template-columns: auto auto auto auto;
+  grid-template-columns: auto auto auto auto auto;
   height: 100px;
   background-color: $oc-gray-2;
   padding: 10px 10px 20px 10px;
