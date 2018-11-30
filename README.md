@@ -1,7 +1,8 @@
 # Robotics Website
 This is a website coded for the [Robotics Team Website Challenge 2019](https://challenges.robotevents.com/challenge/95).
 
-## Setup
+
+## Setup :wrench:
 ```bash
 $ git clone https://github.com/eshsrobotics/RobotEventsChallengeWebsite2018
 $ cd RobotEventsChallengeWebsite2018
@@ -12,15 +13,20 @@ $ ./build.sh
 ```bash
 $ npm run serve
 ```
+
 #### About dev server
-* Running on localhost:8080
+* Running on port 8080
 
 ### Build for Prod
 ```bash
 $ npm run build
 ```
 
-## Roadmap
+## Info :information_source:
+Just a heads up, I performed an interactive rebase on about November 28th 2018, and essentially nuked part of the commit history or something. I tried to rename some (2ish) commit messages, but I tripped up and messed up. I tried to fix it, it's still messed up, but the website works now. ¯\_(ツ)_/¯
+
+
+## Roadmap :car:
 ### Website
 * Make website responsive design
 * Make website mobile-friendly
@@ -29,6 +35,7 @@ $ npm run build
 * Prevent split second of unstyled text (while custom ones are being loaded in)
 * Possibly have some way of viewing the Team's 3D Models bots
 * Maybe have a shine effect, possibly for some of the sponsor icons
+
 ### Blogging System
 * Blogging system can be controlled by in-house (very basic) CMS
   * Make with NodeJS (running on localhost)
@@ -50,6 +57,7 @@ $ npm run build
   * Keep trap of users, comments, etc. If a password is wiped due to an emergency, make sure the blog posts, comments, etc. are not deleted, or will not be deleted on the next build of the blog
 * Obviously we can see the local backend for the CMS
   * Use [required reviews for pull requests](https://help.github.com/articles/enabling-required-reviews-for-pull-requests/) so bad modifications don't get merged
+
 
 ## Comon Problems
 If you're new to Vue, or conntributing, you may encounter a few errors. I've isolated some of the more common (and uncommong) errors / mishehaviors you may be getting and I've provided a solution. i.e. If the website is not doing what you want, see if your issue matches any below. The first bullet point after a subsection is a snippet of example code that defines or relates to the issue.
