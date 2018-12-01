@@ -13,29 +13,55 @@ export default new Router({
     },
     {
       path: '/about',
-      component: () => import('@/views/about/About'),
-      name: 'About'
+      component: () => import('@/views/about/AboutWrapper'),
+      children: [
+        {
+          path: '',
+          component: () => import('@/views/about/About'),
+          name: 'About'
+        },
+        {
+          path: 'team',
+          component: () => import('@/views/about/Team'),
+          name: 'Team'
+        },
+        {
+          path: 'coaches-and-mentors',
+          component: () => import('@/views/about/CoachesAndMentors'),
+          name: 'Coaches and Mentors'
+        },
+        {
+          path: 'officers',
+          component: () => import('@/views/about/Officers'),
+          name: 'Officers'
+        },
+        {
+          path: 'website',
+          component: () => import('@/views/about/Website'),
+          name: 'About Website'
+        },
+      ]
     },
-    {
-      path: '/about/team',
-      component: () => import('@/views/about/Team'),
-      name: 'Team'
-    },
-    {
-      path: '/about/coaches-and-mentors',
-      component: () => import('@/views/about/CoachesAndMentors'),
-      name: 'Coaches and Mentors'
-    },
-    {
-      path: '/about/officers',
-      component: () => import('@/views/about/Officers'),
-      name: 'Officers'
-    },
-    {
-      path: '/about/website',
-      component: () => import('@/views/about/Website'),
-      name: 'Website'
-    },
+    // {
+    //   path: '/about/team',
+    //   component: () => import('@/views/about/Team'),
+    //   name: 'Team'
+    // },
+    // {
+    //   path: '/about/coaches-and-mentors',
+    //   component: () => import('@/views/about/CoachesAndMentors'),
+    //   name: 'Coaches and Mentors'
+    // },
+    // {
+    //   path: '/about/officers',
+    //   component: () => import('@/views/about/Officers'),
+    //   name: 'Officers'
+    // },
+    // {
+    //   path: '/about/website',
+    //   component: () => import('@/views/about/Website'),
+    //   name: 'Website'
+    // },
     {
       path: '/cyberpatriots',
       component: () => import('@/views/cyberpatriots/CyberPatriots'),

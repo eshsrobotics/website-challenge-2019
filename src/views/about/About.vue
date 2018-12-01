@@ -1,7 +1,5 @@
 <template>
   <div class="about">
-    <c-breadcrumb></c-breadcrumb>
-    <h1>About</h1>
     <c-block :data="historyBlock">
       <h2>History</h2>
       <p>Incididunt deserunt dolor tempor cillum non consectetur ullamco excepteur commodo ex voluptate dolore. In ut non voluptate do commodo incididunt fugiat officia irure aliquip. Eiusmod minim consectetur amet aliquip irure. Quis velit cupidatat in qui. Ut tempor qui et ipsum. Aliquip nostrud irure id occaecat irure nulla mollit Lorem.</p>

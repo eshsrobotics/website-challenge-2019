@@ -1,7 +1,5 @@
 <template>
   <div class="coaches-and-mentors">
-    <c-breadcrumb></c-breadcrumb>
-    <h1>Coaches and Mentors</h1>
     <h2>Coaches</h2>
     <layout-cards-overflow>
       <mentor-card>
