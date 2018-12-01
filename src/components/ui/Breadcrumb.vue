@@ -10,6 +10,7 @@
 
 <script>
 export default {
+  // Much of this should be simplified with $router.matched, or whatever (actually using the vue-router api)
   methods: {
     redirectUser: function(urlSeg) {
       this.$router.push(this.getPath(urlSeg))

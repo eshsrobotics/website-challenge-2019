@@ -13,6 +13,13 @@ import Navbar from '@/components/nav/Navbar'
 import Footer from '@/components/footer/Footer'
 
 export default {
+  mounted() {
+    this.$nextTick(() => console.log(this.$route.path));
+    setTimeout(() => console.log(this.$route.path), 800);
+
+    // console.log(this.$router.options.routes)
+    // console.log(this.$route.path)
+  },
   components: {
     'navbar': Navbar,
     'foot': Footer
@@ -53,16 +60,16 @@ h3 {
 p {
   color: $std-text;
   font-family: 'Raleway', sans-serif;
-  font-size: 1.125em;
-  line-height: 150%;
+  font-size: $std-text-size;
+  line-height: $std-text-line-height;
 }
 
 a {
   color: $std-text;
   text-decoration: line;
   font-family: 'Raleway', sans-serif;
-  font-size: 1.125em;
-  line-height: 150%;
+  font-size: $std-text-size;
+  line-height: $std-text-line-height;
 }
 
 a:link, a:visited {

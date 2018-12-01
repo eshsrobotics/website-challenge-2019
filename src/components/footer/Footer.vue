@@ -72,6 +72,7 @@ ul {
   list-style-type: none;
 }
 
+// Remember this font-size overides the values in variables.scss
 p {
   font-weight: bold;
   font-size: 1em;
