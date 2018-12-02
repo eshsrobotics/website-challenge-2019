@@ -13,13 +13,6 @@ import Navbar from '@/components/nav/Navbar'
 import Footer from '@/components/footer/Footer'
 
 export default {
-  mounted() {
-    this.$nextTick(() => console.log(this.$route.path));
-    setTimeout(() => console.log(this.$route.path), 800);
-
-    // console.log(this.$router.options.routes)
-    // console.log(this.$route.path)
-  },
   components: {
     'navbar': Navbar,
     'foot': Footer

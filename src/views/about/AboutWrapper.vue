@@ -1,12 +1,19 @@
 <template>
-  <div>
-    <h1> {{ $route.name }} </h1>
+  <div class="about-wrapper">
+    <page-heading/>
     <router-view/>
   </div>
 </template>
 
 <script>
-  
+import PageHeading from '@/components/ui/PageHeading'
+
+export default {
+  name: 'AboutWrapper',
+  components: {
+    'page-heading': PageHeading
+  }
+}
 </script>
 
 <style scoped lang="scss">

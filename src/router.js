@@ -14,54 +14,67 @@ export default new Router({
     {
       path: '/about',
       component: () => import('@/views/about/AboutWrapper'),
+      // name: 'AboutWrapper',
       children: [
         {
           path: '',
           component: () => import('@/views/about/About'),
-          name: 'About'
+          name: 'About', 
+          meta: {
+            title: 'About'
+          }
         },
         {
           path: 'team',
           component: () => import('@/views/about/Team'),
-          name: 'Team'
+          name: 'Team',
+          meta: {
+            title: 'Team'
+          }
         },
         {
           path: 'coaches-and-mentors',
           component: () => import('@/views/about/CoachesAndMentors'),
-          name: 'Coaches and Mentors'
+          name: 'Coaches and Mentors',
+          meta: {
+            title: 'Coaches and Mentors'
+          }
         },
         {
           path: 'officers',
           component: () => import('@/views/about/Officers'),
-          name: 'Officers'
+          name: 'Officers',
+          meta: {
+            title: 'Officers'
+          }
         },
         {
           path: 'website',
           component: () => import('@/views/about/Website'),
-          name: 'About Website'
+          meta: {
+            title: 'Website'
+          },
+          children: [
+            {
+              path: 'more-info',
+              component: () => import('@/views/about/CoachesAndMentors'),
+              name: 'Thing1',
+              meta: {
+                title: 'Thing1'
+              }
+            },
+            {
+              path: 'thing2',
+              component: () => import('@/views/about/Officers'),
+              name: 'Thing2',
+              meta: {
+                title: 'Thing2'
+              }
+            }
+          ]
         },
       ]
     },
-    // {
-    //   path: '/about/team',
-    //   component: () => import('@/views/about/Team'),
-    //   name: 'Team'
-    // },
-    // {
-    //   path: '/about/coaches-and-mentors',
-    //   component: () => import('@/views/about/CoachesAndMentors'),
-    //   name: 'Coaches and Mentors'
-    // },
-    // {
-    //   path: '/about/officers',
-    //   component: () => import('@/views/about/Officers'),
-    //   name: 'Officers'
-    // },
-    // {
-    //   path: '/about/website',
-    //   component: () => import('@/views/about/Website'),
-    //   name: 'Website'
-    // },
     {
       path: '/cyberpatriots',
       component: () => import('@/views/cyberpatriots/CyberPatriots'),

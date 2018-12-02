@@ -18,7 +18,7 @@
       </ul>
     </div>
     <div class="column">
-      <p>Contacts</p>
+      <p>Contact</p>
       <ul>
         <li><router-link to="/contact">Webmaster</router-link></li>
         <li><a href="#">School</a></li>
