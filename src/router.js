@@ -10,7 +10,7 @@ export default new Router({
       path: '/',
       component: Home,
       meta: {
-        title: 'E.S.H.S. Robotics Club'
+        title: 'El Segundo High School Robotics Club'
       }
     },
     {

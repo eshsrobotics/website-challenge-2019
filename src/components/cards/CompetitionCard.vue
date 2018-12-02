@@ -51,6 +51,8 @@ export default {
 
 .competition {
   @include genericCard();
+  // This overrides default padding of card
+  padding: 14px;
 }
 
 h3 {
