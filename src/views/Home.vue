@@ -3,7 +3,7 @@
     <page-desc>
       <h1>E.S.H.S. Robotics Club</h1>
       <p>We're a club located in the <b>heart of El Segundo</b>, We have a <b>strong passion</b> for robotics, programming, engineering, and anything related.</p>
-      <p>The team resides in the south bay at El Segundo High School.</p>
+      <p>The team resides in the South Bay at El Segundo High School.</p>
     </page-desc>
 
     <h2>Competitions</h2>

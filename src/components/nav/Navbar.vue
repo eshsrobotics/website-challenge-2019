@@ -7,7 +7,7 @@
         <nav-bar-item routeTo="/about/team">Team</nav-bar-item>
         <nav-bar-item routeTo="/about/coaches-and-mentors">Coaches and Mentors</nav-bar-item>
         <nav-bar-item routeTo="/about/officers">Officers</nav-bar-item>
-        <nav-bar-item routeTo="/about/website/more-info">Website</nav-bar-item>
+        <nav-bar-item routeTo="/about/website">Website</nav-bar-item>
       </nav-bar-item-dropdown>
       <nav-bar-item routeTo="/cyberpatriots">Cyberpatriots</nav-bar-item>
       <nav-bar-item routeTo="/frc">FRC</nav-bar-item>

@@ -19,7 +19,6 @@ export default new Router({
         {
           path: '',
           component: () => import('@/views/about/About'),
-          name: 'About', 
           meta: {
             title: 'About'
           }
@@ -27,7 +26,6 @@ export default new Router({
         {
           path: 'team',
           component: () => import('@/views/about/Team'),
-          name: 'Team',
           meta: {
             title: 'Team'
           }
@@ -35,15 +33,13 @@ export default new Router({
         {
           path: 'coaches-and-mentors',
           component: () => import('@/views/about/CoachesAndMentors'),
-          name: 'Coaches and Mentors',
           meta: {
-            title: 'Coaches and Mentors'
+            title: 'Coaches & Mentors'
           }
         },
         {
           path: 'officers',
           component: () => import('@/views/about/Officers'),
-          name: 'Officers',
           meta: {
             title: 'Officers'
           }
@@ -53,26 +49,8 @@ export default new Router({
           component: () => import('@/views/about/Website'),
           meta: {
             title: 'Website'
-          },
-          children: [
-            {
-              path: 'more-info',
-              component: () => import('@/views/about/CoachesAndMentors'),
-              name: 'Thing1',
-              meta: {
-                title: 'Thing1'
-              }
-            },
-            {
-              path: 'thing2',
-              component: () => import('@/views/about/Officers'),
-              name: 'Thing2',
-              meta: {
-                title: 'Thing2'
-              }
-            }
-          ]
-        },
+          }
+        }
       ]
     },
     {

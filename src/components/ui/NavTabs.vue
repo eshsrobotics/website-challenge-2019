@@ -1,14 +1,14 @@
 <template>
   <ul>
-    <li v-for="route in routes"> {{ route }}</li>
+    <li v-for="(routeObject, index) in routeObjects"><router-link :to="routeObjectsPath[index]">{{ routeObject.meta.title }}</router-link></li>
   </ul> 
 </template>
 
 <script>
   // Navigation tabs allow user to move between child routes of a route (such as the subpages under 'about')
   export default {
-    computed: {
-      routes: function() {
+    methods: {
+      getRelevantRoutes: function() {
         // Get the array of path of current route 
         // .split separates the string and converted it into array, separating each element by a '/'
         // .filter iterates each element in array and only keeps that element if it satisfies the confitional (el !== '')
@@ -30,6 +30,7 @@
         
         // Go through the routes tree to find all sibling rotes (or child routes if you are on the parent route (ex. if you are on '/about' (rather than '/about/website'), still show the same thing as '/about/website'))
         let relevantRoutes = this.$router.options.routes;
+        // console.warn(relevantRoutes)
         for(let i = 0; i < currentRoutesArray.length; i++) {
           // Find all of the relevant routes (basically sibling components)
           relevantRoutes = relevantRoutes.filter(el => {
@@ -41,14 +42,78 @@
 
           // Now, get the children of this route as the new element (in a readable format), and loop over that
           // Relevant routes is an array of objects with a property of path
+          // console.log(relevantRoutes)
           relevantRoutes = relevantRoutes[0].children
         }
 
         // If debugging is hard (if you're seeing a bunch of prototypes in the console log prints, and not actual properties of the object),
         // comment the following line of code (and remove its presence in the DOM)
         // .map (in this context) goes through each object in the array of objects and converts it to the property meta.title of the object, converting relevantRoutes to an array of Strings, ultimately
-        return relevantRoutes.map(obj => obj.meta.title);
-      }
+        return relevantRoutes
+      },
+      // newRouteObjectsPath(index) {
+      //   let relevantRoutes = this.getRelevantRoutes();
+      //   console.log(relevantRoutes)
+
+      //   if(index == 1) {
+      //     let prepend = this.$route.path.split('/').filter(el => el !== '')
+      //     console.log(prepend)
+      //     return prepend
+      //   }
+      //   else {
+      //     console.log(porepend)
+      //   }
+      // }
+    },
+    computed: {
+      routeObjects: function() {
+        return this.getRelevantRoutes()
+      },
+      // Recall that for every route change, this routeObjectPath is re-created every single time, at minimum dependent on this.$route
+      routeObjectsPath: function() {
+        let relativeRoutes = this.getRelevantRoutes()
+        // console.log('relativeRoutes', relativeRoutes)
+
+        // Convert the abolute routes (ex. ['', 'coaches']) to absolute routes (starting from root of path) (ex. ['/about', '/about/coaches'])
+        // Could use es6 object destructuring when passing in param to anon func, but don't, easier to understand for new contributers
+        let absoluteRoutes = relativeRoutes.map(obj => {
+          let relativePath = obj.path;
+         
+          // Make sure that if route does not have child components, we do not want to add a slash at the end
+          if(relativePath == "") {
+            // Do not need to prepend anything
+            let prepend = this.$route.matched.map(obj => obj.path)
+            let absolutePath = prepend[prepend.length -2]
+            // console.log('if', absolutePath)
+            return absolutePath
+          }
+          
+          // Find the values to prepend to the relativeRoutes
+          let prepend = this.$route.path.split('/').filter(el => el !== '')
+          if(prepend.length > 1) {
+            prepend = prepend.slice(0, -1)
+          }
+          prepend = prepend.join('/')
+          // console.warn('prepend', prepend)
+
+          let absolutePath = '/' + prepend + '/' + relativePath
+          // console.log('else', absolutePath)
+          return absolutePath
+        })
+
+        // console.log(absoluteRoutes)
+        return absoluteRoutes
+      },
     }
   }
 </script>
+
+<style scoped lang="scss">
+  ul {
+    display: flex;
+    list-style-type: none;
+  }
+  li {
+    padding: 5px;
+  }
+</style>

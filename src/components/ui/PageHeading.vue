@@ -1,8 +1,8 @@
 <template>
   <div>
-    <div>
-      <h1> {{ $route.name }} </h1>
-      <nav-tabs/>
+    <div class="nav">
+      <h1> {{ $route.meta.title }} </h1>
+      <nav-tabs class="nav-tabs"/>
     </div>
   </div>
 </template>
@@ -19,5 +19,12 @@ export default {
 </script>
 
 <style scoped lang="scss">
-  
+@import '@/styles/variables.scss';
+
+.nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+ 
 </style>
