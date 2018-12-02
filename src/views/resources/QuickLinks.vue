@@ -1,6 +1,5 @@
 <template>
   <page-desc class="links">
-    <h1>Quick Links</h1>
     <p>Not implemented yet</p>
   </page-desc>
 </template>

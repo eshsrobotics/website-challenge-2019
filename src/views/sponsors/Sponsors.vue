@@ -1,7 +1,7 @@
 <template>
   <div class="sponsors-page">
+    <page-heading/>
     <page-desc>
-       <h1>Sponsors</h1>
        <p>The Robotics Club is grateful all our sponsors</p>
     </page-desc>
 
@@ -27,6 +27,7 @@
 </template>
 
 <script>
+import PageHeading from '@/components/ui/PageHeading'
 import PageDesc from '@/components/PageDescription'
 import SponsorCardWrapper from '@/components/cards/SponsorCardWrapper'
 import SponsorCard from '@/components/cards/SponsorCard'
@@ -34,6 +35,7 @@ import SponsorCard from '@/components/cards/SponsorCard'
 export default {
   name: 'sponsors',
   components: {
+    'page-heading': PageHeading,
     'page-desc': PageDesc,
     'sponsor-card-wrapper': SponsorCardWrapper,
     'sponsor-card': SponsorCard

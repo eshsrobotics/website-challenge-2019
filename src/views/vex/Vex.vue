@@ -1,6 +1,6 @@
 <template>
   <div class="vex">
-    <h1>VEX</h1>
+    <page-heading/>
     <c-block :data="vexBlock">
       <h2>About</h2>
       <p>Teams of students work together to design, program, and build a robot that competes with other robots from other teams. Each robot is designed to complete a certain objective or goal, which changes annually. Students learn to build robots using VEX parts, program a robot using RobotC, and design their VEX Robot using Autodesk Inventor. Two alliances, each with two robots, battle on the field, collecting as many points possible within the time restriction.</p>
@@ -9,6 +9,7 @@
 </template>
 
 <script>
+import PageHeading from '@/components/ui/PageHeading'
 import CBlock from '@/components/ui/Block';
 
 export default {
@@ -40,6 +41,7 @@ export default {
     }
   },
   components: {
+    'page-heading': PageHeading,
     'c-block': CBlock
   }
 }

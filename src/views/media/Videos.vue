@@ -1,6 +1,5 @@
 <template>
   <page-desc class="videos">
-    <h1>Videos</h1>
     <p>Not implemented yet</p>
   </page-desc>
 </template>

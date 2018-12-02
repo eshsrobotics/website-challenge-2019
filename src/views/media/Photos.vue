@@ -1,6 +1,5 @@
 <template>
   <page-desc class="photos">
-    <h1>Photos</h1>
     <p>Not implemented yet</p>
   </page-desc>
 </template>

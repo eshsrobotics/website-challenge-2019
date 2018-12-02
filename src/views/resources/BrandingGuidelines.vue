@@ -1,6 +1,5 @@
 <template>
   <page-desc class="branding">
-    <h1>Branding Guidelines</h1>
     <p>Not implemented yet</p>
   </page-desc>
 </template>

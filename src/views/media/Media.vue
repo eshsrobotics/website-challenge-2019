@@ -1,7 +1,6 @@
 <template>
   <div class="media">
     <page-desc>
-      <h1>Media</h1>
       <p>Not implemented yet.</p>
     </page-desc>
   </div>

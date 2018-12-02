@@ -1,6 +1,6 @@
 <template>
   <div class="frc">
-    <h1>FRC</h1>
+    <page-heading/>
     <c-block :data="frcBlock">
       <h2>About</h2>
       <p>Combining the excitement of sport with the rigors of science and technology. We call FIRST Robotics Competition the ultimate Sport for the Mind. High-school student participants call it “the hardest fun you’ll ever have.” Under strict rules, limited resources, and an intense six-week time limit, teams of students are challenged to raise funds, design a team “brand,” hone teamwork skills, and build and program industrial-size robots to play a difficult field game against like-minded competitors. It’s as close to real-world engineering as a student can get. Volunteer professional mentors lend their time and talents to guide each team. Each season ends with an exciting FIRST Championship.</p>
@@ -9,6 +9,7 @@
 </template>
 
 <script>
+import PageHeading from '@/components/ui/PageHeading'
 import CBlock from '@/components/ui/Block';
 
 export default {
@@ -50,6 +51,7 @@ export default {
     }
   },
   components: {
+    'page-heading': PageHeading,
     'c-block': CBlock
   }
 }

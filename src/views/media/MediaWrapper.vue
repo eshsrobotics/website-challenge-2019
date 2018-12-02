@@ -1,7 +1,7 @@
 <template>
-  <div class="contact">
+  <div class="media-wrapper">
     <page-heading/>
-    <p>Fill out the Google Form contact sheet. We will try to reply as soon as possible.</p>
+    <router-view/>
   </div>
 </template>
 
@@ -9,9 +9,13 @@
 import PageHeading from '@/components/ui/PageHeading'
 
 export default {
-  name: 'contact',
+  name: 'AboutWrapper',
   components: {
     'page-heading': PageHeading
   }
 }
 </script>
+
+<style scoped lang="scss">
+  
+</style>

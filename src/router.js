@@ -9,12 +9,13 @@ export default new Router({
     {
       path: '/',
       component: Home,
-      name: 'Home'
+      meta: {
+        title: 'E.S.H.S. Robotics Club'
+      }
     },
     {
       path: '/about',
       component: () => import('@/views/about/AboutWrapper'),
-      // name: 'AboutWrapper',
       children: [
         {
           path: '',
@@ -56,7 +57,9 @@ export default new Router({
     {
       path: '/cyberpatriots',
       component: () => import('@/views/cyberpatriots/CyberPatriots'),
-      name: 'CyberPatriots'
+      meta: {
+        title: 'CyberPatriots'
+      }
     },
     {
       path: '/cyberpatriots/info',
@@ -66,57 +69,91 @@ export default new Router({
     {
       path: '/frc',
       component: () => import('@/views/frc/Frc'),
-      name: 'FRC'
+      meta: {
+        title: 'FRC'
+      }
     },
     {
       path: '/vex',
       component: () => import('@/views/vex/Vex'),
-      name: 'VEX'
+      meta: {
+        title: 'VEX'
+      }
     },
     {
       path: '/resources',
-      component: () => import('@/views/resources/Resources'),
-      name: 'Resources'
-    },
-    {
-      path: '/resources/links',
-      component: () => import('@/views/resources/QuickLinks'),
-      name: 'Links'
-    },
-    {
-      path: '/resources/branding',
-      component: () => import('@/views/resources/BrandingGuidelines'),
-      name: 'Branding'
+      component: () => import('@/views/resources/ResourcesWrapper'),
+      children: [
+        {
+          path: '',
+          component: () => import('@/views/resources/Resources'),
+          meta: {
+            title: 'Resources'
+          }
+        },
+        {
+          path: 'links',
+          component: () => import('@/views/resources/QuickLinks'),
+          meta: {
+            title: 'Quick Links'
+          }
+        },
+        {
+          path: 'branding',
+          component: () => import('@/views/resources/BrandingGuidelines'),
+          meta: {
+            title: 'Branding Guidelines'
+          }
+        }
+      ]
     },
     {
       path: '/media',
-      component: () => import('@/views/media/Media'),
-      name: 'Media'
-    },
-    {
-      path: '/media/videos',
-      component: () => import('@/views/media/Videos'),
-      name: 'Videos'
-    },
-    {
-      path: '/media/photos',
-      component: () => import('@/views/media/Photos'),
-      name: 'Photos'
+      component: () => import('@/views/media/MediaWrapper'),
+      children: [
+        {
+          path: '',
+          component: () => import('@/views/media/Media'),
+          meta: {
+            title: 'Media'
+          }
+        },
+        {
+          path: 'videos',
+          component: () => import('@/views/media/Videos'),
+          meta: {
+            title: 'Videos'
+          }
+        },
+        {
+          path: 'photos',
+          component: () => import('@/views/media/Photos'),
+          meta: {
+            title: 'Photos'
+          }
+        },
+      ]
     },
     {
       path: '/sponsors',
       component: () => import('@/views/sponsors/Sponsors'),
-      name: 'Sponsors'
+      meta: {
+        title: 'Sponsors'
+      }
     },
     {
       path: '/blog',
       component: () => import('@/views/blog/Blog'),
-      name: 'Blog'
+      meta: {
+        title: 'Blog'
+      }
     },
     {
       path: '/contact',
       component: () => import('@/views/Contact'),
-      name: 'Contact'
+      meta: {
+        title: 'Contact'
+      }
     }
   ]
 })
