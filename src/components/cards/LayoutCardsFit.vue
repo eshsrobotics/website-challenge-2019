@@ -18,7 +18,7 @@ export default {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-column-gap: 10px;
-  margin: 15px 0px 30px 0px; 
+  margin: 10px 0px 30px 0px; 
 }
 </style>
 

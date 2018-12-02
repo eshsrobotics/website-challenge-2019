@@ -1,6 +1,5 @@
 <template>
   <div class="home">
-    <page-heading/>
     <page-desc>
       <p>We're a club located in the <b>heart of El Segundo</b>, We have a <b>strong passion</b> for robotics, programming, engineering, and anything related.</p>
       <p>The team resides in the South Bay at El Segundo High School.</p>
@@ -16,15 +15,13 @@
 </template>
 
 <script>
-import PageHeading from '@/components/ui/PageHeading'
-import PageDesc from '@/components/PageDescription'; 
-import CompetitionCard from '@/components/cards/CompetitionCard';
-import LayoutCardsFit from '@/components/cards/LayoutCardsFit';
+import PageDesc from '@/components/PageDescription'
+import CompetitionCard from '@/components/cards/CompetitionCard'
+import LayoutCardsFit from '@/components/cards/LayoutCardsFit'
 
 export default {
   name: 'home',
   components: {
-    'page-heading': PageHeading,
     'page-desc': PageDesc,
     'competition-card': CompetitionCard,
     'layout-cards-fit': LayoutCardsFit

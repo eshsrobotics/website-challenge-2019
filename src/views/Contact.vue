@@ -1,17 +1,11 @@
 <template>
   <div class="contact">
-    <page-heading/>
     <p>Fill out the Google Form contact sheet. We will try to reply as soon as possible.</p>
   </div>
 </template>
 
 <script>
-import PageHeading from '@/components/ui/PageHeading'
-
 export default {
-  name: 'contact',
-  components: {
-    'page-heading': PageHeading
-  }
+  name: 'contact'
 }
 </script>

@@ -2,6 +2,7 @@
   <div id="app">
       <navbar class="nav"/>
       <div class="router-view-outer">
+        <page-heading class="heading"/>
         <router-view class="router-view"/>
       </div>
       <foot class="footer"></foot>
@@ -10,11 +11,13 @@
 
 <script>
 import Navbar from '@/components/nav/Navbar'
+import PageHeading from '@/components/ui/PageHeading'
 import Footer from '@/components/footer/Footer'
 
 export default {
   components: {
     'navbar': Navbar,
+    'page-heading': PageHeading,
     'foot': Footer
   }
 }
@@ -83,7 +86,7 @@ a:hover, a:active {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  margin: 0px 20px;
+  margin: 0px 20px 10px 20px;
 
 }
 .router-view {

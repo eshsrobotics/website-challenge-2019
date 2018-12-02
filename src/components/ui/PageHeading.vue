@@ -45,6 +45,8 @@ hr {
 }
 
 .page-heading {
+  display: block;
+  width: 100%;
   margin-bottom: 15px;
 }
 </style>

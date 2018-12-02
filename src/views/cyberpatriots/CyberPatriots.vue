@@ -1,6 +1,5 @@
 <template>
   <div class="cyberpatriots">
-    <page-heading/>
     <c-block :data="cypatBlock">
       <h2>About</h2>
       <p>The competition puts teams of students in the position of newly hired IT professionals tasked with managing the network of a small company. In the rounds of competition, teams are given a set of virtual images that represent operating systems and are tasked with finding cybersecurity vulnerabilities within the images and hardening the system while maintaining critical services.</p>
@@ -9,8 +8,7 @@
 </template>
 
 <script>
-import PageHeading from '@/components/ui/PageHeading'
-import CBlock from '@/components/ui/Block';
+import CBlock from '@/components/ui/Block'
 
 export default {
   name: 'cyberpatriots',
@@ -31,7 +29,6 @@ export default {
     }
   },
   components: {
-    'page-heading': PageHeading,
     'c-block': CBlock
   }
 }
