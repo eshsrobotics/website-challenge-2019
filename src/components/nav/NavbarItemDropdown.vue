@@ -1,10 +1,12 @@
 <template>
-  <div class="dropdown">
-    <nav-bar-item :routeTo="routeTo" class="dropdown-title">{{ dropdownTitle }}</nav-bar-item> 
-    <ul class="child-navbar-items" ref="navbar-items">
-        <slot></slot> 
+  <li class="dropdown">
+    <nav-bar-item :routeTo="routeTo" class="dropdown-title">
+      {{ dropdownTitle }}
+    </nav-bar-item> 
+    <ul class="dropdown-items" ref="navbar-items">
+      <slot></slot>
     </ul>
-  </div>
+  </li>
 </template>
 
 <script>
@@ -24,28 +26,31 @@ import NavBarItem from '@/components/nav/NavbarItem'
 <style scoped lang="scss">
 @import '@/styles/variables.scss';
 
-ul {
-  list-style-type: none;
-}
-
 .dropdown {
   position: relative;
 }
 
-.child-navbar-items {
-  // background-color: $oc-gray-0;
+.dropdown-items {
+  position: absolute;
+  left: 5px;
+
+  // margin-top: 5px;
+  box-sizing: border-box;
+  border-radius: $border-radius-small;
+  list-style-type: none;
+
+  background-color: $oc-gray-1;
 
   visibility: hidden;
-  position: absolute;
 
   & > * {
     margin-top: 5px;
   }
 }
 
-.dropdown:focus .child-navbar-items,
-.dropdown:focus-within .child-navbar-items,
-.dropdown:hover .child-navbar-items {
+.dropdown:focus .dropdown-items,
+.dropdown:focus-within .dropdown-items,
+.dropdown:hover .dropdown-items {
   visibility: visible;
   // opacity: 1;
   // z-index: 1;

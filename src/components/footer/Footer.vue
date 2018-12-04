@@ -1,7 +1,6 @@
 <template>
   <div class="wrapper">
     <div class="column">
-      <hr>
       <p>About</p>
       <ul>
         <li><router-link to="/about/team">Team</router-link></li>
@@ -54,9 +53,8 @@ export default {
   // display: flex;
   display: grid;
   grid-template-columns: auto auto auto auto auto;
-  height: 100px;
   background-color: $oc-gray-2;
-  padding: 10px 10px 20px 10px;
+  padding: 10px 10px 10px 10px;
 }
 
 .column {

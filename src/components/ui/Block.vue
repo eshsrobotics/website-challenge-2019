@@ -7,7 +7,7 @@
     <div class="picture">
       <img :src="data.photoURL" :alt="data.photoDesc" width="100%">
     </div>
-  </div>
+  </div>  
   <div v-if="data.photoPosition == 'left'" class="description">
     <slot></slot>
   </div>

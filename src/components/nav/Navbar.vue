@@ -1,23 +1,25 @@
 <template>
   <nav class="nav">
     <ul id="list">
+      <!-- I do not really like explicitly saying which components have an hr at the bottom, but
+      that is one of the most simplest ways to do it -->
       <li id="image"> <img src="@/assets/robotics-logo.png" alt="Robotics Logo" height="30px"> </li>
       <nav-bar-item routeTo="/">Home</nav-bar-item>
        <nav-bar-item-dropdown routeTo="/about" dropdownTitle="About Us">
-        <nav-bar-item routeTo="/about/team">Team</nav-bar-item>
-        <nav-bar-item routeTo="/about/coaches-and-mentors">Coaches and Mentors</nav-bar-item>
-        <nav-bar-item routeTo="/about/officers">Officers</nav-bar-item>
+        <nav-bar-item routeTo="/about/team" :hrBelow="true">Team</nav-bar-item>
+        <nav-bar-item routeTo="/about/coaches-and-mentors" :hrBelow="true">Coaches and Mentors</nav-bar-item>
+        <nav-bar-item routeTo="/about/officers" :hrBelow="true">Officers</nav-bar-item>
         <nav-bar-item routeTo="/about/website">Website</nav-bar-item>
       </nav-bar-item-dropdown>
       <nav-bar-item routeTo="/cyberpatriots">Cyberpatriots</nav-bar-item>
       <nav-bar-item routeTo="/frc">FRC</nav-bar-item>
       <nav-bar-item routeTo="/vex">VEX</nav-bar-item>
       <nav-bar-item-dropdown routeTo="/resources" dropdownTitle="Resources">
-        <nav-bar-item routeTo="/resources/links">Quick Links</nav-bar-item>
+        <nav-bar-item routeTo="/resources/links" :hrBelow="true">Quick Links</nav-bar-item>
         <nav-bar-item routeTo="/resources/branding">Branding Guidelines</nav-bar-item>
       </nav-bar-item-dropdown>
       <nav-bar-item-dropdown routeTo="/media" dropdownTitle="Media">
-        <nav-bar-item routeTo="/media/videos">Videos</nav-bar-item>
+        <nav-bar-item routeTo="/media/videos" :hrBelow="true">Videos</nav-bar-item>
         <nav-bar-item routeTo="/media/photos">Photos</nav-bar-item>
       </nav-bar-item-dropdown>
       <nav-bar-item routeTo="/sponsors">Sponsors</nav-bar-item>

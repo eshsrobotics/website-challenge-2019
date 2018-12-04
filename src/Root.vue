@@ -53,6 +53,16 @@ h3 {
   // font-size: 1.5em;
 }
 
+hr {
+  border: 0;
+  clear: both;
+  display: block;
+  width: 100%;               
+  background-color: $std-text-underline;
+  height: 2px;
+  border-radius: $border-radius-small;
+}
+
 p {
   color: $std-text;
   font-family: 'Raleway', sans-serif;

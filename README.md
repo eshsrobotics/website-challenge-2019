@@ -28,13 +28,11 @@ Just a heads up, I performed an interactive rebase on about November 28th 2018, 
 
 ## Roadmap :car:
 ### Website
-* Make website responsive design
-* Make website mobile-friendly
-* Add slightly more noise to website (line separators, etc.) (hold of until finish basic design)
+* Make website responsive design & mobile friendly
 * Add many more pages and make design more interesting
-* Prevent split second of unstyled text (while custom ones are being loaded in)
 * Possibly have some way of viewing the Team's 3D Models bots
 * Maybe have a shine effect, possibly for some of the sponsor icons
+* Theme support
 
 ### Blogging System
 * Blogging system can be controlled by in-house (very basic) CMS

@@ -34,16 +34,6 @@ h1 {
 
 }
 
-hr {
-  border: 0;
-  clear: both;
-  display: block;
-  width: 100%;               
-  background-color: $std-text-underline;
-  height: 1px;
-  border-radius: $border-radius-small;
-}
-
 .page-heading {
   display: block;
   width: 100%;
