@@ -13,9 +13,6 @@
 
 <script>
 export default {
-  mounted() {
-    console.log(this.hrBelow);
-  },
   props: {
     'routeTo': String,
     // Get prop; type must be string and the default value is false

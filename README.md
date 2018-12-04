@@ -75,8 +75,8 @@ If you're new to Vue, or conntributing, you may encounter a few errors. I've iso
   .element { color: blue }
   .element { color: red }
   ```
-* Solution 1: Remove all `createTransition` calls within your mixins, and put them in your components. That way there are no two `transition` properties for each element (since your mixin will bring an extra `transition` property and cause conflicts)
-* Solution 2: Actually fix the issue. Just modifying the `createTransitios` scss function won't change anything. Try looking into [extend](https://css-tricks.com/the-extend-concept/) in scss in combination with mixins / methods / whatever
+* Solution 1: Remove all `createTransitions` calls within your mixins, and put them in your components. That way there are no two `transition` properties for each element (since your mixin will bring an extra `transition` property and cause conflicts)
+* Solution 2: Actually fix the issue. Just modifying the `createTransitions` scss function won't change anything. Try looking into [extend](https://css-tricks.com/the-extend-concept/) in scss in combination with mixins / methods / whatever
 
 ### CSS IDs Styling
 * Ids can only be used once per webPage. Because components are reusable, you might be declaring multiple components of the same type on the same page

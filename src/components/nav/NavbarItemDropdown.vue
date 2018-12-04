@@ -30,31 +30,26 @@ import NavBarItem from '@/components/nav/NavbarItem'
   position: relative;
 }
 
+.dropdown:hover .dropdown-items {
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(0%);
+  transition: createTransitions((all));
+}
+
 .dropdown-items {
   position: absolute;
   left: 5px;
-
-  // margin-top: 5px;
-  box-sizing: border-box;
-  border-radius: $border-radius-small;
   list-style-type: none;
-
   background-color: $oc-gray-1;
-
+  border-radius: $border-radius-small;
   visibility: hidden;
+  opacity: 0;
+  transform: translateY(8px);
+  transition: createTransitions((all));
 
   & > * {
     margin-top: 5px;
   }
-}
-
-.dropdown:focus .dropdown-items,
-.dropdown:focus-within .dropdown-items,
-.dropdown:hover .dropdown-items {
-  visibility: visible;
-  // opacity: 1;
-  // z-index: 1;
-  // transform: translateY(0%);
-  // transition-delay: 0s, 0s, $transition-duration; /* this removes the transition delay so the menu will be visible while the other styles transition */
 }
 </style>
