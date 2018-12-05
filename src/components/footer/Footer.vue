@@ -40,7 +40,7 @@
 import CButton from '@/components/ui/Button'
 
 export default {
-  name: 'footer',
+  name: 'foot',
   components: {
     'c-button': CButton
   }

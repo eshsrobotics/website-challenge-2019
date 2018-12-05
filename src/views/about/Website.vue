@@ -13,7 +13,7 @@ import PageDesc from '@/components/PageDescription'
 import CBreadcrumb from '@/components/ui/Breadcrumb'
 
 export default {
-  data: 'website',
+  name: 'website',
   components: {
     'page-desc': PageDesc,
     'c-breadcrumb': CBreadcrumb

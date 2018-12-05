@@ -1,6 +1,6 @@
 <template>
   <ul>
-    <li v-for="(routeObject, index) in routeObjects"><router-link :to="routeObjectsPath[index]">{{ routeObject.meta.title }}</router-link></li>
+    <li v-for="(routeObject, index) in routeObjects" :class="isRouteActive(index)"><router-link :to="routeObjectsPath[index]">{{ routeObject.meta.title }}</router-link></li>
   </ul> 
 </template>
 
@@ -51,6 +51,15 @@
         // comment the following line of code (and remove its presence in the DOM)
         // .map (in this context) goes through each object in the array of objects and converts it to the property meta.title of the object, converting relevantRoutes to an array of Strings, ultimately
         return relevantRoutes
+      },
+      isRouteActive: function(index) {
+        // console.log(this.$route)
+        // console.warn(this.routeObjectsPath[index])
+        if(this.routeObjectsPath[index] === this.$route.path) {
+          // If the route is active, set a class of 'route-active', which will be bolded, etc. so user knows the current page
+          return 'route-active'
+        }
+        return 'route-not-active'
       }
     },
     computed: {
@@ -91,17 +100,23 @@
 
         // console.log(absoluteRoutes)
         return absoluteRoutes
-      },
+      }
     }
   }
 </script>
 
 <style scoped lang="scss">
+@import '@/styles/variables.scss';
+
   ul {
     display: flex;
     list-style-type: none;
   }
   li {
     padding: 5px;
+  }
+  .route-active a {
+    font-weight: bold;
+    text-decoration-color: $std-text-underline-active;
   }
 </style>
