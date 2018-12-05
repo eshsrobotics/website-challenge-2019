@@ -4,10 +4,12 @@
     <layout-cards-overflow>
       <person-card>
         <h3>Chi Foo</h3>
+        <h4>VEX and FRC</h4>
         <p>Velit labore esse aliqua sint tempor non velit lorem.</p>
       </person-card>
       <person-card>
         <h3>Nu Bar</h3>
+        <h4>Cyberpatriots</h4>
         <p>Commodo amet eiusmod laboris sit fugiat enim in aliquip ullamco eu officia.</p>
       </person-card>
     </layout-cards-overflow>
@@ -26,6 +28,7 @@
         <h3>Mu Foo</h3>
         <p>Ad aliqua laborum et laborum in labore consectetur esse.</p>
       </person-card>
+      <person-card></person-card>
     </layout-cards-overflow>
   </div>
 </template>

@@ -33,6 +33,7 @@ Just a heads up, I performed an interactive rebase on about November 28th 2018, 
 * Possibly have some way of viewing the Team's 3D Models bots
 * Maybe have a shine effect, possibly for some of the sponsor icons
 * Theme support
+* Create abstraction over image element, such that clicking on image yields an enlarged photo, with extra features
 
 ### Blogging System
 * Blogging system can be controlled by in-house (very basic) CMS

@@ -119,17 +119,17 @@ export default new Router({
           }
         },
         {
-          path: 'videos',
-          component: () => import('@/views/media/Videos'),
-          meta: {
-            title: 'Videos'
-          }
-        },
-        {
           path: 'photos',
           component: () => import('@/views/media/Photos'),
           meta: {
             title: 'Photos'
+          }
+        },
+        {
+          path: 'videos',
+          component: () => import('@/views/media/Videos'),
+          meta: {
+            title: 'Videos'
           }
         },
       ]

@@ -39,19 +39,26 @@ export default {
 h1 {
   color: $std-text; 
   font-family: 'Poppins', sans-serif;
-  font-size: 2.125em;
+  font-size: 2.125rem;
 }
 
 h2 {
   color: $std-text;
   font-family: 'Poppins', sans-serif;
-  font-size: 1.5em;
+  font-size: 1.5rem;
 }
 
 h3 {
   color: $std-text; 
   font-family: 'Poppins', sans-serif;
-  // font-size: 1.5em;
+  font-size: 1.3rem;
+}
+
+h4 {
+  color: $std-text;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  font-style: italic;
 }
 
 hr {
