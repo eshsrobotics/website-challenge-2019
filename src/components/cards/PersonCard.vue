@@ -1,19 +1,21 @@
 <template>
-  <div class="officer">
-    <slot></slot>
+  <div class="person">
+    <slot>
+
+    </slot>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'officerCard'
+  name: 'personCard'
 }
 </script>
 
 <style scoped lang="scss">
 @import '@/styles/variables.scss';
 
-.officer {
+.person {
   @include genericCard("false");
   width: 200px;
   margin-bottom: 20px;

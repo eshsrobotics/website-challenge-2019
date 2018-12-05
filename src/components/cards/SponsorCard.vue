@@ -8,57 +8,12 @@
 <script>
 export default {
   name: 'sponsorCard',
-  data() {
-    let placeHolder = 'https://dummyimage.com/1280x960/dee2e6/212529';
-    return {
-      sponsors: {
-        gamma: {
-          name: "Gamma Foo" ,
-          image: placeHolder,
-          imageAltText: "Gamma Logo"
-        },
-        epsilon: {
-          name: "Epsilon Bar" ,
-          image: placeHolder,
-          imageAltText: "Epsilon Logo"
-        },
-        zeta: {
-          name: "Zeta Baz" ,
-          image: placeHolder,
-          imageAltText: "Zeta Logo"
-        },
-        kappa: {
-          name: "Kappa Foo" ,
-          image: placeHolder,
-          imageAltText: "Kappa Logo"
-        },
-        omicron: {
-          name: "Omicron Bar" ,
-          image: placeHolder,
-          imageAltText: "Omicron Logo"
-        },
-        rho: {
-          name: "Rho Baz" ,
-          image: placeHolder,
-          imageAltText: "Rho Logo"
-        },
-        phi: {
-          name: "Phi Foo",
-          image: placeHolder,
-          imageAltText: "Phi Logo"
-        }
-      }
-    }
-  },
   computed: {
-    sponsor: function() {
-      return this.sponsors[this.showSponsor]
-    },
-     // Purpose: To recieve the showSponsor property (prop) when declaring this component
+    // Purpose: To recieve the showSponsor property (prop) when declaring this component
     // Ex. For the following code
     //   <sponsor-card showSponsor="companyFoo"></sponsor-card>
     //   "companyFoo" is being passed down and is equal to the value of showSponsor (for that particular component). And showSponsor must be type String, or errors will be printed in console
-  
+
     pictureWidth: function() {
       if(this.aTier === "diamond") {
         return (250 * 1.25 * 1.25 * 1.25) + "px"
@@ -75,8 +30,20 @@ export default {
     }
   },
   props: {
-    showSponsor: String,
-    aTier: String
+    sponsor: {
+      type: Object,
+      // We put parenthesis around object to denote that we are returning an object rather than a
+      // function (since we're using es6 fat arrow notation)
+      default: () => ({
+        name: 'Sponsor Name',
+        image: 'https://dummyimage.com/1280x960/dee2e6/212529',
+        imageAltText: 'Sponsor Alt Text' 
+      })
+    },
+    aTier: {
+      type: String,
+      default: 'bronze'
+    }
   }
 }
 </script>
