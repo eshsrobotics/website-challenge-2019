@@ -8,8 +8,9 @@
 
 <script>
 export default {
+  name: 'competitionCard',
   data() {
-    let placeHolder = 'https://dummyimage.com/1280x960/dee2e6/212529';
+    let placeHolder = 'https://dummyimage.com/1280x960/dee2e6/212529'
     return {
       competitions: {
         cyberpatriots: {
@@ -38,7 +39,7 @@ export default {
   },
   computed: {
     competition: function() {
-      return this.competitions[this.showCompetition];
+      return this.competitions[this.showCompetition]
     }
   },
   components: {

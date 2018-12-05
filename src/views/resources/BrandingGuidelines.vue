@@ -7,6 +7,7 @@
 <script>
   import PageDesc from '@/components/PageDescription'
   export default {
+    name: 'brandingGuidelines',
     components: {
       'page-desc': PageDesc
     }

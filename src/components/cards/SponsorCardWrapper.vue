@@ -11,6 +11,7 @@
 import LayoutCardOverflow from '@/components/cards/LayoutCardsOverflow'
 
 export default {
+  name: 'sponsorCardWrapper',
   computed: {
     // This converts makes the first letter of tier uppercase
     // Ex. Converts 'gold' to 'Gold'
@@ -28,9 +29,11 @@ export default {
 </script>
 
 <style scoped lang="scss">
+@import '@/styles/variables.scss';
 // The styles for the class "tier" is in a child component, SponsorCard
 
 h2 {
   margin-bottom: 3px;
 }
+
 </style>

@@ -17,6 +17,7 @@
 
 <script>
 export default {
+  name: 'block',
   props: {
     data: Object
   }
@@ -25,6 +26,21 @@ export default {
 
 <style scoped lang="scss">
 @import '@/styles/variables.scss';
+
+h1 {
+  margin-bottom: 10px;
+}
+
+p {
+  margin-bottom: 5px;
+}
+
+img {
+  // width: auto;
+  // height: auto;
+  border-radius: $border-radius;
+  display: block;
+}
 
 .block.left {
   display: grid;
@@ -48,10 +64,4 @@ export default {
   margin-left: 20px;
 }
 
-img {
-  // width: auto;
-  // height: auto;
-  border-radius: $border-radius;
-  display: block;
-}
 </style>

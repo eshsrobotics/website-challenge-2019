@@ -15,6 +15,7 @@ import PageHeading from '@/components/ui/PageHeading'
 import Footer from '@/components/footer/Footer'
 
 export default {
+  name: 'root',
   components: {
     'navbar': Navbar,
     'page-heading': PageHeading,

@@ -5,9 +5,9 @@
 // @param 4  $transitionTimingFunction  Specify the function of how the transition timing behaves. Default is $transition-timing-fn
 // Purpose: To create a function that can add transitions to the CSS property. The only mandatory parameter to pass are the proeprties to transitions, the rest will defualt
 @function createTransitions($transitionProperties,
-                       $isExtraTransitions: false,
-                       $transitionDuration: $transition-duration,
-                       $transitionTimingFunction: $transition-timing-fn
+                            $isExtraTransitions: false,
+                            $transitionDuration: $transition-duration,
+                            $transitionTimingFunction: $transition-timing-fn
 ) {
 
   $returnThis: '';

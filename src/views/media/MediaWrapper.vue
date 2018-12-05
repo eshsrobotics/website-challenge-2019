@@ -6,7 +6,7 @@
 
 <script>
 export default {
-  name: 'AboutWrapper'
+  name: 'aboutWrapper'
 }
 </script>
 

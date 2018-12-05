@@ -7,6 +7,7 @@
 <script>
   // Navigation tabs allow user to move between child routes of a route (such as the subpages under 'about')
   export default {
+    name: 'navTabs',
     methods: {
       getRelevantRoutes: function() {
         // Get the array of path of current route 
@@ -36,7 +37,7 @@
           relevantRoutes = relevantRoutes.filter(el => {
             if(el.path.includes(currentRoutesArray[i])) {
               // console.log('relveantRoutes', relevantRoutes)
-              return el;
+              return el
             }
           })
 
@@ -50,20 +51,7 @@
         // comment the following line of code (and remove its presence in the DOM)
         // .map (in this context) goes through each object in the array of objects and converts it to the property meta.title of the object, converting relevantRoutes to an array of Strings, ultimately
         return relevantRoutes
-      },
-      // newRouteObjectsPath(index) {
-      //   let relevantRoutes = this.getRelevantRoutes();
-      //   console.log(relevantRoutes)
-
-      //   if(index == 1) {
-      //     let prepend = this.$route.path.split('/').filter(el => el !== '')
-      //     console.log(prepend)
-      //     return prepend
-      //   }
-      //   else {
-      //     console.log(porepend)
-      //   }
-      // }
+      }
     },
     computed: {
       routeObjects: function() {
