@@ -40,6 +40,7 @@ import OfficerCard from '@/components/cards/OfficerCard'
 
 
 export default {
+  name: 'officers',
   components: {
     'c-breadcrumb': CBreadcrumb,
     'layout-cards-overflow': LayoutCardsOverflow,

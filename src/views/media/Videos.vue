@@ -7,6 +7,7 @@
 <script>
   import PageDesc from '@/components/PageDescription'
   export default {
+    name: 'videos',
     components: {
       'page-desc': PageDesc
     }

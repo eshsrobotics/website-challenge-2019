@@ -10,7 +10,6 @@
 import PageDesc from '@/components/PageDescription'
 
 export default {
-  
   name: 'blog',
   components: {
     'page-desc': PageDesc

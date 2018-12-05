@@ -12,6 +12,7 @@ import CBreadcrumb from '@/components/ui/Breadcrumb'
 import CBlock from '@/components/ui/Block'
 
 export default {
+  name: 'team',
   data() {
     return {
       teamBlock: {

@@ -7,6 +7,7 @@
 
 <script>
 export default {
+  name: 'sponsorCard',
   data() {
     let placeHolder = 'https://dummyimage.com/1280x960/dee2e6/212529';
     return {
@@ -119,8 +120,8 @@ img {
 
 .bronze .sponsor {
   @include hoverShadow($card-shadow-hov, $oc-orange-3, 32px);
-
 }
+
 </style>
 
 

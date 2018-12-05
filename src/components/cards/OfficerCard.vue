@@ -5,9 +5,8 @@
 </template>
 
 <script>
-
 export default {
-
+  name: 'officerCard'
 }
 </script>
 
@@ -27,4 +26,5 @@ h3 {
 p {
   text-align: center;
 }
+
 </style>

@@ -28,6 +28,7 @@ import CBreadcrumb from '@/components/ui/Breadcrumb'
 import CBlock from '@/components/ui/Block'
 
 export default {
+  name: 'about',
   data() {
     return {
       coreValuesBlock: {
@@ -62,8 +63,4 @@ export default {
 
 <style scoped lang="scss">
 @import '@/styles/variables.scss';
-
-p {
-  margin-bottom: 10px;
-}
 </style>

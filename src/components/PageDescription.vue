@@ -4,6 +4,12 @@
   </div>
 </template>
 
+<script>
+export default {
+  name: 'pageDescription'
+}
+</script>
+
 <style scoped lang="scss">
 h1 {
   margin-bottom: 10px;
@@ -12,5 +18,5 @@ h1 {
 p {
   margin-bottom: 5px;
 }
-</style>
 
+</style>

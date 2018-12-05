@@ -12,7 +12,7 @@
 import navTab from '@/components/ui/NavTabs.vue'
 
 export default {
-  name: 'PageHeading',
+  name: 'pageHeading',
   components: {
     'nav-tabs': navTab
   }

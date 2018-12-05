@@ -8,6 +8,7 @@
 
 <script>
 export default {
+  name: 'button',
   methods: {
     redirect: function() {
       this.$router.push('/')

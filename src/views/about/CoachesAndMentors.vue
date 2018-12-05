@@ -37,6 +37,7 @@ import MentorCard from '@/components/cards/MentorCard'
 
 
 export default {
+  name: 'coachesAndMentors',
   components: {
     'c-breadcrumb': CBreadcrumb,
     'layout-cards-overflow': LayoutCardsOverflow,

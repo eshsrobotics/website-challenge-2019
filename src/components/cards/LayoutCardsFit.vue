@@ -5,9 +5,8 @@
 </template>
 
 <script>
-
 export default {
-  name: 'layoutCardsFit',
+  name: 'layoutCardsFit'
 }
 </script>
 
