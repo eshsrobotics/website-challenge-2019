@@ -12,10 +12,10 @@
 <script>
 import Navbar from '@/components/nav/Navbar'
 import PageHeading from '@/components/ui/PageHeading'
-import Footer from '@/components/footer/Footer'
+import Footer from '@/components/footer/Foot'
 
 export default {
-  name: 'root',
+  name: 'theRoot',
   components: {
     'navbar': Navbar,
     'page-heading': PageHeading,
