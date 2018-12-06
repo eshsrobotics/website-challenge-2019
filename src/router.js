@@ -15,7 +15,7 @@ export default new Router({
     },
     {
       path: '/about',
-      component: () => import('@/views/about/AboutWrapper'),
+      component: () => import('@/components/SubPathWrapper'),
       children: [
         {
           path: '',
@@ -82,7 +82,7 @@ export default new Router({
     },
     {
       path: '/resources',
-      component: () => import('@/views/resources/ResourcesWrapper'),
+      component: () => import('@/components/SubPathWrapper'),
       children: [
         {
           path: '',
@@ -109,7 +109,7 @@ export default new Router({
     },
     {
       path: '/media',
-      component: () => import('@/views/media/MediaWrapper'),
+      component: () => import('@/components/SubPathWrapper'),
       children: [
         {
           path: '',
@@ -136,10 +136,23 @@ export default new Router({
     },
     {
       path: '/sponsors',
-      component: () => import('@/views/sponsors/Sponsors'),
-      meta: {
-        title: 'Sponsors'
-      }
+      component: () => import('@/components/SubPathWrapper'),
+      children: [
+        {
+          path: '',
+          component: () => import('@/views/sponsors/Sponsors'),
+          meta: {
+            title: 'Sponsors'
+          }
+        },
+        {
+          path: 'us',
+          component: () => import('@/views/sponsors/SponsorUs'),
+          meta: {
+            title: 'Sponsor Us'
+          }
+        }
+      ]
     },
     {
       path: '/blog',

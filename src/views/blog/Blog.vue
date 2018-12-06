@@ -1,18 +1,12 @@
 <template>
   <div class="blog">
-    <page-desc>
-      <p>Not implemented yet.</p>
-    </page-desc>
+    <p>Not implemented yet.</p>
   </div>
 </template>
 
 <script>
-import PageDesc from '@/components/PageDescription'
 
 export default {
   name: 'blog',
-  components: {
-    'page-desc': PageDesc
-  }
 }
 </script>

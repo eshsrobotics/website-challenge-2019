@@ -27,7 +27,7 @@
       <p>Sponsors</p>
       <ul>
         <li><router-link to="/sponsors">Sponsors</router-link></li>
-        <li><router-link to="/sponsors">Sponsor Us</router-link></li>
+        <li><router-link to="/sponsors/us">Sponsor Us</router-link></li>
       </ul>
     </div>
     <div class="column">
