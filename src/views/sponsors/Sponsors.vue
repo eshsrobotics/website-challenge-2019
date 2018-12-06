@@ -27,8 +27,8 @@
 
 <script>
 import PageDesc from '@/components/PageDescription'
-import SponsorCardWrapper from '@/components/cards/SponsorCardWrapper'
-import SponsorCard from '@/components/cards/SponsorCard'
+import SponsorCardWrapper from '@/components/cards/WrapperCardSponsor'
+import SponsorCard from '@/components/cards/CardSponsor'
 
 export default {
   name: 'sponsors',

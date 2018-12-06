@@ -22,7 +22,7 @@
 <script>
 import CBreadcrumb from '@/components/ui/Breadcrumb'
 import LayoutCardsOverflow from '@/components/cards/LayoutCardsOverflow'
-import PersonCard from '@/components/cards/PersonCard'
+import PersonCard from '@/components/cards/CardPerson'
 
 
 export default {

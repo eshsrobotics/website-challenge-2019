@@ -16,7 +16,7 @@
 
 <script>
 import PageDesc from '@/components/PageDescription'
-import CompetitionCard from '@/components/cards/CompetitionCard'
+import CompetitionCard from '@/components/cards/CardCompetition'
 import LayoutCardsFit from '@/components/cards/LayoutCardsFit'
 
 export default {

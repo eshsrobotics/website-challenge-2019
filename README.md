@@ -34,6 +34,9 @@ Just a heads up, I performed an interactive rebase on about November 28th 2018, 
 * Maybe have a shine effect, possibly for some of the sponsor icons
 * Theme support
 * Create abstraction over image element, such that clicking on image yields an enlarged photo, with extra features
+* Think about timeline component to show timeline of frc, vex, cyberpatriots competition
+* Have carosel of sponsors, or have line of sponsors that move left gradually
+* Have descriptions of photographs on the back
 
 ### Blogging System
 * Blogging system can be controlled by in-house (very basic) CMS

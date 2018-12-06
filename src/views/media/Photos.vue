@@ -6,10 +6,11 @@
 
 <script>
   import PageDesc from '@/components/PageDescription'
+  
   export default {
     name: 'photos',
     components: {
-      'page-desc': PageDesc
+      'page-desc': PageDesc,
     }
   }
 </script>
