@@ -9,13 +9,13 @@
 
 <script>
 export default {
-  name: 'personCard',
+  name: 'cardPerson',
   props: {
     person: {
       type: Object,
       default: () => ({
         name: 'First Last',
-        title: 'Optional Subheading',
+        title: 'Subheading',
         image: 'https://dummyimage.com/1280x960/dee2e6/212529',
         imageAltText: 'This is an important person',
         desc: 'Description of mentor or officer that adequately describes mentor or officer.'

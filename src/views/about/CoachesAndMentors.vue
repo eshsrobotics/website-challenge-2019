@@ -1,20 +1,20 @@
 <template>
   <div class="coaches-and-mentors">
     <h2>Coaches</h2>
+    <p>We are grateful to our coaches for working hard to administer and drive the robotics club towards a positive direction.</p>
     <layout-cards-overflow>
-      <person-card :person="coaches.person1"></person-card>
-      <person-card :person="coaches.person2"></person-card>
-      <person-card :person="coaches.person3"></person-card>
-      <person-card :person="coaches.person4"></person-card>
-      <person-card :person="coaches.person5"></person-card>
+      <card-person :person="coaches.davis"></card-person>
+      <card-person :person="coaches.horvath"></card-person>
+      <card-person :person="coaches.robinson"></card-person>
     </layout-cards-overflow>
 
     <h2>Mentors</h2>
+    <p>We thank our mentos for dedicating their time to use their knowledge to guide the club to a better future.</p>
     <layout-cards-overflow>
-      <person-card :person="mentors.person1"></person-card>
-      <person-card :person="mentors.person2"></person-card>
-      <person-card :person="mentors.person3"></person-card>
-      <person-card :person="mentors.person4"></person-card>
+      <card-person :person="mentors.person1"></card-person>
+      <card-person :person="mentors.person2"></card-person>
+      <card-person :person="mentors.person3"></card-person>
+      <card-person :person="mentors.person4"></card-person>
     </layout-cards-overflow>
   </div>
 </template>
@@ -22,7 +22,7 @@
 <script>
 import CBreadcrumb from '@/components/ui/Breadcrumb'
 import LayoutCardsOverflow from '@/components/cards/LayoutCardsOverflow'
-import PersonCard from '@/components/cards/CardPerson'
+import CardPerson from '@/components/cards/CardPerson'
 
 
 export default {
@@ -30,40 +30,26 @@ export default {
   data() {
     return {
       coaches: {
-        person1: {
-          name: 'Nu Foo',
-          title: 'Company Alpha',
+        davis: {
+          name: 'Alan Davis',
+          title: 'VEX Coach',
           image: 'https://dummyimage.com/1280x960/dee2e6/212529',
           imageAltText: 'This is an important person',
           desc: 'Aliquip occaecat velit ipsum nisi reprehenderit adipisicing nostrud.'
         },
-        person2: {
-          name: 'Mu Baz',
-          title: 'Company Beta',
+        horvath: {
+          name: 'Danial Horvath',
+          title: 'FRC Coach',
           image: 'https://dummyimage.com/1280x960/dee2e6/212529',
           imageAltText: 'This is an important person',
           desc: 'Lorem exercitation tempor quis est.'
         },
-        person3: {
-          name: 'Nu Baz',
-          title: 'Company Gamma',
+        robinson: {
+          name: 'Joelle Robinson',
+          title: 'Cyberpatriots Coach',
           image: 'https://dummyimage.com/1280x960/dee2e6/212529',
           imageAltText: 'This is an important person',
           desc: 'Nulla voluptate et magna reprehenderit commodo ea consectetur.'
-        },
-        person4: {
-          name: 'Mu Baz',
-          title: 'Company Beta',
-          image: 'https://dummyimage.com/1280x960/dee2e6/212529',
-          imageAltText: 'This is an important person',
-          desc: 'Sunt officia adipisicing Lorem elit.'
-        },
-        person5: {
-          name: 'Nu Baz',
-          title: 'Company Gamma',
-          image: 'https://dummyimage.com/1280x960/dee2e6/212529',
-          imageAltText: 'This is an important person',
-          desc: 'Tempor ea eu do sunt ut cupidatat et ex amet cupidatat nostrud proident.'
         }
       },
       mentors: {
@@ -101,7 +87,7 @@ export default {
   components: {
     'c-breadcrumb': CBreadcrumb,
     'layout-cards-overflow': LayoutCardsOverflow,
-    'person-card': PersonCard
+    'card-person': CardPerson
   }
 }
 </script>

@@ -2,7 +2,7 @@
   <div class="about">
     <c-block :data="coreValuesBlock">
       <h2>Core Values</h2>
-      <p>Lorem ad tempor exercitation laboris voluptate consectetur quis dolor nisi Lorem do ex exercitation. Culpa ipsum ea voluptate aute in non quis in velit. Mollit aliqua ex mollit deserunt consequat.</p>
+      <p>Excepteur ipsum nulla veniam esse adipisicing quis proident dolor nostrud anim. Nostrud officia consectetur exercitation cillum anim ipsum Lorem voluptate cillum eu nulla. Nisi ea voluptate nisi in amet et amet Lorem voluptate laboris ipsum tempor. Occaecat proident et laboris ad tempor elit elit pariatur eu.</p>
     </c-block>
     <h2>History</h2>
     <c-block :data="historyEarly">
