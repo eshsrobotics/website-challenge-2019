@@ -10,8 +10,8 @@
       <p>Incididunt deserunt dolor tempor cillum non consectetur ullamco excepteur commodo ex voluptate dolore. In ut non voluptate do commodo incididunt fugiat officia irure aliquip. Eiusmod minim consectetur amet aliquip irure. Quis velit cupidatat in qui. Ut tempor qui et ipsum. Aliquip nostrud irure id occaecat irure nulla mollit Lorem.</p>
       <p>Deserunt esse et ullamco adipisicing nisi incididunt commodo. Laborum ex sunt et duis. Aliqua est nulla ut ad veniam ex commodo sit ad commodo occaecat. Cupidatat proident cillum proident sint minim id sit. Qui veniam adipisicing cupidatat qui dolor sunt.</p>
     </c-block>
-    <c-block :data="historyTransition">
-      <h3>The Transition </h3>
+    <c-block :data="historyDevelopment">
+      <h3>Club Development</h3>
       <p>Occaecat occaecat duis excepteur eiusmod eu aute aliquip reprehenderit sunt elit dolore do reprehenderit. Dolor qui Lorem anim veniam voluptate. Aute consectetur reprehenderit nulla consequat. Proident deserunt aliquip dolore exercitation nulla incididunt sunt ullamco consectetur veniam anim adipisicing. Tempor commodo eu aute ex minim occaecat ex laborum.</p>
     </c-block>
     <c-block :data="historyRecent">
@@ -41,7 +41,7 @@ export default {
         photoDesc: 'Dummy Image',
         photoPosition: 'right'
       },
-      historyTransition: {
+      historyDevelopment: {
         photoURL: 'https://dummyimage.com/1280x720/dee2e6/212529',
         photoDesc: 'Dummy Image',
         photoPosition: 'right'

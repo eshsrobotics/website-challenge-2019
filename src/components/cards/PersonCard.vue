@@ -1,11 +1,9 @@
 <template>
   <div class="person">
-    <slot>
-        <h3>Person</h3>
-        <h4>Optional subheading</h4>
-        <img :src="image.url" :alt="image.altText">
-        <p>Description of person. Include more information and fill up space.</p>
-    </slot>
+    <h3>{{ person.name }}</h3>
+    <h4>{{ person.title }}</h4>
+    <img :src="person.image" :alt="person.imageAltText">
+    <p>{{ person.desc }}</p>
   </div>
 </template>
 
@@ -13,11 +11,14 @@
 export default {
   name: 'personCard',
   props: {
-    image: {
+    person: {
       type: Object,
       default: () => ({
-        url: 'https://dummyimage.com/1280x960/dee2e6/212529',
-        altText: 'This is an important person'
+        name: 'First Last',
+        title: 'Optional Subheading',
+        image: 'https://dummyimage.com/1280x960/dee2e6/212529',
+        imageAltText: 'This is an important person',
+        desc: 'Description of mentor or officer that adequately describes mentor or officer.'
       })
     }
   }
@@ -29,7 +30,7 @@ export default {
 
 img {
   width: 100%;
-  border-radius: $border-radius-small;
+  border-radius: $border-radius;
 }
 
 .person {
