@@ -1,5 +1,5 @@
 # Contributing
-## Basics
+* As per the competition rules, the website must have been designed and programmed by students in our VRC program
 * Do not commit to the master branch! Your changes may be reverted.
 * All modifications must be made in a new branch, *do not commit to master branch*
 * Follow branch naming similarly to [this](https://stackoverflow.com/a/6065944/9367643), but replace slashes with '-'
@@ -10,4 +10,3 @@
   junk-throwaway_branch_for_experimentation
   new-branch_unsure_categorization
   ```
-  * You can follow branch naming loosely, just don't commit to `master`
