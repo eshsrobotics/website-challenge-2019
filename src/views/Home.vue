@@ -29,19 +29,22 @@ export default {
           title: "CyberPatriots",
           image: placeHolder,
           imageAltText: "Alt text",
-          desc: "Small teams search computer systems for vulnerabilities and exploits. As you compete, gain points for every vulnerability that is patched!"
+          desc: "Small teams search computer systems for vulnerabilities and exploits. As you compete, gain points for every vulnerability that is patched!",
+          buttonText: "Learn More"
         },
         frc: {
           title: "FRC",
           image: placeHolder,
           imageAltText: "Alt text",
-          desc: "Brainstorm, plan, and execute the fabrication of a large robot within a span of 6-weeks. We'll teach you what skills you need to succeed."
+          desc: "Brainstorm, plan, and execute the fabrication of a large robot within a span of 6-weeks. We'll teach you what skills you need to succeed.",
+          buttonText: "Learn More",
         },
         vex: {
           title: "VEX",
           image: placeHolder,
           imageAltText: "Alt text",
-          desc: "Small robots must complete the competition objective and maximize points during the intense competition. Learn the fundamentals of building a robot with a dedicated team!"
+          desc: "Small robots must complete the competition objective and maximize points during the intense competition. Learn the fundamentals of building a robot with a dedicated team!",
+          buttonText: "Learn More"
         }
       }
     }

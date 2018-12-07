@@ -4,10 +4,13 @@
     <h4 v-if="subtitleShow">{{ cardInfo.subtitle }}</h4>
     <img v-if="imageShow" :src="cardInfo.image" :alt="cardInfo.imageAltText">
     <p v-if="descShow">{{ cardInfo.desc }}</p>
+    <c-button v-if="buttonShow">{{ cardInfo.buttonText }}</c-button>
   </div>
 </template>
 
 <script>
+import CButton from '@/components/ui/Button'
+
 export default {
   name: 'cardGeneric',
   computed: {
@@ -38,6 +41,13 @@ export default {
         return false;
       }
       return true;
+    },
+    buttonShow: function() {
+      let title = this.cardInfo.buttonText;
+      if(title === null || title === undefined || title === '') {
+        return false;
+      }
+      return true;
     }
   },
   props: {
@@ -52,6 +62,9 @@ export default {
       //  desc: 'Default Description'
       })
     }
+  },
+  components: {
+    'c-button': CButton
   }
 }
   

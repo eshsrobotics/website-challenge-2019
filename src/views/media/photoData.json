@@ -1,15 +1,35 @@
 [
   {
+    "year": "2019",
+    "events": [
+      {
+        "title": "Gamma Foo Mu",
+        "image": "https://dummyimage.com/1280x960/dee2e6/212529",
+        "desc": "Competition loacted at el camino"
+      },
+      {
+        "title": "Beta Baz Nu",
+        "image": "https://dummyimage.com/1280x960/dee2e6/212529",
+        "desc": "Competition located at lorem ipsum"
+      }
+    ]
+  },
+  {
     "year": "2018",
     "events": [
       {
         "title": "El Camino Competition",
-        "photo": "https://dummyimage.com/1280x960/dee2e6/212529",
+        "image": "https://dummyimage.com/1280x960/dee2e6/212529",
         "desc": "Competition loacted at el camino"
       },
       {
         "title": "Sample Event",
-        "photo": "https://dummyimage.com/1280x960/dee2e6/212529",
+        "image": "https://dummyimage.com/1280x960/dee2e6/212529",
+        "desc": "Competition located at lorem ipsum"
+      },
+      {
+        "title": "Sample Event",
+        "image": "https://dummyimage.com/1280x960/dee2e6/212529",
         "desc": "Competition located at lorem ipsum"
       }
     ]
@@ -18,13 +38,18 @@
     "year": "2019",
     "events": [
       {
-        "title": "Gamma Foo Mu",
-        "photo": "https://dummyimage.com/1280x960/dee2e6/212529",
+        "title": "2017 Competition",
+        "image": "https://dummyimage.com/1280x960/dee2e6/212529",
         "desc": "Competition loacted at el camino"
       },
       {
-        "title": "Beta Baz Nu",
-        "photo": "https://dummyimage.com/1280x960/dee2e6/212529",
+        "title": "Sample Event",
+        "image": "https://dummyimage.com/1280x960/dee2e6/212529",
+        "desc": "Competition located at lorem ipsum"
+      },
+      {
+        "title": "Sample Event",
+        "image": "https://dummyimage.com/1280x960/dee2e6/212529",
         "desc": "Competition located at lorem ipsum"
       }
     ]
