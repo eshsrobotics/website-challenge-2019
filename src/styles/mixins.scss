@@ -27,6 +27,10 @@
   border-radius: $border-radius;
   padding: 10px;
 
+  img {
+    border-radius: $border-radius;
+  }
+
   // Want card to have shadow on hover
   @include hoverShadow($card-shadow-reg, $card-shadow-hov);
 

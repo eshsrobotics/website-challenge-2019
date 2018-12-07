@@ -37,10 +37,6 @@ h3 {
   font-size: 1.33em;
 }
 
-img {
-  border-radius: $border-radius;
-}
-
 </style>
 
 
