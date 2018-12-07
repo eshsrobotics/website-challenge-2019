@@ -3,18 +3,18 @@
     <h2>Coaches</h2>
     <p>We are grateful to our coaches for working hard to administer and drive the robotics club towards a positive direction.</p>
     <layout-cards-overflow>
-      <card-person :person="coaches.davis"></card-person>
-      <card-person :person="coaches.horvath"></card-person>
-      <card-person :person="coaches.robinson"></card-person>
+      <card-generic :cardInfo="coaches.davis" class="generic"></card-generic>
+      <card-generic :cardInfo="coaches.horvath" class="generic"></card-generic>
+      <card-generic :cardInfo="coaches.robinson" class="generic"></card-generic>
     </layout-cards-overflow>
 
     <h2>Mentors</h2>
-    <p>We thank our mentos for dedicating their time to use their knowledge to guide the club to a better future.</p>
+    <p>We thank our mentos for dedicating their time to use their knowledge to guide the club towards a better future.</p>
     <layout-cards-overflow>
-      <card-person :person="mentors.person1"></card-person>
-      <card-person :person="mentors.person2"></card-person>
-      <card-person :person="mentors.person3"></card-person>
-      <card-person :person="mentors.person4"></card-person>
+      <card-generic :cardInfo="mentors.person1" class="generic"></card-generic>
+      <card-generic :cardInfo="mentors.person2" class="generic"></card-generic>
+      <card-generic :cardInfo="mentors.person3" class="generic"></card-generic>
+      <card-generic :cardInfo="mentors.person4" class="generic"></card-generic>
     </layout-cards-overflow>
   </div>
 </template>
@@ -22,7 +22,7 @@
 <script>
 import CBreadcrumb from '@/components/ui/Breadcrumb'
 import LayoutCardsOverflow from '@/components/cards/LayoutCardsOverflow'
-import CardPerson from '@/components/cards/CardPerson'
+import CardGeneric from '@/components/cards/CardGeneric'
 
 
 export default {
@@ -31,22 +31,22 @@ export default {
     return {
       coaches: {
         davis: {
-          name: 'Alan Davis',
-          title: 'VEX Coach',
+          title: 'Alan Davis',
+          subtitle: 'VEX Coach',
           image: 'https://dummyimage.com/1280x960/dee2e6/212529',
           imageAltText: 'This is an important person',
           desc: 'Aliquip occaecat velit ipsum nisi reprehenderit adipisicing nostrud.'
         },
         horvath: {
-          name: 'Danial Horvath',
-          title: 'FRC Coach',
+          title: 'Danial Horvath',
+          subtitle: 'FRC Coach',
           image: 'https://dummyimage.com/1280x960/dee2e6/212529',
           imageAltText: 'This is an important person',
           desc: 'Lorem exercitation tempor quis est.'
         },
         robinson: {
-          name: 'Joelle Robinson',
-          title: 'Cyberpatriots Coach',
+          title: 'Joelle Robinson',
+          subtitle: 'Cyberpatriots Coach',
           image: 'https://dummyimage.com/1280x960/dee2e6/212529',
           imageAltText: 'This is an important person',
           desc: 'Nulla voluptate et magna reprehenderit commodo ea consectetur.'
@@ -54,29 +54,29 @@ export default {
       },
       mentors: {
         person1: {
-          name: 'Psi Foo',
-          title: 'Company Alpha',
+          title: 'Psi Foo',
+          subtitle: 'Company Alpha',
           image: 'https://dummyimage.com/1280x960/dee2e6/212529',
           imageAltText: 'This is an important person',
           desc: 'Aliquip occaecat velit ipsum nisi reprehenderit adipisicing nostrud.'
         },
         person2: {
-          name: 'Phi Baz',
-          title: 'Company Beta',
+          title: 'Phi Baz',
+          subtitle: 'Company Beta',
           image: 'https://dummyimage.com/1280x960/dee2e6/212529',
           imageAltText: 'This is an important person',
           desc: 'Do esse laborum consequat officia eu aliqua commodo reprehenderit.'
         },
         person3: {
-          name: 'Phi Baz',
-          title: 'Company Gamma',
+          title: 'Phi Baz',
+          subtitle: 'Company Gamma',
           image: 'https://dummyimage.com/1280x960/dee2e6/212529',
           imageAltText: 'This is an important person',
           desc: 'Laboris reprehenderit consequat occaecat enim.'
         },
         person4: {
-          name: 'Phi Baz',
-          title: 'Company Omega',
+          title: 'Phi Baz',
+          subtitle: 'Company Omega',
           image: 'https://dummyimage.com/1280x960/dee2e6/212529',
           imageAltText: 'This is an important person',
           desc: 'In veniam elit aliquip minim deserunt deserunt elit occaecat et.'
@@ -87,7 +87,14 @@ export default {
   components: {
     'c-breadcrumb': CBreadcrumb,
     'layout-cards-overflow': LayoutCardsOverflow,
-    'card-person': CardPerson
+    'card-generic': CardGeneric
   }
 }
 </script>
+
+<style scoped lang="scss">
+.generic {
+  width: 250px;
+  margin-bottom: 20px;
+}
+</style>

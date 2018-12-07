@@ -55,10 +55,6 @@ h3 {
   display: inline;
 }
 
-img {
-  border-radius: $border-radius;
-}
-
 .sponsor {
   @include genericCard();
   display: flex;

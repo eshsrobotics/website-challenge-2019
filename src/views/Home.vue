@@ -7,16 +7,16 @@
 
     <h2>Competitions</h2>
     <layout-cards-fit class="competitions">
-      <competition-card :showCompetition="competitions.cyberpatriots"></competition-card>
-      <competition-card :showCompetition="competitions.frc"></competition-card>
-      <competition-card :showCompetition="competitions.vex"></competition-card>
+      <card-generic :cardInfo="competitions.cyberpatriots" class="competition"></card-generic>
+      <card-generic :cardInfo="competitions.frc" class="competition"></card-generic>
+      <card-generic :cardInfo="competitions.vex" class="competition"></card-generic>
     </layout-cards-fit>
   </div>
 </template>
 
 <script>
 import PageDesc from '@/components/PageDescription'
-import CompetitionCard from '@/components/cards/CardCompetition'
+import CardGeneric from '@/components/cards/CardGeneric'
 import LayoutCardsFit from '@/components/cards/LayoutCardsFit'
 
 export default {
@@ -29,26 +29,29 @@ export default {
           title: "CyberPatriots",
           image: placeHolder,
           imageAltText: "Alt text",
-          desc: "Small teams search computer systems for vulnerabilities and exploits. As you compete, gain points for every vulnerability that is patched!"
+          desc: "Small teams search computer systems for vulnerabilities and exploits. As you compete, gain points for every vulnerability that is patched!",
+          buttonText: "Learn More"
         },
         frc: {
           title: "FRC",
           image: placeHolder,
           imageAltText: "Alt text",
-          desc: "Brainstorm, plan, and execute the fabrication of a large robot within a span of 6-weeks. We'll teach you what skills you need to succeed."
+          desc: "Brainstorm, plan, and execute the fabrication of a large robot within a span of 6-weeks. We'll teach you what skills you need to succeed.",
+          buttonText: "Learn More",
         },
         vex: {
           title: "VEX",
           image: placeHolder,
           imageAltText: "Alt text",
-          desc: "Small robots must complete the competition objective and maximize points during the intense competition. Learn the fundamentals of building a robot with a dedicated team!"
+          desc: "Small robots must complete the competition objective and maximize points during the intense competition. Learn the fundamentals of building a robot with a dedicated team!",
+          buttonText: "Learn More"
         }
       }
     }
   },
   components: {
     'page-desc': PageDesc,
-    'competition-card': CompetitionCard,
+    'card-generic': CardGeneric,
     'layout-cards-fit': LayoutCardsFit
   }
 }
@@ -56,4 +59,15 @@ export default {
 
 <style scoped lang="scss">
 @import '@/styles/variables.scss';
+
+.competition {
+  @include genericCard();
+  // This overrides default padding of card
+  padding: 14px;
+  margin-bottom: 15px;
+}
+
+h3 {
+  font-size: 1.33em;
+}
 </style>
