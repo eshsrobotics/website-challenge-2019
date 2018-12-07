@@ -4,7 +4,7 @@
       <h2>{{ yearEvents.year }}</h2>
       <layout-cards-overflow class="events-wrapper">
         <div v-for="event in yearEvents.events" :key="event.name" class="event">
-          <card-media :event="event"></card-media>
+          <card-generic :cardInfo="event"></card-generic>
         </div>
       </layout-cards-overflow>
    
@@ -13,7 +13,7 @@
 </template>
 
 <script>
-import CardMedia from '@/components/cards/CardMedia'
+import CardGeneric from '@/components/cards/CardGeneric'
 import LayoutCardsOverflow from '@/components/cards/LayoutCardsOverflow'
 import photoDataJson from '@/views/media/photoData.json'
 
@@ -25,7 +25,7 @@ export default {
     }
   },
   components: {
-    'card-media': CardMedia,
+    'card-generic': CardGeneric,
     'layout-cards-overflow': LayoutCardsOverflow
   }
 }

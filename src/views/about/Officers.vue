@@ -2,13 +2,12 @@
   <div class="coaches-and-mentors">
     <h2>Officers</h2>
     <layout-cards-overflow>
-      <card-generic :cardInfo="officers.spensor"></card-generic>
-      <card-person :person="officers.spensor"></card-person>
-      <card-person :person="officers.grace"></card-person>
-      <card-person :person="officers.daniel"></card-person>
-      <card-person :person="officers.james"></card-person>
-      <card-person :person="officers.jasper"></card-person>
-      <card-person :person="officers.lizzie"></card-person>
+      <card-generic :cardInfo="officers.spensor" class="generic"></card-generic>
+      <card-generic :cardInfo="officers.grace" class="generic"></card-generic>
+      <card-generic :cardInfo="officers.daniel" class="generic"></card-generic>
+      <card-generic :cardInfo="officers.james" class="generic"></card-generic>
+      <card-generic :cardInfo="officers.jasper" class="generic"></card-generic>
+      <card-generic :cardInfo="officers.lizzie" class="generic"></card-generic>
     </layout-cards-overflow>
   </div>
 </template>
@@ -16,7 +15,6 @@
 <script>
 import CBreadcrumb from '@/components/ui/Breadcrumb'
 import LayoutCardsOverflow from '@/components/cards/LayoutCardsOverflow'
-import CardPerson from '@/components/cards/CardPerson'
 import CardGeneric from '@/components/cards/CardGeneric'
 
 export default {
@@ -73,8 +71,14 @@ export default {
   components: {
     'c-breadcrumb': CBreadcrumb,
     'layout-cards-overflow': LayoutCardsOverflow,
-    'card-person': CardPerson,
     'card-generic': CardGeneric
   }
 }
 </script>
+
+<style scoped lang="scss">
+.generic {
+  width: 250px;
+  margin-bottom: 20px;
+}
+</style>

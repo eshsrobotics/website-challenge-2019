@@ -2,9 +2,7 @@
   <div class="card-generic">
     <h3 v-if="titleShow">{{ cardInfo.title }}</h3>
     <h4 v-if="subtitleShow">{{ cardInfo.subtitle }}</h4>
-    <div class="image-wrapper">
-      <img v-if="imageShow" :src="cardInfo.image" :alt="cardInfo.imageAltText" width="100px">
-    </div>
+    <img v-if="imageShow" :src="cardInfo.image" :alt="cardInfo.imageAltText">
     <p v-if="descShow">{{ cardInfo.desc }}</p>
   </div>
 </template>
@@ -66,9 +64,9 @@ export default {
   @include genericCard();
 }
 
-.image-wrapper {
-  display: grid;
-  grid-template-columns: 1fr;
+img {
+  width: 100%;
+  max-width: 100%;
 }
 
 </style>

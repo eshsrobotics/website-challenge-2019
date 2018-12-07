@@ -3,12 +3,12 @@
     "year": "2018",
     "events": [
       {
-        "name": "El Camino Competition",
+        "title": "El Camino Competition",
         "photo": "https://dummyimage.com/1280x960/dee2e6/212529",
         "desc": "Competition loacted at el camino"
       },
       {
-        "name": "Sample Event",
+        "title": "Sample Event",
         "photo": "https://dummyimage.com/1280x960/dee2e6/212529",
         "desc": "Competition located at lorem ipsum"
       }
@@ -18,12 +18,12 @@
     "year": "2019",
     "events": [
       {
-        "name": "Gamma Foo Mu",
+        "title": "Gamma Foo Mu",
         "photo": "https://dummyimage.com/1280x960/dee2e6/212529",
         "desc": "Competition loacted at el camino"
       },
       {
-        "name": "Beta Baz Nu",
+        "title": "Beta Baz Nu",
         "photo": "https://dummyimage.com/1280x960/dee2e6/212529",
         "desc": "Competition located at lorem ipsum"
       }
