@@ -7,6 +7,7 @@ This is a website coded for the [Robotics Team Website Challenge 2019](https://c
 $ git clone https://github.com/eshsrobotics/RobotEventsChallengeWebsite2018
 $ cd RobotEventsChallengeWebsite2018
 $ npm install -g @vue/cli-service
+$ npm install @vue/cli-plugin-babel
 $ npm install
 $ npm run serve
 ```
