@@ -4,13 +4,13 @@
 
 ## 1 ##
 # Build release and place (generates in dist folder)
-npm run build
+# npm run build
 
-local currentBranch="$(git rev-parse --abrev-ref HEAD)"
+currentBranch="$(git rev-parse --abbrev-ref HEAD)"
 # Stop if on master
 if [[ "$currentBranch" != "gh-pages" ]]; then
 	echo "Build complete; access website in ./dist/index.html"
-
+	echo "$currentBranch"
 else
 	# Erase dir contents
 	# folders
