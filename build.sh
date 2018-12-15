@@ -14,6 +14,6 @@ else
 	find . -maxdepth 1 -type f -and -not -ipath "*build.sh" -exec rm -vf {} ";"
 
 	# Move contnts of dist to parent folder
-	mv -v ./dist/* ./
+	mv -v dist/* .
 	rmdir -v ./dist
 fi
