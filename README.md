@@ -6,7 +6,9 @@ This is a website coded for the [Robotics Team Website Challenge 2019](https://c
 ```bash
 $ git clone https://github.com/eshsrobotics/RobotEventsChallengeWebsite2018
 $ cd RobotEventsChallengeWebsite2018
-$ ./build.sh
+$ npm install -g @vue/cli-service
+$ npm install
+$ npm run serve
 ```
 
 ### Dev Server
