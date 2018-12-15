@@ -15,8 +15,7 @@ export default {
     }
   },
   props: {
-    content: String,
-    link: String
+    routeTo: String
   }
 }
 </script>

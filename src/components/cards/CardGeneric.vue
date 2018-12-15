@@ -4,7 +4,10 @@
     <h4 v-if="subtitleShow">{{ cardInfo.subtitle }}</h4>
     <img v-if="imageShow" :src="cardInfo.image" :alt="cardInfo.imageAltText">
     <p v-if="descShow">{{ cardInfo.desc }}</p>
-    <c-button v-if="buttonShow">{{ cardInfo.buttonText }}</c-button>
+    <router-link :to="cardInfo.buttonRouteTo">
+      <c-button v-if="buttonShow" :routeTo="cardInfo.buttonRouteTo">{{ cardInfo.buttonText }}</c-button>
+    </router-link>
+
   </div>
 </template>
 
@@ -58,8 +61,10 @@ export default {
       //  title: 'Card Title',
       //  subtitle: 'Card Subtitle',
       //  image: 'https://dummyimage.com/1280x960/dee2e6/212529',
-          imageAltText: 'Generic Alt Text'
-      //  desc: 'Default Description'
+      //  imageAltText: 'Generic Alt Text',
+      //  desc: 'Default Description',
+      //  buttonText: '',
+      //  buttonRouteTo: ''
       })
     }
   },
@@ -75,6 +80,12 @@ export default {
 
 .card-generic {
   @include genericCard();
+}
+
+.card-generic button {
+  a:link, a:visited, a:hover, a:active {
+    text-decoration: none;
+  }
 }
 
 img {

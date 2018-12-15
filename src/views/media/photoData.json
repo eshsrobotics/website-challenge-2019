@@ -3,14 +3,14 @@
     "year": "2018-2019",
     "events": [
       {
-        "title": "Gamma Foo Mu",
-        "image": "https://dummyimage.com/1280x960/dee2e6/212529",
-        "desc": "Competition loacted at el camino"
+        "title": "CyberPatriots Competition",
+        "image": "https://github.com/eshsrobotics/database-photos/blob/master/2018-2019/cyberpatriots-november-competition/IMG_0898.jpg?raw=true",
+        "desc": "Participating in competition at high school"
       },
       {
-        "title": "Beta Baz Nu",
-        "image": "https://dummyimage.com/1280x960/dee2e6/212529",
-        "desc": "Competition located at lorem ipsum"
+        "title": "VEX Competition Prep",
+        "image": "https://github.com/eshsrobotics/database-photos/blob/master/2018-2019/vex-competition-prep/vexprep2.jpg?raw=true",
+        "desc": "Preparing for VEX Competition"
       }
     ]
   },
@@ -18,19 +18,34 @@
     "year": "2017-2018",
     "events": [
       {
+        "title": "CyberPatriots Comp. Prep",
+        "image": "https://github.com/eshsrobotics/database-photos/blob/master/2017-2018/cyberpatriots-competition-prep/cyberPatriots1.jpg?raw=true",
+        "desc": "Preparing for upcoming CyberPatriots competition"
+      },
+      {
+        "title": "FRC Competition Kickoff",
+        "image": "https://github.com/eshsrobotics/database-photos/blob/master/2017-2018/frc-competition-prep-kickoff/DSC07566.JPG?raw=true",
+        "desc": "Participating in FRC Kickoff at LOCATION"
+      },
+      {
         "title": "FRC Competition",
-        "image": "https://github.com/eshsrobotics/database-photos/blob/master/2017-2018/frc-competition/frccompetition7.jpg?raw=true",
-        "desc": "LOCATION FRC Competition"
+        "image": "https://github.com/eshsrobotics/database-photos/blob/master/2017-2018/frc-competition/frccompetition13.jpg?raw=true",
+        "desc": "Team's participating in LOCATION FRC competition"
       },
       {
-        "title": "Sample Event",
-        "image": "https://dummyimage.com/1280x960/dee2e6/212529",
-        "desc": "Competition located at lorem ipsum"
+        "title": "S.T.E.A.M. Night",
+        "image": "https://github.com/eshsrobotics/database-photos/blob/master/2017-2018/frc-steam-night/steam2.jpg?raw=true",
+        "desc": "Outreach event to local elementary school"
       },
       {
-        "title": "Sample Event",
-        "image": "https://dummyimage.com/1280x960/dee2e6/212529",
-        "desc": "Competition located at lorem ipsum"
+        "title": "VEX Competition Prep",
+        "image": "https://github.com/eshsrobotics/database-photos/blob/master/2017-2018/vex-competition-prep/vex2.jpg?raw=true",
+        "desc": "Practicing driving robots for competition"
+      },
+      {
+        "title": "VEX Generic Photos",
+        "image": "https://github.com/eshsrobotics/database-photos/blob/master/2017-2018/vrc-generic-photos/vex1.jpg?raw=true",
+        "desc": "General building with VEX"
       }
     ]
   },

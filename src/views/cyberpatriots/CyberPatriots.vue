@@ -15,8 +15,8 @@ export default {
   data() {
     return {
       cypatBlock: {
-        image: 'https://dummyimage.com/1280x720/dee2e6/212529',
-        imageAltText: 'Dummy Image',
+        image: 'https://github.com/eshsrobotics/database-photos/blob/master/2017-2018/cyberpatriots-competition-prep/cyberPatriots2.jpg?raw=true',
+        imageAltText: 'Brainstorming before competition',
         photoPosition: 'right'
       },
       quickLinks: [

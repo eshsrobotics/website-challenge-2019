@@ -15,6 +15,10 @@ h1 {
   margin-bottom: 10px;
 }
 
+h2 {
+  margin-top: 15px;
+}
+
 p {
   margin-bottom: 5px;
 }

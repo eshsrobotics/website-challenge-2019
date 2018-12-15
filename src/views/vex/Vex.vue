@@ -15,7 +15,7 @@ export default {
   data() {
     return {
       vexBlock: {
-        image: 'https://dummyimage.com/1280x720/dee2e6/212529',
+        image: 'https://github.com/eshsrobotics/database-photos/blob/master/2017-2018/vex-competition-prep/vex8.jpg?raw=true',
         imageAltText: 'Dummy Image',
         photoPosition: 'right'
       },
