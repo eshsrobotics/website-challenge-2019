@@ -1,3 +1,7 @@
 module.exports = {
-    baseUrl: './'
+	// configureWebpack: {
+		
+	// },
+	outputDir: 'docs',
+	baseUrl: 'WebsiteChallenge2019'
 }
