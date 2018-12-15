@@ -1,3 +1,3 @@
 module.exports = {
-    baseUrl: '/WebsiteChallenge2019/'
+    baseUrl: './'
 }
