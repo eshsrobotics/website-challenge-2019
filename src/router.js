@@ -155,13 +155,6 @@ export default new Router({
       ]
     },
     {
-      path: '/blog',
-      component: () => import('@/views/blog/Blog'),
-      meta: {
-        title: 'Blog'
-      }
-    },
-    {
       path: '/contact',
       component: () => import('@/views/Contact'),
       meta: {

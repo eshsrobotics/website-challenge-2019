@@ -25,7 +25,6 @@
       <nav-bar-item-dropdown routeTo="/sponsors" dropdownTitle="Sponsors">
         <nav-bar-item routeTo="/sponsors/us">Sponsor Us</nav-bar-item>
       </nav-bar-item-dropdown>
-      <nav-bar-item routeTo="/blog">Blog</nav-bar-item>
     </ul>
   </nav>
 </template>

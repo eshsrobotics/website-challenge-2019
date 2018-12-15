@@ -32,41 +32,27 @@ Just a heads up, I performed an interactive rebase on about November 28th 2018, 
 ## Roadmap :car:
 ### Website
 * Make website responsive design & mobile friendly
-* Add many more pages and make design more interesting
 * Possibly have some way of viewing the Team's 3D Models bots
 * Maybe have a shine effect, possibly for some of the sponsor icons
 * Theme support
 * Create abstraction over image element, such that clicking on image yields an enlarged photo, with extra features
 * Think about timeline component to show timeline of frc, vex, cyberpatriots competition
-* Have carosel of sponsors / photos, etc., or have line of sponsors that move left gradually
-* Have descriptions of photographs on the back
+* Have carousel of sponsors / photos, etc., or have line of sponsors that move left gradually
+* Have descriptions of photographs on the back, via flip on hover
 * 404
 
-### Blogging System
+### ~~Blogging System~~
+* No plans of implementation, details will become more terse, removed as time progresses
 * Blogging system can be controlled by in-house (very basic) CMS
   * Make with NodeJS (running on localhost)
   * Use SQLite to manage users
 * CMS has three types of users
-  * admins can
-    * Add / delete moderators
-    * Delete standard users
-    * Delete blog posts
-    * And below
-  * moderators can
-    * Add standard users
-    * Add blog posts
-    * And below
-  * standard users can
-    * comment on blog posts
-    * 'like' other blog posts
+  * admins, moderators and standard users
 * All users must memorize passcode
   * Keep trap of users, comments, etc. If a password is wiped due to an emergency, make sure the blog posts, comments, etc. are not deleted, or will not be deleted on the next build of the blog
-* Obviously we can see the local backend for the CMS
-  * Use [required reviews for pull requests](https://help.github.com/articles/enabling-required-reviews-for-pull-requests/) so bad modifications don't get merged
-
 
 ## Comon Problems
-If you're new to Vue, or conntributing, you may encounter a few errors. I've isolated some of the more common (and uncommong) errors / mishehaviors you may be getting and I've provided a solution. i.e. If the website is not doing what you want, see if your issue matches any below. The first bullet point after a subsection is a snippet of example code that defines or relates to the issue.
+If you're new to Vue, or contributing, you may encounter a few errors. I've isolated some of the more common (and uncommong) errors / mishehaviors you may be getting and I've provided a solution. i.e. If the website is not doing what you want, see if your issue matches any below. The first bullet point after a subsection is a snippet of example code that defines or relates to the issue.
 
 ### Scoped CSS / SCSS Styles in Components
 * `<style scoped lang="scss">`
