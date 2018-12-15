@@ -32,9 +32,13 @@ export default {
 </script>
 
 <style scoped lang="scss">
-  @import '@/styles/variables.scss';
+@import '@/styles/variables.scss';
 
 .card-generic {
   width: 300px;
+}
+
+.events-wrapper {
+  margin-bottom: 15px;
 }
 </style>

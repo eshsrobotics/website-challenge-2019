@@ -41,7 +41,7 @@ import NavBarItem from '@/components/nav/NavbarItem'
   position: absolute;
   left: 5px;
   list-style-type: none;
-  background-color: $oc-gray-1;
+  background-color: $std-bg-reg;
   border-radius: $border-radius-small;
   visibility: hidden;
   opacity: 0;

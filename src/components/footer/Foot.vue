@@ -51,8 +51,9 @@ export default {
   // display: flex;
   display: grid;
   grid-template-columns: auto auto auto auto auto;
-  background-color: $oc-gray-2;
+  background-color: white;
   padding: 10px 10px 10px 10px;
+  border-top: 2px solid $oc-yellow-1;
 }
 
 .column {

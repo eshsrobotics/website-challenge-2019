@@ -65,7 +65,7 @@ hr {
   border: 0;
   clear: both;
   display: block;
-  width: 100%;               
+  width: 100%;
   background-color: $std-text-underline;
   height: 2px;
   border-radius: $border-radius-small;

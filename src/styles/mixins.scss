@@ -32,7 +32,7 @@
   }
 
   // Want card to have shadow on hover
-  @include hoverShadow($card-shadow-reg, $card-shadow-hov);
+  @include hoverShadow($oc-gray-2, $std-shadow-hov);
 
   // Want card to glide up on hover
   @if ($isGlideUpOnHover == true) {

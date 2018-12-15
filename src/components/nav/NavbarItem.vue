@@ -6,7 +6,7 @@
       </router-link>
     </div>
     <div v-if="hrBelow === true" class="divider-wrapper">
-      <hr>
+      <!--<hr>-->
     </div>
   </li>
 </template>
@@ -29,14 +29,17 @@ export default {
 @import '@/styles/variables.scss';
 
 .route-label {
+  border: 1px solid $oc-gray-7;
   margin: 0px 5px 0px 5px;
   background-color: $std-bg-reg;
   border-radius: $border-radius-small;
   margin-bottom: 5px;
+  transition: createTransitions((all));
 
   &:hover {
     cursor: pointer;
-    background-color: $std-bg-hov;
+    background-color: $oc-blue-1;
+    transition: createTransitions((all));
   }
 
   &.router-link-exact-active {
@@ -48,8 +51,8 @@ hr {
   border: 0;
   margin-left: 5px;
   width: calc(100% - 10px);          
-  height: 2px;
-  background-color: $oc-gray-3;
+  // height: 2px;
+  // background-color: $oc-yellow-2;
   border-radius: $border-radius-small;
 }
 

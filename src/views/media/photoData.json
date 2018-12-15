@@ -1,6 +1,6 @@
 [
   {
-    "year": "2019",
+    "year": "2018-2019",
     "events": [
       {
         "title": "Gamma Foo Mu",
@@ -15,12 +15,12 @@
     ]
   },
   {
-    "year": "2018",
+    "year": "2017-2018",
     "events": [
       {
-        "title": "El Camino Competition",
-        "image": "https://dummyimage.com/1280x960/dee2e6/212529",
-        "desc": "Competition loacted at el camino"
+        "title": "FRC Competition",
+        "image": "https://github.com/eshsrobotics/database-photos/blob/master/2017-2018/frc-competition/frccompetition7.jpg?raw=true",
+        "desc": "LOCATION FRC Competition"
       },
       {
         "title": "Sample Event",
@@ -35,22 +35,27 @@
     ]
   },
   {
-    "year": "2019",
+    "year": "2016-2017",
     "events": [
       {
-        "title": "2017 Competition",
-        "image": "https://dummyimage.com/1280x960/dee2e6/212529",
-        "desc": "Competition loacted at el camino"
+        "title": "FRC Competition",
+        "image": "https://github.com/eshsrobotics/database-photos/blob/master/2016-2017/frc-competition/frccompetition14.jpg?raw=true",
+        "desc": "FRC Competition at LOCATION"
       },
       {
-        "title": "Sample Event",
-        "image": "https://dummyimage.com/1280x960/dee2e6/212529",
-        "desc": "Competition located at lorem ipsum"
+        "title": "FRC Competition Prep",
+        "image": "https://github.com/eshsrobotics/database-photos/blob/master/2016-2017/frc-competition-prep/frcbot2.jpg?raw=true",
+        "desc": "The team's work in the lab in prep for competition"
       },
       {
-        "title": "Sample Event",
-        "image": "https://dummyimage.com/1280x960/dee2e6/212529",
-        "desc": "Competition located at lorem ipsum"
+        "title": "VEX Competition",
+        "image": "https://github.com/eshsrobotics/database-photos/blob/master/2016-2017/vex-competition/vexcompetition1.jpg?raw=true",
+        "desc": "VEX competition taking place at LOCATION"
+      },
+      {
+        "title": "Buttons",
+        "image": "https://github.com/eshsrobotics/database-photos/blob/master/2016-2017/buttons/button3.jpg?raw=true",
+        "desc": "Photographs of the team's buttons."
       }
     ]
   }

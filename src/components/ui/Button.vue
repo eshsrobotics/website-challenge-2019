@@ -25,15 +25,19 @@ export default {
 @import "@/styles/variables.scss";
 
 .button {
-  padding: 12px 21px 12px 21px;
-  margin: 5px;
-  background-color: $std-bg-reg;
+  border: 1px solid $oc-gray-7;
+  padding: 10px 19px 10px 19px;
+  margin: 10px 5px 5px 5px;
+  background-color: inherit;
   border-radius: $border-radius-small;
-  @include hoverShadow($std-shadow-reg, $std-shadow-hov);
-}
+  transition: createTransitions((all));
 
-.button:hover {
-  cursor: pointer;
+
+  &:hover {
+    cursor: pointer;
+    background-color: $oc-yellow-2;
+    transition: createTransitions((all));
+  }
 }
 
 p {

@@ -9,7 +9,7 @@
 export default {
   name: 'sponsorCard',
   computed: {
-    // Purpose: To recieve the showSponsor property (prop) when declaring this component
+    // Purpose: To receive the showSponsor property (prop) when declaring this component
     // Ex. For the following code
     //   <sponsor-card showSponsor="companyFoo"></sponsor-card>
     //   "companyFoo" is being passed down and is equal to the value of showSponsor (for that particular component). And showSponsor must be type String, or errors will be printed in console
@@ -70,19 +70,19 @@ h3 {
 }
 
 .diamond .sponsor {
-  @include hoverShadow($card-shadow-hov, $oc-blue-3, 32px);
+  @include hoverShadow($std-shadow-hov, $oc-blue-3, 32px);
 }
 
 .gold .sponsor {
-  @include hoverShadow($card-shadow-hov, $oc-yellow-3, 32px);
+  @include hoverShadow($std-shadow-hov, $oc-yellow-3, 32px);
 }
 
 .silver .sponsor {
-  @include hoverShadow($card-shadow-hov, $oc-indigo-3, 32px);
+  @include hoverShadow($std-shadow-hov, $oc-indigo-3, 32px);
 }
 
 .bronze .sponsor {
-  @include hoverShadow($card-shadow-hov, $oc-orange-3, 32px);
+  @include hoverShadow($std-shadow-hov, $oc-orange-3, 32px);
 }
 
 </style>

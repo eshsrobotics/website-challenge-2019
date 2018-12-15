@@ -2,12 +2,13 @@
   <div class="about">
     <c-block :blockData="coreValuesBlock">
       <h2>Core Values</h2>
-      <p>Excepteur ipsum nulla veniam esse adipisicing quis proident dolor nostrud anim. Nostrud officia consectetur exercitation cillum anim ipsum Lorem voluptate cillum eu nulla. Nisi ea voluptate nisi in amet et amet Lorem voluptate laboris ipsum tempor. Occaecat proident et laboris ad tempor elit elit pariatur eu.</p>
+      <p>El Segundo High School Robotics club emphasizes three values. Integrity and Iota. Both Integrity and Iota are important because of Foo Gamma Kappa etc.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquam aperiam autem consequuntur, ducimus expedita laudantium numquam omnis, pariatur possimus quos reiciendis tempora, veniam? Error eveniet facere impedit laborum maiores.</p>
     </c-block>
     <h2>History</h2>
     <c-block :blockData="historyEarly">
       <h3>Early Beginnings</h3>
-      <p>Incididunt deserunt dolor tempor cillum non consectetur ullamco excepteur commodo ex voluptate dolore. In ut non voluptate do commodo incididunt fugiat officia irure aliquip. Eiusmod minim consectetur amet aliquip irure. Quis velit cupidatat in qui. Ut tempor qui et ipsum. Aliquip nostrud irure id occaecat irure nulla mollit Lorem.</p>
+      <p>The club started back in 2005, according to the club's old <a href="https://github.com/ESHSPOTATOES">GitHub</a> profile. The earliest photograph to date was uploaded on August 10th, 2013, although the photograph could have been taken much earlier. Not much is known about the earliest stages of the club. Little evidence was left behind. We know the team was awarded <b>FRC ROOKIE AWARD INSERT SPECIFICS</b> in <b>INSERT DATE</b>.</p>
       <p>Deserunt esse et ullamco adipisicing nisi incididunt commodo. Laborum ex sunt et duis. Aliqua est nulla ut ad veniam ex commodo sit ad commodo occaecat. Cupidatat proident cillum proident sint minim id sit. Qui veniam adipisicing cupidatat qui dolor sunt.</p>
     </c-block>
     <c-block :blockData="historyDevelopment">
@@ -16,7 +17,7 @@
     </c-block>
     <c-block :blockData="historyRecent">
       <h3>Recent Years</h3>
-      <p>Ipsum ut eiusmod pariatur irure. Lorem fugiat eu eu ullamco tempor sunt quis nostrud amet consequat. Nostrud ad veniam quis nulla deserunt ex duis veniam duis. Incididunt et ad aliquip nulla eu minim laborum officia est laborum ipsum. Velit consequat Lorem exercitation proident. Nulla laboris id veniam enim cupidatat ex sit.</p>
+      <p>Over the past few years, the club has grown steadily in members, increasing membership, especially in <router-link to="/vex">VEX Robotics</router-link> and <router-link to="/vex">CyberPatriots</router-link>. After the steep dropoff in club membership between the 2015-2016 to the 2016-2017 school year, the club has been steadily gaining membership..</p>
       <p>Mollit consequat cillum ipsum ipsum nostrud officia ipsum qui aliquip cupidatat irure. Minim cillum sint est officia enim id ea laboris elit est exercitation sit. Aliqua mollit aliqua voluptate elit ullamco aliquip. Fugiat culpa dolor Lorem ipsum. Et ex esse excepteur anim ea duis exercitation occaecat cupidatat eiusmod. Ea mollit dolor Lorem eiusmod nostrud dolore proident cillum amet anim. Mollit aliquip officia non nulla anim incididunt.</p>
     </c-block>
   </div>
@@ -32,22 +33,22 @@ export default {
   data() {
     return {
       coreValuesBlock: {
-        image: 'https://dummyimage.com/1280x720/dee2e6/212529',
+        image: 'http://move2manhattanbeach.virtualresults.net/wp-files/1040/2014/07/ES-high-school.jpg',
         imageAltText: 'Dummy Image',
         photoPosition: 'left'
       },
       historyEarly: {
-        image: 'https://dummyimage.com/1280x720/dee2e6/212529',
+        image: 'https://eshsroboticsclub.files.wordpress.com/2013/08/photo.jpg?w=585',
         imageAltText: 'Dummy Image',
         photoPosition: 'right'
       },
       historyDevelopment: {
-        image: 'https://dummyimage.com/1280x720/dee2e6/212529',
+        image: 'https://github.com/eshsrobotics/database-photos/blob/master/2016-2017/frc-competition/frccompetition8.jpg?raw=true',
         imageAltText: 'Dummy Image',
         photoPosition: 'right'
       },
       historyRecent: {
-        image: 'https://dummyimage.com/1280x720/dee2e6/212529',
+        image: 'https://github.com/eshsrobotics/database-photos/blob/master/2018-2019/cyberpatriots-november-competition/IMG_0902.jpg?raw=true',
         imageAltText: 'Dummy Image',
         photoPosition: 'right'
       }
