@@ -26,42 +26,42 @@ export default {
         spensor: {
           title: 'Spensor Moore',
           subtitle: 'FRC Captain',
-          image: 'https://dummyimage.com/1280x960/dee2e6/212529',
+          // image: 'https://dummyimage.com/1280x960/dee2e6/212529',
           imageAltText: 'This is an important person',
           desc: tempDesc
         },
         daniel: {
           title: 'Daniel Stamper',
           subtitle: 'VEX Captain',
-          image: 'https://dummyimage.com/1280x960/dee2e6/212529',
+          // image: 'https://dummyimage.com/1280x960/dee2e6/212529',
           imageAltText: 'This is an important person',
           desc: tempDesc
         },
         james: {
           title: 'James Lim',
           subtitle: 'VEX Captain',
-          image: 'https://dummyimage.com/1280x960/dee2e6/212529',
+          // image: 'https://dummyimage.com/1280x960/dee2e6/212529',
           imageAltText: 'This is an important person',
           desc: tempDesc
         },
         jasper: {
           title: 'Jasper Nelson',
           subtitle: 'CyberPatriots Captain',
-          image: 'https://dummyimage.com/1280x960/dee2e6/212529',
+          // image: 'https://dummyimage.com/1280x960/dee2e6/212529',
           imageAltText: 'This is an important person',
           desc: tempDesc
         },
         grace: {
           title: 'Grace Ringuette',
           subtitle: 'FRC Captain',
-          image: 'https://dummyimage.com/1280x960/dee2e6/212529',
+          // image: 'https://dummyimage.com/1280x960/dee2e6/212529',
           imageAltText: 'This is an important person',
           desc: tempDesc
         },
         lizzie: {
           title: 'Lizzie kapoor',
           subtitle: 'Marketing Captain',
-          image: 'https://dummyimage.com/1280x960/dee2e6/212529',
+          // image: 'https://dummyimage.com/1280x960/dee2e6/212529',
           imageAltText: 'This is an important person',
           desc: tempDesc
         }

@@ -33,21 +33,21 @@ export default {
         davis: {
           title: 'Alan Davis',
           subtitle: 'VEX Coach',
-          image: 'https://dummyimage.com/1280x960/dee2e6/212529',
+          // image: 'https://dummyimage.com/1280x960/dee2e6/212529',
           imageAltText: 'This is an important person',
           desc: 'Aliquip occaecat velit ipsum nisi reprehenderit adipisicing nostrud.'
         },
         horvath: {
           title: 'Danial Horvath',
           subtitle: 'FRC Coach',
-          image: 'https://dummyimage.com/1280x960/dee2e6/212529',
+          // image: 'https://dummyimage.com/1280x960/dee2e6/212529',
           imageAltText: 'This is an important person',
           desc: 'Lorem exercitation tempor quis est.'
         },
         robinson: {
           title: 'Joelle Robinson',
           subtitle: 'Cyberpatriots Coach',
-          image: 'https://dummyimage.com/1280x960/dee2e6/212529',
+          // image: 'https://dummyimage.com/1280x960/dee2e6/212529',
           imageAltText: 'This is an important person',
           desc: 'Nulla voluptate et magna reprehenderit commodo ea consectetur.'
         }
@@ -56,28 +56,28 @@ export default {
         person1: {
           title: 'Psi Foo',
           subtitle: 'Company Alpha',
-          image: 'https://dummyimage.com/1280x960/dee2e6/212529',
+          // image: 'https://dummyimage.com/1280x960/dee2e6/212529',
           imageAltText: 'This is an important person',
           desc: 'Aliquip occaecat velit ipsum nisi reprehenderit adipisicing nostrud.'
         },
         person2: {
           title: 'Phi Baz',
           subtitle: 'Company Beta',
-          image: 'https://dummyimage.com/1280x960/dee2e6/212529',
+          // image: 'https://dummyimage.com/1280x960/dee2e6/212529',
           imageAltText: 'This is an important person',
           desc: 'Do esse laborum consequat officia eu aliqua commodo reprehenderit.'
         },
         person3: {
           title: 'Phi Baz',
           subtitle: 'Company Gamma',
-          image: 'https://dummyimage.com/1280x960/dee2e6/212529',
+          // image: 'https://dummyimage.com/1280x960/dee2e6/212529',
           imageAltText: 'This is an important person',
           desc: 'Laboris reprehenderit consequat occaecat enim.'
         },
         person4: {
           title: 'Phi Baz',
           subtitle: 'Company Omega',
-          image: 'https://dummyimage.com/1280x960/dee2e6/212529',
+          // image: 'https://dummyimage.com/1280x960/dee2e6/212529',
           imageAltText: 'This is an important person',
           desc: 'In veniam elit aliquip minim deserunt deserunt elit occaecat et.'
         }

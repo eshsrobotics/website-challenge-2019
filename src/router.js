@@ -155,6 +155,10 @@ export default new Router({
       ]
     },
     {
+      path: '/sponsor-us',
+      redirect: '/sponsors/us'
+    },
+    {
       path: '/contact',
       component: () => import('@/views/Contact'),
       meta: {
