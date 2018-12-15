@@ -1,2 +1,0 @@
-(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["chunk-2d0b9948"],{"340a":function(e,t,a){"use strict";a.r(t);var n=function(){var e=this,t=e.$createElement,a=e._self._c||t;return a("div",{staticClass:"sub-path-wrapper"},[a("router-view")],1)},r=[],u={name:"subPathWrapper"},p=u,s=a("2877"),i=Object(s["a"])(p,n,r,!1,null,null,null);i.options.__file="SubPathWrapper.vue";t["default"]=i.exports}}]);
-//# sourceMappingURL=chunk-2d0b9948.4158a44f.js.map
