@@ -1,10 +1,18 @@
 <template>
   <ul>
-    <li v-for="(routeObject, index) in routeObjects" :class="isRouteActive(index)"><router-link :to="routeObjectsPath[index]">{{ routeObject.meta.title }}</router-link></li>
+    <li v-for="(routeObject, index) in routeObjects" :class="isRouteActive(index)">
+      <router-link :to="routeObjectsPath[index]">
+        <!-- <nav-bar-item :routeTo="routeObjectsPath[index]"> -->
+          {{ routeObject.meta.title }}
+        <!-- </nav-bar-item> -->
+      </router-link>
+    </li>
   </ul> 
 </template>
 
 <script>
+import NavBarItem from '@/components/nav/NavbarItem.vue'
+
   // Navigation tabs allow user to move between child routes of a route (such as the subpages under 'about')
   export default {
     name: 'navTabs',
@@ -101,6 +109,9 @@
         // console.log(absoluteRoutes)
         return absoluteRoutes
       }
+    },
+    components: {
+      'nav-bar-item': NavBarItem
     }
   }
 </script>
@@ -108,15 +119,34 @@
 <style scoped lang="scss">
 @import '@/styles/variables.scss';
 
-  ul {
-    display: flex;
-    list-style-type: none;
+ul {
+  display: flex;
+  list-style-type: none;
+}
+li {
+  padding: 5px;
+}
+
+.route-active a {
+  font-weight: bold;
+  background-color: $oc-gray-3;
+  background-color: $oc-yellow-1;
+  transition: createTransitions((all));
+}
+
+a {
+  text-decoration: none;
+  border: 1px solid $oc-gray-7;
+  padding: 4px;
+  border-radius: $border-radius-small;
+  background-color: $std-bg-reg;
+  transition: createTransitions((all));
+
+  &:hover {
+    cursor: pointer;
+    background-color: $oc-blue-1;
+    transition: createTransitions((all));
   }
-  li {
-    padding: 5px;
-  }
-  .route-active a {
-    font-weight: bold;
-    text-decoration-color: $std-text-underline-active;
-  }
+}
+
 </style>
