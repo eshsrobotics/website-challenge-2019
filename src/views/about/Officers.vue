@@ -14,8 +14,8 @@
 
 <script>
 import CBreadcrumb from '@/components/ui/Breadcrumb'
-import LayoutCardsOverflow from '@/components/cards/LayoutCardsOverflow'
-import CardGeneric from '@/components/cards/CardGeneric'
+import LayoutCardsOverflow from '@/components/card-layout/LayoutCardsOverflow'
+import CardGeneric from '@/components/card/CardGeneric'
 
 export default {
   name: 'officers',

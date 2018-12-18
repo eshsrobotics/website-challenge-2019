@@ -14,7 +14,7 @@
 </template>
 
 <script>
-import CardGeneric from '@/components/cards/CardGeneric'
+import CardGeneric from '@/components/card/CardGeneric'
 
 export default {
   name: 'block',

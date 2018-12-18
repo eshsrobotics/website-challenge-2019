@@ -1,0 +1,96 @@
+<template>
+  <div class="card-generic">
+    <h3 v-if="titleShow">{{ cardInfo.title }}</h3>
+    <h4 v-if="subtitleShow">{{ cardInfo.subtitle }}</h4>
+    <img v-if="imageShow" :src="cardInfo.image" :alt="cardInfo.imageAltText">
+    <p v-if="descShow">{{ cardInfo.desc }}</p>
+    <router-link v-if="buttonShow" :to="cardInfo.buttonRouteTo">
+      <c-button :routeTo="cardInfo.buttonRouteTo">{{ cardInfo.buttonText }}</c-button>
+    </router-link>
+
+  </div>
+</template>
+
+<script>
+import CButton from '@/components/ui/Button'
+
+export default {
+  name: 'cardGeneric',
+  computed: {
+    titleShow: function() {
+      let title = this.cardInfo.title;
+      if(title === null || title === undefined || title === '') {
+        return false;
+      }
+      return true;
+    },
+    subtitleShow: function() {
+      let title = this.cardInfo.subtitle;
+      if(title === null || title === undefined || title === '') {
+        return false;
+      }
+      return true;
+    },
+    imageShow: function() {
+      let title = this.cardInfo.image;
+      if(title === null || title === undefined || title === '') {
+        return false;
+      }
+      return true;
+    },
+    descShow: function() {
+      let title = this.cardInfo.desc;
+      if(title === null || title === undefined || title === '') {
+        return false;
+      }
+      return true;
+    },
+    buttonShow: function() {
+      let title = this.cardInfo.buttonText;
+      if(title === null || title === undefined || title === '') {
+        return false;
+      }
+      return true;
+    }
+  },
+  props: {
+    cardInfo: {
+      type: Object,
+      // Do not create default property (object prop) of property ()
+      default: () => ({
+      //  title: 'Card Title',
+      //  subtitle: 'Card Subtitle',
+      //  image: 'https://dummyimage.com/1280x960/dee2e6/212529',
+      //  imageAltText: 'Generic Alt Text',
+      //  desc: 'Default Description',
+      //  buttonText: '',
+      //  buttonRouteTo: ''
+      })
+    }
+  },
+  components: {
+    'c-button': CButton
+  }
+}
+  
+</script>
+
+<style scoped lang="scss">
+  @import '@/styles/variables.scss';
+
+.card-generic {
+  @include genericCard();
+}
+
+.card-generic button {
+  a:link, a:visited, a:hover, a:active {
+    text-decoration: none;
+  }
+}
+
+img {
+  width: 100%;
+  max-width: 100%;
+}
+
+</style>

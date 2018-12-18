@@ -16,8 +16,8 @@
 
 <script>
 import PageDesc from '@/components/PageDescription'
-import CardGeneric from '@/components/cards/CardGeneric'
-import LayoutCardsFit from '@/components/cards/LayoutCardsFit'
+import CardGeneric from '@/components/card/CardGeneric'
+import LayoutCardsFit from '@/components/card-layout/LayoutCardsFit'
 
 export default {
   name: 'home',

@@ -13,8 +13,8 @@
 </template>
 
 <script>
-import CardGeneric from '@/components/cards/CardGeneric'
-import LayoutCardsStruct from '@/components/cards/LayoutCardsStruct'
+import CardGeneric from '@/components/card/CardGeneric'
+import LayoutCardsStruct from '@/components/card-layout/LayoutCardsStruct'
 import photoDataJson from '@/views/media/photoData.json'
 
 export default {
