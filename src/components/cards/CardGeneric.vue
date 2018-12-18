@@ -4,8 +4,8 @@
     <h4 v-if="subtitleShow">{{ cardInfo.subtitle }}</h4>
     <img v-if="imageShow" :src="cardInfo.image" :alt="cardInfo.imageAltText">
     <p v-if="descShow">{{ cardInfo.desc }}</p>
-    <router-link :to="cardInfo.buttonRouteTo">
-      <c-button v-if="buttonShow" :routeTo="cardInfo.buttonRouteTo">{{ cardInfo.buttonText }}</c-button>
+    <router-link v-if="buttonShow" :to="cardInfo.buttonRouteTo">
+      <c-button :routeTo="cardInfo.buttonRouteTo">{{ cardInfo.buttonText }}</c-button>
     </router-link>
 
   </div>

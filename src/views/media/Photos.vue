@@ -3,19 +3,18 @@
     <p>See the team's photos throughout the year. Find photos from competitions, events, and general lab work.</p>
     <div v-for="year in photoData" :key="year.year" class="card">
       <h2>{{ year.year }}</h2>
-      <layout-cards-overflow class="events-wrapper">
-        <div v-for="event in year.events" :key="event.name" class="event">
-          <card-generic :cardInfo="event" class="card-generic"></card-generic>
-        </div>
-      </layout-cards-overflow>
-   
+      <layout-cards-struct class="events-wrapper">
+        <!--<div  class="event">-->
+          <card-generic :cardInfo="event" v-for="event in year.events" :key="event.name" class="card-generic"></card-generic>
+        <!--</div>-->
+      </layout-cards-struct>
     </div>
   </div>
 </template>
 
 <script>
 import CardGeneric from '@/components/cards/CardGeneric'
-import LayoutCardsOverflow from '@/components/cards/LayoutCardsOverflow'
+import LayoutCardsStruct from '@/components/cards/LayoutCardsStruct'
 import photoDataJson from '@/views/media/photoData.json'
 
 export default {
@@ -27,7 +26,7 @@ export default {
   },
   components: {
     'card-generic': CardGeneric,
-    'layout-cards-overflow': LayoutCardsOverflow
+    'layout-cards-struct': LayoutCardsStruct
   }
 }
 </script>
@@ -40,6 +39,7 @@ export default {
 }
 
 .events-wrapper {
+  width: 100%;
   margin-bottom: 15px;
 }
 </style>
