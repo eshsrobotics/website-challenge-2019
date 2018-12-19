@@ -1,10 +1,8 @@
 <template>
   <li>
-    <div class="route-label">
-      <router-link :to="routeTo" >
-        <p><slot></slot></p>
-      </router-link>
-    </div>
+    <router-link :to="routeTo" tag="div" class="route-label">
+      <p><slot></slot></p>
+    </router-link>
     <div v-if="hrBelow === true" class="divider-wrapper">
       <!--<hr>-->
     </div>
@@ -43,7 +41,12 @@ export default {
   }
 
   &.router-link-exact-active {
-    background-color: $oc-gray-3;
+    background-color: $oc-yellow-1;
+    
+    p {
+      color: $team-green;
+      font-weight: bold;
+    }
   }
 }
 
@@ -67,11 +70,6 @@ p {
 
 a {
   text-decoration: none;
-}
-
-.router-link-exact-active p {
-  color: $team-green;
-  font-weight: bold;
 }
 
 </style>
