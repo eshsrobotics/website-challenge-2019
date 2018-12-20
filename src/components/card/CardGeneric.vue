@@ -2,7 +2,8 @@
   <div class="card-generic">
     <h3 v-if="titleShow">{{ cardInfo.title }}</h3>
     <h4 v-if="subtitleShow">{{ cardInfo.subtitle }}</h4>
-    <img v-if="imageShow" :src="cardInfo.image" :alt="cardInfo.imageAltText">
+    <!--<img  :src="cardInfo.image" :alt="cardInfo.imageAltText">-->
+    <c-photo v-if="imageShow" :imageInfo="cardInfo"></c-photo>
     <p v-if="descShow">{{ cardInfo.desc }}</p>
     <router-link v-if="buttonShow" :to="cardInfo.buttonRouteTo">
       <c-button :routeTo="cardInfo.buttonRouteTo">{{ cardInfo.buttonText }}</c-button>
@@ -13,10 +14,12 @@
 
 <script>
 import CButton from '@/components/ui/Button'
+import CPhoto from '@/components/ui/Photo'
 
 export default {
   name: 'cardGeneric',
   computed: {
+    // Would it be better to use double equal (with type coercion), since these are all falsy values?
     titleShow: function() {
       let title = this.cardInfo.title;
       if(title === null || title === undefined || title === '') {
@@ -69,7 +72,8 @@ export default {
     }
   },
   components: {
-    'c-button': CButton
+    'c-button': CButton,
+    'c-photo': CPhoto
   }
 }
   
@@ -87,10 +91,4 @@ export default {
     text-decoration: none;
   }
 }
-
-img {
-  width: 100%;
-  max-width: 100%;
-}
-
 </style>

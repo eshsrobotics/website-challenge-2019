@@ -28,6 +28,7 @@ import NavBarItem from '@/components/nav/NavbarItem'
 
 .dropdown {
   position: relative;
+  z-index: 10000;
 }
 
 .dropdown:hover .dropdown-items {

@@ -4,9 +4,7 @@
     <div v-for="year in photoData" :key="year.year" class="card">
       <h2>{{ year.year }}</h2>
       <layout-cards-struct class="events-wrapper">
-        <!--<div  class="event">-->
           <card-generic :cardInfo="event" v-for="event in year.events" :key="event.name" class="card-generic"></card-generic>
-        <!--</div>-->
       </layout-cards-struct>
     </div>
   </div>

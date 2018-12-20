@@ -15,11 +15,8 @@ export default {
 
 .cards-struct {
   display: grid;
-  // Temporary fix
-  grid-template-columns: repeat(auto-fill, 340px);
+  grid-template-columns: repeat(auto-fill, 325px); // TODO: Fix this temporary fix
   grid-template-rows: repeat(auto-fill, 1fr);
-  /*grid-auto-flow: column;*/
-
   grid-gap: 15px;
 }
 </style>
