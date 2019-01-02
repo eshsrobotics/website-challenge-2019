@@ -2,23 +2,22 @@
   <div class="about">
     <c-block :blockData="coreValuesBlock">
       <h2>Core Values</h2>
-      <p>El Segundo High School Robotics club emphasizes three values. Integrity and Iota. Both Integrity and Iota are important because of Foo Gamma Kappa etc.</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquam aperiam autem consequuntur, ducimus expedita laudantium numquam omnis, pariatur possimus quos reiciendis tempora, veniam? Error eveniet facere impedit laborum maiores.</p>
+      <p>El Segundo High School Robotics club emphasizes integrity, academic excellence. Club members must consistently demonstrate that they uphold the highest moral principles. Additionally, the club believes that academic excellence comes first. Meaning, club membership and activity does not trump academics activities such as homework or classwork. Gracious Professionalism are also important qualities members pursue.</p>
+      <p>All club members work hard to demonstrate these core values when interacting with others or themselves. We reflect upon our own actions and self-reflect to improve ourselves.</p>
     </c-block>
     <h2>History</h2>
     <c-block :blockData="historyEarly">
       <h3>Early Beginnings</h3>
-      <p>The club started back in 2005, according to the club's old <a href="https://github.com/ESHSPOTATOES">GitHub</a> profile. The earliest photograph to date was uploaded on August 10th, 2013, although the photograph could have been taken much earlier. Not much is known about the earliest stages of the club. Little evidence was left behind. We know the team was awarded <b>FRC ROOKIE AWARD INSERT SPECIFICS</b> in <b>INSERT DATE</b>.</p>
-      <p>Deserunt esse et ullamco adipisicing nisi incididunt commodo. Laborum ex sunt et duis. Aliqua est nulla ut ad veniam ex commodo sit ad commodo occaecat. Cupidatat proident cillum proident sint minim id sit. Qui veniam adipisicing cupidatat qui dolor sunt.</p>
+      <p>The club started back in 2005, according to the club's old <a href="https://github.com/ESHSPOTATOES" target="_blank">GitHub</a> profile. The earliest photograph to date was uploaded on August 10th, 2013, although the photograph could have been taken much earlier. Not much is known about the earliest stages of the club. Little evidence was left behind. We know the team was awarded <b>FRC ROOKIE AWARD INSERT SPECIFICS</b> in <b>INSERT DATE</b>.</p>
     </c-block>
     <c-block :blockData="historyDevelopment">
       <h3>Club Development</h3>
-      <p>Occaecat occaecat duis excepteur eiusmod eu aute aliquip reprehenderit sunt elit dolore do reprehenderit. Dolor qui Lorem anim veniam voluptate. Aute consectetur reprehenderit nulla consequat. Proident deserunt aliquip dolore exercitation nulla incididunt sunt ullamco consectetur veniam anim adipisicing. Tempor commodo eu aute ex minim occaecat ex laborum.</p>
+      <p>As the club developed, the program became less of a niche group. Members joined to improve the marketing, branding, and outreach programs. This period of time ended when club membership peaked during the 2015-2016 [VERIFY] school year. </p>
     </c-block>
     <c-block :blockData="historyRecent">
       <h3>Recent Years</h3>
-      <p>Over the past few years, the club has grown steadily in members, increasing membership, especially in <router-link to="/vex">VEX Robotics</router-link> and <router-link to="/vex">CyberPatriots</router-link>. After the steep dropoff in club membership between the 2015-2016 to the 2016-2017 school year, the club has been steadily gaining membership..</p>
-      <p>Mollit consequat cillum ipsum ipsum nostrud officia ipsum qui aliquip cupidatat irure. Minim cillum sint est officia enim id ea laboris elit est exercitation sit. Aliqua mollit aliqua voluptate elit ullamco aliquip. Fugiat culpa dolor Lorem ipsum. Et ex esse excepteur anim ea duis exercitation occaecat cupidatat eiusmod. Ea mollit dolor Lorem eiusmod nostrud dolore proident cillum amet anim. Mollit aliquip officia non nulla anim incididunt.</p>
+      <p></p>
+      <p>Currently, there are three flourishing programs: VRC (VEX Robotics Competition), FRC (FIRST Robotics Competition) and CyberPatriots. Membership has grown especially in <router-link to="/vex">VEX Robotics</router-link> and <router-link to="/vex">CyberPatriots</router-link>. Recruitment efforts currently executing include raising participating in FRC.</p>
     </c-block>
   </div>
 </template>

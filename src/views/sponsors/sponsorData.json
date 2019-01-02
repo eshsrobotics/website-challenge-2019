@@ -1,0 +1,44 @@
+{
+  "gamma": {
+    "name": "Gamma Foo" ,
+    "image": "https://dummyimage.com/1280x960/dee2e6/212529",
+    "imageAltText": "Gamma Logo",
+    "tier": "diamond"
+  },
+  "epsilon": {
+    "name": "Epsilon Bar" ,
+    "image": "https://dummyimage.com/1280x960/dee2e6/212529",
+    "imageAltText": "Epsilon Logo",
+    "tier": "gold"
+  },
+  "zeta": {
+    "name": "Zeta Baz" ,
+    "image": "https://dummyimage.com/1280x960/dee2e6/212529",
+    "imageAltText": "Zeta Logo",
+    "tier": "silver"
+  },
+  "kappa": {
+    "name": "Kappa Foo" ,
+    "image": "https://dummyimage.com/1280x960/dee2e6/212529",
+    "imageAltText": "Kappa Logo",
+    "tier": "silver"
+  },
+  "omicron": {
+    "name": "Omicron Bar" ,
+    "image": "https://dummyimage.com/1280x960/dee2e6/212529",
+    "imageAltText": "Omicron Logo",
+    "tier": "bronze"
+  },
+  "rho": {
+    "name": "Rho Baz" ,
+    "image": "https://dummyimage.com/1280x960/dee2e6/212529",
+    "imageAltText": "Rho Logo",
+    "tier":  "bronze"
+  },
+  "phi": {
+    "name": "Phi Foo",
+    "image": "https://dummyimage.com/1280x960/dee2e6/212529",
+    "imageAltText": "Phi Logo",
+    "tier":  "bronze"
+  }
+}

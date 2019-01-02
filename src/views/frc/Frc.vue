@@ -2,7 +2,7 @@
   <div class="frc">
     <c-block :blockData="frcBlock">
       <h2>About</h2>
-      <p>Combining the excitement of sport with the rigors of science and technology. We call FIRST Robotics Competition the ultimate Sport for the Mind. High-school student participants call it “the hardest fun you’ll ever have.” Under strict rules, limited resources, and an intense six-week time limit, teams of students are challenged to raise funds, design a team “brand,” hone teamwork skills, and build and program industrial-size robots to play a difficult field game against like-minded competitors. It’s as close to real-world engineering as a student can get. Volunteer professional mentors lend their time and talents to guide each team. Each season ends with an exciting FIRST Championship.</p>
+      <p>FRC is a multifaceted competition that involves many engineering disciplines. Students must know how to design a robot frame from raw ideas, fabricate one with various materials, 3D model them in computer aided design (CAD) applications, create networks that allow the robot to communicate with the main computer, and finally program the robot. One team containing tens of people must build a fully functional robot that satisfy operating constraints during competition. These includes dimensional and constraints. Final fabrication of robot would include optimized features that maximized points during actual competition. Preparation time for the competition consists of a narrow 6 week time interval. This competition models real-world engineering closely. </p>
     </c-block>
   </div>
 </template>

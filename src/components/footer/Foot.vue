@@ -3,7 +3,7 @@
     <div class="column">
       <p>About</p>
       <ul>
-        <li><router-link to="/about/team">Team</router-link></li>
+        <li><router-link to="/about">The club</router-link></li>
         <li><router-link to="/about/coaches-and-mentors">Coaches &amp; Mentors</router-link></li>
         <li><router-link to="/about/website">Website</router-link></li>
       </ul>
@@ -11,16 +11,16 @@
     <div class="column">
       <p>Social Media</p>
       <ul>
-        <li><a href="#">Twitter</a></li>
-        <li><a href="#">Instagram</a></li>
-        <li><a href="#">Facebook</a></li>
+        <li><a href="https://twitter.com/eshsPotatoes" target="_blank">Twitter</a></li>
+        <li><a href="https://www.instagram.com/eshspotatoes" target="_blank">Instagram</a></li>
+        <li><a href="https://www.facebook.com/eshspotatoes" target="_blank">Facebook</a></li>
       </ul>
     </div>
     <div class="column">
       <p>Contact</p>
       <ul>
         <li><router-link to="/contact">Webmaster</router-link></li>
-        <li><a href="#">School</a></li>
+        <li><a href="https://www.elsegundohigh.org/" target="_blank">School</a></li>
       </ul>
     </div>
     <div class="column">
@@ -37,8 +37,6 @@
 </template>
 
 <script>
-import CButton from '@/components/ui/Button'
-
 export default {
   name: 'foot'
 }

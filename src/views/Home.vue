@@ -11,6 +11,8 @@
       <card-generic :cardInfo="competitions.frc" class="competition"></card-generic>
       <card-generic :cardInfo="competitions.vex" class="competition"></card-generic>
     </layout-cards-fit>
+
+    <layout-cards-carousel></layout-cards-carousel>
   </div>
 </template>
 
@@ -18,6 +20,8 @@
 import PageDesc from '@/components/PageDescription'
 import CardGeneric from '@/components/card/CardGeneric'
 import LayoutCardsFit from '@/components/card-layout/LayoutCardsFit'
+import LayoutCardsCarousel from '@/components/card-layout/LayoutCardsCarousel'
+import SponsorData from '@/views/sponsors/sponsorData'
 
 export default {
   name: 'home',
@@ -55,7 +59,8 @@ export default {
   components: {
     'page-desc': PageDesc,
     'card-generic': CardGeneric,
-    'layout-cards-fit': LayoutCardsFit
+    'layout-cards-fit': LayoutCardsFit,
+    'layout-cards-carousel': LayoutCardsCarousel
   }
 }
 </script>

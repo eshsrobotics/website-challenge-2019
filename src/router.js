@@ -104,19 +104,6 @@ export default new Router({
           meta: {
             title: 'Branding Guidelines'
           }
-        }
-      ]
-    },
-    {
-      path: '/media',
-      component: () => import('@/components/SubPathWrapper'),
-      children: [
-        {
-          path: '',
-          component: () => import('@/views/media/Media'),
-          meta: {
-            title: 'Media'
-          }
         },
         {
           path: 'photos',

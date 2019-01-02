@@ -2,7 +2,8 @@
   <div class="vex">
     <c-block :blockData="vexBlock">
       <h2>About</h2>
-      <p>Teams of students work together to design, program, and build a robot that competes with other robots from other teams. Each robot is designed to complete a certain objective or goal, which changes annually. Students learn to build robots using VEX parts, program a robot using RobotC, and design their VEX Robot using Autodesk Inventor. Two alliances, each with two robots, battle on the field, collecting as many points possible within the time restriction.</p>
+      <p>Teams of students work together to design, program, and build a robot that competes with other teams. Each robot is designed to complete a certain objective or goal, which changes annually. During competition, a red and blue alliance battle it out. Each alliance has two teams. This means that your team will be cooperating with another team. The objective is to collect as many points possible within the time restriction.</p>
+      <p>Students learn to build robots using VEX parts, program a robot using RobotC, and design their VEX Robot using Autodesk Inventor.</p>
     </c-block>
   </div>
 </template>

@@ -1,7 +1,7 @@
 <template>
 <div class="sponsor-us">
   <page-desc>
-    <p>The P.O.T.A.T.O.E.S. is grateful for all our sponsor's contributions. If you want to help the club grow and flourish, consider donating! Donations do not just include monetary amounts, but other resources such as equipment and tools.</p>
+    <p>The P.O.T.A.T.O.E.S. is grateful for all our sponsor's contributions. If you want to help the club grow and flourish, consider donating! Donations do not just include monetary values, but other resources such as equipment and tools.</p>
     <p>Please <router-link to="/contact">Contact us</router-link> for your inquiries relating to sponsorship, or any other questions!</p>
     <br/>
     <h3>See Our Sponsors</h3>

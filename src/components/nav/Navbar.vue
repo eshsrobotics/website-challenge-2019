@@ -15,12 +15,9 @@
       <nav-bar-item routeTo="/frc">FRC</nav-bar-item>
       <nav-bar-item routeTo="/vex">VEX</nav-bar-item>
       <nav-bar-item-dropdown routeTo="/resources" dropdownTitle="Resources">
-        <nav-bar-item routeTo="/resources/links" :hrBelow="true">Quick Links</nav-bar-item>
-        <nav-bar-item routeTo="/resources/branding">Branding Guidelines</nav-bar-item>
-      </nav-bar-item-dropdown>
-      <nav-bar-item-dropdown routeTo="/media" dropdownTitle="Media">
-        <nav-bar-item routeTo="/media/photos" :hrBelow="true">Photos</nav-bar-item>
-        <nav-bar-item routeTo="/media/videos">Videos</nav-bar-item>
+        <nav-bar-item routeTo="/resources/branding" :hrBelow="true">Branding Guidelines</nav-bar-item>
+        <nav-bar-item routeTo="/resources/photos" :hrBelow="true">Photos</nav-bar-item>
+        <nav-bar-item routeTo="/resources/videos">Videos</nav-bar-item>
       </nav-bar-item-dropdown>
       <nav-bar-item-dropdown routeTo="/sponsors" dropdownTitle="Sponsors">
         <nav-bar-item routeTo="/sponsors/us">Sponsor Us</nav-bar-item>
@@ -54,7 +51,7 @@ export default {
   margin: 5px 5px 5px 5px;
 
   li#image {
-    padding: 0px;
+    padding: 0;
     background-color: inherit;
     display: flex;
     justify-content: center;
