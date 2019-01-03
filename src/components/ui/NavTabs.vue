@@ -1,10 +1,8 @@
 <template>
   <ul>
-    <li v-for="(routeObject, index) in routeObjects" :class="isRouteActive(index)">
+    <li v-for="(routeObject, index) in routeObjects"  v-if="routeObject.meta.showRoute !== false" :class="isRouteActive(index)">
       <router-link :to="routeObjectsPath[index]">
-        <!-- <nav-bar-item :routeTo="routeObjectsPath[index]"> -->
-          {{ routeObject.meta.title }}
-        <!-- </nav-bar-item> -->
+        {{ routeObject.meta.title }}
       </router-link>
     </li>
   </ul> 
@@ -88,7 +86,7 @@ import NavBarItem from '@/components/nav/NavbarItem.vue'
           if(relativePath == "") {
             // Do not need to prepend anything
             let prepend = this.$route.matched.map(obj => obj.path)
-            let absolutePath = prepend[prepend.length -2]
+            let absolutePath = prepend[prepend.length - 2]
             // console.log('if', absolutePath)
             return absolutePath
           }

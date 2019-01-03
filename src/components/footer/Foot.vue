@@ -31,7 +31,7 @@
       </ul>
     </div>
     <div class="column">
-      <img src="@/assets/robotics-logo.png" alt="" height="50px" width="50px">
+      <img src="@/assets/robotics-logo.png" alt="Logo" height="50px" width="50px">
     </div>
   </div>
 </template>

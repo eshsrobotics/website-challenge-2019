@@ -1,7 +1,7 @@
 <template>
   <div class="photos">
     <p>See the team's photos throughout the year. Find photos from competitions, events, and general lab work.</p>
-    <div v-for="year in photoData" :key="year.year" class="card">
+    <div v-for="year in newPhotoData" :key="year.year" class="card">
       <h2>{{ year.year }}</h2>
       <layout-cards-struct class="events-wrapper">
           <card-generic :cardInfo="event" v-for="event in year.events" :key="event.name" class="card-generic"></card-generic>
@@ -20,6 +20,20 @@ export default {
   data() {
     return {
       photoData: photoDataJson
+    }
+  },
+  computed: {
+    // I don't know why this modifies photoData. Array.prototype.map() is supposed to return the modified array, not modify the actual array I'm pretty sure
+    newPhotoData: function() {
+      return this.photoData.map(yearsEvents => {
+        yearsEvents.events = yearsEvents.events.map(event => {
+          event.buttonText = 'View'
+          let modifiedPath = this.$route.path.split('/').slice(0, -1).join('/')
+          event.buttonRouteTo = modifiedPath + '/album/' + event.uri
+          return event;
+        })
+        return yearsEvents
+      })
     }
   },
   components: {

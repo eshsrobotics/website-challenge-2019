@@ -113,6 +113,13 @@ export default new Router({
           }
         },
         {
+          path: 'album/:album',
+          component: () => import('@/views/media/Album'),
+          meta: {
+            showRoute: false
+          }
+        },
+        {
           path: 'videos',
           component: () => import('@/views/media/Videos'),
           meta: {

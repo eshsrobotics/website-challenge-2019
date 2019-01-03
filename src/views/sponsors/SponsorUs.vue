@@ -13,7 +13,7 @@
 </template>
 
 <script>
-  import CButton from '@/components/ui/Button'
+  import CButton from '@/components/ui/CButton'
   import PageDesc from '@/components/PageDescription'
 
 export default {

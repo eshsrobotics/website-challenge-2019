@@ -5,12 +5,14 @@
       {
         "title": "CyberPatriots Competition",
         "image": "https://github.com/eshsrobotics/database-photos/blob/master/2018-2019/cyberpatriots-november-competition/IMG_0898.jpg?raw=true",
-        "desc": "Participating in competition at high school"
+        "desc": "Participating in competition at high school",
+        "uri": "cyberpatriots-competition-round-1"
       },
       {
         "title": "VEX Competition Prep",
         "image": "https://github.com/eshsrobotics/database-photos/blob/master/2018-2019/vex-competition-prep/vexprep2.jpg?raw=true",
-        "desc": "Preparing for VEX Competition"
+        "desc": "Preparing for VEX Competition",
+        "uri": "vex-prep-fall"
       }
     ]
   },
@@ -20,32 +22,38 @@
       {
         "title": "CyberPatriots Comp. Prep",
         "image": "https://github.com/eshsrobotics/database-photos/blob/master/2017-2018/cyberpatriots-competition-prep/cyberPatriots1.jpg?raw=true",
-        "desc": "Preparing for upcoming CyberPatriots competition"
+        "desc": "Preparing for upcoming CyberPatriots competition",
+        "uri": "cyberpatriots-prep"
       },
       {
         "title": "FRC Competition Kickoff",
         "image": "https://github.com/eshsrobotics/database-photos/blob/master/2017-2018/frc-competition-prep-kickoff/DSC07566.JPG?raw=true",
-        "desc": "Participating in FRC Kickoff at LOCATION"
+        "desc": "Participating in FRC Kickoff at LOCATION",
+        "uri": "frc-kickoff"
       },
       {
         "title": "FRC Competition",
         "image": "https://github.com/eshsrobotics/database-photos/blob/master/2017-2018/frc-competition/frccompetition13.jpg?raw=true",
-        "desc": "Team's participating in LOCATION FRC competition"
+        "desc": "Team's participating in LOCATION FRC competition",
+        "uri": "frc-competition"
       },
       {
         "title": "S.T.E.A.M. Night",
         "image": "https://github.com/eshsrobotics/database-photos/blob/master/2017-2018/frc-steam-night/steam2.jpg?raw=true",
-        "desc": "Outreach event to local elementary school"
+        "desc": "Outreach event to local elementary school",
+        "uri": "steam-night"
       },
       {
         "title": "VEX Competition Prep",
         "image": "https://github.com/eshsrobotics/database-photos/blob/master/2017-2018/vex-competition-prep/vex2.jpg?raw=true",
-        "desc": "Practicing driving robots for competition"
+        "desc": "Practicing driving robots for competition",
+        "uri": "vex-prep"
       },
       {
         "title": "VEX Generic Photos",
         "image": "https://github.com/eshsrobotics/database-photos/blob/master/2017-2018/vrc-generic-photos/vex1.jpg?raw=true",
-        "desc": "General building with VEX"
+        "desc": "General building with VEX",
+        "uri": "vex-generic-photos"
       }
     ]
   },
@@ -55,22 +63,26 @@
       {
         "title": "FRC Competition",
         "image": "https://github.com/eshsrobotics/database-photos/blob/master/2016-2017/frc-competition/frccompetition14.jpg?raw=true",
-        "desc": "FRC Competition at LOCATION"
+        "desc": "FRC Competition at LOCATION",
+        "uri": "frc-competition"
       },
       {
         "title": "FRC Competition Prep",
         "image": "https://github.com/eshsrobotics/database-photos/blob/master/2016-2017/frc-competition-prep/frcbot2.jpg?raw=true",
-        "desc": "The team's work in the lab in prep for competition"
+        "desc": "The team's work in the lab in prep for competition",
+        "uri": "frc-prep"
       },
       {
         "title": "VEX Competition",
         "image": "https://github.com/eshsrobotics/database-photos/blob/master/2016-2017/vex-competition/vexcompetition1.jpg?raw=true",
-        "desc": "VEX competition taking place at LOCATION"
+        "desc": "VEX competition taking place at LOCATION",
+        "uri": "vex-comp"
       },
       {
         "title": "Buttons",
         "image": "https://github.com/eshsrobotics/database-photos/blob/master/2016-2017/buttons/button3.jpg?raw=true",
-        "desc": "Photographs of the team's buttons."
+        "desc": "Photographs of the team's buttons.",
+        "uri": "buttons"
       }
     ]
   }

@@ -6,14 +6,14 @@
     <c-photo v-if="imageShow" :imageInfo="cardInfo"></c-photo>
     <p v-if="descShow">{{ cardInfo.desc }}</p>
     <router-link v-if="buttonShow" :to="cardInfo.buttonRouteTo">
-      <c-button :routeTo="cardInfo.buttonRouteTo">{{ cardInfo.buttonText }}</c-button>
+      <c-button>{{ cardInfo.buttonText }}</c-button>
     </router-link>
 
   </div>
 </template>
 
 <script>
-import CButton from '@/components/ui/Button'
+import CButton from '@/components/ui/CButton'
 import CPhoto from '@/components/ui/Photo'
 
 export default {

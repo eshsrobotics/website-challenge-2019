@@ -1,5 +1,5 @@
 <template>
-  <button @click="redirect" class="button">
+  <button class="myButton">
     <p class="text">
       <slot></slot>
     </p>
@@ -8,22 +8,14 @@
 
 <script>
 export default {
-  name: 'button',
-  methods: {
-    redirect: function() {
-      this.$router.push('/')
-    }
-  },
-  props: {
-    routeTo: String
-  }
+  name: 'CButton'
 }
 </script>
 
 <style scoped lang="scss">
 @import "@/styles/variables.scss";
 
-.button {
+.myButton {
   border: 1px solid $oc-gray-7;
   padding: 10px 19px 10px 19px;
   margin: 10px 5px 5px 5px;
