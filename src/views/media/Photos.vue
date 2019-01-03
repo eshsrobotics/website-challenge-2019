@@ -4,7 +4,7 @@
     <div v-for="year in newPhotoData" :key="year.year" class="card">
       <h2>{{ year.year }}</h2>
       <layout-cards-struct class="events-wrapper">
-          <card-generic :cardInfo="event" v-for="event in year.events" :key="event.name" class="card-generic"></card-generic>
+          <card-generic v-for="event in year.events" :cardInfo="newEvent(event)" :key="event.name" class="card-generic"></card-generic>
       </layout-cards-struct>
     </div>
   </div>
@@ -30,10 +30,15 @@ export default {
           event.buttonText = 'View'
           let modifiedPath = this.$route.path.split('/').slice(0, -1).join('/')
           event.buttonRouteTo = modifiedPath + '/album/' + event.uri
-          return event;
+          return event
         })
         return yearsEvents
       })
+    }
+  },
+  methods: {
+    newEvent: function(event) {
+      return event
     }
   },
   components: {

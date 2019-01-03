@@ -68,6 +68,7 @@ export default {
       //  desc: 'Default Description',
       //  buttonText: '',
       //  buttonRouteTo: ''
+      //  buttonRouteToQuery: ''
       })
     }
   },

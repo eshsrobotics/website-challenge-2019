@@ -116,6 +116,7 @@ export default new Router({
           path: 'album/:album',
           component: () => import('@/views/media/Album'),
           meta: {
+            title: 'Album Photos',
             showRoute: false
           }
         },
