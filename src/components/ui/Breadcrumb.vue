@@ -33,7 +33,7 @@ export default {
       // Ex. for route = '/about/website' and urlSeg = about, we will get '/about' in this step
       // Ex. for route = '/about/website' and urlSeg = website, we will get '/about/website' in this step
       let newUrlSeg = route.slice(0, urlSegLocation +  urlSeg.length)
-      return newUrlSeg;
+      return newUrlSeg
     }
   },
   computed: {

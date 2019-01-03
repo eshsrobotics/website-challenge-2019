@@ -7,7 +7,7 @@
 </template>
 
 <script>
-import PageDesc from '@/components/PageDescription';
+import PageDesc from '@/components/PageDescription'
 
 export default {
   name: 'resources',

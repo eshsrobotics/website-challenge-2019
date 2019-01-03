@@ -9,7 +9,7 @@
 </template>
 
 <script>
-import CBlock from '@/components/ui/Block';
+import CBlock from '@/components/ui/Block'
 
 export default {
   name: 'vex',
