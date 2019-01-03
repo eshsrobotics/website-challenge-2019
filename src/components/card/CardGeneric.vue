@@ -2,7 +2,6 @@
   <div class="card-generic" @click="changeData">
     <h3 v-if="titleShow">{{ cardInfo.title }}</h3>
     <h4 v-if="subtitleShow">{{ cardInfo.subtitle }}</h4>
-    <!--<img  :src="cardInfo.image" :alt="cardInfo.imageAltText">-->
     <c-photo v-if="imageShow" :imageInfo="cardInfo"></c-photo>
     <p v-if="descShow">{{ cardInfo.desc }}</p>
     <router-link v-if="buttonShow" :to="cardInfo.buttonRouteTo">
@@ -13,7 +12,7 @@
 
 <script>
 import CButton from '@/components/ui/CButton'
-import CPhoto from '@/components/ui/Photo'
+import CPhoto from '@/components/ui/CPhoto'
 import { mapMutations } from 'vuex'
 
 export default {
