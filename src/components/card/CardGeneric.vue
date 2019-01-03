@@ -1,5 +1,5 @@
 <template>
-  <div class="card-generic">
+  <div class="card-generic" @click="changeData">
     <h3 v-if="titleShow">{{ cardInfo.title }}</h3>
     <h4 v-if="subtitleShow">{{ cardInfo.subtitle }}</h4>
     <!--<img  :src="cardInfo.image" :alt="cardInfo.imageAltText">-->
@@ -8,13 +8,13 @@
     <router-link v-if="buttonShow" :to="cardInfo.buttonRouteTo">
       <c-button>{{ cardInfo.buttonText }}</c-button>
     </router-link>
-
   </div>
 </template>
 
 <script>
 import CButton from '@/components/ui/CButton'
 import CPhoto from '@/components/ui/Photo'
+import { mapMutations } from 'vuex'
 
 export default {
   name: 'cardGeneric',
@@ -56,6 +56,15 @@ export default {
       return true;
     }
   },
+  methods: {
+    ...mapMutations([
+        'setAlbumData'
+    ]),
+    changeData: function() {
+      // Yeah, this is called on all card components sigh
+      this.$store.commit('setAlbumData', this.cardInfo)
+    }
+  },
   props: {
     cardInfo: {
       type: Object,
@@ -68,7 +77,6 @@ export default {
       //  desc: 'Default Description',
       //  buttonText: '',
       //  buttonRouteTo: ''
-      //  buttonRouteToQuery: ''
       })
     }
   },

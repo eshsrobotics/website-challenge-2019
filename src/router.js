@@ -92,13 +92,6 @@ export default new Router({
           }
         },
         {
-          path: 'links',
-          component: () => import('@/views/resources/QuickLinks'),
-          meta: {
-            title: 'Quick Links'
-          }
-        },
-        {
           path: 'branding',
           component: () => import('@/views/resources/BrandingGuidelines'),
           meta: {

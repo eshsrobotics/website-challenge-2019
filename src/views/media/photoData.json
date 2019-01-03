@@ -6,7 +6,22 @@
         "title": "CyberPatriots Competition",
         "image": "https://github.com/eshsrobotics/database-photos/blob/master/2018-2019/cyberpatriots-november-competition/IMG_0898.jpg?raw=true",
         "desc": "Participating in competition at high school",
-        "uri": "cyberpatriots-competition-round-1"
+        "uri": "cyberpatriots-competition-round-1",
+        "photosPrefix": "https://github.com/eshsrobotics/database-photos/blob/master/2017-2018/cyberpatriots-november-competition/IMG_0",
+        "photosSuffix": ".jpg?raw=true",
+        "photos": [
+          "896",
+          "897",
+          "898",
+          "899",
+          "900",
+          "901",
+          "902",
+          "903",
+          "904",
+          "905",
+          "906"
+        ]
       },
       {
         "title": "VEX Competition Prep",
@@ -23,37 +38,98 @@
         "title": "CyberPatriots Comp. Prep",
         "image": "https://github.com/eshsrobotics/database-photos/blob/master/2017-2018/cyberpatriots-competition-prep/cyberPatriots1.jpg?raw=true",
         "desc": "Preparing for upcoming CyberPatriots competition",
-        "uri": "cyberpatriots-prep"
+        "uri": "cyberpatriots-prep",
+        "photosPrefix": "https://github.com/eshsrobotics/database-photos/blob/master/2017-2018/cyberpatriots-competition-prep/cyberPatriots",
+        "photosSuffix": ".jpg?raw=true",
+        "photos": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "6",
+          "7",
+          "8",
+          "9"
+        ]
       },
       {
         "title": "FRC Competition Kickoff",
         "image": "https://github.com/eshsrobotics/database-photos/blob/master/2017-2018/frc-competition-prep-kickoff/DSC07566.JPG?raw=true",
         "desc": "Participating in FRC Kickoff at LOCATION",
-        "uri": "frc-kickoff"
+        "uri": "frc-kickoff",
+        "photosPrefix": "https://github.com/eshsrobotics/database-photos/blob/master/2017-2018/frc-competition-prep-kickoff/DSC07",
+        "photosSuffix": ".jpg?raw=true",
+        "photos": [
+          "562",
+          "566",
+          "571",
+          "572",
+          "821"
+        ]
       },
       {
         "title": "FRC Competition",
         "image": "https://github.com/eshsrobotics/database-photos/blob/master/2017-2018/frc-competition/frccompetition13.jpg?raw=true",
         "desc": "Team's participating in LOCATION FRC competition",
-        "uri": "frc-competition"
+        "uri": "frc-competition",
+        "photosPrefix": "https://github.com/eshsrobotics/database-photos/blob/master/2017-2018/frc-competition/frccompetition",
+        "photosSuffix": ".jpg?raw=true",
+        "photos": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "22"
+        ]
       },
       {
         "title": "S.T.E.A.M. Night",
         "image": "https://github.com/eshsrobotics/database-photos/blob/master/2017-2018/frc-steam-night/steam2.jpg?raw=true",
         "desc": "Outreach event to local elementary school",
-        "uri": "steam-night"
+        "uri": "steam-night",
+        "photosPrefix": "https://github.com/eshsrobotics/database-photos/blob/master/2017-2018/frc-steam-night/steam",
+        "photosSuffix": ".jpg?raw=true",
+        "photos": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5"
+        ]
       },
       {
         "title": "VEX Competition Prep",
         "image": "https://github.com/eshsrobotics/database-photos/blob/master/2017-2018/vex-competition-prep/vex2.jpg?raw=true",
         "desc": "Practicing driving robots for competition",
-        "uri": "vex-prep"
+        "uri": "vex-prep",
+        "photosPrefix": "https://github.com/eshsrobotics/database-photos/blob/master/2017-2018/vrc-competition-prep/vex",
+        "photosSuffix": ".jpg?raw=true",
+        "photos": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6",
+          "7",
+          "8",
+          "9"
+        ]
       },
       {
         "title": "VEX Generic Photos",
         "image": "https://github.com/eshsrobotics/database-photos/blob/master/2017-2018/vrc-generic-photos/vex1.jpg?raw=true",
         "desc": "General building with VEX",
-        "uri": "vex-generic-photos"
+        "uri": "vex-generic-photos",
+        "photosPrefix": "https://github.com/eshsrobotics/database-photos/blob/master/2017-2018/vrc-generic-photos/vex",
+        "photosSuffix": ".jpg?raw=true",
+        "photos": [
+          "1",
+          "2",
+          "3",
+          "17",
+          "don't forget to change the name of the other two"
+        ]
       }
     ]
   },
@@ -64,25 +140,73 @@
         "title": "FRC Competition",
         "image": "https://github.com/eshsrobotics/database-photos/blob/master/2016-2017/frc-competition/frccompetition14.jpg?raw=true",
         "desc": "FRC Competition at LOCATION",
-        "uri": "frc-competition"
+        "uri": "frc-competition",
+        "photosPrefix": "https://github.com/eshsrobotics/database-photos/blob/master/2016-2017/frc-competition/frccompetition",
+        "photosSuffix": ".jpg?raw=true",
+        "photos": [
+          "1",
+          "2",
+          "3",
+          "72"
+        ]
       },
       {
         "title": "FRC Competition Prep",
         "image": "https://github.com/eshsrobotics/database-photos/blob/master/2016-2017/frc-competition-prep/frcbot2.jpg?raw=true",
         "desc": "The team's work in the lab in prep for competition",
-        "uri": "frc-prep"
+        "uri": "frc-prep",
+        "photosPrefix": "https://github.com/eshsrobotics/database-photos/blob/master/2016-2017/frc-competition-prep/",
+        "photosSuffix": ".jpg?raw=true",
+        "photos": [
+          "frcbot1",
+          "frcbot2",
+          "frcbot3",
+          "frcbot4",
+          "frcbot5",
+          "frcbot6",
+          "frcbot7",
+          "frcbot8",
+          "frcbot9",
+          "lab1",
+          "lab2",
+          "lab3",
+          "lab4",
+          "lab5",
+          "lab6",
+          "lab7",
+          "lab8",
+          "lab9",
+          "lab10",
+          "lab11"
+        ]
       },
       {
         "title": "VEX Competition",
         "image": "https://github.com/eshsrobotics/database-photos/blob/master/2016-2017/vex-competition/vexcompetition1.jpg?raw=true",
         "desc": "VEX competition taking place at LOCATION",
-        "uri": "vex-comp"
+        "uri": "vex-comp",
+        "photosPrefix": "https://github.com/eshsrobotics/database-photos/blob/master/2016-2017/vex-competition/vexcompetition",
+        "photosSuffix": ".jpg?raw=true",
+        "photos": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5"
+        ]
       },
       {
         "title": "Buttons",
         "image": "https://github.com/eshsrobotics/database-photos/blob/master/2016-2017/buttons/button3.jpg?raw=true",
         "desc": "Photographs of the team's buttons.",
-        "uri": "buttons"
+        "uri": "buttons",
+        "photosPrefix": "https://github.com/eshsrobotics/database-photos/blob/master/2016-2017/buttons/button",
+        "photosSuffix": ".jpg?raw=true",
+        "photos": [
+          "1",
+          "2",
+          "3"
+        ]
       }
     ]
   }
