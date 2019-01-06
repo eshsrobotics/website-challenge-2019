@@ -1,0 +1,3 @@
+[submodule "src/components/infinite-slide-bar"]
+	path = src/components/infinite-slide-bar
+	url = https://github.com/biigpongsatorn/vue-infinite-slide-bar

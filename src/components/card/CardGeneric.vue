@@ -2,7 +2,7 @@
   <div class="card-generic" @click="changeData">
     <h3 v-if="titleShow">{{ cardInfo.title }}</h3>
     <h4 v-if="subtitleShow">{{ cardInfo.subtitle }}</h4>
-    <c-photo v-if="imageShow" :imageInfo="cardInfo"></c-photo>
+    <c-photo v-if="imageShow" :imageInfo="cardInfo" :pictureWidth="pictureWidth"></c-photo>
     <p v-if="descShow">{{ cardInfo.desc }}</p>
     <router-link v-if="buttonShow" :to="cardInfo.buttonRouteTo">
       <c-button>{{ cardInfo.buttonText }}</c-button>
@@ -77,6 +77,9 @@ export default {
       //  buttonText: '',
       //  buttonRouteTo: ''
       })
+    },
+    pictureWidth: {
+      type: String
     }
   },
   components: {
@@ -84,7 +87,6 @@ export default {
     'c-photo': CPhoto
   }
 }
-  
 </script>
 
 <style scoped lang="scss">

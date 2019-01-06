@@ -1,7 +1,7 @@
 <template>
   <div class="image-wrapper">
     <div class="image-wrapper-inner" :class="cardState">
-      <div class="image-front">
+      <div class="image-front" :style="getPictureWidth">
         <!--<div class="maximize-icon" @click="flipCard">-->
           <!--<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 21" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-maximize-2"><polyline points="15 3 21 3 21 9"></polyline><polyline points="9 21 3 21 3 15"></polyline><line x1="21" y1="3" x2="14" y2="10"></line><line x1="3" y1="21" x2="10" y2="14"></line></svg>-->
         <!--</div>-->
@@ -17,6 +17,13 @@ export default {
   data() {
     return {
       cardState: 'card-small'
+    }
+  },
+  computed: {
+    getPictureWidth: function() {
+      console.log('cphoto', this.pictureWidth)
+      let myString = "width: " + "320px"
+      return myString;
     }
   },
   methods: {
@@ -37,7 +44,8 @@ export default {
         image: 'https://dummyimage.com/1280x960/dee2e6/212529',
         imageAltText: 'Generic Alt Text'
       })
-    }
+    },
+    pictureWidth: String
   }
 }
 </script>

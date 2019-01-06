@@ -12,7 +12,17 @@
       <card-generic :cardInfo="competitions.vex" class="competition"></card-generic>
     </layout-cards-fit>
 
-    <layout-cards-carousel></layout-cards-carousel>
+    <h2>We thank our wonderful sponsors</h2>
+      <infinite-slide-bar duration="50s" width="4500px">
+        <div class="carousel">
+          <card-sponsor :sponsor="sponsors.gamma"></card-sponsor>
+          <card-sponsor :sponsor="sponsors.epsilon"></card-sponsor>
+          <card-sponsor :sponsor="sponsors.zeta"></card-sponsor>
+          <card-sponsor :sponsor="sponsors.kappa"></card-sponsor>
+          <card-sponsor :sponsor="sponsors.omicron"></card-sponsor>
+          <card-sponsor :sponsor="sponsors.rho"></card-sponsor>
+        </div>
+      </infinite-slide-bar>
   </div>
 </template>
 
@@ -20,7 +30,8 @@
 import PageDesc from '@/components/PageDescription'
 import CardGeneric from '@/components/card/CardGeneric'
 import LayoutCardsFit from '@/components/card-layout/LayoutCardsFit'
-import LayoutCardsCarousel from '@/components/card-layout/LayoutCardsCarousel'
+import CardSponsorWrapper from '@/components/card-layout/WrapperCardSponsor'
+import CardSponsor from '@/components/card/CardSponsor'
 import SponsorData from '@/views/sponsors/sponsorData'
 
 export default {
@@ -28,6 +39,7 @@ export default {
    data() {
     let placeHolder = 'https://dummyimage.com/1280x960/dee2e6/212529'
     return {
+    sponsors: SponsorData,
       competitions: {
         cyberpatriots: {
           title: "CyberPatriots",
@@ -60,7 +72,8 @@ export default {
     'page-desc': PageDesc,
     'card-generic': CardGeneric,
     'layout-cards-fit': LayoutCardsFit,
-    'layout-cards-carousel': LayoutCardsCarousel
+    'card-sponsor-wrapper': CardSponsorWrapper,
+    'card-sponsor': CardSponsor
   }
 }
 </script>
@@ -77,5 +90,16 @@ export default {
 
 h3 {
   font-size: 1.33em;
+}
+
+.carousel {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  overflow: hidden;
+
+  & * {
+    margin: 10px 10px 10px 10px;
+  }
 }
 </style>

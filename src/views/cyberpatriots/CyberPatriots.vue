@@ -7,11 +7,27 @@
       <p>You'll learn how to improve the security of various operating systems such as Windows 7, Windows 10, and variants of Linux, such as Ubuntu or Fedora. [VERIFY]. Some fixes are simple, such as enabling firewalls or managing users. Others are slightly more complex, such as configuring ports for applications to use, or auditing security policies.</p>
       <p>Meetings are held on Fridays.</p>
     </c-block>
+
+      <h2>Cyberpatriots Photos</h2>
+      <infinite-slide-bar duration="70s" width="3600px">
+        <div class="carousel">
+          <card-generic :cardInfo="previewPhotos[0]" class="competition" pictureWidth="220px"></card-generic>
+          <card-generic :cardInfo="previewPhotos[1]" class="competition" pictureWidth="220px"></card-generic>
+          <card-generic :cardInfo="previewPhotos[2]" class="competition" pictureWidth="220px"></card-generic>
+          <card-generic :cardInfo="previewPhotos[3]" class="competition" pictureWidth="220px"></card-generic>
+          <card-generic :cardInfo="previewPhotos[4]" class="competition" pictureWidth="220px"></card-generic>
+        </div>
+      </infinite-slide-bar>
+      <router-link to="/resources/album/2018-2019-cyberpatriots-competition-round-1">
+        <c-button>See More</c-button>
+      </router-link>
   </div>
 </template>
 
 <script>
 import CBlock from '@/components/ui/Block'
+import CButton from '@/components/ui/CButton'
+import CardGeneric from '@/components/card/CardGeneric'
 
 export default {
   name: 'cyberpatriots',
@@ -22,6 +38,28 @@ export default {
         imageAltText: 'Brainstorming before competition',
         photoPosition: 'right'
       },
+      previewPhotos: [
+        {
+          image: 'https://github.com/eshsrobotics/database-photos/blob/master/2018-2019/cyberpatriots-november-competition/IMG_0900.jpg?raw=true',
+          imageAltText: "Alt text",
+        },
+        {
+          image: 'https://github.com/eshsrobotics/database-photos/blob/master/2017-2018/cyberpatriots-competition-prep/cyberPatriots9.jpg?raw=true',
+          imageAltText: "Alt text",
+        },
+        {
+          image: 'https://github.com/eshsrobotics/database-photos/blob/master/2018-2019/cyberpatriots-november-competition/IMG_0906.jpg?raw=true',
+          imageAltText: "Alt text",
+        },
+        {
+          image: 'https://github.com/eshsrobotics/database-photos/blob/master/2018-2019/cyberpatriots-november-competition/IMG_0904.jpg?raw=true',
+          imageAltText: "Alt text",
+        },
+        {
+          image: 'https://github.com/eshsrobotics/database-photos/blob/master/2017-2018/cyberpatriots-competition-prep/cyberPatriots1.jpg?raw=true',
+          imageAltText: "Alt text",
+        },
+      ],
       quickLinks: [
         {
           "name": "Official Website",
@@ -32,7 +70,30 @@ export default {
     }
   },
   components: {
-    'c-block': CBlock
+    'c-block': CBlock,
+    'c-button': CButton,
+    'card-generic': CardGeneric
   }
 }
 </script>
+
+<style scoped lang="scss">
+  .carousel {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    overflow: hidden;
+
+    & * {
+      margin: 10px 10px 10px 10px;
+      width: 500px;
+    }
+  }
+
+  .competition {
+    // image-front is a component inside of CPhoto, which is inside of the CardGeneric Component
+    .image-front {
+      width: 300px
+    }
+  }
+</style>

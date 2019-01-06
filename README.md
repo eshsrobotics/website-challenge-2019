@@ -51,7 +51,21 @@ Just a heads up, I performed an interactive rebase on about November 28th 2018, 
 * All users must memorize passcode
   * Keep trap of users, comments, etc. If a password is wiped due to an emergency, make sure the blog posts, comments, etc. are not deleted, or will not be deleted on the next build of the blog
 
-## Comon Problems
+## Maintenance
+###  As time continues
+Update links on each individual cyberpatriots, frc, vex page to latest photograph collection, album
+
+### Adding photos
+
+
+### Updating Sponsors
+When updating sponsors, change sponsorData.json to match new sponsors. Wherever you want to show the Sponsors, you must update that page. This may include the `Sponsors.vue` page and the main page.
+
+### Updating Carousels /  Infinite Slide Bars
+After adding or removing an image from the slide bar, you must change the width of the infinite slide bar component.
+
+
+## Common Problems
 If you're new to Vue, or contributing, you may encounter a few errors. I've isolated some of the more common (and uncommong) errors / mishehaviors you may be getting and I've provided a solution. i.e. If the website is not doing what you want, see if your issue matches any below. The first bullet point after a subsection is a snippet of example code that defines or relates to the issue.
 
 ### Scoped CSS / SCSS Styles in Components
