@@ -22,7 +22,7 @@ export default {
   computed: {
     getPictureWidth: function() {
       console.log('cphoto', this.pictureWidth)
-      let myString = "width: " + "320px"
+      let myString = "width: " + this.pictureWidth
       return myString;
     }
   },

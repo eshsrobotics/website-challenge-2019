@@ -30,6 +30,7 @@ $ ./deploy.sh
 ### Website
 * Make website responsive design & mobile friendly
 * Theme support
+* Path transitions
 * Create abstraction over image element, such that clicking on image yields an enlarged photo, with extra features
 * Think about timeline component to show timeline of frc, vex, cyberpatriots competition
 * Have descriptions of photographs on the back, via flip on hover
