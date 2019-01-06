@@ -4,7 +4,7 @@ This is a website coded for the [Robotics Team Website Challenge 2019](https://c
 
 ## Setup :wrench:
 ```bash
-$ git clone https://github.com/eshsrobotics/RobotEventsChallengeWebsite2018
+$ git clone --recurse-submodules https://github.com/eshsrobotics/RobotEventsChallengeWebsite2018
 $ cd RobotEventsChallengeWebsite2018
 $ npm install -g @vue/cli-service
 $ npm install @vue/cli-plugin-babel
@@ -14,42 +14,26 @@ $ npm run serve
 
 ### Dev Server
 ```bash
+# Running on port 8080
 $ npm run serve
 ```
-
-#### About dev server
-* Running on port 8080
 
 ### Build for Prod
 ```bash
 $ npm run build
+
+# Build and deploy to prod
+$ ./deploy.sh
 ```
-
-## Info :information_source:
-Just a heads up, I performed an interactive rebase on about November 28th 2018, and essentially nuked part of the commit history or something. I tried to rename some (2ish) commit messages, but I tripped up and messed up. I tried to fix it, it's still messed up, but the website works now. ¯\_(ツ)_/¯
-
 
 ## Roadmap :car:
 ### Website
 * Make website responsive design & mobile friendly
-* Possibly have some way of viewing the Team's 3D Models bots
-* Maybe have a shine effect, possibly for some of the sponsor icons
 * Theme support
 * Create abstraction over image element, such that clicking on image yields an enlarged photo, with extra features
 * Think about timeline component to show timeline of frc, vex, cyberpatriots competition
-* Have carousel of sponsors / photos, etc., or have line of sponsors that move left gradually
 * Have descriptions of photographs on the back, via flip on hover
 * 404
-
-### ~~Blogging System~~
-* No plans of implementation, details will become more terse, removed as time progresses
-* Blogging system can be controlled by in-house (very basic) CMS
-  * Make with NodeJS (running on localhost)
-  * Use SQLite to manage users
-* CMS has three types of users
-  * admins, moderators and standard users
-* All users must memorize passcode
-  * Keep trap of users, comments, etc. If a password is wiped due to an emergency, make sure the blog posts, comments, etc. are not deleted, or will not be deleted on the next build of the blog
 
 ## Maintenance
 ###  As time continues
