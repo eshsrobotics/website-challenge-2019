@@ -31,7 +31,6 @@ export default new Vuex.Store({
       }
     },
     setAlbumDataAccordingToURI: function(state, URI) {
-      console.log(photoData)
       // let newPhotoData = photoData
       let replaceWithThis
       let keepLooking = true
@@ -45,8 +44,6 @@ export default new Vuex.Store({
           }
         }
       }
-      console.log(replaceWithThis)
-
 
       let newAlbumData = replaceWithThis
       for(let property in newAlbumData) {
