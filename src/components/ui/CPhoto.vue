@@ -22,7 +22,7 @@ export default {
   computed: {
     getPictureWidth: function() {
       console.log('cphoto', this.pictureWidth)
-      let myString = "width: " + this.pictureWidth
+      let myString = "width: " + this.pictureWidth + ";" + "height: " + this.pictureHeight
       return myString;
     }
   },
@@ -45,7 +45,8 @@ export default {
         imageAltText: 'Generic Alt Text'
       })
     },
-    pictureWidth: String
+    pictureWidth: String,
+    pictureHeight: String
   }
 }
 </script>
@@ -68,6 +69,8 @@ export default {
 img {
   width: 100%;
   max-width: 100%;
+  /*height: 100%;*/
+  /*max-height: 100%;*/
   border-radius: $border-radius-small;
 }
 

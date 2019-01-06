@@ -13,9 +13,8 @@
     </layout-cards-fit>
 
     <h2>We thank our wonderful sponsors</h2>
-      <infinite-slide-bar duration="50s" width="4500px">
+      <infinite-slide-bar duration="50s" width="3430px">
         <div class="carousel">
-          <card-sponsor :sponsor="sponsors.gamma"></card-sponsor>
           <card-sponsor :sponsor="sponsors.epsilon"></card-sponsor>
           <card-sponsor :sponsor="sponsors.zeta"></card-sponsor>
           <card-sponsor :sponsor="sponsors.kappa"></card-sponsor>

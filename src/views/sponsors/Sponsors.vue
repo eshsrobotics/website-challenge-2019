@@ -22,11 +22,21 @@
       <card-sponsor :sponsor="sponsors.rho"></card-sponsor>
       <card-sponsor></card-sponsor>
     </card-sponsor-wrapper>
+
+    <section class="sponsor-us">
+      <h1>Sponsor Us</h1>
+      <p>Sponsoring the Robotics Club brings many benefits. Seem them on the sponsor us page! [WIP]</p>
+      <router-link to="/sponsors/us">
+        <c-button>Sponsor Us</c-button>
+      </router-link>
+    </section>
+
   </div>
 </template>
 
 <script>
 import PageDesc from '@/components/PageDescription'
+import CButton from '@/components/ui/CButton'
 import WrapperCardSponsor from '@/components/card-layout/WrapperCardSponsor'
 import CardSponsor from '@/components/card/CardSponsor'
 import SponsorData from '@/views/sponsors/sponsorData'
@@ -40,6 +50,7 @@ export default {
   },
   components: {
     'page-desc': PageDesc,
+    'c-button': CButton,
     'card-sponsor-wrapper': WrapperCardSponsor,
     'card-sponsor': CardSponsor
   }
@@ -48,5 +59,9 @@ export default {
 
 <style scoped lang="scss">
 @import '@/styles/variables.scss';
+
+.sponsor-us {
+  margin-top: 15px;
+}
 </style>
 
