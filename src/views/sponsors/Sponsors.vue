@@ -4,10 +4,6 @@
        <p>The Robotics Club is grateful all our sponsors</p>
     </page-desc>
 
-    <card-sponsor-wrapper tier="diamond">
-      <card-sponsor :sponsor="sponsors.gamma"></card-sponsor>
-    </card-sponsor-wrapper>
-
     <card-sponsor-wrapper tier="gold">
       <card-sponsor :sponsor="sponsors.epsilon"></card-sponsor>
     </card-sponsor-wrapper>

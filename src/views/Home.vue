@@ -12,6 +12,12 @@
       <card-generic :cardInfo="competitions.vex" class="competition"></card-generic>
     </layout-cards-fit>
 
+    <page-desc>
+      <h2>About</h2>
+      <p>dd</p>
+      <br/>
+    </page-desc>
+
     <h2>We thank our wonderful sponsors</h2>
       <infinite-slide-bar duration="50s" width="3430px">
         <div class="carousel">

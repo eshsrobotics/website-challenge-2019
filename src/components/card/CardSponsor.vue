@@ -1,5 +1,5 @@
 <template>
-  <div class="sponsor">
+  <div class="sponsor" :class="sponsor.tier">
     <h3> {{ sponsor.name }} </h3>
     <img :src="sponsor.image" :alt="sponsor.imageAltText" :width="pictureWidth"/>
     <!--<div :width="pictureWidth">-->
@@ -81,16 +81,28 @@ h3 {
 .diamond .sponsor {
   @include hoverShadow($std-shadow-hov, $oc-blue-3, 32px);
 }
+.diamond.sponsor {
+  @include hoverShadow($std-shadow-hov, $oc-blue-3, 32px);
+}
 
 .gold .sponsor {
+  @include hoverShadow($std-shadow-hov, $oc-yellow-3, 32px);
+}
+.gold.sponsor {
   @include hoverShadow($std-shadow-hov, $oc-yellow-3, 32px);
 }
 
 .silver .sponsor {
   @include hoverShadow($std-shadow-hov, $oc-indigo-3, 32px);
 }
+.silver.sponsor {
+  @include hoverShadow($std-shadow-hov, $oc-indigo-3, 32px);
+}
 
 .bronze .sponsor {
+  @include hoverShadow($std-shadow-hov, $oc-orange-3, 32px);
+}
+.bronze.sponsor {
   @include hoverShadow($std-shadow-hov, $oc-orange-3, 32px);
 }
 
