@@ -8,7 +8,7 @@
       <p>Meetings are held on Fridays.</p>
     </c-block>
 
-    <h2>Cyberpatriots Photos</h2>
+    <h2>Cyberpatriots Photo Album</h2>
     <infinite-slide-bar duration="70s" width="3600px">
       <div class="carousel">
         <card-generic :cardInfo="previewPhotos[0]" class="competition"></card-generic>

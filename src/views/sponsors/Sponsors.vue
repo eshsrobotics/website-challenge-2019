@@ -26,7 +26,6 @@
         <c-button>Sponsor Us</c-button>
       </router-link>
     </section>
-
   </div>
 </template>
 

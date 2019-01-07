@@ -4,6 +4,7 @@
     <h4 v-if="subtitleShow">{{ cardInfo.subtitle }}</h4>
     <c-photo v-if="imageShow" :imageInfo="cardInfo" :pictureWidth="pictureWidth" :pictureHeight="pictureHeight"></c-photo>
     <p v-if="descShow">{{ cardInfo.desc }}</p>
+    <slot></slot>
     <router-link v-if="buttonShow" :to="cardInfo.buttonRouteTo">
       <c-button>{{ cardInfo.buttonText }}</c-button>
     </router-link>
@@ -100,6 +101,10 @@ export default {
 .card-generic button {
   a:link, a:visited, a:hover, a:active {
     text-decoration: none;
+  }
+
+  button {
+    width: 100%;
   }
 }
 </style>

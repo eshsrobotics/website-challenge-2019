@@ -25,13 +25,6 @@ export default new Router({
           }
         },
         {
-          path: 'team',
-          component: () => import('@/views/about/Team'),
-          meta: {
-            title: 'Team'
-          }
-        },
-        {
           path: 'coaches-and-mentors',
           component: () => import('@/views/about/CoachesAndMentors'),
           meta: {

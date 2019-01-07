@@ -6,7 +6,6 @@
       <li id="image"> <img src="@/assets/robotics-logo.png" alt="Robotics Logo" height="30px"> </li>
       <nav-bar-item routeTo="/">Home</nav-bar-item>
        <nav-bar-item-dropdown routeTo="/about" dropdownTitle="About Us">
-        <nav-bar-item routeTo="/about/team" :hrBelow="true">Team</nav-bar-item>
         <nav-bar-item routeTo="/about/coaches-and-mentors" :hrBelow="true">Coaches and Mentors</nav-bar-item>
         <nav-bar-item routeTo="/about/officers" :hrBelow="true">Officers</nav-bar-item>
         <nav-bar-item routeTo="/about/website">Website</nav-bar-item>

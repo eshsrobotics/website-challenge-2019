@@ -11,6 +11,10 @@ export default {
 </script>
 
 <style scoped lang="scss">
+.page-desc {
+  max-width: 1200px;
+}
+
 h1 {
   margin-bottom: 10px;
 }

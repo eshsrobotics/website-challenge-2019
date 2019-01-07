@@ -2,21 +2,32 @@
   <div class="home">
     <page-desc>
       <p>We're a club located in the <b>heart of El Segundo</b>, We have a <b>strong passion</b> for robotics, programming, engineering, and anything related.</p>
-      <p>The team resides in the South Bay at El Segundo High School.</p>
+     <p>The team resides in the South Bay at <a href="https://www.elsegundohigh.org" target="_blank">El Segundo High School</a>.</p>
     </page-desc>
-
-    <h2>Competitions</h2>
-    <layout-cards-fit class="competitions">
-      <card-generic :cardInfo="competitions.cyberpatriots" class="competition"></card-generic>
-      <card-generic :cardInfo="competitions.frc" class="competition"></card-generic>
-      <card-generic :cardInfo="competitions.vex" class="competition"></card-generic>
-    </layout-cards-fit>
 
     <page-desc>
       <h2>About</h2>
-      <p>dd</p>
+      <p>El Segundo High School robotics contains three programs: CyberPatriots, FRC, and VEX. Each program integrates the discipline of engineering differently. For example, CyberPatriots is more geared to Computer Science skills while FRC and VEX are concerned more with tangible, mechanical products. Captains oversee each program, but are unified by core values a common goal. Read more about the team below or lean more about each program.</p>
+      <router-link to="/about">
+        <c-button> About the Team</c-button>
+      </router-link>
+      <br/>
       <br/>
     </page-desc>
+
+    <h2>Programs</h2>
+    <layout-cards-fit class="competitions">
+      <card-generic :cardInfo="competitions.cyberpatriots" class="competition">
+        <p><b>Meets Fridays</b><br/></p>
+      </card-generic>
+      <card-generic :cardInfo="competitions.frc" class="competition">
+        <p><b>Meets Thursdays</b><br/></p>
+      </card-generic>
+      <card-generic :cardInfo="competitions.vex" class="competition">
+        <p><b>Meets Wednesdays</b><br/></p>
+      </card-generic>
+    </layout-cards-fit>
+
 
     <h2>We thank our wonderful sponsors</h2>
       <infinite-slide-bar duration="50s" width="3430px">
@@ -38,6 +49,7 @@ import LayoutCardsFit from '@/components/card-layout/LayoutCardsFit'
 import CardSponsorWrapper from '@/components/card-layout/WrapperCardSponsor'
 import CardSponsor from '@/components/card/CardSponsor'
 import SponsorData from '@/views/sponsors/sponsorData'
+import CButton from '@/components/ui/CButton'
 
 export default {
   name: 'home',
@@ -78,7 +90,8 @@ export default {
     'card-generic': CardGeneric,
     'layout-cards-fit': LayoutCardsFit,
     'card-sponsor-wrapper': CardSponsorWrapper,
-    'card-sponsor': CardSponsor
+    'card-sponsor': CardSponsor,
+    'c-button': CButton
   }
 }
 </script>

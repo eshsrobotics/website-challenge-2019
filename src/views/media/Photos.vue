@@ -1,6 +1,6 @@
 <template>
   <div class="photos">
-    <p>See the team's photos throughout the year. Find photos from competitions, events, and general lab work.</p>
+    <p>See the team's photos throughout the years. Find competition, event, and other photos!</p>
     <div v-for="year in newPhotoData" :key="year.year" class="card">
       <h2>{{ year.year }}</h2>
       <layout-cards-struct class="events-wrapper">
