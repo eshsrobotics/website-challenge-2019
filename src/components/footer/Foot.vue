@@ -3,8 +3,8 @@
     <div class="column">
       <p>About</p>
       <ul>
-        <li><router-link to="/about">The club</router-link></li>
-        <li><router-link to="/about/coaches-and-mentors">Coaches &amp; Mentors</router-link></li>
+        <li><router-link to="/about">About</router-link></li>
+        <li><router-link to="/about/team">Team</router-link></li>
         <li><router-link to="/about/website">Website</router-link></li>
       </ul>
     </div>

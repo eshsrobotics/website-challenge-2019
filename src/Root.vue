@@ -2,8 +2,12 @@
   <div id="app">
       <navbar class="nav"/>
       <div class="router-view-outer">
-        <page-heading class="heading"/>
-        <router-view class="router-view"/>
+        <!--<transition name="fade" mode="out-in">-->
+          <page-heading class="heading"/>
+        <!--</transition>-->
+        <!--<transition name="slide" mode="out-in">-->
+          <router-view class="router-view"/>
+        <!--</transition>-->
       </div>
       <foot class="footer"></foot>
   </div>
@@ -16,6 +20,18 @@ import Footer from '@/components/footer/Foot'
 
 export default {
   name: 'theRoot',
+  data() {
+    return {
+      transitionName: 'slide-left'
+    }
+  },
+  watch: {
+    '$route' (to, from) {
+      const toDepth = to.path.split('/').length
+      const fromDepth = from.path.split('/').length
+      this.transitionName = toDepth < fromDepth ? 'slide-right' : 'slide-left'
+    }
+  },
   components: {
     'navbar': Navbar,
     'page-heading': PageHeading,
@@ -109,5 +125,26 @@ a:hover, a:active {
 }
 .router-view {
   width: 100%;
+}
+
+.fade-enter-active, .fade-leave-active {
+  transition: opacity .2s ease;
+}
+.fade-enter, .fade-leave-active {
+  opacity: 0;
+}
+.child-view {
+  position: absolute;
+  transition: all .2s cubic-bezier(.55,0,.1,1);
+}
+.slide-left-enter, .slide-right-leave-active {
+  opacity: 0;
+  -webkit-transform: translate(30px, 0);
+  transform: translate(30px, 0);
+}
+.slide-left-leave-active, .slide-right-enter {
+  opacity: 0;
+  -webkit-transform: translate(-30px, 0);
+  transform: translate(-30px, 0);
 }
 </style>

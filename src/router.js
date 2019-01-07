@@ -25,17 +25,10 @@ export default new Router({
           }
         },
         {
-          path: 'coaches-and-mentors',
-          component: () => import('@/views/about/CoachesAndMentors'),
+          path: 'team',
+          component: () => import('@/views/about/Team'),
           meta: {
             title: 'Coaches & Mentors'
-          }
-        },
-        {
-          path: 'officers',
-          component: () => import('@/views/about/Officers'),
-          meta: {
-            title: 'Officers'
           }
         },
         {
@@ -145,6 +138,17 @@ export default new Router({
       meta: {
         title: 'Contact'
       }
+    },
+    {
+      path: '/404',
+      component: () => import('@/views/404'),
+      meta: {
+        title: '404'
+      },
+    },
+    {
+      path: '*',
+      redirect: '/404'
     }
   ]
 })

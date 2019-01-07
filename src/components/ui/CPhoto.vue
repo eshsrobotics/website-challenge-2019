@@ -21,7 +21,7 @@ export default {
   },
   computed: {
     getPictureWidth: function() {
-      console.log('cphoto', this.pictureWidth)
+      // console.log('cphoto', this.pictureWidth)
       let myString = "width: " + this.pictureWidth + ";" + "height: " + this.pictureHeight
       return myString;
     }
@@ -34,7 +34,7 @@ export default {
       else {
         this.cardState = 'card-small'
       }
-      console.log('Card changing state')
+      // console.log('Card changing state')
     }
   },
   props: {
