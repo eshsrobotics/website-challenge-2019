@@ -1,7 +1,7 @@
 <template>
   <page-desc>
     <h1>Page Not Found</h1>
-    <p>Sorry your link was not found</p>
+    <p>Sorry your link was not found.</p>
     <br><br>
     <p>Learn about the Robotics Competition while you're here!</p>
     <router-link to="/">

@@ -140,15 +140,15 @@ export default new Router({
       }
     },
     {
+      path: '/image/:image',
+      component: () => import('@/views/EnlargedImage')
+    },
+    {
       path: '/404',
       component: () => import('@/views/404'),
       meta: {
         title: '404'
       },
     },
-    {
-      path: '*',
-      redirect: '/404'
-    }
   ]
 })

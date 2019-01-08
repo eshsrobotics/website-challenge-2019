@@ -14,11 +14,17 @@ export default new Vuex.Store({
       photosPrefix: '',
       photosSuffix: '',
       photos: []
+    },
+    enlargedPhotoData: {
+
     }
   },
   getters: {
     getAlbumData: function(state) {
-      return state.albumData;
+      return state.albumData
+    },
+    getEnlargedPhotoData: function(state) {
+      return state.enlargedPhotoData
     }
   },
   mutations: {
@@ -53,8 +59,5 @@ export default new Vuex.Store({
         }
       }
     }
-  },
-  actions: {
-
   }
 })
