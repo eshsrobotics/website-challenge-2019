@@ -33,29 +33,29 @@ export default {
   data() {
     return {
       frcBlock: {
-        image: 'https://github.com/eshsrobotics/database-photos/blob/master/2017-2018/frc-competition/frccompetition5.jpg?raw=true',
+        image: 'https://github.com/eshsrobotics/database-photos/blob/master/2017-2018/frc-competition/frccompetition5.small.jpg?raw=true',
         imageAltText: 'Dummy Image',
         photoPosition: 'right'
       },
       previewPhotos: [
         {
-          image: 'https://github.com/eshsrobotics/database-photos/blob/master/2017-2018/frc-competition-prep-kickoff/DSC07594.JPG?raw=true',
+          image: 'https://github.com/eshsrobotics/database-photos/blob/master/2017-2018/frc-competition-prep-kickoff/DSC07594.small.jpg?raw=true',
           imageAltText: "Alt text",
         },
         {
-          image: 'https://github.com/eshsrobotics/database-photos/blob/master/2016-2017/frc-competition/frccompetition14.jpg?raw=true',
+          image: 'https://github.com/eshsrobotics/database-photos/blob/master/2016-2017/frc-competition/frccompetition14.small.jpg?raw=true',
           imageAltText: "Alt text",
         },
         {
-          image: 'https://github.com/eshsrobotics/database-photos/blob/master/2016-2017/frc-competition-prep/frcbot6.jpg?raw=true',
+          image: 'https://github.com/eshsrobotics/database-photos/blob/master/2016-2017/frc-competition-prep/frcbot6.small.jpg?raw=true',
           imageAltText: "Alt text",
         },
         {
-          image: 'https://github.com/eshsrobotics/database-photos/blob/master/2016-2017/frc-competition/frccompetition36.jpg?raw=true',
+          image: 'https://github.com/eshsrobotics/database-photos/blob/master/2016-2017/frc-competition/frccompetition36.small.jpg?raw=true',
           imageAltText: "Alt text",
         },
         {
-          image: 'https://github.com/eshsrobotics/database-photos/blob/master/2017-2018/frc-competition/frccompetition1.jpg?raw=true',
+          image: 'https://github.com/eshsrobotics/database-photos/blob/master/2017-2018/frc-competition/frccompetition1.small.jpg?raw=true',
           imageAltText: "Alt text",
         },
       ],

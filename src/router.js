@@ -32,6 +32,13 @@ export default new Router({
           }
         },
         {
+          path: 'join-us',
+          component: () => import('@/views/about/JoinUs'),
+          meta: {
+            title: 'Join Us'
+          }
+        },
+        {
           path: 'website',
           component: () => import('@/views/about/Website'),
           meta: {
@@ -145,6 +152,13 @@ export default new Router({
     },
     {
       path: '/404',
+      component: () => import('@/views/404'),
+      meta: {
+        title: '404'
+      }
+    },
+    {
+      path: '*',
       component: () => import('@/views/404'),
       meta: {
         title: '404'

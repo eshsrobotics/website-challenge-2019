@@ -34,29 +34,29 @@ export default {
   data() {
     return {
       cypatBlock: {
-        image: 'https://github.com/eshsrobotics/database-photos/blob/master/2017-2018/cyberpatriots-competition-prep/cyberPatriots2.jpg?raw=true',
+        image: 'https://github.com/eshsrobotics/database-photos/blob/master/2017-2018/cyberpatriots-competition-prep/cyberPatriots2.small.jpg?raw=true',
         imageAltText: 'Brainstorming before competition',
         photoPosition: 'right'
       },
       previewPhotos: [
         {
-          image: 'https://github.com/eshsrobotics/database-photos/blob/master/2018-2019/cyberpatriots-november-competition/IMG_0900.jpg?raw=true',
+          image: 'https://github.com/eshsrobotics/database-photos/blob/master/2018-2019/cyberpatriots-november-competition/IMG_0900.small.jpg?raw=true',
           imageAltText: "Alt text",
         },
         {
-          image: 'https://github.com/eshsrobotics/database-photos/blob/master/2017-2018/cyberpatriots-competition-prep/cyberPatriots9.jpg?raw=true',
+          image: 'https://github.com/eshsrobotics/database-photos/blob/master/2017-2018/cyberpatriots-competition-prep/cyberPatriots9.small.jpg?raw=true',
           imageAltText: "Alt text",
         },
         {
-          image: 'https://github.com/eshsrobotics/database-photos/blob/master/2018-2019/cyberpatriots-november-competition/IMG_0906.jpg?raw=true',
+          image: 'https://github.com/eshsrobotics/database-photos/blob/master/2018-2019/cyberpatriots-november-competition/IMG_0906.small.jpg?raw=true',
           imageAltText: "Alt text",
         },
         {
-          image: 'https://github.com/eshsrobotics/database-photos/blob/master/2018-2019/cyberpatriots-november-competition/IMG_0904.jpg?raw=true',
+          image: 'https://github.com/eshsrobotics/database-photos/blob/master/2018-2019/cyberpatriots-november-competition/IMG_0904.small.jpg?raw=true',
           imageAltText: "Alt text",
         },
         {
-          image: 'https://github.com/eshsrobotics/database-photos/blob/master/2017-2018/cyberpatriots-competition-prep/cyberPatriots1.jpg?raw=true',
+          image: 'https://github.com/eshsrobotics/database-photos/blob/master/2017-2018/cyberpatriots-competition-prep/cyberPatriots1.small.jpg?raw=true',
           imageAltText: "Alt text",
         },
       ],

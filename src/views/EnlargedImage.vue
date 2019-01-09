@@ -7,7 +7,7 @@
       <img :src="base64ToObject.image" :alt="base64ToObject.imageAltText">
     </div>
     <div class="buttons">
-      <c-button><a @click="$router.go(-1)">Go Back</a></c-button>
+      <a @click="$router.go(-1)"><c-button>Go Back</c-button></a>
       <c-button>View on GitHub</c-button>
       <a :href="base64ToObject.image"><c-button>View Raw</c-button></a>
       <c-button>Direct Download</c-button>
@@ -37,7 +37,6 @@ export default {
       // Remember we replaced '/' with '!'
       let myThing = base64.split('!').join('/') // Slower than replacing with RegEx
       myThing = JSON.parse(atob(myThing))
-      console.log('upsilon', myThing)
       return myThing
     }
 

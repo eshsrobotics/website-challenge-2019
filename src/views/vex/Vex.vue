@@ -33,29 +33,29 @@ export default {
   data() {
     return {
       vexBlock: {
-        image: 'https://github.com/eshsrobotics/database-photos/blob/master/2017-2018/vex-competition-prep/vex8.jpg?raw=true',
+        image: 'https://github.com/eshsrobotics/database-photos/blob/master/2017-2018/vex-competition-prep/vex8.small.jpg?raw=true',
         imageAltText: 'Dummy Image',
         photoPosition: 'right'
       },
       previewPhotos: [
         {
-          image: 'https://github.com/eshsrobotics/database-photos/blob/master/2017-2018/vrc-generic-photos/vex7.jpg?raw=true',
+          image: 'https://github.com/eshsrobotics/database-photos/blob/master/2017-2018/vrc-generic-photos/vex7.small.jpg?raw=true',
           imageAltText: "Alt text",
         },
         {
-          image: 'https://github.com/eshsrobotics/database-photos/blob/master/2017-2018/vrc-generic-photos/vex14.jpg?raw=true',
+          image: 'https://github.com/eshsrobotics/database-photos/blob/master/2017-2018/vrc-generic-photos/vex14.small.jpg?raw=true',
           imageAltText: "Alt text",
         },
         {
-          image: 'https://github.com/eshsrobotics/database-photos/blob/master/2018-2019/vex-competition-prep/vexprep1.jpg?raw=true',
+          image: 'https://github.com/eshsrobotics/database-photos/blob/master/2018-2019/vex-competition-prep/vexprep1.small.jpg?raw=true',
           imageAltText: "Alt text",
         },
         {
-          image: 'https://github.com/eshsrobotics/database-photos/blob/master/2017-2018/vrc-generic-photos/vex5.jpg?raw=true',
+          image: 'https://github.com/eshsrobotics/database-photos/blob/master/2017-2018/vrc-generic-photos/vex5.small.jpg?raw=true',
           imageAltText: "Alt text",
         },
         {
-          image: 'https://github.com/eshsrobotics/database-photos/blob/master/2017-2018/vex-competition-prep/vex8.jpg?raw=true',
+          image: 'https://github.com/eshsrobotics/database-photos/blob/master/2017-2018/vex-competition-prep/vex8.small.jpg?raw=true',
           imageAltText: "Alt text",
         },
       ],
