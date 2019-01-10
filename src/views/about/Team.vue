@@ -35,7 +35,6 @@ import CBreadcrumb from '@/components/ui/Breadcrumb'
 import LayoutCardsOverflow from '@/components/card-layout/LayoutCardsOverflow'
 import CardGeneric from '@/components/card/CardGeneric'
 
-
 export default {
   name: 'coachesAndMentors',
   data() {

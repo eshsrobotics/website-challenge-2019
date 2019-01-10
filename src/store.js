@@ -14,9 +14,6 @@ export default new Vuex.Store({
       photosPrefix: '',
       photosSuffix: '',
       photos: []
-    },
-    enlargedPhotoData: {
-
     }
   },
   getters: {

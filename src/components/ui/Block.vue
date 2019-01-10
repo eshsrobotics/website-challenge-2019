@@ -1,16 +1,15 @@
 <template>
-<div :class="blockData.photoPosition" class="block">
-  <div v-if="blockData.photoPosition == 'right'" class="description">
-    <slot></slot>
+  <div :class="blockData.photoPosition" class="block">
+    <div v-if="blockData.photoPosition == 'right'" class="description">
+      <slot></slot>
+    </div>
+    <div class="picture">
+      <card-generic :cardInfo="blockData"></card-generic>
+    </div>
+    <div v-if="blockData.photoPosition == 'left'" class="description">
+      <slot></slot>
+    </div>
   </div>
-  <div class="picture">
-    <card-generic :cardInfo="blockData"></card-generic>
-  </div>  
-  <div v-if="blockData.photoPosition == 'left'" class="description">
-    <slot></slot>
-  </div>
-</div>
- 
 </template>
 
 <script>
@@ -45,8 +44,6 @@ p {
 }
 
 img {
-  // width: auto;
-  // height: auto;
   border-radius: $border-radius;
   display: block;
 }
@@ -70,5 +67,4 @@ img {
 .right .picture {
   margin-left: 20px;
 }
-
 </style>

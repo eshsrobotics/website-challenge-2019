@@ -3,7 +3,6 @@
     <h1>View Image</h1>
     <h3>Description</h3>
     <p>{{ base64ToObject.imageAltText }}</p>
-    <p>{{ base64ToObject }}</p>
     <div class="photo">
       <img :src="base64ToObject.imageHighRes" :alt="base64ToObject.imageAltText">
     </div>
@@ -12,7 +11,6 @@
       <c-button>View on GitHub</c-button>
       <a :href="base64ToObject.image"><c-button>View Raw</c-button></a>
       <c-button>Direct Download</c-button>
-
     </div>
   </div>
 </template>
@@ -25,11 +23,6 @@ export default {
   props: {
     pictureDataBase64: Object
   },
-  methods: {
-    changeRoute: function() {
-      this.$router.go(-1)
-    }
-  },
   computed: {
     base64ToObject: function() {
       // Obfuscating the object, convert to base64, with some catches (!//)
@@ -40,7 +33,6 @@ export default {
       myThing = JSON.parse(atob(myThing))
       return myThing
     }
-
   },
   components: {
     'c-button': CButton

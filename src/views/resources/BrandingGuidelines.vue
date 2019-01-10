@@ -5,15 +5,15 @@
 </template>
 
 <script>
-  import PageDesc from '@/components/PageDescription'
-  export default {
-    name: 'brandingGuidelines',
-    components: {
-      'page-desc': PageDesc
-    }
+import PageDesc from '@/components/PageDescription'
+export default {
+  name: 'brandingGuidelines',
+  components: {
+    'page-desc': PageDesc
   }
+}
 </script>
 
 <style scoped lang="scss">
-  @import '@/styles/variables.scss';
+@import '@/styles/variables.scss';
 </style>

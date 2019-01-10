@@ -1,11 +1,10 @@
 <template>
-<ul>
-  <li v-for="(urlSeg, index) in pathsArray" :key="urlSeg">
-    <router-link :to="getPath(urlSeg)"><p>{{ urlSeg }}</p></router-link>
-    <p v-if="index !== pathsArray.length -1 " class="separator"> ></p>
-  </li>
-</ul>
- 
+  <ul>
+    <li v-for="(urlSeg, index) in pathsArray" :key="urlSeg">
+      <router-link :to="getPath(urlSeg)"><p>{{ urlSeg }}</p></router-link>
+      <p v-if="index !== pathsArray.length -1 " class="separator"> ></p>
+    </li>
+  </ul>
 </template>
 
 <script>
@@ -67,16 +66,16 @@ export default {
 </script>
 
 <style scoped lang="scss">
-  ul {
-    display: flex;
-  }
+ul {
+  display: flex;
+}
 
-  li {
-    list-style-type: none;
-    padding: 5px;
-  }
+li {
+  list-style-type: none;
+  padding: 5px;
+}
 
-  p {
-    display: inline;
-  }
+p {
+  display: inline;
+}
 </style>

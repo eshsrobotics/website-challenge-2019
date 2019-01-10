@@ -12,15 +12,16 @@
 <script>
 import NavBarItem from '@/components/nav/NavbarItem'
 
-  export default {
-    props: {
-      routeTo: String,
-      dropdownTitle: String
-    },
-    components: {
-      'nav-bar-item': NavBarItem
-    }
+export default {
+name: 'navbarItemDropdown',
+  props: {
+    routeTo: String,
+    dropdownTitle: String
+  },
+  components: {
+    'nav-bar-item': NavBarItem
   }
+}
 </script>
 
 <style scoped lang="scss">

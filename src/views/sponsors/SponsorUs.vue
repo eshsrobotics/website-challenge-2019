@@ -13,8 +13,8 @@
 </template>
 
 <script>
-  import CButton from '@/components/ui/CButton'
-  import PageDesc from '@/components/PageDescription'
+import CButton from '@/components/ui/CButton'
+import PageDesc from '@/components/PageDescription'
 
 export default {
   name: 'sponsorUs',

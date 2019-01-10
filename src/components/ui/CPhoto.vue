@@ -2,9 +2,6 @@
   <div class="image-wrapper">
     <div class="image-wrapper-inner" :class="cardState">
       <div class="image-front" :style="getPictureWidth">
-        <!--<div class="maximize-icon" @click="flipCard">-->
-          <!--<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 21" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-maximize-2"><polyline points="15 3 21 3 21 9"></polyline><polyline points="9 21 3 21 3 15"></polyline><line x1="21" y1="3" x2="14" y2="10"></line><line x1="3" y1="21" x2="10" y2="14"></line></svg>-->
-        <!--</div>-->
         <img :src="imageInfo.image" :alt="imageInfo.imageAltText">
         <div class="maximize-icon">
           <router-link :to="pictureEnlargeRouteTo">
@@ -47,18 +44,6 @@ export default {
       return '/image/' + base64Thing
     }
   },
-  methods: {
-
-    flipCard: function() {
-      if(this.cardState === 'card-small') {
-        this.cardState = 'card-large'
-      }
-      else {
-        this.cardState = 'card-small'
-      }
-      // console.log('Card changing state')
-    }
-  },
   props: {
     imageInfo: {
       type: Object,
@@ -84,15 +69,9 @@ export default {
   position: relative;
 }
 
-.image-front {
-  /*position: absolute;*/
-}
-
 img {
   width: 100%;
   max-width: 100%;
-  /*height: 100%;*/
-  /*max-height: 100%;*/
   border-radius: $border-radius-small;
 }
 
@@ -109,7 +88,6 @@ svg {
 }
 
 .maximize-icon {
-
   position: absolute;
   right: 5px;
   top: 5px;

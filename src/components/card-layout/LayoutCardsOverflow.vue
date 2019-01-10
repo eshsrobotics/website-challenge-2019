@@ -16,12 +16,10 @@ export default {
 .cards-overflow {
   display: flex;
   flex-wrap: wrap;
-
 }
 
 .cards-overflow > * {
   margin-right: 20px;
 }
-
 </style>
 

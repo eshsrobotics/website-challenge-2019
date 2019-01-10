@@ -146,5 +146,4 @@ a {
     transition: createTransitions((all));
   }
 }
-
 </style>

@@ -35,5 +35,4 @@ export default {
 h2 {
   margin-bottom: 3px;
 }
-
 </style>
