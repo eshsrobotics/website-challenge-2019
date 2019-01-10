@@ -2,7 +2,7 @@
   <div class="card-generic" @click="changeData">
     <h3 v-if="titleShow">{{ cardInfo.title }}</h3>
     <h4 v-if="subtitleShow">{{ cardInfo.subtitle }}</h4>
-    <c-photo v-if="imageShow" :imageInfo="cardInfo" :pictureWidth="pictureWidth" :pictureHeight="pictureHeight"></c-photo>
+    <c-photo class="photo-comp" v-if="imageShow" :imageInfo="cardInfo" :pictureWidth="pictureWidth" :pictureHeight="pictureHeight"></c-photo>
     <p v-if="descShow">{{ cardInfo.desc }}</p>
     <slot></slot>
     <router-link v-if="buttonShow" :to="cardInfo.buttonRouteTo">
@@ -106,5 +106,10 @@ export default {
   button {
     width: 100%;
   }
+}
+
+.card-generic:hover .photo-comp {
+  transform: scale(1.01, 1.01);
+  transition: transform $transition-duration $transition-timing-fn;
 }
 </style>
