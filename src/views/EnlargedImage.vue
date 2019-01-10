@@ -3,8 +3,9 @@
     <h1>View Image</h1>
     <h3>Description</h3>
     <p>{{ base64ToObject.imageAltText }}</p>
+    <p>{{ base64ToObject }}</p>
     <div class="photo">
-      <img :src="base64ToObject.image" :alt="base64ToObject.imageAltText">
+      <img :src="base64ToObject.imageHighRes" :alt="base64ToObject.imageAltText">
     </div>
     <div class="buttons">
       <a @click="$router.go(-1)"><c-button>Go Back</c-button></a>

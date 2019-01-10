@@ -4,8 +4,6 @@
       <h1> {{ getAlbumData.title }} </h1>
       <h2> {{ getAlbumData.year }}</h2>
       <p> {{ getAlbumData.desc }}</p>
-      <!--<p> {{ getAlbumData }}</p>-->
-      <!--<p> {{ getAlbumURIfromURL() }}</p>-->
     </page-desc>
     <layout-cards-struct class="events-wrapper">
       <card-generic v-for="photo in getAlbumData.photos" :cardInfo="imageInfo(photo)" :key="photo"></card-generic>
@@ -46,6 +44,9 @@
       imageInfo: function(photo) {
         let newImageInfo = {}
         newImageInfo.image = this.getAlbumData.photosPrefix + photo + this.getAlbumData.photosSuffix
+        let thing = newImageInfo.image.split('.')
+        let largeImage = thing.filter(el => el !== "small").join('.')
+        newImageInfo.imageHighRes = largeImage
         newImageInfo.subtitle = photo
         return newImageInfo
       },

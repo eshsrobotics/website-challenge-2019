@@ -38,6 +38,9 @@ export default {
       return myString;
     },
     pictureEnlargeRouteTo: function() {
+      let thing = this.imageInfo.image.split('.')
+      let largeImage = thing.filter(el => el !== "small").join('.')
+      this.imageInfo.imageHighRes = largeImage
       let base64Thing = btoa(JSON.stringify(this.imageInfo))
       // Note that base64 has slashes (63rd char), so must remove for path
       base64Thing = base64Thing.split('/').join('!')
