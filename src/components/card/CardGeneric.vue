@@ -107,9 +107,4 @@ export default {
     width: 100%;
   }
 }
-
-.card-generic:hover .photo-comp {
-  transform: scale(1.01, 1.01);
-  transition: transform $transition-duration $transition-timing-fn;
-}
 </style>
