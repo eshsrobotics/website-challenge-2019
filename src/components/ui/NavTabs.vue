@@ -1,5 +1,5 @@
 <template>
-  <ul>
+  <ul class="nav-tab">
     <li v-for="(routeObject, index) in routeObjects"  v-if="routeObject.meta.showRoute !== false" :class="isRouteActive(index)">
       <router-link :to="routeObjectsPath[index]">
         {{ routeObject.meta.title }}
@@ -144,6 +144,12 @@ a {
     cursor: pointer;
     background-color: $oc-blue-1;
     transition: createTransitions((all));
+  }
+}
+
+@media(max-width: $mobileWidth) {
+  .nav-tab {
+    display: none;
   }
 }
 </style>

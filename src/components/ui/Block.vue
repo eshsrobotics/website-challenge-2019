@@ -72,10 +72,15 @@ img {
   min-width: 350px;
   /*max-width: 500px;*/
 }
-@media(max-width: $mobileWidth) {
-  .block.left, .block.right {
-    /*display: flex;*/
-    /*flex-direction: column;*/
+@media(max-width: 650px) {
+  .block.left {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .block.right {
+    display: flex;
+    flex-direction: column;
   }
 }
 </style>

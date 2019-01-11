@@ -1,7 +1,9 @@
 <template>
   <nav class="nav">
     <ul id="list">
-      <li class="image"> <img src="@/assets/robotics-logo.png" alt="Robotics Logo" height="42px"> </li>
+      <router-link to="/">
+        <li class="image"> <img src="@/assets/robotics-logo.png" alt="Robotics Logo" height="42px"> </li>
+      </router-link>
       <nav-bar-item routeTo="/">Home</nav-bar-item>
        <nav-bar-item-dropdown routeTo="/about" dropdownTitle="About Us">
         <nav-bar-item routeTo="/about/team">Team</nav-bar-item>
