@@ -26,5 +26,6 @@ $border-radius-small: 5px;
 $transition-duration: 0.1s;
 $transition-timing-fn: ease-in-out;
 
+$mobileWidth: 880px;
 @import 'functions';
 @import 'mixins';

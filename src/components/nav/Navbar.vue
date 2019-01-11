@@ -119,7 +119,7 @@ li.image {
 }
 // When user hovers over hamburger menu and clicks, this class activates so that it looks hamburger menu shrinks slightly, then goes back
 .feather-menu.smaller {
-  transform: scale(0.9, 0.9);
+  transform: scale(0.92, 0.92);
   transition: createTransitions((all)) +
               createTransitions((transform), false, 0.3s);
 }
@@ -164,7 +164,7 @@ li.image {
   display: flex;
   flex-direction: column;
 }
-@media(max-width: 880px) {
+@media(max-width: $mobileWidth) {
   #list {
     display: none;
   }

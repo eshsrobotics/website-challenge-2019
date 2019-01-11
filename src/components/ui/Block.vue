@@ -67,4 +67,15 @@ img {
 .right .picture {
   margin-left: 20px;
 }
+
+.picture {
+  min-width: 350px;
+  /*max-width: 500px;*/
+}
+@media(max-width: $mobileWidth) {
+  .block.left, .block.right {
+    /*display: flex;*/
+    /*flex-direction: column;*/
+  }
+}
 </style>

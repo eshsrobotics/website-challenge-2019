@@ -50,6 +50,10 @@ export default {
 #app {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+    /*margin-left: auto;*/
+    /*margin-right: auto;*/
+    width: 100%;
+    /*max-width: 1500px;*/
 }
 
 h1 {
@@ -124,7 +128,10 @@ a:hover, a:active {
 
 }
 .router-view {
+  /*margin-left: auto;*/
+  /*margin-right: auto;*/
   width: 100%;
+  /*max-width: 1500px;*/
 }
 
 .fade-enter-active, .fade-leave-active {
