@@ -1,7 +1,7 @@
 <template>
   <nav class="nav">
     <ul id="list">
-      <li class="image"> <img src="@/assets/robotics-logo.png" alt="Robotics Logo" height="30px"> </li>
+      <li class="image"> <img src="@/assets/robotics-logo.png" alt="Robotics Logo" height="42px"> </li>
       <nav-bar-item routeTo="/">Home</nav-bar-item>
        <nav-bar-item-dropdown routeTo="/about" dropdownTitle="About Us">
         <nav-bar-item routeTo="/about/team">Team</nav-bar-item>
@@ -22,9 +22,9 @@
     </ul>
 
     <ul id="list-small-screen">
-      <li class="image"> <img src="@/assets/robotics-logo.png" alt="Robotics Logo" height="30px"> </li>
+      <li class="image"> <img src="@/assets/robotics-logo.png" alt="Robotics Logo" height="42px"> </li>
       <div @click="toggleMobileMenu">
-        <svg class="feather feather-menu" :class="{ smaller: shrinkHamburger}" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="#212529" stroke="#212529" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <svg class="feather feather-menu" :class="{ smaller: shrinkHamburger}" xmlns="http://www.w3.org/2000/svg" width="42" height="42" viewBox="0 0 24 24" fill="#212529" stroke="#212529" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
           <line x1="3" y1="12" x2="21" y2="12"></line>
           <line x1="3" y1="6" x2="21" y2="6">
           </line><line x1="3" y1="18" x2="21" y2="18"></line>
@@ -35,7 +35,7 @@
     <div :class="{ active: mobileMenuActive }" class="mobile-menu">
       <div class="mobile-menu-inner">
         <div @click="toggleMobileMenu">
-          <svg class="feather feather-menu" :class="{ smaller: shrinkHamburger}" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="#212529" stroke="#212529" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <svg class="feather feather-menu" :class="{ smaller: shrinkHamburger}" xmlns="http://www.w3.org/2000/svg" width="42" height="42" viewBox="0 0 24 24" fill="#212529" stroke="#212529" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
             <line x1="3" y1="12" x2="21" y2="12"></line>
             <line x1="3" y1="6" x2="21" y2="6">
             </line><line x1="3" y1="18" x2="21" y2="18"></line>
@@ -102,14 +102,14 @@ export default {
   justify-content: left;
   list-style-type: none;
   margin: 5px 5px 5px 5px;
+}
 
-  li.image {
-    padding: 0;
-    background-color: inherit;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+li.image {
+  padding: 0;
+  background-color: inherit;
+  display: flex;
+  /*justify-content: center;*/
+  /*align-items: center;*/
 }
 
 .feather-menu:hover {
@@ -130,10 +130,9 @@ export default {
 
 .mobile-menu {
   @include resetSpacing();
-
   visibility: hidden;
-  width: 100vw;
-  height: calc(100vh - 50px);
+  /*width: 100vw;*/
+  /*height: calc(100vh - 50px);*/
   opacity: 0;
   overflow: hidden;
   transform: translateY(15px);
@@ -143,11 +142,13 @@ export default {
   right: 0;
   bottom: 0;
   left: 0;
+  z-index: 200;
 }
 .mobile-menu.active {
-
   visibility: visible;
   background-color: white;
+  overflow: hidden;
+
   opacity: 1;
   transform: translateY(0);
   transition: createTransitions((all));
@@ -157,13 +158,13 @@ export default {
     float: right;
     margin: 5px;
   }
-
 }
+
 .mobile-menu-inner {
   display: flex;
   flex-direction: column;
 }
-@media(max-width: 850px) {
+@media(max-width: 880px) {
   #list {
     display: none;
   }

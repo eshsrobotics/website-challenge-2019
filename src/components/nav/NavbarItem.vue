@@ -56,7 +56,7 @@ p {
   font-family: 'poppins', sans-serif;
   color: $oc-gray-9;
   text-decoration: none;
-  padding: 10px 15px;
+  padding: 11px 16px;
   line-height: 100%;
 }
 

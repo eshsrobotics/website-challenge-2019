@@ -29,7 +29,7 @@ name: 'navbarItemDropdown',
 
 .dropdown {
   position: relative;
-  z-index: 10000;
+  z-index: 100;
 }
 
 .dropdown:hover .dropdown-items {
