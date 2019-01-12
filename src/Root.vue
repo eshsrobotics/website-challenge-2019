@@ -1,7 +1,7 @@
 <template>
   <div id="app">
-      <navbar class="nav"/>
-      <div class="router-view-outer">
+    <navbar class="nav-navbar"/>
+    <div class="router-view-outer">
         <!--<transition name="fade" mode="out-in">-->
           <page-heading class="heading"/>
         <!--</transition>-->
@@ -50,10 +50,7 @@ export default {
 #app {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-    /*margin-left: auto;*/
-    /*margin-right: auto;*/
-    width: 100%;
-    /*max-width: 1500px;*/
+  width: 100%;
 }
 
 h1 {
@@ -118,6 +115,13 @@ a:hover, a:active {
   text-decoration-color: $std-text-underline-active;
 
 }
+.nav-navbar {
+  margin: 10px 20px 0 15px;
+}
+
+.heading {
+  margin-top: -8px;
+}
 
 // This is for layout 100% page width
 .router-view-outer {
@@ -128,10 +132,10 @@ a:hover, a:active {
 
 }
 .router-view {
-  /*margin-left: auto;*/
-  /*margin-right: auto;*/
+  margin-left: auto;
+  margin-right: auto;
   width: 100%;
-  /*max-width: 1500px;*/
+  max-width: 1350px;
 }
 
 .fade-enter-active, .fade-leave-active {

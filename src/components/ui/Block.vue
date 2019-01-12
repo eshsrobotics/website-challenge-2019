@@ -1,10 +1,10 @@
 <template>
   <div :class="blockData.photoPosition" class="block">
-    <div v-if="blockData.photoPosition == 'right'" class="description">
-      <slot></slot>
-    </div>
     <div class="picture">
       <card-generic :cardInfo="blockData"></card-generic>
+    </div>
+    <div v-if="blockData.photoPosition == 'right'" class="description">
+      <slot></slot>
     </div>
     <div v-if="blockData.photoPosition == 'left'" class="description">
       <slot></slot>
@@ -45,19 +45,34 @@ p {
 
 img {
   border-radius: $border-radius;
-  display: block;
+  /*display: block;*/
+}
+
+.block {
+  margin-bottom: 20px;
 }
 
 .block.left {
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  margin-bottom: 30px;
+  height: 100%;
+
+  .picture {
+    float: left;
+  }
 }
 
 .block.right {
-  display: grid;
-  grid-template-columns: 2fr 1fr;
-  margin-bottom: 30px;
+  height: 100%;
+
+  .picture {
+    float: right;
+  }
+}
+
+.block::after {
+  content: " ";
+  display: block;
+  height: 0;
+  clear: both;
 }
 
 .left .picture {
@@ -69,10 +84,12 @@ img {
 }
 
 .picture {
+  width: 30vw;
   min-width: 350px;
-  /*max-width: 500px;*/
+  max-width: 600px;
 }
-@media(max-width: 650px) {
+
+@media(max-width: 550px) {
   .block.left {
     display: flex;
     flex-direction: column-reverse;
@@ -80,7 +97,11 @@ img {
 
   .block.right {
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
+  }
+
+  .picture {
+    width: 100%;
   }
 }
 </style>

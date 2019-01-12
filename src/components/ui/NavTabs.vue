@@ -36,7 +36,7 @@ import NavBarItem from '@/components/nav/NavbarItem.vue'
         // console.log('currentRoutesArray', currentRoutesArray)
         
         // Go through the routes tree to find all sibling rotes (or child routes if you are on the parent route (ex. if you are on '/about' (rather than '/about/website'), still show the same thing as '/about/website'))
-        let relevantRoutes = this.$router.options.routes;
+        let relevantRoutes = this.$router.options.routes
         // console.warn(relevantRoutes)
         for(let i = 0; i < currentRoutesArray.length; i++) {
           // Find all of the relevant routes (basically sibling components)
