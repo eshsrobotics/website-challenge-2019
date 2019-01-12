@@ -32,7 +32,6 @@ $ ./deploy.sh
 * Theme support
 * Path transitions
 * Create abstraction over image element, such that clicking on image yields an enlarged photo, with extra features
-* Have descriptions of photographs on the back, via flip on hover
 * Fix picture layout breaks with portrait dimensioned picture
 
 ## Maintenance
