@@ -30,22 +30,28 @@ $ ./deploy.sh
 ### Website
 * Make website responsive design & mobile friendly
 * Theme support
-* Path transitions
-* Create abstraction over image element, such that clicking on image yields an enlarged photo, with extra features
+* Improve image abstraction (add transition)
 * Fix picture layout breaks with portrait dimensioned picture
+* Improve low-width footer
+* spa
+* better 404
 
 ## Maintenance
 ###  As time continues
 Update links on each individual cyberpatriots, frc, vex page to latest photograph collection, album
 
 ### Adding photos
+To add photos, please add photos in the data-base photos archive, run respective scripts that build thumbnails for the higher resolution images, then reference those.
+Alternatively, if the photo is niche and does not group well into other photos (such as taken during a competition or event), drop images in src/assets/local-image. These images will copy over using CopyWebpackPlugin (config in Vue.config.js) to dist/local-image. Reference them with <REPONAME>/local-image/img.jpg' if it's in a JSON file. Ex. 'WebsiteChallenge2019/local-image/img.jpg'. If you're in some JS file, you should be able to reference it with '@/assets/local-image/img.jpg'
 
+### Editing this repo's name / changing hosting
+Some .json files such as sponsorData.json (and others) have the repository name, WebsiteChallenge2019 written in to them. This is because webpack does not seem to resolve '@' (as src (it's a default webpack alias within Vue-cli-3's default webpack config options)). There's probably some way to config webpack to resolve strings, but this is a temporary work around. So change paths in .json file when changing repos name of if this is hosted somewhere else (in these case you'll have to change baseURL (publicDir for Vue CLI 3.3+) in vue.config.js as well!)
 
 ### Updating Sponsors
 When updating sponsors, change sponsorData.json to match new sponsors. Wherever you want to show the Sponsors, you must update that page. This may include the `Sponsors.vue` page and the main page.
 
 ### Updating Carousels /  Infinite Slide Bars
-After adding or removing an image from the slide bar, you must change the width of the infinite slide bar component.
+After adding or removing an image from the slide bar, you must change the width of the infinite slide bar component. You must do this by design. Was not sure how to make component ore modular.
 
 
 ## Common Problems

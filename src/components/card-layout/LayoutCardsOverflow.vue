@@ -16,10 +16,14 @@ export default {
 .cards-overflow {
   display: flex;
   flex-wrap: wrap;
+  height: 0%;
+  /*max-height: 100%;*/
 }
 
 .cards-overflow > * {
   margin-right: 20px;
+  height: 0%;
+  /*max-height: 100%;*/
 }
 </style>
 

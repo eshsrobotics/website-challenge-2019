@@ -17,11 +17,11 @@
 
     <c-block :blockData="teamStructure">
       <h2>Team Structure</h2>
-      <p>Est aliqua dolor aliqua aliqua ea deserunt. Sunt laborum dolor consectetur magna cillum non deserunt id in cupidatat dolor cillum aliquip. Voluptate consequat in magna proident aute et cillum occaecat nisi esse cillum. Amet aute dolor deserunt culpa sunt nulla et est laborum officia consequat proident culpa.</p>
+      <p>As previously stated, the team is structured into three programs: CyberPatriots, FRC, and VEX. An officer helps coordinate the activities of each program. Additionally, a marketing lead heps coordinate any marketing and media activities. This includes </p>
     </c-block>
     <c-block :blockData="teamRecruitment">
       <h2>Recruitment Efforts</h2>
-      <p>Est aliqua dolor aliqua aliqua ea deserunt. Sunt laborum dolor consectetur magna cillum non deserunt id in cupidatat dolor cillum aliquip. Voluptate consequat in magna proident aute et cillum occaecat nisi esse cillum. Amet aute dolor deserunt culpa sunt nulla et est laborum officia consequat proident culpa.</p>
+      <p>The club orchestrates recruitment efforts to improve the visibility of the club and increase member count. For example, marketing helps coordinate the club's involvement in S.T.E.A.M. night, an evening hosted at the town's Elementary School that promotes topics relates to science, technology, engineering, art, and math.</p>
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At consequuntur, id laudantium nam quidem sed voluptatum. At commodi debitis dolorem ducimus minus omnis qui temporibus. Amet enim iusto minima nostrum.</p>
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa dolore illo iure nemo perferendis praesentium quibusdam vero! Accusantium dolores esse quis quos repudiandae. Cupiditate, distinctio, hic. Debitis dolor eaque vel!</p>
     </c-block>
@@ -39,12 +39,12 @@ export default {
   data() {
     return {
       coreValuesBlock: {
-        image: 'http://move2manhattanbeach.virtualresults.net/wp-files/1040/2014/07/ES-high-school.jpg',
-        imageAltText: 'Dummy Image',
+        image: 'WebsiteChallenge2019/local-image/high-school.jpg',
+        imageAltText: 'Front of El Segundo High School, located in El Segundo, California',
         photoPosition: 'left'
       },
       historyEarly: {
-        image: 'https://eshsroboticsclub.files.wordpress.com/2013/08/photo.jpg?w=585',
+        image: 'WebsiteChallenge2019/local-image/early-robotics-2013-08.jpg',
         imageAltText: 'Dummy Image',
         photoPosition: 'right'
       },

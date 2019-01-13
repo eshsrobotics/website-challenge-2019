@@ -148,7 +148,10 @@ export default new Router({
     },
     {
       path: '/image/:image',
-      component: () => import('@/views/EnlargedImage')
+      component: () => import('@/views/EnlargedImage'),
+      meta: {
+        title: 'View Image'
+      }
     },
     {
       path: '/404',

@@ -1,38 +1,44 @@
-{
-  "epsilon": {
-    "name": "Epsilon Bar" ,
-    "image": "https://dummyimage.com/1280x960/dee2e6/212529",
-    "imageAltText": "Epsilon Logo",
+[
+  {
+    "name": "Chevron" ,
+    "image": "WebsiteChallenge2019/local-image/chevron.png",
+    "imageAltText": "Chevron logo",
+    "tier": "calculating"
+  },
+  {
+    "name": "Northrop Grumman" ,
+    "image": "WebsiteChallenge2019/local-image/northrop.png",
+    "imageAltText": "Northrop Grumman logo",
+    "tier": "calculating"
+  },
+  {
+    "name": "Xerox" ,
+    "image": "WebsiteChallenge2019/local-image/xerox.jpg",
+    "imageAltText": "Xerox logo",
     "tier": "gold"
   },
-  "zeta": {
-    "name": "Zeta Baz" ,
-    "image": "https://dummyimage.com/1280x960/dee2e6/212529",
-    "imageAltText": "Zeta Logo",
-    "tier": "silver"
+  {
+    "name": "Ed Foundation" ,
+    "image": "WebsiteChallenge2019/local-image/ed.jpg",
+    "imageAltText": "Ed Foundation logo",
+    "tier": "gold"
   },
-  "kappa": {
-    "name": "Kappa Foo" ,
-    "image": "https://dummyimage.com/1280x960/dee2e6/212529",
-    "imageAltText": "Kappa Logo",
-    "tier": "silver"
+  {
+    "name": "Raytheon" ,
+    "image": "WebsiteChallenge2019/local-image/raytheon.jpg",
+    "imageAltText": "Raytheon logo",
+    "tier":  "calculating"
   },
-  "omicron": {
-    "name": "Omicron Bar" ,
-    "image": "https://dummyimage.com/1280x960/dee2e6/212529",
-    "imageAltText": "Omicron Logo",
-    "tier": "bronze"
+  {
+    "name": "Booz Allen Hamilton" ,
+    "image": "WebsiteChallenge2019/local-image/booz-allen.png",
+    "imageAltText": "Booz Allen Hamilton logo",
+    "tier":  "silver"
   },
-  "rho": {
-    "name": "Rho Baz" ,
-    "image": "https://dummyimage.com/1280x960/dee2e6/212529",
-    "imageAltText": "Rho Logo",
-    "tier":  "bronze"
-  },
-  "phi": {
-    "name": "Phi Foo",
-    "image": "https://dummyimage.com/1280x960/dee2e6/212529",
-    "imageAltText": "Phi Logo",
-    "tier":  "bronze"
+  {
+    "name": "Imforza" ,
+    "image": "WebsiteChallenge2019/local-image/imforza.png",
+    "imageAltText": "Imforza logo",
+    "tier":  "silver"
   }
-}
+]

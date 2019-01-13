@@ -1,7 +1,6 @@
 <template>
-  <div>
-    <h1>View Image</h1>
-    <h3>Description</h3>
+  <div class="enlarge-image">
+    <h3 v-if="base64ToObject.imageAltText == 0">Description</h3> <!-- Type coercion intended use '==' -->
     <p>{{ base64ToObject.imageAltText }}</p>
     <div class="photo">
       <img :src="base64ToObject.imageHighRes" :alt="base64ToObject.imageAltText">

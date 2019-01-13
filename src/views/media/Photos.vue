@@ -53,8 +53,16 @@ export default {
 }
 
 .events-wrapper {
-  width: 100%;
+  display: grid;
+  // Temporary fix
+  grid-template-columns: repeat(auto-fill, 340px); // TODO: Temp
+  grid-template-rows: repeat(auto-fill, 1fr);
+  /*grid-auto-flow: column;*/
+  grid-gap: 1em;
+}
+
+.events-wrapper * {
+  /*display: inline;*/
   /*height: 100%;*/
-  margin-bottom: 15px;
 }
 </style>

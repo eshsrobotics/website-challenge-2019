@@ -53,7 +53,7 @@ img {
 }
 
 .block.left {
-  height: 100%;
+  /*height: 100%;*/ // This bugs out in Firefox!!!
 
   .picture {
     float: left;
@@ -61,7 +61,7 @@ img {
 }
 
 .block.right {
-  height: 100%;
+  /*height: 100%;*/ // This bugs out in Firefox!!!
 
   .picture {
     float: right;
@@ -85,8 +85,9 @@ img {
 
 .picture {
   width: 30vw;
-  min-width: 350px;
-  max-width: 600px;
+  min-width: 300px;
+  max-width: 450px;
+  margin-bottom: 10px;
 }
 
 @media(max-width: 550px) {

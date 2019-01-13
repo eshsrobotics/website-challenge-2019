@@ -30,13 +30,9 @@
 
 
     <h2>We thank our wonderful sponsors</h2>
-      <infinite-slide-bar duration="50s" width="3430px">
+      <infinite-slide-bar duration="50s" width="3130px">
         <div class="carousel">
-          <card-sponsor :sponsor="sponsors.epsilon"></card-sponsor>
-          <card-sponsor :sponsor="sponsors.zeta"></card-sponsor>
-          <card-sponsor :sponsor="sponsors.kappa"></card-sponsor>
-          <card-sponsor :sponsor="sponsors.omicron"></card-sponsor>
-          <card-sponsor :sponsor="sponsors.rho"></card-sponsor>
+          <card-sponsor v-for="sponsor in sponsors" :sponsor="sponsor" v-if="sponsor.tier !== 'calculating'" :key="sponsor.name"></card-sponsor>
         </div>
       </infinite-slide-bar>
   </div>

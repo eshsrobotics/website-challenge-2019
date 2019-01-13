@@ -5,19 +5,20 @@
     </page-desc>
 
     <card-sponsor-wrapper tier="gold">
-      <card-sponsor :sponsor="sponsors.epsilon"></card-sponsor>
+      <card-sponsor v-for="sponsor in sponsors" v-if="sponsor.tier === 'gold'" :sponsor="sponsor" :key="sponsor.name"></card-sponsor>
     </card-sponsor-wrapper>
 
     <card-sponsor-wrapper tier="silver">
-      <card-sponsor :sponsor="sponsors.zeta"></card-sponsor>
-      <card-sponsor :sponsor="sponsors.kappa"></card-sponsor>
+      <card-sponsor
+          v-for="sponsor in sponsors"
+          v-if="sponsor.tier === 'silver'"
+          :sponsor="sponsor"
+          :key="sponsor.name"></card-sponsor>
     </card-sponsor-wrapper>
 
-    <card-sponsor-wrapper tier="bronze">
-      <card-sponsor :sponsor="sponsors.omicron"></card-sponsor>
-      <card-sponsor :sponsor="sponsors.rho"></card-sponsor>
-      <card-sponsor></card-sponsor>
-    </card-sponsor-wrapper>
+    <!--<card-sponsor-wrapper tier="bronze">-->
+      <!--<card-sponsor v-for="sponsor in sponsors" v-if="sponsor.tier === 'bronze'" :sponsor="sponsor" :key="sponsor.name"></card-sponsor>-->
+    <!--</card-sponsor-wrapper>-->
 
     <section class="sponsor-us">
       <h1>Sponsor Us</h1>

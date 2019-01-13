@@ -74,7 +74,7 @@ h3 {
 h4 {
   color: $std-text;
   font-family: 'Poppins', sans-serif;
-  font-size: 1rem;
+  font-size: 1.15rem;
   font-style: italic;
 }
 
@@ -86,6 +86,10 @@ hr {
   background-color: $std-text-underline;
   height: 2px;
   border-radius: $border-radius-small;
+}
+
+ul.chevron {
+  list-style-image: url('./assets/chevron-right.svg');
 }
 
 p {
@@ -136,6 +140,7 @@ a:hover, a:active {
   margin-right: auto;
   width: 100%;
   max-width: 1350px;
+  /*height: 500px;*/
 }
 
 .fade-enter-active, .fade-leave-active {
