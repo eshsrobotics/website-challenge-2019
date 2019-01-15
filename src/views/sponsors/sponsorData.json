@@ -1,43 +1,26 @@
 [
   {
-    "name": "Chevron" ,
-    "image": "WebsiteChallenge2019/local-image/chevron.png",
-    "imageAltText": "Chevron logo",
-    "tier": "calculating"
-  },
-  {
-    "name": "Northrop Grumman" ,
-    "image": "WebsiteChallenge2019/local-image/northrop.png",
-    "imageAltText": "Northrop Grumman logo",
-    "tier": "calculating"
-  },
-  {
-    "name": "Xerox" ,
-    "image": "WebsiteChallenge2019/local-image/xerox.jpg",
-    "imageAltText": "Xerox logo",
-    "tier": "gold"
-  },
-  {
     "name": "Ed Foundation" ,
-    "image": "WebsiteChallenge2019/local-image/ed.jpg",
+    "image": "https://github.com/eshsrobotics/WebsiteChallenge2019/blob/master/src/assets/local-image/ed.jpg?raw=true",
     "imageAltText": "Ed Foundation logo",
     "tier": "gold"
   },
   {
-    "name": "Raytheon" ,
-    "image": "WebsiteChallenge2019/local-image/raytheon.jpg",
-    "imageAltText": "Raytheon logo",
-    "tier":  "calculating"
+    "name": "Xerox" ,
+    "image": "https://github.com/eshsrobotics/WebsiteChallenge2019/blob/master/src/assets/local-image/xerox.jpg?raw=true",
+    "imageAltText": "Xerox logo",
+    "tier": "gold"
   },
+
   {
     "name": "Booz Allen Hamilton" ,
-    "image": "WebsiteChallenge2019/local-image/booz-allen.png",
+    "image": "https://github.com/eshsrobotics/WebsiteChallenge2019/blob/master/src/assets/local-image/booz-allen.png?raw=true",
     "imageAltText": "Booz Allen Hamilton logo",
     "tier":  "silver"
   },
   {
     "name": "Imforza" ,
-    "image": "WebsiteChallenge2019/local-image/imforza.png",
+    "image": "https://github.com/eshsrobotics/WebsiteChallenge2019/blob/master/src/assets/local-image/imforza.png?raw=true",
     "imageAltText": "Imforza logo",
     "tier":  "silver"
   }

@@ -8,6 +8,23 @@
       <p>Meetings are held on Fridays.</p>
     </c-block>
 
+    <!--<ICountUp>-->
+        <!--:startVal="startVal"-->
+        <!--:endVal="endVal"-->
+        <!--:decimals="decimals"-->
+        <!--:duration="duration"-->
+        <!--:options="options"-->
+        <!--@ready="onReady"-->
+    <!--</ICountUp>-->
+
+    <ICountUp
+        :startVal="startVal"
+        :endVal="endVal"
+        :decimals="decimals"
+        :duration="duration"
+        :options="options"
+    />
+
     <h2>Cyberpatriots Photo Album</h2>
     <infinite-slide-bar duration="70s" width="3600px">
       <div class="carousel">
@@ -28,36 +45,49 @@
 import CBlock from '@/components/ui/Block'
 import CButton from '@/components/ui/CButton'
 import CardGeneric from '@/components/card/CardGeneric'
+import ICountUp from 'vue-countup-v2'
 
 export default {
   name: 'cyberpatriots',
   data() {
     return {
+      startVal: 0,
+      endVal: 100,
+      decimals: 0,
+      duration: 2.5,
+      options: {
+        useEasing: true,
+        useGrouping: true,
+        separator: ',',
+        decimal: '.',
+        prefix: '',
+        suffix: ''
+      },
       cypatBlock: {
         image: 'https://github.com/eshsrobotics/database-photos/blob/master/2017-2018/cyberpatriots-competition-prep/cyberPatriots2.small.jpg?raw=true',
-        imageAltText: 'Brainstorming before competition',
+        imageAltText: 'Person brainstorming before competition',
         photoPosition: 'right'
       },
       previewPhotos: [
         {
           image: 'https://github.com/eshsrobotics/database-photos/blob/master/2018-2019/cyberpatriots-november-competition/IMG_0900.small.jpg?raw=true',
-          imageAltText: "Alt text",
+          imageAltText: "Team of members working to complete an image",
         },
         {
           image: 'https://github.com/eshsrobotics/database-photos/blob/master/2017-2018/cyberpatriots-competition-prep/cyberPatriots9.small.jpg?raw=true',
-          imageAltText: "Alt text",
+          imageAltText: "Person using the terminal using a personal computer",
         },
         {
           image: 'https://github.com/eshsrobotics/database-photos/blob/master/2018-2019/cyberpatriots-november-competition/IMG_0906.small.jpg?raw=true',
-          imageAltText: "Alt text",
+          imageAltText: "Two members communicating during the competition",
         },
         {
           image: 'https://github.com/eshsrobotics/database-photos/blob/master/2018-2019/cyberpatriots-november-competition/IMG_0904.small.jpg?raw=true',
-          imageAltText: "Alt text",
+          imageAltText: "Two members communicating during the competition",
         },
         {
           image: 'https://github.com/eshsrobotics/database-photos/blob/master/2017-2018/cyberpatriots-competition-prep/cyberPatriots1.small.jpg?raw=true',
-          imageAltText: "Alt text",
+          imageAltText: "A person standing in front of a whiteboard, thinking intensely",
         },
       ],
       quickLinks: [
@@ -69,15 +99,28 @@ export default {
       ]
     }
   },
+  methods: {
+    // onReady: function(instance, CountUp) {
+    //   const that = this;
+    //   instance.update(that.endVal + 100);
+    // }
+  },
   components: {
     'c-block': CBlock,
     'c-button': CButton,
-    'card-generic': CardGeneric
+    'card-generic': CardGeneric,
+    'ICountUp': ICountUp
   }
 }
 </script>
 
 <style scoped lang="scss">
+  .iCountUp {
+    font-size: 12em;
+    margin: 0;
+    color: #4d63bc;
+  }
+
   .carousel {
     display: flex;
     flex-direction: row;

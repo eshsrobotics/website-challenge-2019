@@ -88,6 +88,7 @@ img {
   min-width: 300px;
   max-width: 450px;
   margin-bottom: 10px;
+  padding-top: 10px;
 }
 
 @media(max-width: 550px) {
@@ -102,7 +103,9 @@ img {
   }
 
   .picture {
-    width: 100%;
+    width: calc(100% - 20px); // That's cheating!
+    margin: 0;
+    padding-top: 10px;
   }
 }
 </style>

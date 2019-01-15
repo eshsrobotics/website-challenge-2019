@@ -48,13 +48,33 @@
         <!--<mobile-menu-button slot="the"><p>Home</p></mobile-menu-button>-->
         <!--</mobile-menu-dropdown>-->
 
-        <mobile-menu-button><p>Home</p></mobile-menu-button>
-        <mobile-menu-button><p>About Us</p></mobile-menu-button>
-        <mobile-menu-button><p>CyberPatriots</p></mobile-menu-button>
-        <mobile-menu-button><p>FRC</p></mobile-menu-button>
-        <mobile-menu-button><p>VEX</p></mobile-menu-button>
-        <mobile-menu-button><p>Resources</p></mobile-menu-button>
-        <mobile-menu-button><p>Sponsors</p></mobile-menu-button>
+        <router-link to="/">
+          <mobile-menu-button><p>Home</p></mobile-menu-button>
+        </router-link>
+        <router-link to="/about">
+          <mobile-menu-button><p>About Us</p></mobile-menu-button>
+        </router-link>
+        <router-link to="/about/team">
+          <mobile-menu-button><p>About Us</p></mobile-menu-button>
+        </router-link>
+        <router-link to="/about/join-us">
+          <mobile-menu-button><p>About Us</p></mobile-menu-button>
+        </router-link>
+        <router-link to="/cyberpatriots">
+          <mobile-menu-button><p>CyberPatriots</p></mobile-menu-button>
+        </router-link>
+        <router-link to="/frc">
+          <mobile-menu-button><p>FRC</p></mobile-menu-button>
+        </router-link>
+        <router-link to="/vex">
+          <mobile-menu-button><p>VEX</p></mobile-menu-button>
+        </router-link>
+        <router-link to="/resources">
+          <mobile-menu-button><p>Resources</p></mobile-menu-button>
+        </router-link>
+        <router-link to="/sponsors">
+          <mobile-menu-button><p>Sponsors</p></mobile-menu-button>
+        </router-link>
       </div>
     </div>
   </nav>

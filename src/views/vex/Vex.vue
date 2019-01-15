@@ -34,29 +34,29 @@ export default {
     return {
       vexBlock: {
         image: 'https://github.com/eshsrobotics/database-photos/blob/master/2017-2018/vex-competition-prep/vex8.small.jpg?raw=true',
-        imageAltText: 'Dummy Image',
+        imageAltText: 'Arial view of the VEX field for the 2017-2018 competition',
         photoPosition: 'right'
       },
       previewPhotos: [
         {
           image: 'https://github.com/eshsrobotics/database-photos/blob/master/2017-2018/vrc-generic-photos/vex7.small.jpg?raw=true',
-          imageAltText: "Alt text",
+          imageAltText: "Person handling wires of small three wheeler VEX robot",
         },
         {
           image: 'https://github.com/eshsrobotics/database-photos/blob/master/2017-2018/vrc-generic-photos/vex14.small.jpg?raw=true',
-          imageAltText: "Alt text",
+          imageAltText: "Containers storing a majority of the VEX parts",
         },
         {
           image: 'https://github.com/eshsrobotics/database-photos/blob/master/2018-2019/vex-competition-prep/vexprep1.small.jpg?raw=true',
-          imageAltText: "Alt text",
+          imageAltText: "Two members discussion and prototyping a robot design",
         },
         {
           image: 'https://github.com/eshsrobotics/database-photos/blob/master/2017-2018/vrc-generic-photos/vex5.small.jpg?raw=true',
-          imageAltText: "Alt text",
+          imageAltText: "Person changing the tightness of a screw using a screwdriver",
         },
         {
           image: 'https://github.com/eshsrobotics/database-photos/blob/master/2017-2018/vex-competition-prep/vex8.small.jpg?raw=true',
-          imageAltText: "Alt text",
+          imageAltText: "Arial view of the VEX field for the 2017-2018 competition",
         },
       ],
       quickLinks: [

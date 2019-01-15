@@ -8,6 +8,7 @@
         <!--<transition name="slide" mode="out-in">-->
           <router-view class="router-view"/>
         <!--</transition>-->
+      <!--<vue-progress-bar></vue-progress-bar>-->
       </div>
       <foot class="footer"></foot>
   </div>
@@ -32,6 +33,9 @@ export default {
       this.transitionName = toDepth < fromDepth ? 'slide-right' : 'slide-left'
     }
   },
+  beforeRouteEnter: function(to, from, next) {
+    console.log('tester gamma')
+  },
   components: {
     'navbar': Navbar,
     'page-heading': PageHeading,
@@ -45,6 +49,7 @@ export default {
 
 * {
   @include resetSpacing();
+  font-family: 'Raleway', sans-serif;
 }
 
 #app {

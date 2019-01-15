@@ -40,23 +40,23 @@ export default {
       previewPhotos: [
         {
           image: 'https://github.com/eshsrobotics/database-photos/blob/master/2017-2018/frc-competition-prep-kickoff/DSC07594.small.jpg?raw=true',
-          imageAltText: "Alt text",
+          imageAltText: "Member looking at an engineering notebook during competition kickoff",
         },
         {
           image: 'https://github.com/eshsrobotics/database-photos/blob/master/2016-2017/frc-competition/frccompetition14.small.jpg?raw=true',
-          imageAltText: "Alt text",
+          imageAltText: "Two people working on the robot during the final competition",
         },
         {
           image: 'https://github.com/eshsrobotics/database-photos/blob/master/2016-2017/frc-competition-prep/frcbot6.small.jpg?raw=true',
-          imageAltText: "Alt text",
+          imageAltText: "Early prototype of FRC robot, with wires and chassis heavily exposed",
         },
         {
           image: 'https://github.com/eshsrobotics/database-photos/blob/master/2016-2017/frc-competition/frccompetition36.small.jpg?raw=true',
-          imageAltText: "Alt text",
+          imageAltText: "Robot competing during the competition as the blue team",
         },
         {
           image: 'https://github.com/eshsrobotics/database-photos/blob/master/2017-2018/frc-competition/frccompetition1.small.jpg?raw=true',
-          imageAltText: "Alt text",
+          imageAltText: "A team identifier for the robot placed at the bottom of a blue cart",
         },
       ],
       quickLinks: [

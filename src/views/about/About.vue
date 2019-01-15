@@ -39,13 +39,13 @@ export default {
   data() {
     return {
       coreValuesBlock: {
-        image: 'WebsiteChallenge2019/local-image/high-school.jpg',
+        image: 'https://github.com/eshsrobotics/WebsiteChallenge2019/blob/master/src/assets/local-image/high-school.jpg?raw=true',
         imageAltText: 'Front of El Segundo High School, located in El Segundo, California',
         photoPosition: 'left'
       },
       historyEarly: {
-        image: 'WebsiteChallenge2019/local-image/early-robotics-2013-08.jpg',
-        imageAltText: 'Dummy Image',
+        image: 'https://github.com/eshsrobotics/WebsiteChallenge2019/blob/master/src/assets/local-image/early-robotics-2013-08.jpg?raw=true',
+        imageAltText: 'The team\'s robot during the year of 2013',
         photoPosition: 'right'
       },
       teamStructure: {
@@ -55,7 +55,7 @@ export default {
       },
       teamRecruitment: {
         image: 'https://github.com/eshsrobotics/database/blob/master/marketing%20and%20media/recruitment%20posters/vrc%20poster/Final%20Simple%20Robotics%20Poster.png?raw=true',
-        imageAltText: 'Photograph of a poster advocating to join the robotics club.',
+        imageAltText: 'Robotics poster that advocates to join the robotics club.',
         photoPosition: 'left'
       }
     }

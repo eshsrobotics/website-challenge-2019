@@ -107,4 +107,10 @@ a {
     display: none;
   }
 }
+
+  @media(max-width: 400px) {
+    .sponsors {
+      display: none;
+    }
+  }
 </style>

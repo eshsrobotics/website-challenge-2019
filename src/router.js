@@ -28,7 +28,7 @@ export default new Router({
           path: 'team',
           component: () => import('@/views/about/Team'),
           meta: {
-            title: 'Coaches & Mentors'
+            title: 'Team'
           }
         },
         {
@@ -84,13 +84,13 @@ export default new Router({
             title: 'Resources'
           }
         },
-        {
-          path: 'branding',
-          component: () => import('@/views/resources/BrandingGuidelines'),
-          meta: {
-            title: 'Branding Guidelines'
-          }
-        },
+        // {
+        //   path: 'branding',
+        //   component: () => import('@/views/resources/BrandingGuidelines'),
+        //   meta: {
+        //     title: 'Branding Guidelines'
+        //   }
+        // },
         {
           path: 'photos',
           component: () => import('@/views/media/Photos'),
@@ -167,5 +167,12 @@ export default new Router({
         title: '404'
       },
     },
-  ]
+  ],
+  //
+  // beforeResolve((to, from, next) => {
+  //   if(to.path) {
+  //     NProgress.start()
+  //     next()
+  //   }
+  // })
 })
