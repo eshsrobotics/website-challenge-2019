@@ -174,9 +174,6 @@ li.image {
   z-index: 200;
 }
 
-.mobile-menu-inner {
-  display: flex;
-}
 .mobile-menu.active {
   visibility: visible;
   background-color: white;
@@ -189,7 +186,7 @@ li.image {
   svg {
     display: block;
     float: right;
-    margin: 5px;
+    margin: 5px 5px 5px 10px;
     padding-right: 20px;
   }
 }

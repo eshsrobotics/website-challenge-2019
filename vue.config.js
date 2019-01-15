@@ -1,7 +1,7 @@
 const  CopyWebpackPlugin = require('copy-webpack-plugin')
 
 module.exports = {
-	baseUrl: 'WebsiteChallenge2019',
+	baseUrl: '',
   configureWebpack: {
     plugins: [
       new CopyWebpackPlugin([
