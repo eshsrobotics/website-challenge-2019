@@ -15,18 +15,6 @@
           :sponsor="sponsor"
           :key="sponsor.name"></card-sponsor>
     </card-sponsor-wrapper>
-
-    <!--<card-sponsor-wrapper tier="bronze">-->
-      <!--<card-sponsor v-for="sponsor in sponsors" v-if="sponsor.tier === 'bronze'" :sponsor="sponsor" :key="sponsor.name"></card-sponsor>-->
-    <!--</card-sponsor-wrapper>-->
-
-    <section class="sponsor-us">
-      <h1>Sponsor Us</h1>
-      <p>Sponsoring the Robotics Club brings many benefits. Seem them on the sponsor us page! [WIP]</p>
-      <router-link to="/sponsors/us">
-        <c-button>Sponsor Us</c-button>
-      </router-link>
-    </section>
   </div>
 </template>
 

@@ -3,9 +3,14 @@
     <c-block :blockData="vexBlock">
       <h2>About</h2>
       <p>Teams of students work together to design, program, and build a robot that competes with other teams. Each robot is designed to complete a certain objective or goal, which changes annually. During competition, a red and blue alliance battle it out. Each alliance has two teams. This means that your team will be cooperating with another team. The objective is to collect as many points possible within the time restriction.</p>
-      <p>Students learn to build robots using VEX parts, program a robot using RobotC, and design their VEX Robot using Autodesk Inventor.</p>
+      <p>Students learn to build sturdy robots using metal VEX parts. Additionally, members will program a robot using RobotC, a special programming similar to C and design their VEX Robot using Autodesk Inventor, a 3D modeling program..</p>
       <p>Meetings are held every Wednesdays. Members may be expected to work during weekends, especially in preparation for the competition.</p>
     </c-block>
+    <p>Learn more about the VEX competition by visiting the team's Wiki page</p>
+    <a href="https://github.com/eshsrobotics/database/wiki/VRC" target="_blank">
+      <c-button>Learn More</c-button>
+    </a>
+    <br/><br/>
 
     <h2>VEX Photo Album</h2>
     <infinite-slide-bar duration="70s" width="3600px">

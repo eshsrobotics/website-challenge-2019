@@ -4,26 +4,24 @@
       <h2>Core Values</h2>
       <p>El Segundo High School Robotics club emphasizes integrity, academic excellence. Club members must consistently demonstrate that they uphold the highest moral principles. Additionally, the club believes that academic excellence comes first. Meaning, club membership and activity does not trump academics activities such as homework or classwork.
         <a href="https://www.youtube.com/watch?v=h2e6gxczMxc" target="_blank">Gracious professionalism</a> are also important qualities members pursue.</p>
-      <p>All club members work hard to demonstrate these core values when interacting with others or themselves. We reflect upon our own actions and self-reflect to improve ourselves.</p>
+      <p>All club members work hard to demonstrate these core values when interacting with others or themselves. We self-reflect upon our own actions to improve ourselves as people.</p>
     </c-block>
     <h2>History</h2>
     <c-block :blockData="historyEarly">
-      <p>The club started back in 2005, according to the club's old <a href="https://github.com/ESHSPOTATOES" target="_blank">GitHub</a> profile. The earliest photograph to date was uploaded on August 10th, 2013, although the photograph could have been taken much earlier. Not much is known about the earliest stages of the club. Little evidence was left behind.</p>
-      <p>We do know, however, that the team was awarded an FRC rookie award during its rookie years.</p>
-      <p>As the club developed, the program became less of a niche group. Members joined to improve the marketing, branding, and outreach programs. This period of time ended when club membership peaked during the 2015-2016 [VERIFY] school year. </p>
-      <p></p>
-      <p>Currently, there are three flourishing programs: VRC (VEX Robotics Competition), FRC (FIRST Robotics Competition) and CyberPatriots. Membership has grown especially in <router-link to="/vex">VEX Robotics</router-link> and <router-link to="/vex">CyberPatriots</router-link>. Recruitment efforts currently executing include raising participating in FRC.</p>
+      <p>The club started back in 2005, according to the club's old <a href="https://github.com/ESHSPOTATOES" target="_blank">GitHub</a> profile. The earliest photograph to date was uploaded on August 10th, 2013, although the photograph could have been taken much earlier. Not much is known about the earliest stages of the club. Little evidence was left behind. We do know, however, that the team was awarded an FRC rookie award during its first few years.</p>
+      <p>As the club developed, the program became less of a niche group. Members joined to improve the marketing, branding, and outreach programs. This period of time ended when club membership peaked during the 2015-2016 school year. </p>
     </c-block>
 
     <c-block :blockData="teamStructure">
       <h2>Team Structure</h2>
-      <p>As previously stated, the team is structured into three programs: CyberPatriots, FRC, and VEX. An officer helps coordinate the activities of each program. Additionally, a marketing lead heps coordinate any marketing and media activities. This includes </p>
+      <p>The team is structured into three programs: CyberPatriots, FRC, and VEX. An officer helps coordinate the activities of each program. Additionally, a marketing lead heps coordinate any marketing and media activities. Additionally, other officers are a part of management, such as the treasurer, secretary and the webmaster. All officers and mentors work together to make the club a better place. Learn more about the team structure by visiting the team's Wiki page.</p>
+      <a class="no-tag" target="_blank" href="https://github.com/eshsrobotics/database/wiki/Team-Structure"><c-button>Learn More</c-button></a>
     </c-block>
     <c-block :blockData="teamRecruitment">
       <h2>Recruitment Efforts</h2>
-      <p>The club orchestrates recruitment efforts to improve the visibility of the club and increase member count. For example, marketing helps coordinate the club's involvement in S.T.E.A.M. night, an evening hosted at the town's Elementary School that promotes topics relates to science, technology, engineering, art, and math.</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At consequuntur, id laudantium nam quidem sed voluptatum. At commodi debitis dolorem ducimus minus omnis qui temporibus. Amet enim iusto minima nostrum.</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa dolore illo iure nemo perferendis praesentium quibusdam vero! Accusantium dolores esse quis quos repudiandae. Cupiditate, distinctio, hic. Debitis dolor eaque vel!</p>
+      <p>The club orchestrates recruitment efforts to improve the visibility of the club and increase member count.</p>
+      <p>For example, marketing helps coordinate the club's involvement in S.T.E.A.M. night, an evening hosted at the town's Elementary School that promotes topics relates to science, technology, engineering, art, and math. They arranged to showcase the FRC robot to the Elementary School kids. The robot demonstrated its abilities and drove around.</p>
+      <p>Additionally, the marketing team helps fabricate posters to improve reach and increase member count. The photograph in the left figure shows one marketing poster used to garner interest in the club. It initially deployed during the 2017-2018 school year.</p>
     </c-block>
   </div>
 </template>
@@ -71,4 +69,8 @@ export default {
 
 <style scoped lang="scss">
 @import '@/styles/variables.scss';
+
+.no-tag {
+  text-decoration: none;
+}
 </style>

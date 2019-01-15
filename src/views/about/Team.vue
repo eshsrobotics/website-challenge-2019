@@ -13,6 +13,7 @@
     </layout-cards-overflow>
 
     <h2>Officers</h2>
+    <p>We value all officers for their hard work in bringing this club together.</p>
     <layout-cards-overflow class="overflow">
       <card-generic v-for="officer in officers" :cardInfo="officer" class="generic"></card-generic>
     </layout-cards-overflow>
@@ -34,35 +35,35 @@ export default {
           subtitle: 'VEX Coach',
           // image: 'https://dummyimage.com/1280x960/dee2e6/212529',
           // imageAltText: 'This is an important person',
-          desc: 'Mr. Davis teaches the first few years of the Engineering pathway and helps direct the VEX team to the right direction.'
+          desc: 'An instructor for the first few years of the Engineering pathway; helps direct the VEX team to the right direction.'
         },
         {
           title: 'Danial Horvath',
           subtitle: 'FRC Coach',
           // image: 'https://dummyimage.com/1280x960/dee2e6/212529',
           // imageAltText: 'This is an important person',
-          desc: 'Mr. Horvath teaches various S.T.E.M. subjects such as AP Physics 1 in addition to directing the FRC team.'
+          desc: 'Teaches various S.T.E.M. subjects such as AP Physics 1 in addition to coaching the FRC team.'
         },
         {
           title: 'Joelle Robinson',
           subtitle: 'Cyberpatriots Coach',
           // image: 'https://dummyimage.com/1280x960/dee2e6/212529',
           // imageAltText: 'This is an important person',
-          desc: 'Ms. Robinson helps coach for CyberPatriots and also teaches AP Computer Science A and other math classes.'
+          desc: 'Helps coach for CyberPatriots and also teaches AP Computer Science A, among other classes.'
         }
       ],
       mentors: [
         {
           title: 'Santiago Garza',
-          subtitle: 'Company Alpha',
+          subtitle: 'FRC',
           // image: 'https://dummyimage.com/1280x960/dee2e6/212529',
           // imageAltText: 'This is an important person',
-          desc: 'Aliquip occaecat velit ipsum nisi reprehenderit adipisicing nostrud.'
+          // desc: 'Aliquip occaecat velit ipsum nisi reprehenderit adipisicing nostrud.'
         },
         {
           title: 'Cheryl Bhence',
           subtitle: 'FRC',
-          desc: 'Do esse laborum consequat officia eu aliqua commodo reprehenderit.'
+          // desc: 'Do esse laborum consequat officia eu aliqua commodo reprehenderit.'
         },
         {
           title: 'Brandon Marshall',
@@ -77,12 +78,12 @@ export default {
         {
           title: 'Jim Swenson',
           subtitle: 'FRC & VEX',
-          desc: 'In veniam elit aliquip minim deserunt deserunt elit occaecat et.'
+          // desc: 'In veniam elit aliquip minim deserunt deserunt elit occaecat et.'
         },
         {
           title: 'Bob Solanto',
           subtitle: 'FRC & VEX',
-          desc: 'In veniam elit aliquip minim deserunt deserunt elit occaecat et.'
+          // desc: 'In veniam elit aliquip minim deserunt deserunt elit occaecat et.'
         }
       ],
       officers: [
@@ -126,7 +127,7 @@ export default {
           subtitle: 'Marketing Captain',
           // image: 'https://dummyimage.com/1280x960/dee2e6/212529',
           // imageAltText: 'This is an important person',
-          desc: 'Helps improve the reach of the Robotics Club by updating social media and coordinating fundraising events.'
+          desc: 'Overlooks brand and brand presentation. Coordinates fundraising and recruitment events.'
         }
       ]
     }
@@ -144,7 +145,11 @@ export default {
   margin-bottom: 20px;
 }
 
-@media(max-width: 400px) {
+p {
+  padding-bottom: 10px;
+}
+
+@media(max-width: 640px) {
   .overflow {
     display: flex;
     flex-direction: column;

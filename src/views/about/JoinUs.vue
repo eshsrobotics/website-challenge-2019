@@ -15,7 +15,7 @@
       </ul>
       <!--<h1>Mentors</h1>-->
       <!--<p>Learn more by visiting the Mentors Wiki Page!</p>-->
-      <!--<c-button><a class="a" href="https://github.com/eshsrobotics/database/wiki/Mentors">Visit</a></c-button>-->
+      <!--<a class="a" href="https://github.com/eshsrobotics/database/wiki/Mentors"><c-button>Visit</c-button></a>-->
     </c-block>
   </div>
 </template>

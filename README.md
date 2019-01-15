@@ -32,7 +32,6 @@ $ ./deploy.sh
 * Theme support
 * Improve image abstraction (add transition)
 * Fix picture layout breaks with portrait dimensioned picture
-* Improve low-width footer
 * spa
 * better 404
 

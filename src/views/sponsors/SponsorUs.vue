@@ -37,7 +37,7 @@
 
 
     <h2>How to Sponsor</h2>
-    <p>If you wish to sponsor us, please cnto<router-link to="/contact">contact us</router-link> concerning any inquiries.</p>
+    <p>If you wish to sponsor us, please <router-link to="/contact">contact us</router-link> concerning any inquiries.</p>
     <br/>
 
     <h3>See Our Sponsors</h3>

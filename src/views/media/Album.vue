@@ -8,9 +8,9 @@
     <layout-cards-struct class="events-wrapper">
       <card-generic v-for="photo in getAlbumData.photos" :cardInfo="imageInfo(photo)" :key="photo"></card-generic>
     </layout-cards-struct>
-    <router-link to="/resources/photos">
+    <a @click="$router.go(-1)">
       <c-button>Go Back</c-button>
-    </router-link>
+    </a>
   </div>
 </template>
 

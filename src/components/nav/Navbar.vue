@@ -13,11 +13,10 @@
       <nav-bar-item routeTo="/cyberpatriots">Cyberpatriots</nav-bar-item>
       <nav-bar-item routeTo="/frc">FRC</nav-bar-item>
       <nav-bar-item routeTo="/vex">VEX</nav-bar-item>
-      <nav-bar-item-dropdown routeTo="/resources" dropdownTitle="Resources">
-        <nav-bar-item routeTo="/resources/branding">Branding Guidelines</nav-bar-item>
-        <nav-bar-item routeTo="/resources/photos">Photos</nav-bar-item>
-        <nav-bar-item routeTo="/resources/videos">Videos</nav-bar-item>
-      </nav-bar-item-dropdown>
+      <!--<nav-bar-item-dropdown routeTo="/resources" dropdownTitle="Resources">-->
+        <nav-bar-item routeTo="/photos">Photos</nav-bar-item>
+        <!--<nav-bar-item routeTo="/resources/videos">Videos</nav-bar-item>-->
+      <!--</nav-bar-item-dropdown>-->
       <nav-bar-item-dropdown routeTo="/sponsors" dropdownTitle="Sponsors">
         <nav-bar-item routeTo="/sponsors/us">Sponsor Us</nav-bar-item>
       </nav-bar-item-dropdown>

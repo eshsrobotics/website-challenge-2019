@@ -7,7 +7,7 @@
 
     <page-desc>
       <h2>About</h2>
-      <p>El Segundo High School robotics contains three programs: CyberPatriots, FRC, and VEX. Each program integrates the discipline of engineering differently. For example, CyberPatriots is more geared to Computer Science skills while FRC and VEX are concerned more with tangible, mechanical products. Captains oversee each program, but are unified by core values a common goal. Read more about the team below or lean more about each program.</p>
+      <p>El Segundo High School robotics contains three programs: CyberPatriots, FRC, and VEX. Each program integrates the discipline of engineering differently. For example, CyberPatriots is more geared to Computer Science skills while FRC and VEX are concerned more with tangible, mechanical products. Student captains oversee each program, but are unified by core values a common goal. Read more about the team below or lean more about each program.</p>
       <router-link to="/about">
         <c-button> About the Team</c-button>
       </router-link>
@@ -58,7 +58,7 @@ export default {
           title: "CyberPatriots",
           image: 'https://github.com/eshsrobotics/database-photos/blob/master/2017-2018/cyberpatriots-competition-prep/cyberPatriots9.small.jpg?raw=true',
           imageAltText: "Alt text",
-          desc: "Small teams search computer systems for vulnerabilities and exploits. As you compete, gain points for every vulnerability that is patched!",
+          desc: "Small teams search computer systems for vulnerabilities and exploits. As you compete, gain points for every vulnerability that is patched.",
           buttonText: "Learn More",
           buttonRouteTo: "/cyberpatriots"
         },
