@@ -174,6 +174,10 @@ li.image {
   z-index: 200;
 }
 
+a {
+  text-decoration: none !important; // I've done this too many times :/
+}
+
 .mobile-menu.active {
   visibility: visible;
   background-color: white;

@@ -58,6 +58,13 @@ export default {
           subtitle: 'FRC',
           // image: 'https://dummyimage.com/1280x960/dee2e6/212529',
           // imageAltText: 'This is an important person',
+          desc: 'FRC alumnus & former Dean’s list award winner, Santiago brings years of experience both on and off the robotics field to the POTATOES'
+        },
+        {
+          title: 'Uche Akotaobi',
+          subtitle: 'VEX & FRC',
+          // image: 'https://dummyimage.com/1280x960/dee2e6/212529',
+          // imageAltText: 'This is an important person',
           // desc: 'Aliquip occaecat velit ipsum nisi reprehenderit adipisicing nostrud.'
         },
         {

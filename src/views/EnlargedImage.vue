@@ -7,9 +7,9 @@
     </div>
     <div class="buttons">
       <a @click="$router.go(-1)"><c-button>Go Back</c-button></a>
-      <c-button>View on GitHub</c-button>
-      <a :href="base64ToObject.image"><c-button>View Raw</c-button></a>
-      <c-button>Direct Download</c-button>
+      <!--<c-button>View on GitHub</c-button>-->
+      <!--<a :href="base64ToObject.image"><c-button>View Raw</c-button></a>-->
+      <!--<c-button>Direct Download</c-button>-->
     </div>
   </div>
 </template>
