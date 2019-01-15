@@ -23,7 +23,7 @@
     </ul>
 
     <ul id="list-small-screen">
-      <li class="image"> <img src="@/assets/robotics-logo.png" alt="Robotics Logo" height="42px"> </li>
+      <div class="image"> <img src="@/assets/robotics-logo.png" alt="Robotics Logo" height="42px"> </div>
       <div @click="toggleMobileMenu">
         <svg class="feather feather-menu" :class="{ smaller: shrinkHamburger}" xmlns="http://www.w3.org/2000/svg" width="42" height="42" viewBox="0 0 24 24" fill="#212529" stroke="#212529" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
           <line x1="3" y1="12" x2="21" y2="12"></line>
@@ -35,6 +35,7 @@
 
     <div :class="{ active: mobileMenuActive }" class="mobile-menu">
       <div class="mobile-menu-inner">
+        <!--<div class="image" id="four"><img src="@/assets/robotics-logo.png" alt="Robotics Logo" height="42px"> </div>-->
         <div @click="toggleMobileMenu">
           <svg class="feather feather-menu" :class="{ smaller: shrinkHamburger}" xmlns="http://www.w3.org/2000/svg" width="42" height="42" viewBox="0 0 24 24" fill="#212529" stroke="#212529" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
             <line x1="3" y1="12" x2="21" y2="12"></line>
@@ -46,34 +47,41 @@
         <!--<mobile-menu-dropdown>-->
         <!--<mobile-menu-button slot="the"><p>Home</p></mobile-menu-button>-->
         <!--</mobile-menu-dropdown>-->
-
-        <router-link to="/">
-          <mobile-menu-button><p>Home</p></mobile-menu-button>
-        </router-link>
-        <router-link to="/about">
-          <mobile-menu-button><p>About Us</p></mobile-menu-button>
-        </router-link>
-        <router-link to="/about/team">
-          <mobile-menu-button><p>About Us</p></mobile-menu-button>
-        </router-link>
-        <router-link to="/about/join-us">
-          <mobile-menu-button><p>About Us</p></mobile-menu-button>
-        </router-link>
-        <router-link to="/cyberpatriots">
-          <mobile-menu-button><p>CyberPatriots</p></mobile-menu-button>
-        </router-link>
-        <router-link to="/frc">
-          <mobile-menu-button><p>FRC</p></mobile-menu-button>
-        </router-link>
-        <router-link to="/vex">
-          <mobile-menu-button><p>VEX</p></mobile-menu-button>
-        </router-link>
-        <router-link to="/resources">
-          <mobile-menu-button><p>Resources</p></mobile-menu-button>
-        </router-link>
-        <router-link to="/sponsors">
-          <mobile-menu-button><p>Sponsors</p></mobile-menu-button>
-        </router-link>
+        <div class="routes" @click="toggleMobileMenu">
+          <router-link to="/">
+            <mobile-menu-button><p>Home</p></mobile-menu-button>
+          </router-link>
+          <router-link to="/about">
+            <mobile-menu-button><p>About Us</p></mobile-menu-button>
+          </router-link>
+          <router-link class="indent" to="/about/team">
+            <mobile-menu-button><p>Team</p></mobile-menu-button>
+          </router-link>
+          <router-link class="indent" to="/about/join-us">
+            <mobile-menu-button><p>Join Us</p></mobile-menu-button>
+          </router-link>
+          <router-link class="indent" to="/about/website">
+            <mobile-menu-button><p>Website</p></mobile-menu-button>
+          </router-link>
+          <router-link to="/cyberpatriots">
+            <mobile-menu-button><p>CyberPatriots</p></mobile-menu-button>
+          </router-link>
+          <router-link to="/frc">
+            <mobile-menu-button><p>FRC</p></mobile-menu-button>
+          </router-link>
+          <router-link to="/vex">
+            <mobile-menu-button><p>VEX</p></mobile-menu-button>
+          </router-link>
+          <router-link to="/photos">
+            <mobile-menu-button><p>Photos</p></mobile-menu-button>
+          </router-link>
+          <router-link to="/sponsors">
+            <mobile-menu-button><p>Sponsors</p></mobile-menu-button>
+          </router-link>
+          <router-link class="indent" to="/sponsor-us">
+            <mobile-menu-button><p>Sponsors</p></mobile-menu-button>
+          </router-link>
+        </div>
       </div>
     </div>
   </nav>
@@ -153,7 +161,7 @@ li.image {
   @include resetSpacing();
   visibility: hidden;
   /*width: 100vw;*/
-  /*height: calc(100vh - 50px);*/
+  height: calc(100vh - 20px);
   opacity: 0;
   overflow: hidden;
   transform: translateY(15px);
@@ -164,6 +172,10 @@ li.image {
   bottom: 0;
   left: 0;
   z-index: 200;
+}
+
+.mobile-menu-inner {
+  display: flex;
 }
 .mobile-menu.active {
   visibility: visible;
@@ -178,7 +190,17 @@ li.image {
     display: block;
     float: right;
     margin: 5px;
+    padding-right: 20px;
   }
+}
+
+.routes {
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.indent .mobile-menu-item {
+  margin-left: 40px;
 }
 
 .mobile-menu-inner {

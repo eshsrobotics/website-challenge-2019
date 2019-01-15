@@ -20,6 +20,7 @@
     background-color: inherit;
     border-radius: $border-radius-small;
     transition: createTransitions((all));
+    /*width: 200px;*/
 
 
   &:hover {
@@ -33,5 +34,9 @@
     font-weight: bold;
     font-family: 'poppins', sans-serif;
   }
+}
+
+p {
+  text-decoration: none !important;
 }
 </style>

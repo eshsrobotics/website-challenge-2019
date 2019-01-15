@@ -132,6 +132,10 @@ a:hover, a:active {
   margin-top: -8px;
 }
 
+/*.mobile-menu.active div {*/
+  /*overflow: hidden;*/
+/*}*/
+
 // This is for layout 100% page width
 .router-view-outer {
   display: flex;
