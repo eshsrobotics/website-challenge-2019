@@ -1,7 +1,7 @@
 <template>
   <div class="enlarge-image">
-    <h3 v-if="base64ToObject.imageAltText == 0">Description</h3> <!-- Type coercion intended use '==' -->
-    <p>{{ base64ToObject.imageAltText }}</p>
+    <!--<h3 v-if="base64ToObject.imageAltText">Description</h3>-->
+    <p v-if="gammaIota">{{ base64ToObject.imageAltText }}</p>
     <div class="photo">
       <img :src="base64ToObject.imageHighRes" :alt="base64ToObject.imageAltText">
     </div>
@@ -23,6 +23,15 @@ export default {
     pictureDataBase64: Object
   },
   computed: {
+    gammaIota: function() {
+      if(this.base64ToObject.imageAltText == "Alt text") {
+        return false;
+      }
+      else if(this.base64ToObject.imageAltText) {
+        return false;
+      }
+      return true;
+    },
     base64ToObject: function() {
       // Obfuscating the object, convert to base64, with some catches (!//)
       let route = this.$route.path
@@ -42,8 +51,9 @@ export default {
 <style scoped lang="scss">
 @import '@/styles/variables.scss';
 
-  img {
-  width: 100%;
+img {
+  /*width: 100%;*/
+  height: calc(100vh - 390px); // Eyeballing it, account for description
   max-width: 100%;
   border-radius: $border-radius;
 }
