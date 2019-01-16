@@ -22,7 +22,7 @@
         <card-generic :cardInfo="previewPhotos[4]" class="competition"></card-generic>
       </div>
     </infinite-slide-bar>
-    <router-link to="/resources/album/2017-2018-frc-competition">
+    <router-link to="/album/2017-2018-frc-competition">
       <c-button>See More</c-button>
     </router-link>
   </div>

@@ -2,17 +2,16 @@
   <div class="photos">
     <p>See the team's photos throughout the years. Find competition, event, and other photos!</p>
     <div v-for="year in newPhotoData" :key="year.year" class="card">
-      <h2>{{ year.year }}</h2>
-      <layout-cards-struct class="events-wrapper">
+      <h2 class="year">{{ year.year }}</h2>
+      <div class="events-wrapper">
           <card-generic v-for="event in year.events" :cardInfo="event" :key="event.name" class="card-generic"></card-generic>
-      </layout-cards-struct>
+      </div>
     </div>
   </div>
 </template>
 
 <script>
 import CardGeneric from '@/components/card/CardGeneric'
-import LayoutCardsStruct from '@/components/card-layout/LayoutCardsStruct'
 import photoDataJson from '@/views/media/photoData.json'
 
 export default {
@@ -39,8 +38,7 @@ export default {
     }
   },
   components: {
-    'card-generic': CardGeneric,
-    'layout-cards-struct': LayoutCardsStruct
+    'card-generic': CardGeneric
   }
 }
 </script>
@@ -52,17 +50,21 @@ export default {
   width: 300px;
 }
 
+.year {
+  padding-bottom: 10px;
+}
 .events-wrapper {
-  display: grid;
-  // Temporary fix
-  grid-template-columns: repeat(auto-fill, 340px); // TODO: Temp
-  grid-template-rows: repeat(auto-fill, 1fr);
-  /*grid-auto-flow: column;*/
-  grid-gap: 1em;
+  display: flex;
+  flex-wrap: wrap;
 }
 
-.events-wrapper * {
-  /*display: inline;*/
-  /*height: 100%;*/
+.card-generic {
+  margin: 10px;
+}
+
+@media(max-width: 500px) {
+  .card-generic {
+    width: 100%;
+  }
 }
 </style>

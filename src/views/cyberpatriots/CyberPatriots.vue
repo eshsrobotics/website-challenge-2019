@@ -18,7 +18,7 @@
         <card-generic :cardInfo="previewPhotos[4]" class="competition"></card-generic>
       </div>
     </infinite-slide-bar>
-    <router-link to="/resources/album/2018-2019-cyberpatriots-competition-round-1">
+    <router-link to="/album/2018-2019-cyberpatriots-competition-round-1">
       <c-button>See More</c-button>
     </router-link>
   </div>

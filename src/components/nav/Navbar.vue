@@ -161,7 +161,7 @@ li.image {
   @include resetSpacing();
   visibility: hidden;
   /*width: 100vw;*/
-  height: calc(100vh - 20px);
+  max-height: calc(100vh - 20px);
   opacity: 0;
   overflow: hidden;
   transform: translateY(15px);
@@ -172,6 +172,7 @@ li.image {
   bottom: 0;
   left: 0;
   z-index: 200;
+  /*max-height: 100%;*/
 }
 
 a {
@@ -179,9 +180,12 @@ a {
 }
 
 .mobile-menu.active {
+  bottom: auto;
   visibility: visible;
   background-color: white;
   overflow: hidden;
+  max-height: inherit;
+  margin-bottom: 20px;
 
   opacity: 1;
   transform: translateY(0);
