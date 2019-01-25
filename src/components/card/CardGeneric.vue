@@ -68,7 +68,6 @@ export default {
   props: {
     cardInfo: {
       type: Object,
-      // Do not create default property (object prop) of property ()
       default: () => ({
       //  title: 'Card Title',
       //  subtitle: 'Card Subtitle',

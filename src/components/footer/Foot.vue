@@ -1,15 +1,16 @@
 <template>
   <div class="wrapper">
-    <div class="column about">
-      <p class="column-label">About</p>
+    <footer-column class="about">
+      <p class="label">About</p>
       <ul>
         <li><router-link to="/about">About</router-link></li>
         <li><router-link to="/about/team">Team</router-link></li>
         <li><router-link to="/about/website">Website</router-link></li>
       </ul>
-    </div>
-    <div class="column media">
-      <p class="column-label">Social Media</p>
+    </footer-column>
+
+    <footer-column class="media">
+      <p class="label">Social Media</p>
       <ul>
         <li>
           <a href="https://twitter.com/eshsPotatoes" target="_blank">
@@ -30,30 +31,37 @@
           </a>
         </li>
       </ul>
-    </div>
-    <div class="column contact">
-      <p class="column-label">Contact</p>
-      <ul>
-        <li><router-link to="/contact">Webmaster</router-link></li>
-        <li><a href="https://www.elsegundohigh.org/" target="_blank">School</a></li>
-      </ul>
-    </div>
-    <div class="column sponsors">
-      <p class="column-label">Sponsors</p>
-      <ul>
-        <li><router-link to="/sponsors">Sponsors</router-link></li>
-        <li><router-link to="/sponsors/us">Sponsor Us</router-link></li>
-      </ul>
-    </div>
-    <div class="column img">
-      <img src="@/assets/robotics-logo.png" alt="Logo" height="50px" width="50px">
-    </div>
+    </footer-column>
+
+    <footer-column class="contract">
+        <p class="label">Contact</p>
+        <ul>
+          <li><router-link to="/contact">Webmaster</router-link></li>
+          <li><a href="https://www.elsegundohigh.org/" target="_blank">School</a></li>
+        </ul>
+    </footer-column>
+
+    <footer-column class="sponsors">
+        <p class="label">Sponsors</p>
+        <ul>
+          <li><router-link to="/sponsors">Sponsors</router-link></li>
+          <li><router-link to="/sponsors/us">Sponsor Us</router-link></li>
+        </ul>
+    </footer-column>
+
+    <footer-column class="img">
+      <img src="@/assets/robotics-logo.png" alt="El Segundo High School Robotics logo" height="50px" width="50px">
+    </footer-column>
   </div>
 </template>
 
 <script>
+  import AboutFooterComponent from '@/components/footer/FooterColumn';
 export default {
-  name: 'foot'
+  name: 'foot',
+  components: {
+    'footer-column': AboutFooterComponent
+  }
 }
 </script>
 
@@ -61,45 +69,11 @@ export default {
 @import '@/styles/variables.scss';
 
 .wrapper {
-  // display: flex;
   display: grid;
   grid-template-columns: auto auto auto auto auto;
   background-color: white;
   padding: 10px 10px 10px 10px;
   border-top: 2px solid $oc-yellow-1;
-}
-
-.column {
-  display: flex;
-  flex-direction: column;
-  margin: 10px;
-}
-
-ul {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  list-style-type: none;
-}
-a {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
-svg {
-  margin-right: 5px;
-}
-// Remember this font-size overrides the values in variables.scss
-p {
-  font-size: 1em;
-}
-
-.column-label {
-  font-weight: bold;
-}
-
-a {
-  font-size: 0.95em;
 }
 
 @media(max-width: 600px) {
@@ -108,9 +82,9 @@ a {
   }
 }
 
-  @media(max-width: 400px) {
-    .sponsors {
-      display: none;
-    }
+@media(max-width: 400px) {
+  .sponsors {
+    display: none;
   }
+}
 </style>

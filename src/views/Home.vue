@@ -57,7 +57,7 @@ export default {
         cyberpatriots: {
           title: "CyberPatriots",
           image: 'https://github.com/eshsrobotics/database-photos/blob/master/2017-2018/cyberpatriots-competition-prep/cyberPatriots9.small.jpg?raw=true',
-          imageAltText: "Alt text",
+          imageAltText: "Photograph of member using a computer during a CyerPatriots meeting",
           desc: "Small teams search computer systems for vulnerabilities and exploits. As you compete, gain points for every vulnerability that is patched.",
           buttonText: "Learn More",
           buttonRouteTo: "/cyberpatriots"
@@ -65,7 +65,7 @@ export default {
         frc: {
           title: "FRC",
           image: 'https://github.com/eshsrobotics/database-photos/blob/master/2016-2017/frc-competition/frccompetition59.small.jpg?raw=true',
-          imageAltText: "Alt text",
+          imageAltText: "Part of the team's FRC robot taken during an FRC competition",
           desc: "Brainstorm, plan, and execute the fabrication of a large robot within a span of 6-weeks. We'll teach you what skills you need to succeed.",
           buttonText: "Learn More",
           buttonRouteTo: "/frc"
@@ -73,7 +73,7 @@ export default {
         vex: {
           title: "VEX",
           image: 'https://github.com/eshsrobotics/database-photos/blob/master/2017-2018/vrc-generic-photos/vex7.small.jpg?raw=true',
-          imageAltText: "Alt text",
+          imageAltText: "VEX Robot taken on top of a table inside of the school's computer lab",
           desc: "Small robots must complete the competition objective and maximize points during the intense competition. Learn the fundamentals of building a robot with a dedicated team!",
           buttonText: "Learn More",
           buttonRouteTo: "/vex"

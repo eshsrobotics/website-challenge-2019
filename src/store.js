@@ -19,22 +19,17 @@ export default new Vuex.Store({
   getters: {
     getAlbumData: function(state) {
       return state.albumData
-    },
-    getEnlargedPhotoData: function(state) {
-      return state.enlargedPhotoData
     }
   },
   mutations: {
     setAlbumData: function(state, newAlbumData) {
       for(let property in newAlbumData) {
         if(state.albumData.hasOwnProperty(property)) {
-          // Thiccc reactivity caveats 😏
           Vue.set(state.albumData, property, newAlbumData[property])
         }
       }
     },
     setAlbumDataAccordingToURI: function(state, URI) {
-      // let newPhotoData = photoData
       let replaceWithThis
       let keepLooking = true
       for(let i = 0; i < photoData.length; i++) {
@@ -51,7 +46,6 @@ export default new Vuex.Store({
       let newAlbumData = replaceWithThis
       for(let property in newAlbumData) {
         if(state.albumData.hasOwnProperty(property)) {
-          // Thiccc reactivity caveats 😏
           Vue.set(state.albumData, property, newAlbumData[property])
         }
       }

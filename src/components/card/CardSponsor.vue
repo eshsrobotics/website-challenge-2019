@@ -10,10 +10,6 @@ import CPhoto from '@/components/ui/CPhoto'
 export default {
   name: 'cardSponsor',
   computed: {
-    // Purpose: To receive the showSponsor property (prop) when declaring this component
-    // Ex. For the following code
-    //   <sponsor-card showSponsor="companyFoo"></sponsor-card>
-    //   "companyFoo" is being passed down and is equal to the value of showSponsor (for that particular component). And showSponsor must be type String, or errors will be printed in console
     pictureWidth: function() {
       if(this.sponsor.tier === "diamond") {
         return (250 * 1.25 * 1.25 * 1.25) + "px"
@@ -32,8 +28,6 @@ export default {
   props: {
     sponsor: {
       type: Object,
-      // We put parenthesis around object to denote that we are returning an object rather than a
-      // function (since we're using es6 fat arrow notation)
       default: () => ({
         name: 'Sponsor Name',
         image: 'https://dummyimage.com/1280x960/dee2e6/212529',
@@ -62,16 +56,6 @@ h3 {
   margin-bottom: 15px;
 }
 
-// Recall "plainum, gold, siler, bronze" classes are set in component LayoutCardOverflow.vue (which always must be parent of SponsorCard.vue
-.platinum .sponsor {
-  img {
-    width: 200px;
-  }
-}
-
-.diamond.sponsor {
-  @include hoverShadow($std-shadow-hov, $oc-blue-3, 32px);
-}
 .gold.sponsor {
   @include hoverShadow($std-shadow-hov, $oc-yellow-3, 32px);
 }

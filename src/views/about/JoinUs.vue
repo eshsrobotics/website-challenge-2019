@@ -14,7 +14,7 @@
         <li>Internships with local sponsoring businesses</li>
       </ul>
       <!--<h1>Mentors</h1>-->
-      <!--<p>Learn more by visiting the Mentors Wiki Page!</p>-->
+      <!--<p>Learn more by visiting the Mentors wiki Page!</p>-->
       <!--<a class="a" href="https://github.com/eshsrobotics/database/wiki/Mentors"><c-button>Visit</c-button></a>-->
     </c-block>
   </div>

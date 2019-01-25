@@ -6,7 +6,7 @@
       <p>One team containing tens of people must build a fully functional robot that satisfy operating constraints during competition. These range from controlling the size of the robot to how the robot must gain points. The final version of the robot aims to include the optimum features that maximizes points during the actual competition. However, because the robot must be completed within 6 weeks shortcuts are sometimes made to complete the robot in time. This competition models real-world engineering closely.</p>
       <p>FRC meets every Thursday. However, contributing on other days, including weekends may be required, especially during build season.</p>
     </c-block>
-    <p>Learn more about the FRC competition by visiting the team's Wiki page</p>
+    <p>Learn more about the FRC competition by visiting the team's wiki page</p>
     <a href="https://github.com/eshsrobotics/database/wiki/FRC" target="_blank">
       <c-button>Learn More</c-button>
     </a>
@@ -39,7 +39,7 @@ export default {
     return {
       frcBlock: {
         image: 'https://github.com/eshsrobotics/database-photos/blob/master/2017-2018/frc-competition/frccompetition5.small.jpg?raw=true',
-        imageAltText: 'Dummy Image',
+        imageAltText: 'Team photograph taken at the FRC 2018-2018 competition day',
         photoPosition: 'right'
       },
       previewPhotos: [

@@ -6,7 +6,7 @@
       <p>Students learn to build sturdy robots using metal VEX parts. Additionally, members will program a robot using RobotC, a special programming similar to C and design their VEX Robot using Autodesk Inventor, a 3D modeling program..</p>
       <p>Meetings are held every Wednesdays. Members may be expected to work during weekends, especially in preparation for the competition.</p>
     </c-block>
-    <p>Learn more about the VEX competition by visiting the team's Wiki page</p>
+    <p>Learn more about the VEX competition by visiting the team's wiki page</p>
     <a href="https://github.com/eshsrobotics/database/wiki/VRC" target="_blank">
       <c-button>Learn More</c-button>
     </a>

@@ -14,7 +14,7 @@
 
     <c-block :blockData="teamStructure">
       <h2>Team Structure</h2>
-      <p>The team is structured into three programs: CyberPatriots, FRC, and VEX. An officer helps coordinate the activities of each program. Additionally, a marketing lead heps coordinate any marketing and media activities. Additionally, other officers are a part of management, such as the treasurer, secretary and the webmaster. All officers and mentors work together to make the club a better place. Learn more about the team structure by visiting the team's Wiki page.</p>
+      <p>The team is structured into three programs: CyberPatriots, FRC, and VEX. An officer helps coordinate the activities of each program. Additionally, a marketing lead heps coordinate any marketing and media activities. Additionally, other officers are a part of management, such as the treasurer, secretary and the webmaster. All officers and mentors work together to make the club a better place. Learn more about the team structure by visiting the team's wiki page.</p>
       <a class="no-tag" target="_blank" href="https://github.com/eshsrobotics/database/wiki/Team-Structure"><c-button>Learn More</c-button></a>
     </c-block>
     <c-block :blockData="teamRecruitment">
