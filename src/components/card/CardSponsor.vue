@@ -11,18 +11,30 @@ export default {
   name: 'cardSponsor',
   computed: {
     pictureWidth: function() {
-      if(this.sponsor.tier === "diamond") {
-        return (250 * 1.25 * 1.25 * 1.25) + "px"
+      // Sponsor photograph size now based on width of photograph (rather than just the width)
+      // Sponsors of the same tier now have the same area
+      // Calculated by hand TODO: // Perform calculations manually
+      if(this.sponsor.name === "Ed Foundation") {
+        return 430.3 + 'px';
       }
-      else if(this.sponsor.tier === "gold") {
-        return (250 * 1.25 * 1.25) + "px"
+      else if(this.sponsor.name === "Xerox") {
+        return 473.10 + 'px';
       }
-      else if(this.sponsor.tier === "silver") {
-        return (250 * 1.25) + "px"
+      else if(this.sponsor.name === "Booz Allen Hamilton") {
+        return 468.21 + 'px';
       }
-      else if(this.sponsor.tier === "bronze") {
-        return "250px"
+      else if(this.sponsor.name === "Imforza") {
+        return 276.66 + 'px';
       }
+      // if(this.sponsor.tier === "gold") {
+      //   return (250 * 1.25 * 1.25) + "px"
+      // }
+      // else if(this.sponsor.tier === "silver") {
+      //   return (250 * 1.25) + "px"
+      // }
+      // else if(this.sponsor.tier === "bronze") {
+      //   return "100px"
+      // }
     }
   },
   props: {

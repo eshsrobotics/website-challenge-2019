@@ -5,7 +5,12 @@
     </page-desc>
 
     <card-sponsor-wrapper tier="gold">
-      <card-sponsor v-for="sponsor in sponsors" v-if="sponsor.tier === 'gold'" :sponsor="sponsor" :key="sponsor.name"></card-sponsor>
+      <card-sponsor
+          v-for="sponsor in sponsors"
+          v-if="sponsor.tier === 'gold'"
+          :sponsor="sponsor"
+          :key="sponsor.name">
+      </card-sponsor>
     </card-sponsor-wrapper>
 
     <card-sponsor-wrapper tier="silver">
