@@ -7,9 +7,12 @@
     </div>
     <div class="buttons">
       <a @click="$router.go(-1)"><c-button>Go Back</c-button></a>
-      <!--<c-button>View on GitHub</c-button>-->
-      <!--<a :href="base64ToObject.image"><c-button>View Raw</c-button></a>-->
-      <!--<c-button>Direct Download</c-button>-->
+      <a target="__blank" :href="base64ToObject.imageHighRes.replace(/raw=true/g, '').slice(0, -1)">
+        <c-button> View On GitHub</c-button>
+      </a>
+      <a target="__blank" :href="base64ToObject.imageHighRes.replace(/raw=true/g, '').replace(/github/, 'raw.githubusercontent').replace(/blob\/master/, 'master').slice(0, -1)">
+        <c-button>Download</c-button>
+      </a>    
     </div>
   </div>
 </template>
