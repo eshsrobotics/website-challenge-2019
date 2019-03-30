@@ -6,10 +6,8 @@ This is a website coded for the [Robotics Team Website Challenge 2019](https://c
 ```bash
 $ git clone --recurse-submodules https://github.com/eshsrobotics/RobotEventsChallengeWebsite2018
 $ cd RobotEventsChallengeWebsite2018
-$ npm install -g @vue/cli-service
-$ npm install @vue/cli-plugin-babel
-$ npm install
-$ npm run serve
+$ yarn install
+$ yarn run serve
 ```
 
 ### Dev Server

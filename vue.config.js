@@ -5,7 +5,7 @@ module.exports = {
   css: {
     loaderOptions: {
       sass: {
-        implementation: require('sass')
+        implementation: require('dart-sass')
       }
     }
   },
