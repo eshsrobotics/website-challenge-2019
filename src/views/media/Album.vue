@@ -2,7 +2,7 @@
   <div class="album">
     <page-desc>
       <h1> {{ getAlbumData.title }} </h1>
-      <h2 class="album-year"> {{ getAlbumData.year }}</h2>
+      <h2 class="album-year"> {{ getAlbumData.year || this.$route.path.split('/')[2].slice(0, 9) }}</h2>
       <p> {{ getAlbumData.desc }}</p>
        <div class="view-buttons">
         <a @click="$router.go(-1)">
