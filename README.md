@@ -13,18 +13,18 @@ $ yarn run serve
 ### Dev Server
 ```bash
 # Running on port 8080
-$ npm run serve
+$ yarn run serve
 ```
 
 ### Build for Prod
 ```bash
-$ npm run build
+$ yarn run build
 
 # Build and deploy to prod
 $ ./deploy.sh
 ```
 
-## Improvements :car:
+## Improvements / Known Issues :car:
 ### Website
 * Improve image abstraction (add transition)
 * Fix picture layout breaks with portrait dimensioned picture

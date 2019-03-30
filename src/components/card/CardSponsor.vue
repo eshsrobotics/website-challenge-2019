@@ -66,6 +66,12 @@ h3 {
   display: flex;
   flex-direction: column;
   margin-bottom: 15px;
+  max-width: 100%;
+
+  img {
+    max-width: 100%;
+    object-fit: scale-down;
+  }
 }
 
 .gold.sponsor {
