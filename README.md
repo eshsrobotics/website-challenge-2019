@@ -26,13 +26,11 @@ $ npm run build
 $ ./deploy.sh
 ```
 
-## Roadmap :car:
+## Improvements :car:
 ### Website
-* Make website responsive design & mobile friendly
 * Improve image abstraction (add transition)
-* Fix picture layout breaks with portrait dimensioned picture (won't fix)
+* Fix picture layout breaks with portrait dimensioned picture
 * pwa
-* better 404
 
 ## Maintenance
 ###  As time continues
