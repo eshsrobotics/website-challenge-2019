@@ -53,7 +53,7 @@ export default {
 
 img {
   /*width: 100%;*/
-  max-height: calc(100vh - 390px); // Eyeballing it, account for description
+  max-height: calc(100vh - 340px); // Eyeballing it, account for description
   max-width: 100%;
   border-radius: $border-radius;
 }
