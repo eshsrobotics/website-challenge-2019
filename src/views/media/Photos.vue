@@ -35,13 +35,13 @@ export default {
         })
         return yearsEvents
       })
-    }
-  },
-  otherAlbumData: function() {
-    let ghLink = photoDataJson.image
+    },
+    otherAlbumData: function() {
+      let ghLink = photoDataJson.image
 
-    return {
-      githubLink: ghLink
+      return {
+        githubLink: ghLink
+      }
     }
   },
   components: {

@@ -94,7 +94,7 @@ Update links on each individual cyberpatriots, frc, vex page to latest photograp
 ```
 * `image` is a cover image for that album
 * `uri` is the route that shows in the url bar when you navigate to that page. *Always* include year. Make `uri`s as similar as previous ones to maintain continuity
-  * `uri` MUST start with a year. `2018-2019`
+  * `uri` MUST start with a year. `2018-2019` due to 192154336e7badf3c9a6b25eca6328a79c2bb765
 * Note that the Second "VEX Competition Prep" event will generate a page located at `/#/album/2018-2019-vex-prep-fall`
   * Note you can browse through these photos here: [`https://github.com/eshsrobotics/database-photos/tree/master/2018-2019/vex-competition-prep`](https://github.com/eshsrobotics/database-photos/tree/master/2018-2019/vex-competition-prep)
   * Photos are a concatenation of `photosPrefix + photos[i] + photosSuffic`
