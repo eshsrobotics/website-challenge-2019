@@ -31,8 +31,11 @@ $ ./deploy.sh
 * pwa
 
 ## Maintenance
-###  As time continues
-Update links on each individual cyberpatriots, frc, vex page to latest photograph collection, album
+###  General
+* Update links on each individual cyberpatriots, frc, vex page
+  * Change links to the photograph album (and the "see more" button)
+  * Change images and content
+  * To do this, go to `src/views`. Folder structure should resemble similarly to the nav bar menu on the site
 
 ### Adding photos (general)
 * Add photos in the data-base photos archive (is org gh repo)
