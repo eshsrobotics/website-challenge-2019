@@ -179,7 +179,7 @@ export default new Router({
       path: '*',
       component: () => import('@/views/404'),
       meta: {
-        title: '404'
+        title: '404 Page Not Found'
       },
     },
   ],
