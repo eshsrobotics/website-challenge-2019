@@ -29,10 +29,9 @@ $ ./deploy.sh
 ## Roadmap :car:
 ### Website
 * Make website responsive design & mobile friendly
-* Theme support
 * Improve image abstraction (add transition)
-* Fix picture layout breaks with portrait dimensioned picture
-* spa
+* Fix picture layout breaks with portrait dimensioned picture (won't fix)
+* pwa
 * better 404
 
 ## Maintenance
