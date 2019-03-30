@@ -34,19 +34,91 @@ $ ./deploy.sh
 ###  As time continues
 Update links on each individual cyberpatriots, frc, vex page to latest photograph collection, album
 
-### Adding photos
-To add photos, please add photos in the data-base photos archive, run respective scripts that build thumbnails for the higher resolution images, then reference those.
-Alternatively, if the photo is niche and does not group well into other photos (such as taken during a competition or event), drop images in src/assets/local-image. These images will copy over using CopyWebpackPlugin (config in Vue.config.js) to dist/local-image. Reference them with <REPONAME>/local-image/img.jpg' if it's in a JSON file. Ex. 'WebsiteChallenge2019/local-image/img.jpg'. If you're in some JS file, you should be able to reference it with '@/assets/local-image/img.jpg'
+### Adding photos (generall)
+* Add photos in the data-base photos archive (is org gh repo)
+* Run respective scripts there that build thumbnails for the higher resolution images
+* If the photo is niche and does not group well into other photos, drop images in `src/assets/local-image`
+  * These images will copy over using CopyWebpackPlugin (config in Vue.config.js) to `dist/local-image`
+  * Reference these with <REPONAME>/local-image/img.jpg' if it's in a JSON file. Ex. `WebsiteChallenge2019/local-image/img.jpg`. If you're in some JS file, you can reference it with `@/assets/local-image/img.jpg`
+
+### Adding photos (to album collection)
+* Schema for albums at `/photos` found at `src/views/media/photoData.json`; observe and extend upon the existing schema, simple sample shown below 
+```json
+[
+  { 
+    "year" "2018-2019",
+    "events": [
+      {
+        "title": "CyberPatriots Competition",
+        "image": "https://github.com/eshsrobotics/database-photos/blob/master/2018-2019/cyberpatriots-november-competition/IMG_0898.small.jpg?raw=true",
+        "desc": "Participating in the 2018-2019 CyberPatriots round 1 competition",
+        "uri": "2018-2019-cyberpatriots-competition-round-1",
+        "photosPrefix": "https://github.com/eshsrobotics/database-photos/blob/master/2018-2019/cyberpatriots-november-competition/IMG_0",
+        "photosSuffix": ".small.jpg?raw=true",
+        "photos": [
+          "896",
+          "897",
+          "898",
+          "899",
+          "900",
+          "901",
+          "902",
+          "903",
+          "904",
+          "906"
+        ]
+      },
+      {
+        "title": "VEX Competition Prep",
+        "image": "https://github.com/eshsrobotics/database-photos/blob/master/2018-2019/vex-competition-prep/vexprep2.small.jpg?raw=true",
+        "desc": "Working on the 2018-2019 VEX Robot",
+        "uri": "2018-2019-vex-prep-fall",
+        "photosPrefix": "https://github.com/eshsrobotics/database-photos/blob/master/2018-2019/vex-competition-prep/",
+        "photosSuffix": ".small.jpg?raw=true",
+        "photos": [
+          "IMG_0907",
+          "IMG_0908",
+          "vexprep1",
+          "vexprep2"
+        ]
+      }
+    ]
+  },
+  { 
+    "year" "2017-2018",
+    "events": [
+      ...
+    ]
+  }
+]
+```
+* Note that the Second "VEX Competition Prep" event will generate a page located at `/#/album/2018-2019-vex-prep-fall`
+  * Note you can browse through these photos here: [`https://github.com/eshsrobotics/database-photos/tree/master/2018-2019/vex-competition-prep`](https://github.com/eshsrobotics/database-photos/tree/master/2018-2019/vex-competition-prep)
+  * Photos are a concatenation of `photosPrefix + photos[i] + photosSuffic`
+    * One example of result of concatenation is `https://github.com/eshsrobotics/database-photos/blob/master/2018-2019/vex-competition-prep/IMG_0907.jpg?raw=true`
+  * Note that there are four photos in the "VEX Competition Prep" archive and four items in `photos: []`
 
 ### Editing this repo's name / changing hosting
-Some .json files such as sponsorData.json (and others) have the repository name, WebsiteChallenge2019 written in to them. This is because webpack does not seem to resolve '@' (as src (it's a default webpack alias within Vue-cli-3's default webpack config options)). There's probably some way to config webpack to resolve strings, but this is a temporary work around. So change paths in .json file when changing repos name of if this is hosted somewhere else (in these case you'll have to change baseURL (publicDir for Vue CLI 3.3+) in vue.config.js as well!)
+* Some `.json` files (such as `sponsorData.json` and others) have the repository name, `WebsiteChallenge2019` hardcoded
+* This is because webpack does not seem to resolve '@' (as src (it's a default webpack alias within Vue-cli-3's default webpack config options))
+* There's some way to config webpack to resolve this stuff in `.json`, but this is a temporary work around. So change paths in .json file when changing repos name
+* if this is hosted somewhere else (in these case you'll have to change publicDir in `vue.config.js`
 
 ### Updating Sponsors
-When updating sponsors, change sponsorData.json to match new sponsors. Wherever you want to show the Sponsors, you must update that page. This may include the `Sponsors.vue` page and the main page.
-
-### Updating Carousels /  Infinite Slide Bars
-After adding or removing an image from the slide bar, you must change the width of the infinite slide bar component. You must do this by design. Was not sure how to make component ore modular.
-
+When updating sponsors, change `src/views/sponsors/sponsorData.json` to match new sponsors. Use the following schema
+```json
+{
+  "name": "Company Name",
+  "image": "https://github.com/eshsrobotics/WebsiteChallenge2019/blob/master/src/assets/local-image/company-image.png?raw=true",
+  "imageAltText": "Text shown when image not found",
+  "tier": "Tier of Company"
+}
+```
+* Note that `company-image.png` must be placed in `src/local-image`
+* You may need to update `src/views/sponsors` if you're adding a new tier. Observe and extend upon the existing structure
+* You must also update `<infinite-slide-bar>` components that use the `sponsorData.json`
+  * In src/views/Home.vue, update `width` property on `<infinite-slide-bar>` component
+  * Update when no sponsor photo overlaps another
 
 ## Common Problems
 If you're new to Vue, or contributing, you may encounter a few errors. I've isolated some of the more common (and uncommong) errors / mishehaviors you may be getting and I've provided a solution. i.e. If the website is not doing what you want, see if your issue matches any below. The first bullet point after a subsection is a snippet of example code that defines or relates to the issue.

@@ -44,7 +44,7 @@ import CardGeneric from '@/components/card/CardGeneric'
 import LayoutCardsFit from '@/components/card-layout/LayoutCardsFit'
 import CardSponsorWrapper from '@/components/card-layout/WrapperCardSponsor'
 import CardSponsor from '@/components/card/CardSponsor'
-import SponsorData from '@/views/sponsors/sponsorData'
+import SponsorData from '@/views/sponsors/sponsorData.json'
 import CButton from '@/components/ui/CButton'
 
 export default {
