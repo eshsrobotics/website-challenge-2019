@@ -47,7 +47,7 @@ export default {
       let thing = newImageInfo.image.split('.')
       let largeImage = thing.filter(el => el !== "small").join('.')
       newImageInfo.imageHighRes = largeImage
-      newImageInfo.subtitle = photo
+      newImageInfo.subtitle = "Image " + photo
       return newImageInfo
     },
     getAlbumURIfromURL: function() {
