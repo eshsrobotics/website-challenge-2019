@@ -33,13 +33,12 @@ $ ./deploy.sh
 * update image cover on new album
 * eslint ignore infinite-side-bar/
 * year disappears on album page refresh
-* any image card appears to have more padding on bottom than top
 
 ## Maintenance
 ###  As time continues
 Update links on each individual cyberpatriots, frc, vex page to latest photograph collection, album
 
-### Adding photos (generall)
+### Adding photos (general)
 * Add photos in the data-base photos archive (is org gh repo)
 * Run respective scripts there that build thumbnails for the higher resolution images
 * If the photo is niche and does not group well into other photos, drop images in `src/assets/local-image`

@@ -69,6 +69,11 @@ export default {
   position: relative;
 }
 
+.image-front {
+  display: flex;
+  flex-direction: column;
+}
+
 img {
   width: 100%;
   max-width: 100%;
