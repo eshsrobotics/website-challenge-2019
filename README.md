@@ -30,6 +30,10 @@ $ ./deploy.sh
 * Fix picture layout breaks with portrait dimensioned picture
 * pwa
 * add to github button on album page
+* update image cover on new album
+* eslint ignore infinite-side-bar/
+* year disappears on album page refresh
+* any image card appears to have more padding on bottom than top
 
 ## Maintenance
 ###  As time continues
@@ -47,7 +51,7 @@ Update links on each individual cyberpatriots, frc, vex page to latest photograp
 ```json
 [
   { 
-    "year" "2018-2019",
+    "year": "2018-2019",
     "events": [
       {
         "title": "CyberPatriots Competition",
@@ -86,9 +90,9 @@ Update links on each individual cyberpatriots, frc, vex page to latest photograp
     ]
   },
   { 
-    "year" "2017-2018",
+    "year": "2017-2018",
     "events": [
-      ...
+      "..."
     ]
   }
 ]

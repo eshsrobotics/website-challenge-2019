@@ -6,6 +6,9 @@ Vue.use(Vuex)
 
 export default new Vuex.Store({
   state: {
+    otherAlbumData: {
+      githubLink: ''
+    },
     albumData: {
       title: '',
       desc: '',
@@ -19,9 +22,19 @@ export default new Vuex.Store({
   getters: {
     getAlbumData: function(state) {
       return state.albumData
+    },
+    getOtherAlbumData: function(state) {
+      return state.otherAlbumData
     }
   },
   mutations: {
+    setOtherAlbumData: function(state, newOtherAlbumData) {
+      for(let property in newOtherAlbumData) {
+        if(state.otherAlbumData.hasOwnProperty(property)) {
+          Vue.set(state.otherAlbumData, property, newOtherAlbumData[property])
+        }
+      }
+    },
     setAlbumData: function(state, newAlbumData) {
       for(let property in newAlbumData) {
         if(state.albumData.hasOwnProperty(property)) {

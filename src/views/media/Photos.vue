@@ -4,7 +4,7 @@
     <div v-for="year in newPhotoData" :key="year.year" class="card">
       <h2 class="year">{{ year.year }}</h2>
       <div class="events-wrapper">
-          <card-generic v-for="event in year.events" :cardInfo="event" :key="event.name" class="card-generic"></card-generic>
+          <card-generic v-for="event in year.events" :cardInfo="event" :key="event.name" :otherAlbumData="otherAlbumData" class="card-generic"></card-generic>
       </div>
     </div>
   </div>
@@ -35,6 +35,13 @@ export default {
         })
         return yearsEvents
       })
+    }
+  },
+  otherAlbumData: function() {
+    let ghLink = photoDataJson.image
+
+    return {
+      githubLink: ghLink
     }
   },
   components: {

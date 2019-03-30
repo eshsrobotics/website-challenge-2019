@@ -2,8 +2,16 @@
   <div class="album">
     <page-desc>
       <h1> {{ getAlbumData.title }} </h1>
-      <h2> {{ getAlbumData.year }}</h2>
+      <h2 class="album-year"> {{ getAlbumData.year }}</h2>
       <p> {{ getAlbumData.desc }}</p>
+       <div class="view-buttons">
+        <a @click="$router.go(-1)">
+          <c-button>Go Back</c-button>
+        </a>
+        <a target="__blank" :href="githubLink">
+          <c-button>View On Github</c-button>
+        </a>
+      </div>
     </page-desc>
     <layout-cards-struct class="events-wrapper">
       <card-generic v-for="photo in getAlbumData.photos" :cardInfo="imageInfo(photo)" :key="photo"></card-generic>
@@ -34,8 +42,14 @@ export default {
   },
   computed: {
     ...mapGetters([
-        'getAlbumData'
-    ])
+      'getAlbumData',
+      'getOtherAlbumData'
+    ]),
+    githubLink: function() {
+      let array = this.getOtherAlbumData.githubLink.replace(/\/blob/, '/tree').split('/').slice()
+      array.pop()
+      return array.join('/')
+    },
   },
   methods: {
     ...mapMutations([
@@ -68,4 +82,12 @@ export default {
 </script>
 
 <style scoped lang="scss">
+.view-buttons {
+  margin-bottom: 15px;
+}
+
+.album-year {
+  margin-top: 0;
+  padding-top: 0;
+}
 </style>

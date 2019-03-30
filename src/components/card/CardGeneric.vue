@@ -56,6 +56,11 @@ export default {
       return true;
     }
   },
+  mounted: function() {
+    this.$store.commit('setOtherAlbumData', {
+      githubLink: this.cardInfo.image
+    })
+  },
   methods: {
     ...mapMutations([
         'setAlbumData'
@@ -63,6 +68,7 @@ export default {
     changeData: function() {
       // Yeah, this is called on all card components sigh
       this.$store.commit('setAlbumData', this.cardInfo)
+      
     }
   },
   props: {
@@ -76,6 +82,12 @@ export default {
       //  desc: 'Default Description',
       //  buttonText: '',
       //  buttonRouteTo: ''
+      })
+    },
+    otherAlbumData: {
+      type: Object,
+      default: () => ({
+      // githubLink: ''
       })
     },
     pictureWidth: {
