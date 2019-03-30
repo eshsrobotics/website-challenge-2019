@@ -30,7 +30,7 @@
 
 
     <h2>We thank our wonderful sponsors</h2>
-      <infinite-slide-bar duration="50s" width="3130px">
+      <infinite-slide-bar duration="50s" width="3650px">
         <div class="carousel">
           <card-sponsor v-for="sponsor in sponsors" :sponsor="sponsor" v-if="sponsor.tier !== 'calculating'" :key="sponsor.name"></card-sponsor>
         </div>
