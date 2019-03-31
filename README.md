@@ -37,7 +37,7 @@ $ ./deploy.sh
   * Change images and content
   * To do this, go to `src/views`. Folder structure should resemble similarly to the nav bar menu on the site
 
-## Putting content at root project dir in prod
+### Putting content at root project dir in prod
 * You may need to add a CNAME or something thats at root of project when deployed
 * Place these files in `public/`
 * This is done with `copy-webpack-plugin`, with abstraction layer provided by `vue-cli-3`
