@@ -22,7 +22,7 @@
         <card-generic :cardInfo="previewPhotos[4]" class="competition"></card-generic>
       </div>
     </infinite-slide-bar>
-    <router-link to="/album/2017-2018-frc-competition">
+    <router-link to="/album/2018-2019-frc-competition">
       <c-button>See More</c-button>
     </router-link>
   </div>
@@ -44,25 +44,25 @@ export default {
       },
       previewPhotos: [
         {
-          image: 'https://github.com/eshsrobotics/database-photos/blob/master/2017-2018/frc-competition-prep-kickoff/DSC07594.small.jpg?raw=true',
-          imageAltText: "Member looking at an engineering notebook during competition kickoff",
+          image: 'https://github.com/eshsrobotics/database-photos/blob/master/2018-2019/frc-la-regional-competition/DSC00191.jpg?raw=true',
+          imageAltText: "Group photograph during final competition",
         },
         {
-          image: 'https://github.com/eshsrobotics/database-photos/blob/master/2016-2017/frc-competition/frccompetition14.small.jpg?raw=true',
-          imageAltText: "Two people working on the robot during the final competition",
+          image: 'https://github.com/eshsrobotics/database-photos/blob/master/2018-2019/frc-la-regional-competition/DSC00187.jpg?raw=true',
+          imageAltText: "Corner shot of the FRC robot",
         },
         {
-          image: 'https://github.com/eshsrobotics/database-photos/blob/master/2016-2017/frc-competition-prep/frcbot6.small.jpg?raw=true',
-          imageAltText: "Early prototype of FRC robot, with wires and chassis heavily exposed",
+          image: 'https://github.com/eshsrobotics/database-photos/blob/master/2018-2019/frc-la-regional-competition/DSC00271.jpg?raw=true',
+          imageAltText: "Two team membersstanding in front of the robot",
         },
         {
-          image: 'https://github.com/eshsrobotics/database-photos/blob/master/2016-2017/frc-competition/frccompetition36.small.jpg?raw=true',
-          imageAltText: "Robot competing during the competition as the blue team",
+          image: 'https://github.com/eshsrobotics/database-photos/blob/master/2018-2019/frc-la-regional-competition/DSC00199.jpg?raw=true',
+          imageAltText: "FRC Robot on the playing ground",
         },
         {
-          image: 'https://github.com/eshsrobotics/database-photos/blob/master/2017-2018/frc-competition/frccompetition1.small.jpg?raw=true',
-          imageAltText: "A team identifier for the robot placed at the bottom of a blue cart",
-        },
+          image: 'https://github.com/eshsrobotics/database-photos/blob/master/2018-2019/frc-la-regional-competition/DSC00212.jpg?raw=true',
+          imageAltText: "Team's robot attempting to pick up an orange ball",
+        }
       ],
       quickLinks: [
         {
