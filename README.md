@@ -25,10 +25,7 @@ $ ./deploy.sh
 ```
 
 ## Improvements / Known Issues :car:
-### Website
-* Improve image abstraction (add transition)
 * Fix picture layout breaks with portrait dimensioned picture
-* pwa
 
 ## Maintenance
 ###  General
