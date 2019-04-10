@@ -9,7 +9,7 @@
           <c-button>Go Back</c-button>
         </a>
         <a target="__blank" :href="githubLink">
-          <c-button>View On Github</c-button>
+          <c-button>View On GitHub</c-button>
         </a>
       </div>
     </page-desc>
