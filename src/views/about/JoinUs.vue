@@ -30,7 +30,7 @@ export default {
   data() {
     return {
       joinUsBlock: {
-        image: 'https://github.com/eshsrobotics/database-photos/blob/master/2016-2017/frc-competition/frccompetition34.jpg?raw=true',
+        image: 'https://github.com/eshsrobotics/database-photos/blob/master/2016-2017/frc-competition/frccompetition34.small.jpg?raw=true',
         imageAltText: 'Team pow-ow during the FRC competition',
         photoPosition: 'right'
       },
