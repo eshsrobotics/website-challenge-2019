@@ -150,7 +150,7 @@ If you're new to Vue, or contributing, you may encounter a few errors. I've isol
 * Solution 2: Actually fix the issue. Just modifying the `createTransitions` scss function won't change anything. Try looking into [extend](https://css-tricks.com/the-extend-concept/) in scss in combination with mixins / methods / whatever
 
 ### CSS IDs Styling
-* Ids can only be used once per webPage. Because components are reusable, you might be declaring multiple components of the same type on the same page
+* Ids can only be used once per web page. Because components are reusable, you might be declaring multiple components of the same type on the same page
 * Alternatively, you may be giving the component two different Ids from two different places. Such as giving the Id when creating the component (`ChildComponent.vue`) *and* using the component (`ParentComponent.vue`)
 
   `ParentComponent.vue`
