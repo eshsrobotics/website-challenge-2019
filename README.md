@@ -26,6 +26,7 @@ $ ./deploy.sh
 
 ## Improvements / Known Issues :car:
 * Fix picture layout breaks with portrait dimensioned picture
+* Transform markdown static articles to actual posts with routes & breadcrumbs, tags, dates, authors, etc. 
 
 ## Maintenance
 ###  General
