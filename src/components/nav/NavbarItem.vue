@@ -3,22 +3,14 @@
     <router-link :to="routeTo" tag="div" class="route-label">
       <p><slot></slot></p>
     </router-link>
-    <div v-if="hrBelow === true" class="divider-wrapper">
-      <!--<hr>-->
-    </div>
   </li>
 </template>
 
 <script>
 export default {
+  name: 'navbarItem',
   props: {
-    'routeTo': String,
-    // Get prop; type must be string and the default value is false
-    // Meaning by default, do not add the hr at the end
-    hrBelow: {
-      type: Boolean,
-      default: false
-    }
+    'routeTo': String
   }
 }
 </script>
@@ -64,13 +56,12 @@ p {
   font-family: 'poppins', sans-serif;
   color: $oc-gray-9;
   text-decoration: none;
-  padding: 10px 15px;
+  padding: 11px 16px;
   line-height: 100%;
 }
 
 a {
   text-decoration: none;
 }
-
 </style>
 

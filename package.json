@@ -7,16 +7,21 @@
     "build": "vue-cli-service build"
   },
   "dependencies": {
-    "vue": "^2.5.21",
+    "copy-webpack-plugin": "^4.6.0",
+    "countup.js": "^1.9.3",
+    "vue": "^2.5.22",
+    "vue-countup-v2": "^2.0.0",
+    "vue-progressbar": "^0.7.5",
     "vue-router": "^3.0.2",
-    "vue-tabs-with-active-line": "^1.1.4"
+    "vue-tabs-with-active-line": "^1.1.4",
+    "vuex": "^3.1.0"
   },
   "devDependencies": {
-    "@vue/cli-plugin-babel": "^3.2.0",
-    "@vue/cli-service": "^3.2.0",
-    "node-sass": "^4.11.0",
+    "@vue/cli-plugin-babel": "^3.3.0",
+    "@vue/cli-service": "^3.3.1",
+    "dart-sass": "^1.17.3",
     "sass-loader": "^7.0.1",
-    "vue-template-compiler": "^2.5.21"
+    "vue-template-compiler": "^2.5.22"
   },
   "postcss": {
     "plugins": {

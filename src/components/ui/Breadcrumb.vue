@@ -1,11 +1,10 @@
 <template>
-<ul>
-  <li v-for="(urlSeg, index) in pathsArray" :key="urlSeg">
-    <router-link :to="getPath(urlSeg)"><p>{{ urlSeg }}</p></router-link>
-    <p v-if="index !== pathsArray.length -1 " class="separator"> ></p>
-  </li>
-</ul>
- 
+  <ul>
+    <li v-for="(urlSeg, index) in pathsArray" :key="urlSeg">
+      <router-link :to="getPath(urlSeg)"><p>{{ urlSeg }}</p></router-link>
+      <p v-if="index !== pathsArray.length -1 " class="separator"> ></p>
+    </li>
+  </ul>
 </template>
 
 <script>
@@ -33,7 +32,7 @@ export default {
       // Ex. for route = '/about/website' and urlSeg = about, we will get '/about' in this step
       // Ex. for route = '/about/website' and urlSeg = website, we will get '/about/website' in this step
       let newUrlSeg = route.slice(0, urlSegLocation +  urlSeg.length)
-      return newUrlSeg;
+      return newUrlSeg
     }
   },
   computed: {
@@ -67,16 +66,16 @@ export default {
 </script>
 
 <style scoped lang="scss">
-  ul {
-    display: flex;
-  }
+ul {
+  display: flex;
+}
 
-  li {
-    list-style-type: none;
-    padding: 5px;
-  }
+li {
+  list-style-type: none;
+  padding: 5px;
+}
 
-  p {
-    display: inline;
-  }
+p {
+  display: inline;
+}
 </style>

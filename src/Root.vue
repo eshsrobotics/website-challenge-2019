@@ -1,9 +1,14 @@
 <template>
   <div id="app">
-      <navbar class="nav"/>
-      <div class="router-view-outer">
-        <page-heading class="heading"/>
-        <router-view class="router-view"/>
+    <navbar class="nav-navbar"/>
+    <div class="router-view-outer">
+        <!--<transition name="fade" mode="out-in">-->
+          <page-heading class="heading"/>
+        <!--</transition>-->
+        <!--<transition name="slide" mode="out-in">-->
+          <router-view class="router-view"/>
+        <!--</transition>-->
+      <!--<vue-progress-bar></vue-progress-bar>-->
       </div>
       <foot class="footer"></foot>
   </div>
@@ -16,6 +21,21 @@ import Footer from '@/components/footer/Foot'
 
 export default {
   name: 'theRoot',
+  data() {
+    return {
+      transitionName: 'slide-left'
+    }
+  },
+  watch: {
+    '$route' (to, from) {
+      const toDepth = to.path.split('/').length
+      const fromDepth = from.path.split('/').length
+      this.transitionName = toDepth < fromDepth ? 'slide-right' : 'slide-left'
+    }
+  },
+  beforeRouteEnter: function(to, from, next) {
+    console.log('tester gamma')
+  },
   components: {
     'navbar': Navbar,
     'page-heading': PageHeading,
@@ -29,11 +49,14 @@ export default {
 
 * {
   @include resetSpacing();
+  font-family: 'Raleway', sans-serif;
 }
 
 #app {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  width: 100%;
+  height: 100%;
 }
 
 h1 {
@@ -57,7 +80,7 @@ h3 {
 h4 {
   color: $std-text;
   font-family: 'Poppins', sans-serif;
-  font-size: 1rem;
+  font-size: 1.15rem;
   font-style: italic;
 }
 
@@ -69,6 +92,10 @@ hr {
   background-color: $std-text-underline;
   height: 2px;
   border-radius: $border-radius-small;
+}
+
+ul.chevron {
+  list-style-image: url('./assets/chevron-right.svg');
 }
 
 p {
@@ -98,6 +125,17 @@ a:hover, a:active {
   text-decoration-color: $std-text-underline-active;
 
 }
+.nav-navbar {
+  margin: 10px 20px 0 15px;
+}
+
+.heading {
+  margin-top: -8px;
+}
+
+/*.mobile-menu.active div {*/
+  /*overflow: hidden;*/
+/*}*/
 
 // This is for layout 100% page width
 .router-view-outer {
@@ -108,6 +146,31 @@ a:hover, a:active {
 
 }
 .router-view {
+  margin-left: auto;
+  margin-right: auto;
   width: 100%;
+  max-width: 1350px;
+  /*height: 500px;*/
+}
+
+.fade-enter-active, .fade-leave-active {
+  transition: opacity .2s ease;
+}
+.fade-enter, .fade-leave-active {
+  opacity: 0;
+}
+.child-view {
+  position: absolute;
+  transition: all .2s cubic-bezier(.55,0,.1,1);
+}
+.slide-left-enter, .slide-right-leave-active {
+  opacity: 0;
+  -webkit-transform: translate(30px, 0);
+  transform: translate(30px, 0);
+}
+.slide-left-leave-active, .slide-right-enter {
+  opacity: 0;
+  -webkit-transform: translate(-30px, 0);
+  transform: translate(-30px, 0);
 }
 </style>

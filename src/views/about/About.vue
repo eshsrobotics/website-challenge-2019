@@ -2,23 +2,26 @@
   <div class="about">
     <c-block :blockData="coreValuesBlock">
       <h2>Core Values</h2>
-      <p>El Segundo High School Robotics club emphasizes three values. Integrity and Iota. Both Integrity and Iota are important because of Foo Gamma Kappa etc.</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquam aperiam autem consequuntur, ducimus expedita laudantium numquam omnis, pariatur possimus quos reiciendis tempora, veniam? Error eveniet facere impedit laborum maiores.</p>
+      <p>El Segundo High School Robotics club emphasizes integrity, academic excellence. Club members must consistently demonstrate that they uphold the highest moral principles. Additionally, the club believes that academic excellence comes first. Meaning, club membership and activity does not trump academics activities such as homework or classwork.
+        <a href="https://www.youtube.com/watch?v=h2e6gxczMxc" target="_blank">Gracious professionalism</a> are also important qualities members pursue.</p>
+      <p>All club members work hard to demonstrate these core values when interacting with others or themselves. We self-reflect upon our own actions to improve ourselves as people.</p>
     </c-block>
     <h2>History</h2>
     <c-block :blockData="historyEarly">
-      <h3>Early Beginnings</h3>
-      <p>The club started back in 2005, according to the club's old <a href="https://github.com/ESHSPOTATOES">GitHub</a> profile. The earliest photograph to date was uploaded on August 10th, 2013, although the photograph could have been taken much earlier. Not much is known about the earliest stages of the club. Little evidence was left behind. We know the team was awarded <b>FRC ROOKIE AWARD INSERT SPECIFICS</b> in <b>INSERT DATE</b>.</p>
-      <p>Deserunt esse et ullamco adipisicing nisi incididunt commodo. Laborum ex sunt et duis. Aliqua est nulla ut ad veniam ex commodo sit ad commodo occaecat. Cupidatat proident cillum proident sint minim id sit. Qui veniam adipisicing cupidatat qui dolor sunt.</p>
+      <p>The club started back in 2005, according to the club's old <a href="https://github.com/ESHSPOTATOES" target="_blank">GitHub</a> profile. The earliest photograph to date was uploaded on August 10th, 2013, although the photograph could have been taken much earlier. Not much is known about the earliest stages of the club. Little evidence was left behind. We do know, however, that the team was awarded an FRC rookie award during its first few years.</p>
+      <p>As the club developed, the program became less of a niche group. Members joined to improve the marketing, branding, and outreach programs. This period of time ended when club membership peaked during the 2015-2016 school year. </p>
     </c-block>
-    <c-block :blockData="historyDevelopment">
-      <h3>Club Development</h3>
-      <p>Occaecat occaecat duis excepteur eiusmod eu aute aliquip reprehenderit sunt elit dolore do reprehenderit. Dolor qui Lorem anim veniam voluptate. Aute consectetur reprehenderit nulla consequat. Proident deserunt aliquip dolore exercitation nulla incididunt sunt ullamco consectetur veniam anim adipisicing. Tempor commodo eu aute ex minim occaecat ex laborum.</p>
+
+    <c-block :blockData="teamStructure">
+      <h2>Team Structure</h2>
+      <p>The team is structured into three programs: CyberPatriots, FRC, and VEX. An officer helps coordinate the activities of each program. Additionally, a marketing lead heps coordinate any marketing and media activities. Additionally, other officers are a part of management, such as the treasurer, secretary and the webmaster. All officers and mentors work together to make the club a better place. Learn more about the team structure by visiting the team's wiki page.</p>
+      <a class="no-tag" target="_blank" href="https://github.com/eshsrobotics/database/wiki/Team-Structure"><c-button>Learn More</c-button></a>
     </c-block>
-    <c-block :blockData="historyRecent">
-      <h3>Recent Years</h3>
-      <p>Over the past few years, the club has grown steadily in members, increasing membership, especially in <router-link to="/vex">VEX Robotics</router-link> and <router-link to="/vex">CyberPatriots</router-link>. After the steep dropoff in club membership between the 2015-2016 to the 2016-2017 school year, the club has been steadily gaining membership..</p>
-      <p>Mollit consequat cillum ipsum ipsum nostrud officia ipsum qui aliquip cupidatat irure. Minim cillum sint est officia enim id ea laboris elit est exercitation sit. Aliqua mollit aliqua voluptate elit ullamco aliquip. Fugiat culpa dolor Lorem ipsum. Et ex esse excepteur anim ea duis exercitation occaecat cupidatat eiusmod. Ea mollit dolor Lorem eiusmod nostrud dolore proident cillum amet anim. Mollit aliquip officia non nulla anim incididunt.</p>
+    <c-block :blockData="teamRecruitment">
+      <h2>Recruitment Efforts</h2>
+      <p>The club orchestrates recruitment efforts to improve the visibility of the club and increase member count.</p>
+      <p>For example, marketing helps coordinate the club's involvement in S.T.E.A.M. night, an evening hosted at the town's Elementary School that promotes topics relates to science, technology, engineering, art, and math. They arranged to showcase the FRC robot to the Elementary School kids. The robot demonstrated its abilities and drove around.</p>
+      <p>Additionally, the marketing team helps fabricate posters to improve reach and increase member count. The photograph in the left figure shows one marketing poster used to garner interest in the club. It initially deployed during the 2017-2018 school year.</p>
     </c-block>
   </div>
 </template>
@@ -27,41 +30,47 @@
 import PageDesc from '@/components/PageDescription'
 import CBreadcrumb from '@/components/ui/Breadcrumb'
 import CBlock from '@/components/ui/Block'
+import CButton from '@/components/ui/CButton'
 
 export default {
   name: 'about',
   data() {
     return {
       coreValuesBlock: {
-        image: 'http://move2manhattanbeach.virtualresults.net/wp-files/1040/2014/07/ES-high-school.jpg',
-        imageAltText: 'Dummy Image',
+        image: 'https://github.com/eshsrobotics/WebsiteChallenge2019/blob/master/src/assets/local-image/high-school.jpg?raw=true',
+        imageAltText: 'Front of El Segundo High School, located in El Segundo, California',
         photoPosition: 'left'
       },
       historyEarly: {
-        image: 'https://eshsroboticsclub.files.wordpress.com/2013/08/photo.jpg?w=585',
-        imageAltText: 'Dummy Image',
+        image: 'https://github.com/eshsrobotics/WebsiteChallenge2019/blob/master/src/assets/local-image/early-robotics-2013-08.jpg?raw=true',
+        imageAltText: 'The team\'s robot during the year of 2013',
         photoPosition: 'right'
       },
-      historyDevelopment: {
-        image: 'https://github.com/eshsrobotics/database-photos/blob/master/2016-2017/frc-competition/frccompetition8.jpg?raw=true',
-        imageAltText: 'Dummy Image',
+      teamStructure: {
+        image: 'https://github.com/eshsrobotics/database/blob/master/marketing%20and%20media/team%20structure/Team%20Structure%20Diagram%20Version%202.png?raw=true',
+        imageAltText: 'A diagram of the team\'s structure',
         photoPosition: 'right'
       },
-      historyRecent: {
-        image: 'https://github.com/eshsrobotics/database-photos/blob/master/2018-2019/cyberpatriots-november-competition/IMG_0902.jpg?raw=true',
-        imageAltText: 'Dummy Image',
-        photoPosition: 'right'
+      teamRecruitment: {
+        image: 'https://github.com/eshsrobotics/database/blob/master/marketing%20and%20media/recruitment%20posters/vrc%20poster/Final%20Simple%20Robotics%20Poster.png?raw=true',
+        imageAltText: 'Robotics poster that advocates to join the robotics club.',
+        photoPosition: 'left'
       }
     }
   },
   components: {
     'page-desc': PageDesc,
     'c-breadcrumb': CBreadcrumb,
-    'c-block': CBlock
+    'c-block': CBlock,
+    'c-button': CButton
   }
 }
 </script>
 
 <style scoped lang="scss">
 @import '@/styles/variables.scss';
+
+.no-tag {
+  text-decoration: none;
+}
 </style>

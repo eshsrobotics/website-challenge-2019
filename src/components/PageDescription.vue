@@ -11,6 +11,10 @@ export default {
 </script>
 
 <style scoped lang="scss">
+.page-desc {
+  max-width: 1200px;
+}
+
 h1 {
   margin-bottom: 10px;
 }
@@ -22,5 +26,4 @@ h2 {
 p {
   margin-bottom: 5px;
 }
-
 </style>

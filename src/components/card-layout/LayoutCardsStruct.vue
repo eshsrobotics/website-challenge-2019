@@ -15,9 +15,18 @@ export default {
 
 .cards-struct {
   display: grid;
-  grid-template-columns: repeat(auto-fill, 325px); // TODO: Fix this temporary fix
-  grid-template-rows: repeat(auto-fill, 1fr);
-  grid-gap: 15px;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-auto-rows: minmax(min-content, min-content);
+  grid-auto-flow: dense;
+  grid-gap: 10px;
+}
+
+.cards-struct * {
+  display: inline-block;
+  /*height: 100%;*/
+  margin-bottom: auto;
+  min-height: 0;
+
 }
 </style>
 

@@ -1,3 +1,22 @@
+const  CopyWebpackPlugin = require('copy-webpack-plugin')
+
 module.exports = {
-	baseUrl: 'WebsiteChallenge2019'
+  publicPath: '',
+  css: {
+    loaderOptions: {
+      sass: {
+        implementation: require('dart-sass')
+      }
+    }
+  },
+  configureWebpack: {
+    plugins: [
+      new CopyWebpackPlugin([
+        {
+          from: 'src/assets/local-image/',
+          to: 'local-image'
+        }
+      ])
+    ]
+  }
 }

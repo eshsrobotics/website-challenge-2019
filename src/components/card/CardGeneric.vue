@@ -1,20 +1,20 @@
 <template>
-  <div class="card-generic">
+  <div class="card-generic" @click="changeData">
     <h3 v-if="titleShow">{{ cardInfo.title }}</h3>
     <h4 v-if="subtitleShow">{{ cardInfo.subtitle }}</h4>
-    <!--<img  :src="cardInfo.image" :alt="cardInfo.imageAltText">-->
-    <c-photo v-if="imageShow" :imageInfo="cardInfo"></c-photo>
+    <c-photo class="photo-comp" v-if="imageShow" :imageInfo="cardInfo" :pictureWidth="pictureWidth" :pictureHeight="pictureHeight"></c-photo>
     <p v-if="descShow">{{ cardInfo.desc }}</p>
+    <slot></slot>
     <router-link v-if="buttonShow" :to="cardInfo.buttonRouteTo">
-      <c-button :routeTo="cardInfo.buttonRouteTo">{{ cardInfo.buttonText }}</c-button>
+      <c-button>{{ cardInfo.buttonText }}</c-button>
     </router-link>
-
   </div>
 </template>
 
 <script>
-import CButton from '@/components/ui/Button'
-import CPhoto from '@/components/ui/Photo'
+import CButton from '@/components/ui/CButton'
+import CPhoto from '@/components/ui/CPhoto'
+import { mapMutations } from 'vuex'
 
 export default {
   name: 'cardGeneric',
@@ -56,10 +56,24 @@ export default {
       return true;
     }
   },
+  mounted: function() {
+    this.$store.commit('setOtherAlbumData', {
+      githubLink: this.cardInfo.image
+    })
+  },
+  methods: {
+    ...mapMutations([
+        'setAlbumData'
+    ]),
+    changeData: function() {
+      // Yeah, this is called on all card components sigh
+      this.$store.commit('setAlbumData', this.cardInfo)
+      
+    }
+  },
   props: {
     cardInfo: {
       type: Object,
-      // Do not create default property (object prop) of property ()
       default: () => ({
       //  title: 'Card Title',
       //  subtitle: 'Card Subtitle',
@@ -69,14 +83,23 @@ export default {
       //  buttonText: '',
       //  buttonRouteTo: ''
       })
-    }
+    },
+    otherAlbumData: {
+      type: Object,
+      default: () => ({
+      // githubLink: ''
+      })
+    },
+    pictureWidth: {
+      type: String
+    },
+    pictureHeight: String
   },
   components: {
     'c-button': CButton,
     'c-photo': CPhoto
   }
 }
-  
 </script>
 
 <style scoped lang="scss">
@@ -89,6 +112,10 @@ export default {
 .card-generic button {
   a:link, a:visited, a:hover, a:active {
     text-decoration: none;
+  }
+
+  button {
+    width: 100%;
   }
 }
 </style>

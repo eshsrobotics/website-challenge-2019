@@ -12,15 +12,16 @@
 <script>
 import NavBarItem from '@/components/nav/NavbarItem'
 
-  export default {
-    props: {
-      routeTo: String,
-      dropdownTitle: String
-    },
-    components: {
-      'nav-bar-item': NavBarItem
-    }
+export default {
+name: 'navbarItemDropdown',
+  props: {
+    routeTo: String,
+    dropdownTitle: String
+  },
+  components: {
+    'nav-bar-item': NavBarItem
   }
+}
 </script>
 
 <style scoped lang="scss">
@@ -28,7 +29,7 @@ import NavBarItem from '@/components/nav/NavbarItem'
 
 .dropdown {
   position: relative;
-  z-index: 10000;
+  z-index: 100;
 }
 
 .dropdown:hover .dropdown-items {

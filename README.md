@@ -4,54 +4,132 @@ This is a website coded for the [Robotics Team Website Challenge 2019](https://c
 
 ## Setup :wrench:
 ```bash
-$ git clone https://github.com/eshsrobotics/RobotEventsChallengeWebsite2018
+$ git clone --recurse-submodules https://github.com/eshsrobotics/RobotEventsChallengeWebsite2018
 $ cd RobotEventsChallengeWebsite2018
-$ npm install -g @vue/cli-service
-$ npm install @vue/cli-plugin-babel
-$ npm install
-$ npm run serve
+$ yarn install
+$ yarn run serve
 ```
 
 ### Dev Server
 ```bash
-$ npm run serve
+# Running on port 8080
+$ yarn run serve
 ```
-
-#### About dev server
-* Running on port 8080
 
 ### Build for Prod
 ```bash
-$ npm run build
+$ yarn run build
+
+# Build and deploy to prod
+$ ./deploy.sh
 ```
 
-## Info :information_source:
-Just a heads up, I performed an interactive rebase on about November 28th 2018, and essentially nuked part of the commit history or something. I tried to rename some (2ish) commit messages, but I tripped up and messed up. I tried to fix it, it's still messed up, but the website works now. ¯\_(ツ)_/¯
+## Improvements / Known Issues :car:
+* Fix picture layout breaks with portrait dimensioned picture
+* Transform markdown static articles to actual posts with routes & breadcrumbs, tags, dates, authors, etc. 
 
+## Maintenance
+###  General
+* Update links on each individual cyberpatriots, frc, vex page
+  * Change links to the photograph album (and the "see more" button)
+  * Change images and content
+  * To do this, go to `src/views`. Folder structure should resemble similarly to the nav bar menu on the site
 
-## Roadmap :car:
-### Website
-* Make website responsive design & mobile friendly
-* Possibly have some way of viewing the Team's 3D Models bots
-* Maybe have a shine effect, possibly for some of the sponsor icons
-* Theme support
-* Create abstraction over image element, such that clicking on image yields an enlarged photo, with extra features
-* Think about timeline component to show timeline of frc, vex, cyberpatriots competition
-* Have carousel of sponsors / photos, etc., or have line of sponsors that move left gradually
-* Have descriptions of photographs on the back, via flip on hover
-* 404
+### Putting content at root project dir in prod
+* You may need to add a CNAME or something thats at root of project when deployed
+* Place these files in `public/`
+* This is done with `copy-webpack-plugin`, with abstraction layer provided by `vue-cli-3`
 
-### ~~Blogging System~~
-* No plans of implementation, details will become more terse, removed as time progresses
-* Blogging system can be controlled by in-house (very basic) CMS
-  * Make with NodeJS (running on localhost)
-  * Use SQLite to manage users
-* CMS has three types of users
-  * admins, moderators and standard users
-* All users must memorize passcode
-  * Keep trap of users, comments, etc. If a password is wiped due to an emergency, make sure the blog posts, comments, etc. are not deleted, or will not be deleted on the next build of the blog
+### Adding photos (general)
+* Add photos in the data-base photos archive (is org gh repo)
+* Run respective scripts there that build thumbnails for the higher resolution images
+* If the photo is niche and does not group well into other photos, drop images in `src/assets/local-image`
+  * These images will copy over using CopyWebpackPlugin (config in Vue.config.js) to `dist/local-image`
+  * Reference these with <REPONAME>/local-image/img.jpg' if it's in a JSON file. Ex. `WebsiteChallenge2019/local-image/img.jpg`. If you're in some JS file, you can reference it with `@/assets/local-image/img.jpg`
 
-## Comon Problems
+### Adding photos (to album collection)
+* Schema for albums at `/photos` found at `src/views/media/photoData.json`; observe and extend upon the existing schema, simple sample shown below 
+```json
+[
+  { 
+    "year": "2018-2019",
+    "events": [
+      {
+        "title": "CyberPatriots Competition",
+        "image": "https://github.com/eshsrobotics/database-photos/blob/master/2018-2019/cyberpatriots-november-competition/IMG_0898.small.jpg?raw=true",
+        "desc": "Participating in the 2018-2019 CyberPatriots round 1 competition",
+        "uri": "2018-2019-cyberpatriots-competition-round-1",
+        "photosPrefix": "https://github.com/eshsrobotics/database-photos/blob/master/2018-2019/cyberpatriots-november-competition/IMG_0",
+        "photosSuffix": ".small.jpg?raw=true",
+        "photos": [
+          "896",
+          "897",
+          "898",
+          "899",
+          "900",
+          "901",
+          "902",
+          "903",
+          "904",
+          "906"
+        ]
+      },
+      {
+        "title": "VEX Competition Prep",
+        "image": "https://github.com/eshsrobotics/database-photos/blob/master/2018-2019/vex-competition-prep/vexprep2.small.jpg?raw=true",
+        "desc": "Working on the 2018-2019 VEX Robot",
+        "uri": "2018-2019-vex-prep-fall",
+        "photosPrefix": "https://github.com/eshsrobotics/database-photos/blob/master/2018-2019/vex-competition-prep/",
+        "photosSuffix": ".small.jpg?raw=true",
+        "photos": [
+          "IMG_0907",
+          "IMG_0908",
+          "vexprep1",
+          "vexprep2"
+        ]
+      }
+    ]
+  },
+  { 
+    "year": "2017-2018",
+    "events": [
+      "..."
+    ]
+  }
+]
+```
+* `image` is a cover image for that album
+* `uri` is the route that shows in the url bar when you navigate to that page. *Always* include year. Make `uri`s as similar as previous ones to maintain continuity
+  * `uri` MUST start with a year. `2018-2019` due to 192154336e7badf3c9a6b25eca6328a79c2bb765
+* Note that the Second "VEX Competition Prep" event will generate a page located at `/#/album/2018-2019-vex-prep-fall`
+  * Note you can browse through these photos here: [`https://github.com/eshsrobotics/database-photos/tree/master/2018-2019/vex-competition-prep`](https://github.com/eshsrobotics/database-photos/tree/master/2018-2019/vex-competition-prep)
+  * Photos are a concatenation of `photosPrefix + photos[i] + photosSuffic`
+    * One example of result of concatenation is `https://github.com/eshsrobotics/database-photos/blob/master/2018-2019/vex-competition-prep/IMG_0907.jpg?raw=true`
+  * Note that there are four photos in the "VEX Competition Prep" archive and four items in `photos: []`
+
+### Editing this repo's name / changing hosting
+* Some `.json` files (such as `sponsorData.json` and others) have the repository name, `WebsiteChallenge2019` hardcoded
+* This is because webpack does not seem to resolve '@' (as src (it's a default webpack alias within Vue-cli-3's default webpack config options))
+* There's some way to config webpack to resolve this stuff in `.json`, but this is a temporary work around. So change paths in .json file when changing repos name
+* if this is hosted somewhere else (in these case you'll have to change publicDir in `vue.config.js`
+
+### Updating Sponsors
+When updating sponsors, change `src/views/sponsors/sponsorData.json` to match new sponsors. Use the following schema
+```json
+{
+  "name": "Company Name",
+  "image": "https://github.com/eshsrobotics/WebsiteChallenge2019/blob/master/src/assets/local-image/company-image.png?raw=true",
+  "imageAltText": "Text shown when image not found",
+  "tier": "Tier of Company"
+}
+```
+* Note that `company-image.png` must be placed in `src/local-image`
+* You may need to update `src/views/sponsors` if you're adding a new tier. Observe and extend upon the existing structure
+* You must also update `<infinite-slide-bar>` components that use the `sponsorData.json`
+  * In src/views/Home.vue, update `width` property on `<infinite-slide-bar>` component
+  * Update when no sponsor photo overlaps another
+
+## Common Problems
 If you're new to Vue, or contributing, you may encounter a few errors. I've isolated some of the more common (and uncommong) errors / mishehaviors you may be getting and I've provided a solution. i.e. If the website is not doing what you want, see if your issue matches any below. The first bullet point after a subsection is a snippet of example code that defines or relates to the issue.
 
 ### Scoped CSS / SCSS Styles in Components
@@ -73,7 +151,7 @@ If you're new to Vue, or contributing, you may encounter a few errors. I've isol
 * Solution 2: Actually fix the issue. Just modifying the `createTransitions` scss function won't change anything. Try looking into [extend](https://css-tricks.com/the-extend-concept/) in scss in combination with mixins / methods / whatever
 
 ### CSS IDs Styling
-* Ids can only be used once per webPage. Because components are reusable, you might be declaring multiple components of the same type on the same page
+* Ids can only be used once per web page. Because components are reusable, you might be declaring multiple components of the same type on the same page
 * Alternatively, you may be giving the component two different Ids from two different places. Such as giving the Id when creating the component (`ChildComponent.vue`) *and* using the component (`ParentComponent.vue`)
 
   `ParentComponent.vue`

@@ -1,16 +1,15 @@
 <template>
-<div :class="blockData.photoPosition" class="block">
-  <div v-if="blockData.photoPosition == 'right'" class="description">
-    <slot></slot>
+  <div :class="blockData.photoPosition" class="block">
+    <div class="picture">
+      <card-generic :cardInfo="blockData"></card-generic>
+    </div>
+    <div v-if="blockData.photoPosition == 'right'" class="description">
+      <slot></slot>
+    </div>
+    <div v-if="blockData.photoPosition == 'left'" class="description">
+      <slot></slot>
+    </div>
   </div>
-  <div class="picture">
-    <card-generic :cardInfo="blockData"></card-generic>
-  </div>  
-  <div v-if="blockData.photoPosition == 'left'" class="description">
-    <slot></slot>
-  </div>
-</div>
- 
 </template>
 
 <script>
@@ -45,22 +44,35 @@ p {
 }
 
 img {
-  // width: auto;
-  // height: auto;
   border-radius: $border-radius;
-  display: block;
+  /*display: block;*/
+}
+
+.block {
+  margin-bottom: 20px;
 }
 
 .block.left {
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  margin-bottom: 30px;
+  /*height: 100%;*/ // This bugs out in Firefox!!!
+
+  .picture {
+    float: left;
+  }
 }
 
 .block.right {
-  display: grid;
-  grid-template-columns: 2fr 1fr;
-  margin-bottom: 30px;
+  /*height: 100%;*/ // This bugs out in Firefox!!!
+
+  .picture {
+    float: right;
+  }
+}
+
+.block::after {
+  content: " ";
+  display: block;
+  height: 0;
+  clear: both;
 }
 
 .left .picture {
@@ -71,4 +83,29 @@ img {
   margin-left: 20px;
 }
 
+.picture {
+  width: 30vw;
+  min-width: 300px;
+  max-width: 450px;
+  margin-bottom: 10px;
+  padding-top: 10px;
+}
+
+@media(max-width: 550px) {
+  .block.left {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .block.right {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .picture {
+    width: calc(100% - 20px); // That's cheating!
+    margin: 0;
+    padding-top: 10px;
+  }
+}
 </style>

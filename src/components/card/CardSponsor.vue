@@ -1,49 +1,55 @@
 <template>
-  <div class="sponsor">
+  <div class="sponsor" :class="sponsor.tier">
     <h3> {{ sponsor.name }} </h3>
     <img :src="sponsor.image" :alt="sponsor.imageAltText" :width="pictureWidth"/>
   </div>
 </template>
 
 <script>
+import CPhoto from '@/components/ui/CPhoto'
 export default {
-  name: 'sponsorCard',
+  name: 'cardSponsor',
   computed: {
-    // Purpose: To receive the showSponsor property (prop) when declaring this component
-    // Ex. For the following code
-    //   <sponsor-card showSponsor="companyFoo"></sponsor-card>
-    //   "companyFoo" is being passed down and is equal to the value of showSponsor (for that particular component). And showSponsor must be type String, or errors will be printed in console
-
     pictureWidth: function() {
-      if(this.aTier === "diamond") {
-        return (250 * 1.25 * 1.25 * 1.25) + "px"
+      // Sponsor photograph size now based on width of photograph (rather than just the width)
+      // Sponsors of the same tier now have the same area
+      // Calculated by hand TODO: // Perform calculations manually
+      if(this.sponsor.name === "Ed Foundation") {
+        return 430.3 + 'px';
       }
-      else if(this.aTier === "gold") {
-        return (250 * 1.25 * 1.25) + "px"
+      else if(this.sponsor.name === "Xerox") {
+        return 473.10 + 'px';
       }
-      else if(this.aTier === "silver") {
-        return (250 * 1.25) + "px"
+      else if(this.sponsor.name === "Booz Allen Hamilton") {
+        return 468.21 + 'px';
       }
-      else if(this.aTier === "bronze") {
-        return "250px"
+      else if(this.sponsor.name === "Imforza") {
+        return 276.66 + 'px';
       }
+      // if(this.sponsor.tier === "gold") {
+      //   return (250 * 1.25 * 1.25) + "px"
+      // }
+      // else if(this.sponsor.tier === "silver") {
+      //   return (250 * 1.25) + "px"
+      // }
+      // else if(this.sponsor.tier === "bronze") {
+      //   return "100px"
+      // }
     }
   },
   props: {
     sponsor: {
       type: Object,
-      // We put parenthesis around object to denote that we are returning an object rather than a
-      // function (since we're using es6 fat arrow notation)
       default: () => ({
         name: 'Sponsor Name',
         image: 'https://dummyimage.com/1280x960/dee2e6/212529',
-        imageAltText: 'Sponsor Alt Text' 
+        imageAltText: 'Sponsor Alt Text',
+        tier: 'bronze'
       })
-    },
-    aTier: {
-      type: String,
-      default: 'bronze'
     }
+  },
+  components: {
+    'c-photo': CPhoto
   }
 }
 </script>
@@ -60,31 +66,23 @@ h3 {
   display: flex;
   flex-direction: column;
   margin-bottom: 15px;
-}
+  max-width: 100%;
 
-// Recall "plainum, gold, siler, bronze" classes are set in component LayoutCardOverflow.vue (which always must be parent of SponsorCard.vue
-.platinum .sponsor {
   img {
-    width: 200px;
+    max-width: 100%;
+    object-fit: scale-down;
   }
 }
 
-.diamond .sponsor {
-  @include hoverShadow($std-shadow-hov, $oc-blue-3, 32px);
-}
-
-.gold .sponsor {
+.gold.sponsor {
   @include hoverShadow($std-shadow-hov, $oc-yellow-3, 32px);
 }
-
-.silver .sponsor {
+.silver.sponsor {
   @include hoverShadow($std-shadow-hov, $oc-indigo-3, 32px);
 }
-
-.bronze .sponsor {
+.bronze.sponsor {
   @include hoverShadow($std-shadow-hov, $oc-orange-3, 32px);
 }
-
 </style>
 
 

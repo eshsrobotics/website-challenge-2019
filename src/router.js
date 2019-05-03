@@ -32,17 +32,10 @@ export default new Router({
           }
         },
         {
-          path: 'coaches-and-mentors',
-          component: () => import('@/views/about/CoachesAndMentors'),
+          path: 'join-us',
+          component: () => import('@/views/about/JoinUs'),
           meta: {
-            title: 'Coaches & Mentors'
-          }
-        },
-        {
-          path: 'officers',
-          component: () => import('@/views/about/Officers'),
-          meta: {
-            title: 'Officers'
+            title: 'Join Us'
           }
         },
         {
@@ -81,57 +74,60 @@ export default new Router({
       }
     },
     {
+      path: '/photos',
+      component: () => import('@/views/media/Photos'),
+      meta: {
+        title: 'Photos'
+      }
+    },
+    {
+      path: '/album/:album',
+      component: () => import('@/views/media/Album'),
+      meta: {
+        title: 'Album Photos',
+        showRoute: false
+      }
+    },
+    {
       path: '/resources',
       component: () => import('@/components/SubPathWrapper'),
       children: [
-        {
-          path: '',
-          component: () => import('@/views/resources/Resources'),
-          meta: {
-            title: 'Resources'
-          }
-        },
-        {
-          path: 'links',
-          component: () => import('@/views/resources/QuickLinks'),
-          meta: {
-            title: 'Quick Links'
-          }
-        },
-        {
-          path: 'branding',
-          component: () => import('@/views/resources/BrandingGuidelines'),
-          meta: {
-            title: 'Branding Guidelines'
-          }
-        }
-      ]
-    },
-    {
-      path: '/media',
-      component: () => import('@/components/SubPathWrapper'),
-      children: [
-        {
-          path: '',
-          component: () => import('@/views/media/Media'),
-          meta: {
-            title: 'Media'
-          }
-        },
-        {
-          path: 'photos',
-          component: () => import('@/views/media/Photos'),
-          meta: {
-            title: 'Photos'
-          }
-        },
-        {
-          path: 'videos',
-          component: () => import('@/views/media/Videos'),
-          meta: {
-            title: 'Videos'
-          }
-        },
+        // {
+        //   path: '',
+        //   component: () => import('@/views/resources/Resources'),
+        //   meta: {
+        //     title: 'Resources'
+        //   }
+        // },
+        // {
+        //   path: 'branding',
+        //   component: () => import('@/views/resources/BrandingGuidelines'),
+        //   meta: {
+        //     title: 'Branding Guidelines'
+        //   }
+        // },
+        // {
+        //   path: 'photos',
+        //   component: () => import('@/views/media/Photos'),
+        //   meta: {
+        //     title: 'Photos'
+        //   }
+        // },
+        // {
+        //   path: 'album/:album',
+        //   component: () => import('@/views/media/Album'),
+        //   meta: {
+        //     title: 'Album Photos',
+        //     showRoute: false
+        //   }
+        // },
+        // {
+        //   path: 'videos',
+        //   component: () => import('@/views/media/Videos'),
+        //   meta: {
+        //     title: 'Videos'
+        //   }
+        // },
       ]
     },
     {
@@ -164,6 +160,34 @@ export default new Router({
       meta: {
         title: 'Contact'
       }
-    }
-  ]
+    },
+    {
+      path: '/image/:image',
+      component: () => import('@/views/EnlargedImage'),
+      meta: {
+        title: 'View Image'
+      }
+    },
+    {
+      path: '/404',
+      component: () => import('@/views/404'),
+      meta: {
+        title: '404'
+      }
+    },
+    {
+      path: '*',
+      component: () => import('@/views/404'),
+      meta: {
+        title: '404 Page Not Found'
+      },
+    },
+  ],
+  //
+  // beforeResolve((to, from, next) => {
+  //   if(to.path) {
+  //     NProgress.start()
+  //     next()
+  //   }
+  // })
 })

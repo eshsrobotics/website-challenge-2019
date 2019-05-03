@@ -1,51 +1,172 @@
 <template>
-  <div class="team">
-    <c-block :blockData="teamBlock">
-      <h2>About the Team</h2>
-      <p>Aliqua cillum pariatur adipisicing esse tempor mollit. Veniam eu ullamco ullamco ipsum amet est quis nulla officia nisi exercitation laboris. Qui mollit est adipisicing sint proident cupidatat ut qui velit dolore consectetur. Ex aute aliqua commodo quis in culpa consectetur sit velit ex consectetur occaecat. Reprehenderit magna laboris duis exercitation esse commodo elit qui ad aliquip et nisi.</p>
-    </c-block>
-    <c-block :blockData="teamStructure">
-      <h2>Team Structure</h2>
-      <p>Est aliqua dolor aliqua aliqua ea deserunt. Sunt laborum dolor consectetur magna cillum non deserunt id in cupidatat dolor cillum aliquip. Voluptate consequat in magna proident aute et cillum occaecat nisi esse cillum. Amet aute dolor deserunt culpa sunt nulla et est laborum officia consequat proident culpa.</p>
-    </c-block>
-    <c-block :blockData="teamRecruitment">
-      <h2>Recruitment Efforts</h2>
-      <p>Est aliqua dolor aliqua aliqua ea deserunt. Sunt laborum dolor consectetur magna cillum non deserunt id in cupidatat dolor cillum aliquip. Voluptate consequat in magna proident aute et cillum occaecat nisi esse cillum. Amet aute dolor deserunt culpa sunt nulla et est laborum officia consequat proident culpa.</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At consequuntur, id laudantium nam quidem sed voluptatum. At commodi debitis dolorem ducimus minus omnis qui temporibus. Amet enim iusto minima nostrum.</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa dolore illo iure nemo perferendis praesentium quibusdam vero! Accusantium dolores esse quis quos repudiandae. Cupiditate, distinctio, hic. Debitis dolor eaque vel!</p>
-    </c-block>
+  <div class="coaches-and-mentors">
+    <h2>Coaches</h2>
+    <p>We are grateful to our coaches for working hard to administer and drive the robotics club towards a positive direction.</p>
+    <layout-cards-overflow class="overflow">
+      <card-generic v-for="coach in coaches" :cardInfo="coach" class="generic"></card-generic>
+    </layout-cards-overflow>
+
+    <h2>Mentors</h2>
+    <p>We thank our mentors for dedicating their time to use their knowledge to guide the club towards a better future.</p>
+    <layout-cards-overflow class="overflow">
+      <card-generic v-for="mentor in mentors" :cardInfo="mentor" class="generic"></card-generic>
+    </layout-cards-overflow>
+
+    <h2>Officers</h2>
+    <p>We value all officers for their hard work in bringing this club together.</p>
+    <layout-cards-overflow class="overflow">
+      <card-generic v-for="officer in officers" :cardInfo="officer" class="generic"></card-generic>
+    </layout-cards-overflow>
   </div>
 </template>
 
 <script>
-import CBreadcrumb from '@/components/ui/Breadcrumb'
-import CBlock from '@/components/ui/Block'
+import LayoutCardsOverflow from '@/components/card-layout/LayoutCardsOverflow'
+import CardGeneric from '@/components/card/CardGeneric'
 
 export default {
-  name: 'team',
+  name: 'coachesAndMentors',
   data() {
+    let tempDesc = 'Description of person. Short and concise. Well-written.'
     return {
-      teamBlock: {
-        image: 'https://dummyimage.com/1280x720/dee2e6/212529',
-        imageAltText: 'Dummy Image',
-        photoPosition: 'right'
-      },
-      teamStructure: {
-        image: 'https://github.com/eshsrobotics/database/blob/master/marketing%20and%20media/team%20structure/Team%20Structure%20Diagram%20Version%202.png?raw=true',
-        imageAltText: 'A diagram of the team\'s structure',
-        photoPosition: 'right'
-      },
-      teamRecruitment: {
-        image: 'https://github.com/eshsrobotics/database/blob/master/marketing%20and%20media/recruitment%20posters/vrc%20poster/Final%20Simple%20Robotics%20Poster.png?raw=true',
-        imageAltText: 'Photograph of a poster advocating to join the robotics club.',
-        photoPosition: 'left'
-      }
-  }
-
+      coaches: [
+        {
+          title: 'Alan Davis',
+          subtitle: 'VEX Coach',
+          // image: 'https://dummyimage.com/1280x960/dee2e6/212529',
+          // imageAltText: 'This is an important person',
+          desc: 'An instructor for the first few years of the Engineering pathway; helps direct the VEX team to the right direction.'
+        },
+        {
+          title: 'Danial Horvath',
+          subtitle: 'FRC Coach',
+          // image: 'https://dummyimage.com/1280x960/dee2e6/212529',
+          // imageAltText: 'This is an important person',
+          desc: 'Teaches various S.T.E.M. subjects such as AP Physics 1 in addition to coaching the FRC team.'
+        },
+        {
+          title: 'Joelle Robinson',
+          subtitle: 'Cyberpatriots Coach',
+          // image: 'https://dummyimage.com/1280x960/dee2e6/212529',
+          // imageAltText: 'This is an important person',
+          desc: 'Helps coach for CyberPatriots and also teaches AP Computer Science A, among other classes.'
+        }
+      ],
+      mentors: [
+        {
+          title: 'Santiago Garza',
+          subtitle: 'FRC',
+          // image: 'https://dummyimage.com/1280x960/dee2e6/212529',
+          // imageAltText: 'This is an important person',
+          desc: 'FRC alumnus & former Dean’s list award winner, Santiago brings years of experience both on and off the robotics field to the POTATOES'
+        },
+        {
+          title: 'Uche Akotaobi',
+          subtitle: 'VEX & FRC',
+          // image: 'https://dummyimage.com/1280x960/dee2e6/212529',
+          // imageAltText: 'This is an important person',
+          // desc: 'Aliquip occaecat velit ipsum nisi reprehenderit adipisicing nostrud.'
+        },
+        {
+          title: 'Cheryl Bhence',
+          subtitle: 'FRC',
+          // desc: 'Do esse laborum consequat officia eu aliqua commodo reprehenderit.'
+        },
+        {
+          title: 'Brandon Marshall',
+          subtitle: 'VEX',
+          // desc: 'Description'
+        },
+        {
+          title: 'Michael Leahy',
+          subtitle: 'FRC',
+          // desc: 'Description'
+        },
+        {
+          title: 'Jim Swenson',
+          subtitle: 'FRC & VEX',
+          // desc: 'In veniam elit aliquip minim deserunt deserunt elit occaecat et.'
+        },
+        {
+          title: 'Bob Solanto',
+          subtitle: 'FRC & VEX',
+          // desc: 'In veniam elit aliquip minim deserunt deserunt elit occaecat et.'
+        }
+      ],
+      officers: [
+        {
+          title: 'Spensor Moore',
+          subtitle: 'FRC Co-Captain',
+          // image: 'https://dummyimage.com/1280x960/dee2e6/212529',
+          // imageAltText: 'This is an important person',
+          desc: 'Also lead programmer, Spensor helps oversee the development of the FRC competition and preparation for the competition.'
+        },
+        {
+          title: 'Grace Ringuette',
+          subtitle: 'FRC Co-Captain',
+          // image: 'https://dummyimage.com/1280x960/dee2e6/212529',
+          // imageAltText: 'This is an important person',
+          desc: 'With experience of VEX Robotics, Grace brings talent and direction to the fabrication of FRC robots.'
+        },
+        {
+          title: 'Daniel Stamper',
+          subtitle: 'VEX Co-Captain',
+          // image: 'https://dummyimage.com/1280x960/dee2e6/212529',
+          // imageAltText: 'This is an important person',
+          desc: 'Daniel Stamper, in conjunction with Co-Captain James Lim help recruit members and direct lessons related to VEX.'
+        },
+        {
+          title: 'James Lim',
+          subtitle: 'VEX Co-Captain',
+          // image: 'https://dummyimage.com/1280x960/dee2e6/212529',
+          // imageAltText: 'This is an important person',
+          desc: 'James Lim, in conjunction with Co-Captain Daniel Stamper help recruit members and direct lessons related to VEX.'
+        },
+        {
+          title: 'Jasper Nelson',
+          subtitle: 'CyberPatriots Captain',
+          // image: 'https://dummyimage.com/1280x960/dee2e6/212529',
+          // imageAltText: 'This is an important person',
+          desc: 'Jasper Nelson keeps the CyberPatriots program on track and oversees technical training for CyberPatriots competitions.'
+        },
+        {
+          title: 'Lizzie Kapoor',
+          subtitle: 'Marketing Captain',
+          // image: 'https://dummyimage.com/1280x960/dee2e6/212529',
+          // imageAltText: 'This is an important person',
+          desc: 'Overlooks brand and brand presentation. Coordinates fundraising and recruitment events.'
+        }
+      ]
+    }
   },
   components: {
-    'c-breadcrumb': CBreadcrumb,
-    'c-block': CBlock
+    'layout-cards-overflow': LayoutCardsOverflow,
+    'card-generic': CardGeneric
   }
 }
 </script>
+
+<style scoped lang="scss">
+.generic {
+  width: 250px;
+  margin-bottom: 20px;
+}
+
+p {
+  padding-bottom: 10px;
+}
+
+@media(max-width: 640px) {
+  .overflow {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+
+    & * {
+      width: 100%;
+      display: block;
+      box-sizing: border-box;
+    }
+  }
+}
+</style>

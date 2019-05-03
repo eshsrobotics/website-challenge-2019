@@ -1,10 +1,8 @@
 <template>
-  <ul>
-    <li v-for="(routeObject, index) in routeObjects" :class="isRouteActive(index)">
+  <ul class="nav-tab">
+    <li v-for="(routeObject, index) in routeObjects"  v-if="routeObject.meta.showRoute !== false" :class="isRouteActive(index)">
       <router-link :to="routeObjectsPath[index]">
-        <!-- <nav-bar-item :routeTo="routeObjectsPath[index]"> -->
-          {{ routeObject.meta.title }}
-        <!-- </nav-bar-item> -->
+        {{ routeObject.meta.title }}
       </router-link>
     </li>
   </ul> 
@@ -38,7 +36,7 @@ import NavBarItem from '@/components/nav/NavbarItem.vue'
         // console.log('currentRoutesArray', currentRoutesArray)
         
         // Go through the routes tree to find all sibling rotes (or child routes if you are on the parent route (ex. if you are on '/about' (rather than '/about/website'), still show the same thing as '/about/website'))
-        let relevantRoutes = this.$router.options.routes;
+        let relevantRoutes = this.$router.options.routes
         // console.warn(relevantRoutes)
         for(let i = 0; i < currentRoutesArray.length; i++) {
           // Find all of the relevant routes (basically sibling components)
@@ -88,7 +86,7 @@ import NavBarItem from '@/components/nav/NavbarItem.vue'
           if(relativePath == "") {
             // Do not need to prepend anything
             let prepend = this.$route.matched.map(obj => obj.path)
-            let absolutePath = prepend[prepend.length -2]
+            let absolutePath = prepend[prepend.length - 2]
             // console.log('if', absolutePath)
             return absolutePath
           }
@@ -149,4 +147,9 @@ a {
   }
 }
 
+@media(max-width: $mobileWidth) {
+  .nav-tab {
+    display: none;
+  }
+}
 </style>
