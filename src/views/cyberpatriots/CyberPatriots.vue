@@ -2,7 +2,8 @@
   <div class="cyberpatriots">
     <c-block :blockData="cypatBlock">
       <h2>About</h2>
-      <p>The competition puts teams of students in the position of newly hired IT professionals tasked with managing the network of a small company. In the rounds of competition, teams are given a set of virtual images that represent operating systems and are tasked with finding cybersecurity vulnerabilities within the images and hardening the system while maintaining critical services.</p>
+      <p>The competition puts teams of students in the position of newly hired IT professionals tasked with managing the network of a small company. During competition, teams are given a set of virtual images that represent operating systems and are tasked with finding cybersecurity vulnerabilities within the images and hardening the system while maintaining critical services.</p>
+      <p>The Cyperpatriots competition is sponsored by the U.S. Air Force Association.</p>
     </c-block>
   </div>
 </template>

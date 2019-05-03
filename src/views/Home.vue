@@ -29,7 +29,8 @@ export default {
           title: "CyberPatriots",
           image: 'https://github.com/eshsrobotics/database-photos/blob/master/2017-2018/cyberpatriots-competition-prep/cyberPatriots9.jpg?raw=true',
           imageAltText: "Alt text",
-          desc: "Small teams search computer systems for vulnerabilities and exploits. As you compete, gain points for every vulnerability that is patched!",
+          // desc: "Small teams search computer systems for vulnerabilities and exploits. As you compete, gain points for every vulnerability that is patched!",
+          desc: "Teams of six students or less function as an I.T. team. Students learn about computer systems, networking systems, and the fundamentals of protecting virtual systems.",
           buttonText: "Learn More",
           buttonRouteTo: "/cyberpatriots"
         },
