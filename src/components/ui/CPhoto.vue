@@ -2,7 +2,7 @@
   <div class="image-wrapper">
     <div class="image-wrapper-inner" :class="cardState">
       <div class="image-front" :style="getPictureWidth">
-        <img :src="imageInfo.image" :alt="imageInfo.imageAltText">
+        <img :src="imageInfo.image" :alt="imageInfo.imageAltText" loading="lazy">
         <div class="maximize-icon">
           <router-link :to="pictureEnlargeRouteTo">
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#212529" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-maximize-2">
