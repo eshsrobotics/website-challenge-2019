@@ -1,4 +1,4 @@
-const  CopyWebpackPlugin = require('copy-webpack-plugin')
+const CopyWebpackPlugin = require('copy-webpack-plugin')
 
 module.exports = {
   publicPath: '',
