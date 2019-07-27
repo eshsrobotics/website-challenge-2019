@@ -3,19 +3,19 @@
     <h2>Coaches</h2>
     <p>We are grateful to our coaches for working hard to administer and drive the robotics club towards a positive direction.</p>
     <layout-cards-overflow class="overflow">
-      <card-generic v-for="coach in coaches" :cardInfo="coach" class="generic"></card-generic>
+      <card-generic v-for="coach in coaches" :cardInfo="coach" :key="coach.title" class="generic"></card-generic>
     </layout-cards-overflow>
 
     <h2>Mentors</h2>
     <p>We thank our mentors for dedicating their time to use their knowledge to guide the club towards a better future.</p>
     <layout-cards-overflow class="overflow">
-      <card-generic v-for="mentor in mentors" :cardInfo="mentor" class="generic"></card-generic>
+      <card-generic v-for="mentor in mentors" :cardInfo="mentor" :key="mentor.title" class="generic"></card-generic>
     </layout-cards-overflow>
 
     <h2>Officers</h2>
     <p>We value all officers for their hard work in bringing this club together.</p>
     <layout-cards-overflow class="overflow">
-      <card-generic v-for="officer in officers" :cardInfo="officer" class="generic"></card-generic>
+      <card-generic v-for="officer in officers" :cardInfo="officer" :key="officer.title" class="generic"></card-generic>
     </layout-cards-overflow>
   </div>
 </template>
