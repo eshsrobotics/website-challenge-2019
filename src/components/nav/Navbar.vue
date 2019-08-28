@@ -5,9 +5,9 @@
         <li class="image"> <img src="@/assets/robotics-logo.png" alt="Robotics Logo" height="42px"> </li>
       </router-link>
       <nav-bar-item routeTo="/">Home</nav-bar-item>
-       <nav-bar-item-dropdown routeTo="/about" dropdownTitle="About Us">
+      <nav-bar-item-dropdown routeTo="/about" dropdownTitle="About Us">
         <nav-bar-item routeTo="/about/team">Team</nav-bar-item>
-         <nav-bar-item route-to="/about/join-us">Join Us</nav-bar-item>
+        <nav-bar-item route-to="/about/join-us">Join Us</nav-bar-item>
         <nav-bar-item routeTo="/about/website">Website</nav-bar-item>
       </nav-bar-item-dropdown>
       <nav-bar-item routeTo="/cyberpatriots">Cyberpatriots</nav-bar-item>
@@ -227,4 +227,3 @@ a {
   }
 }
 </style>
-

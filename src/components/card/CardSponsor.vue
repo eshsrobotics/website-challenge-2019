@@ -84,6 +84,3 @@ h3 {
   @include hoverShadow($std-shadow-hov, $oc-orange-3, 32px);
 }
 </style>
-
-
-

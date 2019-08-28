@@ -31,4 +31,3 @@ export default {
   /*max-height: 100%;*/
 }
 </style>
-

@@ -1,7 +1,7 @@
 <template>
   <div class="sponsors-page">
     <page-desc>
-       <p>The Robotics Club is grateful all our sponsors</p>
+      <p>The Robotics Club is grateful all our sponsors</p>
     </page-desc>
 
     <card-sponsor-wrapper tier="gold">
@@ -53,4 +53,3 @@ export default {
   margin-top: 15px;
 }
 </style>
-

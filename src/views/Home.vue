@@ -2,7 +2,7 @@
   <div class="home">
     <page-desc>
       <p>We're a club located in the <b>heart of El Segundo</b>, We have a <b>strong passion</b> for robotics, programming, engineering, and anything related.</p>
-     <p>The team resides in the South Bay at <a href="https://www.elsegundohigh.org" target="_blank">El Segundo High School</a>.</p>
+    <p>The team resides in the South Bay at <a href="https://www.elsegundohigh.org" target="_blank">El Segundo High School</a>.</p>
     </page-desc>
 
     <page-desc>
@@ -52,7 +52,7 @@ import CButton from '@/components/ui/CButton'
 
 export default {
   name: 'home',
-   data() {
+  data() {
     let placeHolder = 'https://dummyimage.com/1280x960/dee2e6/212529'
     return {
     sponsors: SponsorData,
