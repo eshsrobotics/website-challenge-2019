@@ -8,6 +8,7 @@ npm run build
 
 git checkout master
 git merge dev
+git push origin master
 
 # navigate into the build output directory
 cd dist
