@@ -1,26 +1,26 @@
 [
   {
     "name": "Ed Foundation" ,
-    "image": "https://github.com/eshsrobotics/WebsiteChallenge2019/blob/master/src/assets/local-image/ed.jpg?raw=true",
+    "image": "https://github.com/eshsrobotics/website-challenge-2019/blob/master/src/assets/local-image/ed.jpg?raw=true",
     "imageAltText": "Ed Foundation logo",
     "tier": "gold"
   },
   {
     "name": "Xerox" ,
-    "image": "https://github.com/eshsrobotics/WebsiteChallenge2019/blob/master/src/assets/local-image/xerox.jpg?raw=true",
+    "image": "https://github.com/eshsrobotics/website-challenge-2019/blob/master/src/assets/local-image/xerox.jpg?raw=true",
     "imageAltText": "Xerox logo",
     "tier": "gold"
   },
 
   {
     "name": "Booz Allen Hamilton" ,
-    "image": "https://github.com/eshsrobotics/WebsiteChallenge2019/blob/master/src/assets/local-image/booz-allen.png?raw=true",
+    "image": "https://github.com/eshsrobotics/website-challenge-2019/blob/master/src/assets/local-image/booz-allen.png?raw=true",
     "imageAltText": "Booz Allen Hamilton logo",
     "tier":  "silver"
   },
   {
     "name": "Imforza" ,
-    "image": "https://github.com/eshsrobotics/WebsiteChallenge2019/blob/master/src/assets/local-image/imforza.png?raw=true",
+    "image": "https://github.com/eshsrobotics/website-challenge-2019/blob/master/src/assets/local-image/imforza.png?raw=true",
     "imageAltText": "Imforza logo",
     "tier":  "silver"
   }

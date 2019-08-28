@@ -45,7 +45,7 @@ $ ./deploy.sh
 * Run respective scripts there that build thumbnails for the higher resolution images
 * If the photo is niche and does not group well into other photos, drop images in `src/assets/local-image`
   * These images will copy over using CopyWebpackPlugin (config in Vue.config.js) to `dist/local-image`
-  * Reference these with <REPONAME>/local-image/img.jpg' if it's in a JSON file. Ex. `WebsiteChallenge2019/local-image/img.jpg`. If you're in some JS file, you can reference it with `@/assets/local-image/img.jpg`
+  * Reference these with <REPONAME>/local-image/img.jpg' if it's in a JSON file. Ex. `website-challenge-2019/local-image/img.jpg`. If you're in some JS file, you can reference it with `@/assets/local-image/img.jpg`
 
 ### Adding photos (to album collection)
 * Schema for albums at `/photos` found at `src/views/media/photoData.json`; observe and extend upon the existing schema, simple sample shown below 
@@ -108,7 +108,7 @@ $ ./deploy.sh
   * Note that there are four photos in the "VEX Competition Prep" archive and four items in `photos: []`
 
 ### Editing this repo's name / changing hosting
-* Some `.json` files (such as `sponsorData.json` and others) have the repository name, `WebsiteChallenge2019` hardcoded
+* Some `.json` files (such as `sponsorData.json` and others) have the repository name, `website-challenge-2019` hardcoded
 * This is because webpack does not seem to resolve '@' (as src (it's a default webpack alias within Vue-cli-3's default webpack config options))
 * There's some way to config webpack to resolve this stuff in `.json`, but this is a temporary work around. So change paths in .json file when changing repos name
 * if this is hosted somewhere else (in these case you'll have to change publicDir in `vue.config.js`
@@ -118,7 +118,7 @@ When updating sponsors, change `src/views/sponsors/sponsorData.json` to match ne
 ```json
 {
   "name": "Company Name",
-  "image": "https://github.com/eshsrobotics/WebsiteChallenge2019/blob/master/src/assets/local-image/company-image.png?raw=true",
+  "image": "https://github.com/eshsrobotics/website-challenge-2019/blob/master/src/assets/local-image/company-image.png?raw=true",
   "imageAltText": "Text shown when image not found",
   "tier": "Tier of Company"
 }
