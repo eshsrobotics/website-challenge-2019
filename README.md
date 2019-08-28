@@ -1,27 +1,31 @@
 # Robotics Website
-This is a website coded for the [Robotics Team Website Challenge 2019](https://challenges.robotevents.com/challenge/95).
+This is a website coded for the [Robotics Team Website Challenge 2019](https://web.archive.org/web/20190225062010/https://challenges.robotevents.com/challenge/95).
 
 
 ## Setup :wrench:
-```bash
-$ git clone --recurse-submodules https://github.com/eshsrobotics/RobotEventsChallengeWebsite2018
-$ cd RobotEventsChallengeWebsite2018
-$ yarn install
-$ yarn run serve
+```sh
+git clone --recurse-submodules https://github.com/eshsrobotics/website-challenge-2019
+cd website-challenge-2019
+yarn install
+yarn run serve
 ```
 
 ### Dev Server
-```bash
+```sh
+sudo docker-compose up
+```
+
+```sh
 # Running on port 8080
-$ yarn run serve
+yarn run serve
 ```
 
 ### Build for Prod
-```bash
-$ yarn run build
+```sh
+yarn run build
 
 # Build and deploy to prod
-$ ./deploy.sh
+./deploy.sh
 ```
 
 ## Improvements / Known Issues :car:
