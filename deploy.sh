@@ -6,6 +6,9 @@ set -e
 # build
 npm run build
 
+git checkout master
+git merge dev
+
 # navigate into the build output directory
 cd dist
 
@@ -23,3 +26,5 @@ git commit -m 'deploy'
 git push -f https://github.com/eshsrobotics/website-challenge-2019.git master:gh-pages
 
 cd -
+
+git checkout dev
