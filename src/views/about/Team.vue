@@ -7,11 +7,11 @@
     </layout-cards-overflow>
 
     <h2>Mentors</h2>
-    <p>We thank our mentors for dedicating their time to use their knowledge to guide the club towards a better future.</p>
+    <p>We thank our mentors for dedicating their time to use their knowledge to guide the club towards a better future. Learn more about becoming a mentor by visiting the <a class="a" href="https://github.com/eshsrobotics/database/wiki/Mentors">wiki page</a>!</p>
+
     <layout-cards-overflow class="overflow">
       <card-generic v-for="mentor in mentors" :cardInfo="mentor" :key="mentor.title" class="generic"></card-generic>
     </layout-cards-overflow>
-
     <h2>Officers</h2>
     <p>We value all officers for their hard work in bringing this club together.</p>
     <layout-cards-overflow class="overflow">
@@ -40,15 +40,11 @@ export default {
         {
           title: 'Danial Horvath',
           subtitle: 'FRC Coach',
-          // image: 'https://dummyimage.com/1280x960/dee2e6/212529',
-          // imageAltText: 'This is an important person',
           desc: 'Teaches various S.T.E.M. subjects such as AP Physics 1 in addition to coaching the FRC team.'
         },
         {
           title: 'Joelle Robinson',
           subtitle: 'Cyberpatriots Coach',
-          // image: 'https://dummyimage.com/1280x960/dee2e6/212529',
-          // imageAltText: 'This is an important person',
           desc: 'Helps coach for CyberPatriots and also teaches AP Computer Science A, among other classes.'
         }
       ],
@@ -56,41 +52,31 @@ export default {
         {
           title: 'Santiago Garza',
           subtitle: 'FRC',
-          // image: 'https://dummyimage.com/1280x960/dee2e6/212529',
-          // imageAltText: 'This is an important person',
           desc: 'FRC alumnus & former Dean’s list award winner, Santiago brings years of experience both on and off the robotics field to the POTATOES'
         },
         {
           title: 'Uche Akotaobi',
           subtitle: 'VEX & FRC',
-          // image: 'https://dummyimage.com/1280x960/dee2e6/212529',
-          // imageAltText: 'This is an important person',
-          // desc: 'Aliquip occaecat velit ipsum nisi reprehenderit adipisicing nostrud.'
         },
         {
           title: 'Cheryl Bhence',
           subtitle: 'FRC',
-          // desc: 'Do esse laborum consequat officia eu aliqua commodo reprehenderit.'
         },
         {
           title: 'Brandon Marshall',
           subtitle: 'VEX',
-          // desc: 'Description'
         },
         {
           title: 'Michael Leahy',
           subtitle: 'FRC',
-          // desc: 'Description'
         },
         {
           title: 'Jim Swenson',
           subtitle: 'FRC & VEX',
-          // desc: 'In veniam elit aliquip minim deserunt deserunt elit occaecat et.'
         },
         {
           title: 'Bob Solanto',
           subtitle: 'FRC & VEX',
-          // desc: 'In veniam elit aliquip minim deserunt deserunt elit occaecat et.'
         }
       ],
       officers: [
@@ -104,36 +90,26 @@ export default {
         {
           title: 'Grace Ringuette',
           subtitle: 'FRC Co-Captain',
-          // image: 'https://dummyimage.com/1280x960/dee2e6/212529',
-          // imageAltText: 'This is an important person',
           desc: 'With experience of VEX Robotics, Grace brings talent and direction to the fabrication of FRC robots.'
         },
         {
           title: 'Daniel Stamper',
           subtitle: 'VEX Co-Captain',
-          // image: 'https://dummyimage.com/1280x960/dee2e6/212529',
-          // imageAltText: 'This is an important person',
           desc: 'Daniel Stamper, in conjunction with Co-Captain James Lim help recruit members and direct lessons related to VEX.'
         },
         {
           title: 'James Lim',
           subtitle: 'VEX Co-Captain',
-          // image: 'https://dummyimage.com/1280x960/dee2e6/212529',
-          // imageAltText: 'This is an important person',
           desc: 'James Lim, in conjunction with Co-Captain Daniel Stamper help recruit members and direct lessons related to VEX.'
         },
         {
           title: 'Jasper Nelson',
           subtitle: 'CyberPatriots Captain',
-          // image: 'https://dummyimage.com/1280x960/dee2e6/212529',
-          // imageAltText: 'This is an important person',
           desc: 'Jasper Nelson keeps the CyberPatriots program on track and oversees technical training for CyberPatriots competitions.'
         },
         {
           title: 'Lizzie Kapoor',
           subtitle: 'Marketing Captain',
-          // image: 'https://dummyimage.com/1280x960/dee2e6/212529',
-          // imageAltText: 'This is an important person',
           desc: 'Overlooks brand and brand presentation. Coordinates fundraising and recruitment events.'
         }
       ]

@@ -6,19 +6,19 @@
 
     <card-sponsor-wrapper tier="gold">
       <card-sponsor
-          v-for="sponsor in sponsors"
-          v-if="sponsor.tier === 'gold'"
-          :sponsor="sponsor"
-          :key="sponsor.name">
+        v-for="sponsor in sponsors"
+        v-if="sponsor.tier === 'gold'"
+        :sponsor="sponsor"
+        :key="sponsor.name">
       </card-sponsor>
     </card-sponsor-wrapper>
 
     <card-sponsor-wrapper tier="silver">
       <card-sponsor
-          v-for="sponsor in sponsors"
-          v-if="sponsor.tier === 'silver'"
-          :sponsor="sponsor"
-          :key="sponsor.name"></card-sponsor>
+        v-for="sponsor in sponsors"
+        v-if="sponsor.tier === 'silver'"
+        :sponsor="sponsor"
+        :key="sponsor.name"></card-sponsor>
     </card-sponsor-wrapper>
   </div>
 </template>

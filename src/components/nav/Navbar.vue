@@ -44,9 +44,6 @@
           </svg>
         </div>
 
-        <!--<mobile-menu-dropdown>-->
-        <!--<mobile-menu-button slot="the"><p>Home</p></mobile-menu-button>-->
-        <!--</mobile-menu-dropdown>-->
         <div class="routes" @click="toggleMobileMenu">
           <router-link to="/">
             <mobile-menu-button><p>Home</p></mobile-menu-button>
@@ -91,7 +88,6 @@
 import NavBarItem from '@/components/nav/NavbarItem'
 import NavBarItemDropdown from '@/components/nav/NavbarItemDropdown'
 import MenuMobileButton from '@/components/ui/MenuMobileButton'
-import MobileMenuDropdown from '@/components/MobileMenuDropdown'
 
 export default {
   name: 'navbar',
@@ -115,8 +111,7 @@ export default {
   components: {
     'nav-bar-item': NavBarItem,
     'nav-bar-item-dropdown': NavBarItemDropdown,
-    'mobile-menu-button': MenuMobileButton,
-    'mobile-menu-dropdown': MobileMenuDropdown
+    'mobile-menu-button': MenuMobileButton
   }
 }
 </script>

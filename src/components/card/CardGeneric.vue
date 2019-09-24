@@ -19,42 +19,11 @@ import { mapMutations } from 'vuex'
 export default {
   name: 'cardGeneric',
   computed: {
-    // Would it be better to use double equal (with type coercion), since these are all falsy values?
-    titleShow: function() {
-      let title = this.cardInfo.title;
-      if(title === null || title === undefined || title === '') {
-        return false;
-      }
-      return true;
-    },
-    subtitleShow: function() {
-      let title = this.cardInfo.subtitle;
-      if(title === null || title === undefined || title === '') {
-        return false;
-      }
-      return true;
-    },
-    imageShow: function() {
-      let title = this.cardInfo.image;
-      if(title === null || title === undefined || title === '') {
-        return false;
-      }
-      return true;
-    },
-    descShow: function() {
-      let title = this.cardInfo.desc;
-      if(title === null || title === undefined || title === '') {
-        return false;
-      }
-      return true;
-    },
-    buttonShow: function() {
-      let title = this.cardInfo.buttonText;
-      if(title === null || title === undefined || title === '') {
-        return false;
-      }
-      return true;
-    }
+    titleShow() { return !!this.cardInfo.title },
+    subtitleShow() { return !!this.cardInfo.subtitle },
+    imageShow() { return !!this.cardInfo.image },
+    descShow() { return !!this.cardInfo.desc },
+    buttonShow() { return !!this.cardInfo.buttonText}
   },
   mounted: function() {
     this.$store.commit('setOtherAlbumData', {

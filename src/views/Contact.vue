@@ -13,7 +13,7 @@
 </template>
 
 <script>
-  // Weird semantics so bots don't get electronic mail address
+// Weird semantics so bots don't get electronic mail address
 export default {
   name: 'contact'
 }

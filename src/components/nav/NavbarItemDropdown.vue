@@ -3,7 +3,7 @@
     <nav-bar-item :routeTo="routeTo" class="dropdown-title">
       {{ dropdownTitle }}
     </nav-bar-item> 
-    <ul class="dropdown-items" ref="navbar-items">
+    <ul class="dropdown-items">
       <slot></slot>
     </ul>
   </li>

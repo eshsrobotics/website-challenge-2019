@@ -2,15 +2,14 @@
   <div id="app">
     <navbar class="nav-navbar"/>
     <div class="router-view-outer">
-        <!--<transition name="fade" mode="out-in">-->
-          <page-heading class="heading"/>
-        <!--</transition>-->
-        <!--<transition name="slide" mode="out-in">-->
-          <router-view class="router-view"/>
-        <!--</transition>-->
-      <!--<vue-progress-bar></vue-progress-bar>-->
-      </div>
-      <foot class="footer"></foot>
+      <!--<transition name="fade" mode="out-in">-->
+        <page-heading class="heading"/>
+      <!--</transition>-->
+      <!--<transition name="slide" mode="out-in">-->
+        <router-view class="router-view"/>
+      <!--</transition>-->
+    </div>
+    <foot class="footer"></foot>
   </div>
 </template>
 

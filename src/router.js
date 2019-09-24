@@ -89,48 +89,6 @@ export default new Router({
       }
     },
     {
-      path: '/resources',
-      component: () => import('@/components/SubPathWrapper'),
-      children: [
-        // {
-        //   path: '',
-        //   component: () => import('@/views/resources/Resources'),
-        //   meta: {
-        //     title: 'Resources'
-        //   }
-        // },
-        // {
-        //   path: 'branding',
-        //   component: () => import('@/views/resources/BrandingGuidelines'),
-        //   meta: {
-        //     title: 'Branding Guidelines'
-        //   }
-        // },
-        // {
-        //   path: 'photos',
-        //   component: () => import('@/views/media/Photos'),
-        //   meta: {
-        //     title: 'Photos'
-        //   }
-        // },
-        // {
-        //   path: 'album/:album',
-        //   component: () => import('@/views/media/Album'),
-        //   meta: {
-        //     title: 'Album Photos',
-        //     showRoute: false
-        //   }
-        // },
-        // {
-        //   path: 'videos',
-        //   component: () => import('@/views/media/Videos'),
-        //   meta: {
-        //     title: 'Videos'
-        //   }
-        // },
-      ]
-    },
-    {
       path: '/sponsors',
       component: () => import('@/components/SubPathWrapper'),
       children: [

@@ -29,13 +29,9 @@
       <li><p>Up to $1000+ in currency, goods, or services</p></li>
       <li><p>Small logo on website and robot</p></li>
     </ul>
-
   </c-block>
 
-
   <page-desc>
-
-
     <h2>How to Sponsor</h2>
     <p>If you wish to sponsor us, please <router-link to="/contact">contact us</router-link> concerning any inquiries.</p>
     <br/>

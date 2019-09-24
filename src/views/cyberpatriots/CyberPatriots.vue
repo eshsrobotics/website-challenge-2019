@@ -82,12 +82,6 @@ export default {
       ]
     }
   },
-  methods: {
-    // onReady: function(instance, CountUp) {
-    //   const that = this;
-    //   instance.update(that.endVal + 100);
-    // }
-  },
   components: {
     'c-block': CBlock,
     'c-button': CButton,
