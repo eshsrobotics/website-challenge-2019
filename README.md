@@ -6,8 +6,6 @@ This is a website coded for the [Robotics Team Website Challenge 2019](https://w
 ```sh
 git clone --recurse-submodules https://github.com/eshsrobotics/website-challenge-2019
 cd website-challenge-2019
-yarn install
-yarn run serve
 ```
 
 ### Dev Server
@@ -17,6 +15,7 @@ sudo docker-compose up
 or
 ```sh
 # Running on port 8080
+yarn install
 yarn run serve
 ```
 
