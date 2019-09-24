@@ -43,6 +43,14 @@ export default {
   }
 }
 
+
+.dropdown-items .route-label {
+  display: inline-block;
+  box-sizing: border-box;
+  width: 90%;
+  max-width: 90%;
+}
+
 hr {
   border: 0;
   margin-left: 5px;
@@ -59,6 +67,7 @@ p {
   text-decoration: none;
   padding: 11px 16px;
   line-height: 100%;
+  text-align: center;
 }
 
 a {
