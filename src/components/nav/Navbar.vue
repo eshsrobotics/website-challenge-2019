@@ -130,10 +130,9 @@ export default {
 
 li.image {
   padding: 0;
+  margin-right: 5px;
   background-color: inherit;
   display: flex;
-  /*justify-content: center;*/
-  /*align-items: center;*/
 }
 
 .feather-menu:hover {

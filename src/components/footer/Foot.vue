@@ -74,6 +74,7 @@ export default {
   background-color: white;
   padding: 10px 10px 10px 10px;
   border-top: 2px solid $oc-yellow-1;
+  margin-top: 30px;
 }
 
 @media(max-width: 600px) {

@@ -142,7 +142,6 @@ a:hover, a:active {
   flex-direction: column;
   align-items: flex-start;
   margin: 0px 20px 10px 20px;
-
 }
 .router-view {
   margin-left: auto;
