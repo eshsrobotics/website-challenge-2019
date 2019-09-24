@@ -1,6 +1,6 @@
 <template>
   <li>
-    <router-link :to="routeTo" tag="div" class="route-label">
+    <router-link :to="routeTo" class="route-label">
       <p><slot></slot></p>
     </router-link>
   </li>
@@ -19,6 +19,7 @@ export default {
 @import '@/styles/variables.scss';
 
 .route-label {
+  display: inline-block;
   border: 1px solid $oc-gray-7;
   margin: 0px 5px 0px 5px;
   background-color: $std-bg-reg;
