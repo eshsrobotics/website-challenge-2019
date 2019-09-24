@@ -14,7 +14,7 @@ yarn run serve
 ```sh
 sudo docker-compose up
 ```
-
+or
 ```sh
 # Running on port 8080
 yarn run serve
