@@ -10,7 +10,8 @@ cd website-challenge-2019
 
 ### Dev Server
 ```sh
-sudo docker-compose up
+yarn install
+docker-compose up
 ```
 or
 ```sh

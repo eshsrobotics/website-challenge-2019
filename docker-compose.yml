@@ -1,13 +1,17 @@
 version: "3.7"
 services:
   website:
-    build: ./
+    image: node:13-slim
+    working_dir: /app
+    command: yarn serve
     ports:
       - 8080:8080
     environment:
       - NODE_ENV=development
     volumes:
       - "./:/app"
+    restart: always
+    privileged: false
     stdin_open: true
     tty: true
 
