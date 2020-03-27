@@ -19,7 +19,7 @@
   "devDependencies": {
     "@vue/cli-plugin-babel": "^3.11.0",
     "@vue/cli-service": "^3.11.0",
-    "dart-sass": "^1.22.12",
+    "sass": "^1.26.3",
     "sass-loader": "^8.0.0",
     "vue-template-compiler": "^2.6.10"
   },
