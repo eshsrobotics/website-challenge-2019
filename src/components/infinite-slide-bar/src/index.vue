@@ -70,7 +70,7 @@ export default {
 .left-cloud {
   position: absolute;
   // http://jsfiddle.net/x4gSG/310/
-  background: linear-gradient(right, rgba(255,255,255,0) 0%,rgba(255,255,255,1) 56%,rgba(255,255,255,1) 100%);
+  background: linear-gradient(to left, rgba(255,255,255,0) 0%,rgba(255,255,255,1) 56%,rgba(255,255,255,1) 100%);
   top: 0;
   left: 0;
   height: 100%;
@@ -81,7 +81,7 @@ export default {
   position: absolute;
   top: 0;
   right: 0;
-  background: linear-gradient(left, rgba(255,255,255,0) 0%,rgba(255,255,255,1) 56%,rgba(255,255,255,1) 100%);
+  background: linear-gradient(to right, rgba(255,255,255,0) 0%,rgba(255,255,255,1) 56%,rgba(255,255,255,1) 100%);
   height: 100%;
   width: 20px;
 }
